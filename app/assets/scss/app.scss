@@ -1,0 +1,10 @@
+@tailwind base;
+@layer base {
+  body {
+    @apply antialiased bg-gray-100 text-gray-700;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+@import "color_variations";
