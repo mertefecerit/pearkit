@@ -5,6 +5,7 @@ import {usePathname} from "next/navigation";
 import {motion, AnimatePresence} from "framer-motion"
 import {useEffect, useState} from "react";
 import {forEach} from "lodash";
+import scss from "./BNavItem.module.scss";
 
 function BNavItem({label, childItems}) {
     const [isActive, setIsActive] = useState(false)
@@ -15,9 +16,9 @@ function BNavItem({label, childItems}) {
         })
     }, []);
     return (
-        <>
+        <div className={scss.bNavItem}>
             <div onClick={() => setIsActive(!isActive)}
-                 className="font-medium flex gap-1 items-center cursor-pointer hover:bg-gray-100 py-1 rounded">
+                 className={scss.clickArea}>
                 <motion.div
                     initial={{rotate:0}}
                     animate={{rotate: isActive ? 0 : -90}}
@@ -39,12 +40,13 @@ function BNavItem({label, childItems}) {
                             overflow: 'hidden',
                             pointerEvents: isActive ? 'auto' : 'none'
                         }}
-                        className="pl-2">
+                        className={scss.contentArea}
+                    >
                         {
                             childItems && childItems.map((item, index) => (
                                 <li key={index}>
                                     <Link
-                                        className={`inline-block w-full border-l-2 pl-4 py-1 hover:bg-gray-100 hover:rounded-r hover:border-gray-500 ${pathname === item.path ? 'border-blue-500 bg-blue-100 rounded-r text-blue-700 hover:bg-blue-200 hover:border-blue-500' : ''}`}
+                                        className={`${pathname === item.path ? scss.active : ''}`}
                                         href={item.path}>
                                         {item.label}
                                     </Link>
@@ -55,7 +57,7 @@ function BNavItem({label, childItems}) {
                 </AnimatePresence>
             }
 
-        </>
+        </div>
     )
 }
 
