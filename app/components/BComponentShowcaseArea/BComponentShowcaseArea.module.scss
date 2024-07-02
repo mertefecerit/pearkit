@@ -1,0 +1,17 @@
+.bComponentShowcaseArea {
+  @apply flex flex-col gap-4;
+  & > div.header {
+    @apply flex flex-col gap-2;
+    & > h2 {
+      @apply text-2xl font-bold;
+    }
+  }
+  & > div.showcase {
+    @apply w-full rounded-lg border p-4 bg-white flex justify-center;
+  }
+
+  & > div.codeArea {
+    @apply rounded-lg overflow-hidden bg-black;
+  }
+}
+
