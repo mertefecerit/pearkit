@@ -2,7 +2,7 @@
 import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/BuiButton";
 
-function ButtonSection(props) {
+function ButtonColorsSection(props) {
     const codeBlock = `<BuiButton variant="text" color="red">Text Button</BuiButton>
 <BuiButton color="red">Basic Button</BuiButton>
 <BuiButton variant="outlined" color="red">Outlined Button</BuiButton>`;
@@ -34,4 +34,4 @@ function ButtonSection(props) {
     )
 }
 
-export default ButtonSection;
+export default ButtonColorsSection;

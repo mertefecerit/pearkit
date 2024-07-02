@@ -4,6 +4,7 @@ import OutlinedButtonSection from "@/app/doc/components/button/sections/Outlined
 import BasicButtonSection from "@/app/doc/components/button/sections/BasicButtonSection";
 import ButtonHandlingClicks from "@/app/doc/components/button/sections/ButtonHandlingClicks";
 import ButtonColorsSection from "@/app/doc/components/button/sections/ButtonColorsSection";
+import ButtonSizesSection from "@/app/doc/components/button/sections/ButtonSizesSection";
 
 function ButtonComponentPage() {
     return (
@@ -26,6 +27,7 @@ function ButtonComponentPage() {
             <OutlinedButtonSection />
             <ButtonHandlingClicks/>
             <ButtonColorsSection />
+            <ButtonSizesSection />
         </div>
     )
 }

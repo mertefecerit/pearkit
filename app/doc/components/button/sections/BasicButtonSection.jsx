@@ -2,7 +2,7 @@
 import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/BuiButton";
 
-function ButtonSection(props) {
+function BasicButtonSection(props) {
     const basicButtonCodeBlock = `<BuiButton>Basic Button</BuiButton>
 <BuiButton disabled={true}>Disabled Basic Button</BuiButton>
 <BuiButton isLoading={true}>Loading Basic Button</BuiButton>
@@ -22,4 +22,4 @@ function ButtonSection(props) {
     )
 }
 
-export default ButtonSection;
+export default BasicButtonSection;
