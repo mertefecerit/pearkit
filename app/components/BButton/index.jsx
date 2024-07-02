@@ -16,7 +16,7 @@ function BButton(
         startIcon,
         endIcon,
         href,
-        onClickHandler
+        onClick
     }
 ) {
     const content = (
@@ -30,18 +30,17 @@ function BButton(
     return (
         !href ?
             <motion.button type={type}
-                onClick={onClickHandler}
-                whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
-                disabled = {disabled || isLoading}
-                className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
+                           onClick={onClick}
+                           whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
+                           disabled={disabled || isLoading}
+                           className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
             >
                 {content}
             </motion.button>
             :
             <motion.a href={href}
-                      onClick={onClickHandler}
                       whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
-                      disabled = {disabled || isLoading}
+                      disabled={disabled || isLoading}
                       className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
             >
                 {content}
@@ -60,6 +59,6 @@ BButton.propTypes = {
     startIcon: PropTypes.elementType,
     endIcon: PropTypes.elementType,
     href: PropTypes.string,
-    onClickHandler: PropTypes.func
+    onClick: PropTypes.func
 }
 export default BButton;

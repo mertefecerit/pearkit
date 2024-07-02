@@ -1,5 +1,7 @@
 .bbutton {
   @apply
+  sm:w-fit
+  w-full
   font-medium
   border
   border-transparent
@@ -22,7 +24,12 @@
 
   @each $color in $colors {
     &.#{$color} {
-      @apply text-white;
+      @if $color == 'yellow' {
+        @apply text-black;
+      } @else {
+        @apply text-white;
+      }
+
       &.basic {
         @apply
         bg-#{$color}-500

@@ -13,9 +13,13 @@ function BComponentShowcaseArea({children, title, desc, codeBlock}) {
                     {desc}
                 </p>
             </div>
-            <div className={scss.showcase}>
-                {children}
-            </div>
+            {
+                children && (
+                    <div className={scss.showcase}>
+                        {children}
+                    </div>
+                )
+            }
             <div className={scss.codeArea}>
                 <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
                     {codeBlock}

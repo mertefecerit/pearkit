@@ -1,16 +1,11 @@
-import BButton from "@/app/components/BButton";
-import BComponentShowcaseArea from "@/app/components/BComponentShowcaseArea";
+import ButtonSection from "@/app/doc/components/button/sections/ButtonSection";
+import TextButtonSection from "@/app/doc/components/button/sections/TextButtonSection";
+import OutlinedButtonSection from "@/app/doc/components/button/sections/OutlinedButtonSection";
+import BasicButtonSection from "@/app/doc/components/button/sections/BasicButtonSection";
+import ButtonHandlingClicks from "@/app/doc/components/button/sections/ButtonHandlingClicks";
+import ButtonColorsSection from "@/app/doc/components/button/sections/ButtonColorsSection";
 
 function ButtonComponentPage() {
-    const buttonCodeBlock = `<BButton variant="text">Text Button</BButton>
-<BButton>Basic Button</BButton>
-<BButton variant="outlined">Outlined Button</BButton>`;
-
-    const textButtonCodeBlock = `<BButton variant="text">Text Button</BButton>
-<BButton variant="text" disabled={true}>Text Button</BButton>
-<BButton variant="text" isLoading={true}>Text Button</BButton>
-<BButton variant="text" href="https://google.com">Text Button</BButton>`;
-
     return (
         <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-2">
@@ -25,29 +20,12 @@ function ButtonComponentPage() {
                     <li>Toolbars</li>
                 </ul>
             </div>
-            <hr/>
-            <BComponentShowcaseArea
-                title="Button"
-                desc={<>The <code className="bg-gray-100 px-1 py-0.5 text-sm rounded border">Button</code> comes with
-                    three variants: text (default), basic, and outlined.</>}
-                codeBlock={buttonCodeBlock}
-            >
-                <BButton variant="text">Text Button</BButton>
-                <BButton>Basic Button</BButton>
-                <BButton variant="outlined">Outlined Button</BButton>
-            </BComponentShowcaseArea>
-            <hr/>
-            <BComponentShowcaseArea
-                title="Text Buttons"
-                desc={<>Text buttons are typically used for less-pronounced actions, including those located: in
-                    dialogs, in cards. In cards, text buttons help maintain an emphasis on card content.</>}
-                codeBlock={textButtonCodeBlock}
-            >
-                <BButton variant="text">Text Button</BButton>
-                <BButton variant="text" disabled={true}>Text Button</BButton>
-                <BButton variant="text" isLoading={true}>Text Button</BButton>
-                <BButton variant="text" href="https://google.com">Text Button</BButton>
-            </BComponentShowcaseArea>
+            <ButtonSection/>
+            <TextButtonSection/>
+            <BasicButtonSection/>
+            <OutlinedButtonSection />
+            <ButtonHandlingClicks/>
+            <ButtonColorsSection />
         </div>
     )
 }
