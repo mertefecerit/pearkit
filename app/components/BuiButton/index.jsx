@@ -15,7 +15,10 @@ function BuiButton(
         children,
         startIcon,
         endIcon,
+        // link section
         href,
+        target,
+        // link section
         onClick
     }
 ) {
@@ -39,6 +42,7 @@ function BuiButton(
             </motion.button>
             :
             <motion.a href={href}
+                      target={target}
                       whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
                       disabled={disabled || isLoading}
                       className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
@@ -59,6 +63,7 @@ BuiButton.propTypes = {
     startIcon: PropTypes.elementType,
     endIcon: PropTypes.elementType,
     href: PropTypes.string,
+    target: PropTypes.string,
     onClick: PropTypes.func
 }
 export default BuiButton;
