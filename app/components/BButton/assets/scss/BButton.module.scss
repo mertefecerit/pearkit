@@ -1,0 +1,49 @@
+.bbutton {
+  @apply
+  font-medium
+  border
+  border-transparent
+  px-4
+  py-2
+  flex
+  items-center
+  gap-1
+  rounded
+  outline-0;
+  &.basic {
+    @apply
+    focus:ring-2
+    hover:brightness-90;
+  }
+
+  @each $color in $colors {
+    &.#{$color} {
+      @apply text-white;
+      &.basic {
+        @apply
+        bg-#{$color}-500
+        ring-#{$color}-200;
+      }
+
+      &.outlined {
+        @apply
+        border-#{$color}-500
+        text-#{$color}-500
+        hover:bg-#{$color}-100
+        focus:bg-#{$color}-100;
+      }
+
+      &.text {
+        @apply
+        text-#{$color}-500
+        hover:bg-#{$color}-100
+        focus:bg-#{$color}-100;
+      }
+    }
+  }
+  @each $size in $sizes {
+    &.#{$size} {
+      @apply text-#{$size};
+    }
+  }
+}
