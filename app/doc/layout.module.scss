@@ -1,10 +1,10 @@
 .layout {
-  @apply grid grid-cols-[300px,1fr] grid-rows-[auto,1fr] h-screen;
+  @apply grid lg:grid-cols-[300px,1fr] grid-cols-1 grid-rows-[auto,1fr] h-screen;
   & > header {
     @apply row-span-1 col-span-2 bg-white p-4 border-b-2;
   }
   & > aside {
-    @apply row-span-1 col-span-1 bg-white overflow-y-auto p-4 border-r-2;
+    @apply hidden lg:block row-span-1 col-span-1 bg-white overflow-y-auto p-4 border-r-2;
   }
   & > main {
     @apply row-span-1 col-span-1 overflow-y-auto bg-white p-8;

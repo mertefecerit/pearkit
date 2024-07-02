@@ -3,13 +3,17 @@
   font-medium
   border
   border-transparent
+  text-nowrap
   px-4
   py-2
   flex
   items-center
   gap-1
+  disabled:cursor-not-allowed
+  disabled:opacity-50
   rounded
   outline-0;
+
   &.basic {
     @apply
     focus:ring-2

@@ -1,34 +1,54 @@
 "use client"
-import scss from "./assets/scss/BButton.module.scss";
+import scss from "./BButton.module.scss";
 import {motion} from "framer-motion";
 import PropTypes from "prop-types";
+import LoadingIcon from "@/app/components/BButton/LoadingIcon";
 
 function BButton(
     {
         type = "button",
         variant = "basic",
         color = "blue",
-        size= "base",
-        isLoading=false,
-        disabled=false,
+        size = "base",
+        isLoading = false,
+        disabled = false,
         children,
         startIcon,
-        endIcon
+        endIcon,
+        href,
+        onClickHandler
     }
 ) {
-    return (
-        <motion.button
-            disabled={disabled || isLoading}
-            type={type}
-            whileTap={{scale: 0.95}}
-            className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
-        >
-            {startIcon}
+    const content = (
+        <>
+            {isLoading && <LoadingIcon/>}
+            {!isLoading && startIcon}
             {children}
-            {endIcon}
-        </motion.button>
+            {!isLoading && endIcon}
+        </>
+    )
+    return (
+        !href ?
+            <motion.button type={type}
+                onClick={onClickHandler}
+                whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
+                disabled = {disabled || isLoading}
+                className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
+            >
+                {content}
+            </motion.button>
+            :
+            <motion.a href={href}
+                      onClick={onClickHandler}
+                      whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
+                      disabled = {disabled || isLoading}
+                      className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
+            >
+                {content}
+            </motion.a>
     )
 }
+
 BButton.propTypes = {
     type: PropTypes.string,
     variant: PropTypes.string,
@@ -39,5 +59,7 @@ BButton.propTypes = {
     children: PropTypes.node,
     startIcon: PropTypes.elementType,
     endIcon: PropTypes.elementType,
+    href: PropTypes.string,
+    onClickHandler: PropTypes.func
 }
 export default BButton;
