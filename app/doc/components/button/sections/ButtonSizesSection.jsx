@@ -4,9 +4,7 @@ import BuiButton from "@/app/components/BuiButton";
 import BuiCode from "@/app/components/BuiCode";
 
 function ButtonSizesSection(props) {
-    const codeBlock = `<BuiButton variant="text" size="xs">Text Button</BuiButton>
-<BuiButton size="xs">Basic Button</BuiButton>
-<BuiButton variant="outlined" size="xs">Outlined Button</BuiButton>`;
+    const codeBlock = `<BuiButton size="xs">Text Button</BuiButton>`;
 
     return (
         <BuiComponentShowcaseArea
