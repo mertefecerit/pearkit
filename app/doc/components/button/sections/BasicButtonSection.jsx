@@ -1,24 +1,24 @@
 "use client"
-import BComponentShowcaseArea from "@/app/components/BComponentShowcaseArea";
-import BButton from "@/app/components/BButton";
+import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
+import BuiButton from "@/app/components/BuiButton";
 
 function ButtonSection(props) {
-    const basicButtonCodeBlock = `<BButton>Basic Button</BButton>
-<BButton disabled={true}>Disabled Basic Button</BButton>
-<BButton isLoading={true}>Loading Basic Button</BButton>
-<BButton href="https://google.com">Link Basic Button</BButton>`;
+    const basicButtonCodeBlock = `<BuiButton>Basic Button</BuiButton>
+<BuiButton disabled={true}>Disabled Basic Button</BuiButton>
+<BuiButton isLoading={true}>Loading Basic Button</BuiButton>
+<BuiButton href="https://google.com">Link Basic Button</BuiButton>`;
 
     return (
-        <BComponentShowcaseArea
+        <BuiComponentShowcaseArea
             title="Basic Buttons"
             desc={<>Basic buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.</>}
             codeBlock={basicButtonCodeBlock}
         >
-            <BButton>Basic Button</BButton>
-            <BButton disabled={true}>Disabled Basic Button</BButton>
-            <BButton isLoading={true}>Loading Basic Button</BButton>
-            <BButton href="https://google.com">Link Basic Button</BButton>
-        </BComponentShowcaseArea>
+            <BuiButton>Basic Button</BuiButton>
+            <BuiButton disabled={true}>Disabled Basic Button</BuiButton>
+            <BuiButton isLoading={true}>Loading Basic Button</BuiButton>
+            <BuiButton href="https://google.com">Link Basic Button</BuiButton>
+        </BuiComponentShowcaseArea>
     )
 }
 

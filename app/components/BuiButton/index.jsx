@@ -1,10 +1,10 @@
 "use client"
-import scss from "./BButton.module.scss";
+import scss from "./BuiButton.module.scss";
 import {motion} from "framer-motion";
 import PropTypes from "prop-types";
-import LoadingIcon from "@/app/components/BButton/LoadingIcon";
+import LoadingIcon from "@/app/components/BuiButton/LoadingIcon";
 
-function BButton(
+function BuiButton(
     {
         type = "button",
         variant = "basic",
@@ -33,7 +33,7 @@ function BButton(
                            onClick={onClick}
                            whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
                            disabled={disabled || isLoading}
-                           className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
+                           className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
             >
                 {content}
             </motion.button>
@@ -41,14 +41,14 @@ function BButton(
             <motion.a href={href}
                       whileTap={{scale: (disabled || isLoading) ? 1 : 0.95}}
                       disabled={disabled || isLoading}
-                      className={`${scss.bbutton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
+                      className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
             >
                 {content}
             </motion.a>
     )
 }
 
-BButton.propTypes = {
+BuiButton.propTypes = {
     type: PropTypes.string,
     variant: PropTypes.string,
     color: PropTypes.string,
@@ -61,4 +61,4 @@ BButton.propTypes = {
     href: PropTypes.string,
     onClick: PropTypes.func
 }
-export default BButton;
+export default BuiButton;

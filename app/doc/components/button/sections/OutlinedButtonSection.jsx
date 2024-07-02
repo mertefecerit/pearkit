@@ -1,24 +1,24 @@
 "use client"
-import BComponentShowcaseArea from "@/app/components/BComponentShowcaseArea";
-import BButton from "@/app/components/BButton";
+import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
+import BuiButton from "@/app/components/BuiButton";
 
 function OutlinedButtonSection(props) {
-    const outlinedButtonCodeBlock = `<BButton variant="outlined">Outlined Button</BButton>
-<BButton variant="outlined" disabled={true}>Disabled Outlined Button</BButton>
-<BButton variant="outlined" isLoading={true}>Loading Outlined Button</BButton>
-<BButton variant="outlined" href="https://google.com">Link Outlined Button</BButton>`;
+    const outlinedButtonCodeBlock = `<BuiButton variant="outlined">Outlined Button</BuiButton>
+<BuiButton variant="outlined" disabled={true}>Disabled Outlined Button</BuiButton>
+<BuiButton variant="outlined" isLoading={true}>Loading Outlined Button</BuiButton>
+<BuiButton variant="outlined" href="https://google.com">Link Outlined Button</BuiButton>`;
 
     return (
-        <BComponentShowcaseArea
+        <BuiComponentShowcaseArea
             title="Outlined Buttons"
             desc={<>Outlined buttons are medium-emphasis buttons. They contain actions that are important but aren't the primary action in an app. Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.</>}
             codeBlock={outlinedButtonCodeBlock}
         >
-            <BButton variant="outlined">Outlined Button</BButton>
-            <BButton variant="outlined" disabled={true}>Disabled Outlined Button</BButton>
-            <BButton variant="outlined" isLoading={true}>Loading Outlined Button</BButton>
-            <BButton variant="outlined" href="https://google.com">Link Outlined Button</BButton>
-        </BComponentShowcaseArea>
+            <BuiButton variant="outlined">Outlined Button</BuiButton>
+            <BuiButton variant="outlined" disabled={true}>Disabled Outlined Button</BuiButton>
+            <BuiButton variant="outlined" isLoading={true}>Loading Outlined Button</BuiButton>
+            <BuiButton variant="outlined" href="https://google.com">Link Outlined Button</BuiButton>
+        </BuiComponentShowcaseArea>
     )
 }
 
