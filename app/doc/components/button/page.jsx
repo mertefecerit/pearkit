@@ -5,6 +5,7 @@ import BasicButtonSection from "@/app/doc/components/button/sections/BasicButton
 import ButtonHandlingClicks from "@/app/doc/components/button/sections/ButtonHandlingClicks";
 import ButtonColorsSection from "@/app/doc/components/button/sections/ButtonColorsSection";
 import ButtonSizesSection from "@/app/doc/components/button/sections/ButtonSizesSection";
+import ButtonWithIconAndLabelSection from "@/app/doc/components/button/sections/ButtonWithIconAndLabelSection";
 
 function ButtonComponentPage() {
     return (
@@ -28,6 +29,7 @@ function ButtonComponentPage() {
             <ButtonHandlingClicks/>
             <ButtonColorsSection />
             <ButtonSizesSection />
+            <ButtonWithIconAndLabelSection/>
         </div>
     )
 }
