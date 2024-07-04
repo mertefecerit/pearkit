@@ -14,9 +14,9 @@ function ButtonColorsSection(props) {
         >
             <div className="flex flex-col gap-4">
                 <div className="flex flex-wrap gap-4">
-                    <BuiButton variant="text" color="red">Text Button</BuiButton>
-                    <BuiButton color="red">Basic Button</BuiButton>
-                    <BuiButton variant="outlined" color="red">Outlined Button</BuiButton>
+                    <BuiButton variant="text" color="indigo">Text Button</BuiButton>
+                    <BuiButton color="indigo">Basic Button</BuiButton>
+                    <BuiButton variant="outlined" color="indigo">Outlined Button</BuiButton>
                 </div>
                 <div className="flex flex-wrap gap-4">
                     <BuiButton variant="text" color="yellow">Text Button</BuiButton>
@@ -24,9 +24,9 @@ function ButtonColorsSection(props) {
                     <BuiButton variant="outlined" color="yellow">Outlined Button</BuiButton>
                 </div>
                 <div className="flex flex-wrap gap-4">
-                    <BuiButton variant="text" color="green">Text Button</BuiButton>
-                    <BuiButton color="green">Basic Button</BuiButton>
-                    <BuiButton variant="outlined" color="green">Outlined Button</BuiButton>
+                    <BuiButton variant="text" color="red">Text Button</BuiButton>
+                    <BuiButton color="red">Basic Button</BuiButton>
+                    <BuiButton variant="outlined" color="red">Outlined Button</BuiButton>
                 </div>
             </div>
         </BuiComponentShowcaseArea>
