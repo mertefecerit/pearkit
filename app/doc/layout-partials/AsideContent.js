@@ -25,12 +25,8 @@ export default function AsideContent() {
                     label: 'Button',
                 },
                 {
-                    path: '/doc/components/modal',
-                    label: 'Modal',
-                },
-                {
-                    path: '/doc/components/toggle',
-                    label: 'Toggle',
+                    path: '/doc/components/button-group',
+                    label: 'Button Group',
                 },
             ]
         },

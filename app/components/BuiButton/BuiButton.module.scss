@@ -14,12 +14,14 @@
   disabled:cursor-not-allowed
   disabled:opacity-50
   rounded
+  transition-all
   outline-0;
 
   &.basic {
     @apply
     focus:ring-2
-    hover:brightness-90;
+    focus:z-10
+    focus:ring-offset-2;
   }
 
   @each $color in $colors {
@@ -33,7 +35,8 @@
       &.basic {
         @apply
         bg-#{$color}-500
-        ring-#{$color}-200;
+        hover:bg-#{$color}-600
+        ring-#{$color}-500;
       }
 
       &.outlined {
