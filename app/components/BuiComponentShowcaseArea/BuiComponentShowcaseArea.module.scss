@@ -3,7 +3,10 @@
   & > div.header {
     @apply flex flex-col gap-2;
     & > h2 {
-      @apply text-2xl font-bold;
+      @apply text-2xl font-bold cursor-pointer;
+      & > span {
+        @apply text-blue-300;
+      }
     }
   }
   & > div.showcase {

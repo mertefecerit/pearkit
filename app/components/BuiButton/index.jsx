@@ -17,7 +17,7 @@ function BuiButton(
         endIcon,
         // link section
         href,
-        target,
+        target='_target',
         // link section
         onClick,
         animation= true
