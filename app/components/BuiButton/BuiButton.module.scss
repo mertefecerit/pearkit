@@ -17,6 +17,10 @@
   transition-all
   outline-0;
 
+  &.haveIcon {
+    @apply px-2 py-2 w-fit #{!important}
+  }
+
   &.basic {
     @apply
     focus:ring-2

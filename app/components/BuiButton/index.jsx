@@ -37,7 +37,7 @@ function BuiButton(
                            onClick={onClick}
                            whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                            disabled={disabled || isLoading}
-                           className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
+                           className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]} ${!children ? scss.haveIcon:''}`}
             >
                 {content}
             </motion.button>

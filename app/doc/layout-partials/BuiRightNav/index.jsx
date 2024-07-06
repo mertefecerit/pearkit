@@ -11,6 +11,7 @@ function BuiRightNav({routes}) {
     const [currentPathHash, setCurrentPathHash] = useState('');
 
     useEffect(() => {
+        setCurrentPathHash('');
         find(routes, function(o) {
             find(o.children, function(i){
                 if (i.path === pathname){

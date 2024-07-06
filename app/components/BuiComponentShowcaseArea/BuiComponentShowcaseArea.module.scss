@@ -3,7 +3,7 @@
   & > div.header {
     @apply flex flex-col gap-2;
     & > h2 {
-      @apply text-2xl font-bold cursor-pointer;
+      @apply text-2xl font-bold cursor-pointer w-fit;
       & > span {
         @apply text-blue-300;
       }
