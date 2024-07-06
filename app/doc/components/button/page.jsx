@@ -7,6 +7,10 @@ import ButtonColorsSection from "@/app/doc/components/button/sections/ButtonColo
 import ButtonSizesSection from "@/app/doc/components/button/sections/ButtonSizesSection";
 import ButtonWithIconAndLabelSection from "@/app/doc/components/button/sections/ButtonWithIconAndLabelSection";
 
+export const metadata = {
+    title: 'Button',
+    description : 'Buttons allow users to take actions, and make choices, with a single tap.'
+}
 function ButtonComponentPage() {
     return (
         <div className="flex flex-col gap-8">

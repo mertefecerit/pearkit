@@ -1,6 +1,10 @@
 import BasicButtonGroupSection from "@/app/doc/components/button-group/sections/BasicButtonGroupSection";
 import ButtonGroupVariantSection from "@/app/doc/components/button-group/sections/ButtonGroupVariantSection";
 
+export const metadata = {
+    title: 'Button Group',
+    description : 'The ButtonGroup component can be used to group related buttons.'
+}
 function ButtonGroupPage(props) {
     return (
         <div className="flex flex-col gap-8">
