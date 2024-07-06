@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import {useState} from "react";
-
+import {motion, AnimatePresence} from "framer-motion";
 function BuiComponentShowcaseArea({children, title, desc, codeBlock, anchor}) {
     const [clicked,setClicked] = useState(false);
     const copyPath = () => {
@@ -19,7 +19,22 @@ function BuiComponentShowcaseArea({children, title, desc, codeBlock, anchor}) {
             <div className={scss.header}>
                 <h2 onClick={() => copyPath()}>
                     {title}
-                    <span> # {clicked &&  ' Copied'}</span>
+                    <span> #
+                        <AnimatePresence>
+                        {
+
+                            clicked &&
+                            <motion.span
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                exit={{opacity: 0}}
+                            >
+                                Copied
+                            </motion.span>
+
+                        }
+                          </AnimatePresence>
+                    </span>
                 </h2>
                 <p>
                     {desc}
