@@ -10,6 +10,7 @@ function ButtonSection(props) {
 
     return (
         <BuiComponentShowcaseArea
+            anchor="button"
             title="Button"
             desc={<>The <BuiCode>Button</BuiCode> comes with
                 three variants: text (default), basic, and outlined.</>}

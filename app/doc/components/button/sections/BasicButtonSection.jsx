@@ -10,6 +10,7 @@ function BasicButtonSection(props) {
 
     return (
         <BuiComponentShowcaseArea
+            anchor="basic-button"
             title="Basic Buttons"
             desc={<>Basic buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.</>}
             codeBlock={basicButtonCodeBlock}

@@ -1,8 +1,6 @@
-import AsideContent from "./AsideContent";
 import BNavItem from "./BNavItem";
 
-function BNav() {
-    const routes = AsideContent();
+function BNav({routes}) {
     return (
         <nav className="flex flex-col gap-2">
             {

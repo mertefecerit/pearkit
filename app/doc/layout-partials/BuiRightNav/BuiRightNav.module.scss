@@ -1,0 +1,18 @@
+.BuiRightNavWrapper {
+  @apply text-sm;
+  & > nav {
+    & > ul {
+      @apply flex flex-col gap-1;
+      & > li {
+        & > a {
+          @apply hover:text-blue-500 transition-all;
+          &.active {
+            @apply text-blue-500;
+          }
+        }
+      }
+    }
+  }
+}
+
+

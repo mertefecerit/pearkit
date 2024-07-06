@@ -18,6 +18,7 @@ function ButtonGroupVariantSection(){
 </BuiButtonGroup>`;
     return (
         <BuiComponentShowcaseArea
+            anchor="button-variants"
             title="Button Variants"
             desc={<>All the standard button variants are supported.</>}
             codeBlock={codeBlock}

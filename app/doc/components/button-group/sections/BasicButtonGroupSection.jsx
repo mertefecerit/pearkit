@@ -13,6 +13,7 @@ function BasicButtonGroupSection(){
 </BuiButtonGroup>`;
     return (
         <BuiComponentShowcaseArea
+            anchor="basic-button-group"
             title="Basic Button Group"
             desc={<>The buttons can be grouped by wrapping them with the <BuiCode>BuiButtonGroup</BuiCode> component. They need to be immediate children.</>}
             codeBlock={codeBlock}

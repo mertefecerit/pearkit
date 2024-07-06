@@ -10,6 +10,7 @@ function OutlinedButtonSection(props) {
 
     return (
         <BuiComponentShowcaseArea
+            anchor="outlined-button"
             title="Outlined Buttons"
             desc={<>Outlined buttons are medium-emphasis buttons. They contain actions that are important but aren't the primary action in an app. Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.</>}
             codeBlock={outlinedButtonCodeBlock}

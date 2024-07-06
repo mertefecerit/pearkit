@@ -4,11 +4,13 @@ import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import React from "react";
 
-function BuiComponentShowcaseArea({children, title, desc, codeBlock}) {
+function BuiComponentShowcaseArea({children, title, desc, codeBlock, anchor}) {
     return (
-        <div className={scss.buiComponentShowcaseArea}>
+        <section id={anchor} className={scss.buiComponentShowcaseArea}>
             <div className={scss.header}>
-                <h2>{title}</h2>
+                <h2>
+                    {title}
+                </h2>
                 <p>
                     {desc}
                 </p>
@@ -25,7 +27,7 @@ function BuiComponentShowcaseArea({children, title, desc, codeBlock}) {
                     {codeBlock}
                 </SyntaxHighlighter>
             </div>
-        </div>
+        </section>
     )
 }
 
@@ -33,6 +35,7 @@ BuiComponentShowcaseArea.propTypes = {
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.element,
     children: PropTypes.node.isRequired,
+    anchor: PropTypes.string
 }
 
 export default BuiComponentShowcaseArea;

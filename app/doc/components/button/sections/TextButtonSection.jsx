@@ -10,6 +10,7 @@ function TextButtonSection(props) {
 
     return (
         <BuiComponentShowcaseArea
+            anchor="text-button"
             title="Text Buttons"
             desc={<>Text buttons are typically used for less-pronounced actions, including those located: in
                 dialogs, in cards. In cards, text buttons help maintain an emphasis on card content.</>}

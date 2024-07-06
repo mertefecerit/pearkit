@@ -8,6 +8,7 @@ function ButtonColorsSection(props) {
 
     return (
         <BuiComponentShowcaseArea
+            anchor="colors"
             title="Colors"
             desc={<>Simply send the <BuiCode>color</BuiCode> names in the standard tailwindcss color palette as props. Like indigo, red, sky etc. Default color is tailwind blue.</>}
             codeBlock={codeBlock}

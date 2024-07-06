@@ -5,7 +5,7 @@
   & > ul.contentArea {
     @apply pl-2;
     & > li > a {
-      @apply transition-all inline-block w-full border-l-2 pl-4 py-1 hover:rounded-r hover:border-gray-500;
+      @apply outline-0 transition-all inline-block w-full border-l-2 pl-4 py-1 hover:rounded-r hover:border-gray-500;
       &.active {
         @apply border-blue-500 rounded-r text-blue-500;
       }

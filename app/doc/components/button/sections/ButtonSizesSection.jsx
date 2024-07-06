@@ -8,6 +8,7 @@ function ButtonSizesSection(props) {
 
     return (
         <BuiComponentShowcaseArea
+            anchor="sizes"
             title="Sizes"
             desc={<>For larger or smaller buttons, use the <BuiCode>size</BuiCode> prop. Sizes: <BuiCode>xs</BuiCode> <BuiCode>sm</BuiCode> <BuiCode>base</BuiCode> <BuiCode>lg</BuiCode> <BuiCode>xl</BuiCode>, default size is <BuiCode>base</BuiCode></>}
             codeBlock={codeBlock}

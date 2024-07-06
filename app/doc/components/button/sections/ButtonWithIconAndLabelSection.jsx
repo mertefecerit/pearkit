@@ -16,6 +16,7 @@ function ButtonWithIconAndLabelSection(props) {
 
     return (
         <BuiComponentShowcaseArea
+            anchor="button-with-icon-and-label"
             title="Button With Icon and Label"
             desc={<>Sometimes you might want to have icons for certain buttons to enhance the UX of the application as we recognize logos more easily than plain text. For example, if you have a delete button you can label it with a dustbin icon. You can also remove the labels and get only icon buttons.</>}
             codeBlock={codeBlock}
