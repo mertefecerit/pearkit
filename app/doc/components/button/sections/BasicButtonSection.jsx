@@ -1,24 +1,19 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/BuiButton";
+import BuiCode from "@/app/components/BuiCode";
 
 function BasicButtonSection(props) {
-    const basicButtonCodeBlock = `<BuiButton>Basic Button</BuiButton>
-<BuiButton disabled={true}>Disabled Basic Button</BuiButton>
-<BuiButton isLoading={true}>Loading Basic Button</BuiButton>
-<BuiButton href="https://google.com">Link Basic Button</BuiButton>`;
+    const codeBlock = `<BuiButton>Button</BuiButton>`;
 
     return (
         <BuiComponentShowcaseArea
-            anchor="basic-button"
-            title="Basic Buttons"
-            desc={<>Basic buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.</>}
-            codeBlock={basicButtonCodeBlock}
+            anchor="basic"
+            title="Basic"
+            desc={<>The text or content to be displayed on the button can be defined by writing it directly into it.</>}
+            codeBlock={codeBlock}
         >
-            <BuiButton>Basic Button</BuiButton>
-            <BuiButton disabled={true}>Disabled Basic Button</BuiButton>
-            <BuiButton isLoading={true}>Loading Basic Button</BuiButton>
-            <BuiButton href="https://google.com">Link Basic Button</BuiButton>
+            <BuiButton>Button</BuiButton>
         </BuiComponentShowcaseArea>
     )
 }

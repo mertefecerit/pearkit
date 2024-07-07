@@ -1,39 +1,29 @@
-import ButtonSection from "@/app/doc/components/button/sections/ButtonSection";
-import TextButtonSection from "@/app/doc/components/button/sections/TextButtonSection";
-import OutlinedButtonSection from "@/app/doc/components/button/sections/OutlinedButtonSection";
+import ImportButtonSection from "@/app/doc/components/button/sections/ImportButtonSection";
 import BasicButtonSection from "@/app/doc/components/button/sections/BasicButtonSection";
-import ButtonHandlingClicks from "@/app/doc/components/button/sections/ButtonHandlingClicks";
-import ButtonColorsSection from "@/app/doc/components/button/sections/ButtonColorsSection";
-import ButtonSizesSection from "@/app/doc/components/button/sections/ButtonSizesSection";
-import ButtonWithIconAndLabelSection from "@/app/doc/components/button/sections/ButtonWithIconAndLabelSection";
+import LinkButtonSection from "@/app/doc/components/button/sections/LinkButtonSection";
+import IconButtonSection from "@/app/doc/components/button/sections/IconButtonSection";
+import LoadingButtonSection from "@/app/doc/components/button/sections/LoadingButtonSection";
+import ColorButtonSection from "@/app/doc/components/button/sections/ColorButtonSection";
+import DisabledButtonSection from "@/app/doc/components/button/sections/DisabledButtonSection";
+import VariantButtonSection from "@/app/doc/components/button/sections/VariantButtonSection";
+
 
 export const metadata = {
     title: 'Button',
-    description : 'Buttons allow users to take actions, and make choices, with a single tap.'
+    description: 'Buttons allow users to take actions, and make choices, with a single tap.'
 }
+
 function ButtonComponentPage() {
     return (
         <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-2">
-                <h1 className="text-4xl font-bold">Button</h1>
-                <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
-                <p>Buttons communicate actions that users can take. They are typically placed throughout your UI, in
-                    places like:</p>
-                <ul className="list-disc list-inside pl-4">
-                    <li>Modal windows</li>
-                    <li>Forms</li>
-                    <li>Cards</li>
-                    <li>Toolbars</li>
-                </ul>
-            </div>
-            <ButtonSection/>
-            <TextButtonSection/>
+            <ImportButtonSection/>
             <BasicButtonSection/>
-            <OutlinedButtonSection />
-            <ButtonHandlingClicks/>
-            <ButtonColorsSection />
-            <ButtonSizesSection />
-            <ButtonWithIconAndLabelSection/>
+            <VariantButtonSection />
+            <LinkButtonSection/>
+            <IconButtonSection/>
+            <LoadingButtonSection />
+            <ColorButtonSection />
+            <DisabledButtonSection />
         </div>
     )
 }
