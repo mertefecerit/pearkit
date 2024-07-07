@@ -29,7 +29,7 @@ function IconButtonSection(props) {
             codeBlock={codeBlock}
         >
             <div className="flex flex-col gap-4">
-                <div className="flex flex-wrap gap-4 items-center">
+                <div className="flex flex-wrap gap-4">
                     <BuiButton startIcon={<Icon icon="mdi:check"/>}></BuiButton>
                     <BuiButton startIcon={<Icon icon="mdi:check"/>}>Button</BuiButton>
                     <BuiButton endIcon={<Icon icon="mdi:check"/>}>Button</BuiButton>

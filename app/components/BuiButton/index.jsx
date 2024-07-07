@@ -20,7 +20,8 @@ function BuiButton(
         target='_target',
         // link section
         onClick,
-        animation= true
+        animation= true,
+        raised=false
     }
 ) {
     const content = (
@@ -37,7 +38,7 @@ function BuiButton(
                            onClick={onClick}
                            whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                            disabled={disabled || isLoading}
-                           className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]} ${!children ? scss.onlyIcon:''}`}
+                           className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]} ${!children ? scss.onlyIcon:''} ${raised ? scss.raised: ''}`}
             >
                 {content}
             </motion.button>
@@ -66,6 +67,7 @@ BuiButton.propTypes = {
     href: PropTypes.string,
     target: PropTypes.string,
     onClick: PropTypes.func,
-    animation: PropTypes.bool
+    animation: PropTypes.bool,
+    raised: PropTypes.bool
 }
 export default BuiButton;

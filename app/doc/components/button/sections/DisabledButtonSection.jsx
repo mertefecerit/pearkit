@@ -4,7 +4,7 @@ import BuiButton from "@/app/components/BuiButton";
 import BuiCode from "@/app/components/BuiCode";
 
 function DisabledButtonSection(props) {
-    const codeBlock = `<BuiButton disabled={true}>Submit</BuiButton>`;
+    const codeBlock = `<BuiButton disabled>Button</BuiButton>`;
 
     return (
         <BuiComponentShowcaseArea
@@ -13,7 +13,7 @@ function DisabledButtonSection(props) {
             desc={<>You can give a bool value to disable the button.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton disabled={true}>Submit</BuiButton>
+            <BuiButton disabled>Button</BuiButton>
         </BuiComponentShowcaseArea>
     )
 }

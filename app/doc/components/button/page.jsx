@@ -6,6 +6,7 @@ import LoadingButtonSection from "@/app/doc/components/button/sections/LoadingBu
 import ColorButtonSection from "@/app/doc/components/button/sections/ColorButtonSection";
 import DisabledButtonSection from "@/app/doc/components/button/sections/DisabledButtonSection";
 import VariantButtonSection from "@/app/doc/components/button/sections/VariantButtonSection";
+import RaisedButtonSection from "@/app/doc/components/button/sections/RaisedButtonSection";
 
 
 export const metadata = {
@@ -24,6 +25,7 @@ function ButtonComponentPage() {
             <LoadingButtonSection />
             <ColorButtonSection />
             <DisabledButtonSection />
+            <RaisedButtonSection />
         </div>
     )
 }
