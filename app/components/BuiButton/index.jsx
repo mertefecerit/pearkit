@@ -1,5 +1,5 @@
 "use client"
-import scss from "./BuiButton.module.scss";
+import styles from "./BuiButton.module.scss";
 import {motion} from "framer-motion";
 import PropTypes from "prop-types";
 import LoadingIcon from "@/app/components/BuiButton/LoadingIcon";
@@ -21,7 +21,8 @@ function BuiButton(
         // link section
         onClick,
         animation= true,
-        raised=false
+        raised=false,
+        rounded = false
     }
 ) {
     const content = (
@@ -38,7 +39,7 @@ function BuiButton(
                            onClick={onClick}
                            whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                            disabled={disabled || isLoading}
-                           className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]} ${!children ? scss.onlyIcon:''} ${raised ? scss.raised: ''}`}
+                           className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!children ? styles.onlyIcon:''} ${raised ? styles.raised: ''} ${rounded ? styles.roundedMax: ''}`}
             >
                 {content}
             </motion.button>
@@ -47,7 +48,7 @@ function BuiButton(
                       target={target}
                       whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                       disabled={disabled || isLoading}
-                      className={`${scss.buiButton} ${scss[color]} ${scss[size]} ${scss[variant]}`}
+                      className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]}`}
             >
                 {content}
             </motion.a>
@@ -68,6 +69,7 @@ BuiButton.propTypes = {
     target: PropTypes.string,
     onClick: PropTypes.func,
     animation: PropTypes.bool,
-    raised: PropTypes.bool
+    raised: PropTypes.bool,
+    rounded: PropTypes.bool
 }
 export default BuiButton;

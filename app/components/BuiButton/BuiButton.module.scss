@@ -19,6 +19,9 @@
   rounded
   select-none
   transition-all
+  focus:ring-2
+  focus:z-10
+  focus:ring-offset-2
   outline-0;
 
   &.onlyIcon {
@@ -27,16 +30,14 @@
   &.raised {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   }
-
-  &.basic {
-    @apply
-    focus:ring-2
-    focus:z-10
-    focus:ring-offset-2;
+  &.roundedMax {
+    @apply rounded-full #{!important};
   }
+
 
   @each $color in $colors {
     &.#{$color} {
+      @apply ring-#{$color}-500;
       @if $color == 'yellow' {
         @apply text-black;
       } @else {
@@ -46,23 +47,20 @@
       &.basic {
         @apply
         bg-#{$color}-500
-        hover:bg-#{$color}-600
-        ring-#{$color}-500;
+        hover:bg-#{$color}-600;
       }
 
       &.outlined {
         @apply
         border-#{$color}-500
         text-#{$color}-500
-        hover:bg-#{$color}-100
-        focus:bg-#{$color}-100;
+        hover:bg-#{$color}-100;
       }
 
       &.text {
         @apply
         text-#{$color}-500
-        hover:bg-#{$color}-100
-        focus:bg-#{$color}-100;
+        hover:bg-#{$color}-100;
       }
     }
   }
