@@ -1,6 +1,6 @@
 import scss from "./layout.module.scss";
-import BuiNav from "@/app/doc/layout-partials/BuiNav";
-import BuiRightNav from "@/app/doc/layout-partials/BuiRightNav";
+import BuiNavAside from "@/app/doc/layout-partials/BuiNavAside";
+import BuiRightNavAside from "@/app/doc/layout-partials/BuiRightNavAside";
 import BuiHeader from "@/app/doc/layout-partials/BuiHeader";
 
 function DocLayout({children}) {
@@ -8,11 +8,11 @@ function DocLayout({children}) {
     return (
         <section className={scss.layout}>
             <BuiHeader />
-            <BuiNav/>
+            <BuiNavAside />
             <main>
                 {children}
             </main>
-            <BuiRightNav/>
+            <BuiRightNavAside/>
         </section>
     )
 }
