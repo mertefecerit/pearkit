@@ -1,7 +1,13 @@
-function BuiCode({children}) {
+import PropTypes from "prop-types";
+import styles from "./BuiCode.module.scss";
+
+function BuiCode({children, color="blue"}) {
     return (
-        <code className="bg-blue-100 font-bold text-blue-700 px-1 py-0.5 text-sm rounded border">{children}</code>
+        <code className={`${styles.buiCode} ${styles[color]}`}>{children}</code>
     )
 }
-
+BuiCode.propTypes = {
+    children: PropTypes.node.isRequired,
+    color: PropTypes.string
+}
 export default BuiCode;

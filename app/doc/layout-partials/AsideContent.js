@@ -25,51 +25,61 @@ export default function AsideContent() {
                     label: 'Button',
                     children: [
                         {
-                            path: '#button',
-                            label: 'Button'
+                            path: '#import',
+                            label: 'Import'
                         },
                         {
-                            path: '#text-button',
-                            label: 'Text Button'
+                            path: '#basic',
+                            label: 'Basic'
                         },
                         {
-                            path: '#basic-button',
-                            label: 'Basic Button'
+                            path: '#variants',
+                            label: 'Variants'
                         },
                         {
-                            path: '#outlined-button',
-                            label: 'Outlined Button'
+                            path: '#link',
+                            label: 'Link'
                         },
                         {
-                            path: '#handling-clicks',
-                            label: 'Handling Clicks'
+                            path: '#icon',
+                            label: 'Icon'
                         },
                         {
-                            path: '#colors',
-                            label: 'Colors'
+                            path: '#loading',
+                            label: 'Loading'
+                        },
+                        {
+                            path: '#color',
+                            label: 'Color'
+                        },
+                        {
+                            path: '#disabled',
+                            label: 'Disabled'
+                        },
+                        {
+                            path: '#raised',
+                            label: 'Raised'
+                        },
+                        {
+                            path: '#rounded',
+                            label: 'Rounded'
                         },
                         {
                             path: '#sizes',
                             label: 'Sizes'
                         },
                         {
-                            path: '#button-with-icon-and-label',
-                            label: 'Button with icon and label'
+                            path: '#button-group',
+                            label: 'Button Group'
+                        },
+                        {
+                            path: '#accessibility',
+                            label: 'Accessibility'
+                        },
+                        {
+                            path: '#api',
+                            label: 'Api'
                         }
-                    ]
-                },
-                {
-                    path: '/doc/components/button-group',
-                    label: 'Button Group',
-                    children:[
-                        {
-                            path: '#basic-button-group',
-                            label: 'Basic Button Group'
-                        },
-                        {
-                            path: '#button-variants',
-                            label: 'Button Variants'
-                        },
                     ]
                 },
             ]

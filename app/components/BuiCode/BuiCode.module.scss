@@ -1,0 +1,9 @@
+.buiCode {
+  @apply font-bold px-1 py-0.5 text-sm rounded border;
+
+  @each $color in $colors {
+    &.#{$color}{
+      @apply bg-#{$color}-100 text-#{$color}-700;
+    }
+  }
+}

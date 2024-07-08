@@ -47,11 +47,14 @@ function BuiComponentShowcaseArea({children, title, desc, codeBlock, anchor}) {
                     </div>
                 )
             }
-            <div className={scss.codeArea}>
-                <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
-                    {codeBlock}
-                </SyntaxHighlighter>
-            </div>
+            {
+                codeBlock && <div className={scss.codeArea}>
+                    <SyntaxHighlighter language="jsx" style={vscDarkPlus}>
+                        {codeBlock}
+                    </SyntaxHighlighter>
+                </div>
+            }
+
         </section>
     )
 }

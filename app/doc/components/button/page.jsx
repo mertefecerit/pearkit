@@ -10,6 +10,8 @@ import RaisedButtonSection from "@/app/doc/components/button/sections/RaisedButt
 import RoundedButtonSection from "@/app/doc/components/button/sections/RoundedButtonSection";
 import SizesButtonSection from "@/app/doc/components/button/sections/SizesButtonSection";
 import AccessibilityButtonSection from "@/app/doc/components/button/sections/AccessibilityButtonSection";
+import ButtonGroupSection from "@/app/doc/components/button/sections/ButtonGroupSection";
+import ApiButtonSection from "@/app/doc/components/button/sections/ApiButtonSection";
 
 
 export const metadata = {
@@ -31,7 +33,9 @@ function ButtonComponentPage() {
             <RaisedButtonSection />
             <RoundedButtonSection />
             <SizesButtonSection />
+            <ButtonGroupSection />
             <AccessibilityButtonSection />
+            <ApiButtonSection />
         </div>
     )
 }
