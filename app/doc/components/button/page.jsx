@@ -8,6 +8,8 @@ import DisabledButtonSection from "@/app/doc/components/button/sections/Disabled
 import VariantButtonSection from "@/app/doc/components/button/sections/VariantButtonSection";
 import RaisedButtonSection from "@/app/doc/components/button/sections/RaisedButtonSection";
 import RoundedButtonSection from "@/app/doc/components/button/sections/RoundedButtonSection";
+import SizesButtonSection from "@/app/doc/components/button/sections/SizesButtonSection";
+import AccessibilityButtonSection from "@/app/doc/components/button/sections/AccessibilityButtonSection";
 
 
 export const metadata = {
@@ -28,6 +30,8 @@ function ButtonComponentPage() {
             <DisabledButtonSection />
             <RaisedButtonSection />
             <RoundedButtonSection />
+            <SizesButtonSection />
+            <AccessibilityButtonSection />
         </div>
     )
 }

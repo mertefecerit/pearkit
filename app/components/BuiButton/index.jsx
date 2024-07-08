@@ -17,12 +17,13 @@ function BuiButton(
         endIcon,
         // link section
         href,
-        target='_target',
+        target = '_target',
         // link section
         onClick,
-        animation= true,
-        raised=false,
-        rounded = false
+        animation = true,
+        raised = false,
+        rounded = false,
+        ariaLabel='button'
     }
 ) {
     const content = (
@@ -36,15 +37,17 @@ function BuiButton(
     return (
         !href ?
             <motion.button type={type}
+                           aria-label={ariaLabel}
                            onClick={onClick}
                            whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                            disabled={disabled || isLoading}
-                           className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!children ? styles.onlyIcon:''} ${raised ? styles.raised: ''} ${rounded ? styles.roundedMax: ''}`}
+                           className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!children ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''}`}
             >
                 {content}
             </motion.button>
             :
             <motion.a href={href}
+                      role="button"
                       target={target}
                       whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                       disabled={disabled || isLoading}
@@ -70,6 +73,7 @@ BuiButton.propTypes = {
     onClick: PropTypes.func,
     animation: PropTypes.bool,
     raised: PropTypes.bool,
-    rounded: PropTypes.bool
+    rounded: PropTypes.bool,
+    ariaLabel: PropTypes.string
 }
 export default BuiButton;

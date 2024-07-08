@@ -1,0 +1,22 @@
+.BuiBadgeWrapper {
+  @apply px-1 py-0.5 rounded-full z-40;
+  @each $color in $colors {
+    @if $color == 'yellow' {
+      @apply text-black;
+    } @else {
+      @apply text-white;
+    }
+    &.#{$color} {
+      @apply bg-#{$color}-500;
+    }
+  }
+
+  @each $size in $sizes {
+    &.#{$size} {
+      @apply text-#{$size};
+    }
+  }
+
+}
+
+
