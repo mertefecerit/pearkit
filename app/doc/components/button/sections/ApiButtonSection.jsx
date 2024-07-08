@@ -79,13 +79,13 @@ function ApiButtonSection(props) {
                         <td><BuiCode>href</BuiCode></td>
                         <td>string</td>
                         <td><BuiCode color="gray">null</BuiCode></td>
-                        <td>Turns the button into "a" element.</td>
+                        <td>Turns the button into a element.</td>
                     </tr>
                     <tr>
                         <td><BuiCode>target</BuiCode></td>
                         <td>string</td>
                         <td><BuiCode color="gray">_target</BuiCode></td>
-                        <td>It changes the target property of the button whose button has been converted to "a" element.</td>
+                        <td>It changes the target property of the button whose button has been converted to a element.</td>
                     </tr>
                     <tr>
                         <td><BuiCode>onClick</BuiCode></td>
@@ -115,7 +115,7 @@ function ApiButtonSection(props) {
                         <td><BuiCode>ariaLabel</BuiCode></td>
                         <td>string</td>
                         <td><BuiCode color="gray">button</BuiCode></td>
-                        <td>It allows the value of the button's label accessibility option to be changed.</td>
+                        <td>It allows the value of the button label accessibility option to be changed.</td>
                     </tr>
                     </tbody>
                 </table>
