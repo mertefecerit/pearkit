@@ -1,8 +1,5 @@
 .layout {
   @apply grid lg:grid-cols-[300px,1fr,250px] grid-cols-1 grid-rows-[auto,1fr] h-screen;
-  & > header {
-    @apply row-span-1 col-span-3 bg-white p-4 border-b;
-  }
   & > aside {
     @apply hidden lg:block row-span-1 col-span-1 bg-white overflow-y-auto p-4;
   }

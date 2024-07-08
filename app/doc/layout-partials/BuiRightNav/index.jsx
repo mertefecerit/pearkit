@@ -26,27 +26,30 @@ function BuiRightNav({routes}) {
     }, []);
 
     return (
-        <div className={styles.BuiRightNavWrapper}>
-            <nav>
-                <ul>
-                    {
-                        fastMenuContent && fastMenuContent.map((item, i) => (
-                            <li key={i}>
-                                <Link
-                                    onClick={() => setCurrentPathHash(item.path)}
-                                    className={`${currentPathHash === item.path ? styles.active : ''}`}
-                                    href={item.path}
-                                >
-                                    {item.label}
-                                </Link>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </nav>
-        </div>
+        <aside>
+            <div className={styles.BuiRightNavWrapper}>
+                <nav>
+                    <ul>
+                        {
+                            fastMenuContent && fastMenuContent.map((item, i) => (
+                                <li key={i}>
+                                    <Link
+                                        onClick={() => setCurrentPathHash(item.path)}
+                                        className={`${currentPathHash === item.path ? styles.active : ''}`}
+                                        href={item.path}
+                                    >
+                                        {item.label}
+                                    </Link>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </aside>
     );
 }
+
 export default BuiRightNav;
 
 

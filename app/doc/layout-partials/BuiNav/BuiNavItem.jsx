@@ -5,9 +5,9 @@ import {usePathname} from "next/navigation";
 import {motion, AnimatePresence} from "framer-motion"
 import {useEffect, useState} from "react";
 import {forEach} from "lodash";
-import scss from "./BNavItem.module.scss";
+import styles from "./BuiNav.module.scss";
 
-function BNavItem({label, childItems}) {
+function BuiNavItem({label, childItems}) {
     const [isActive, setIsActive] = useState(false)
     const pathname = usePathname();
     useEffect(() => {
@@ -16,9 +16,9 @@ function BNavItem({label, childItems}) {
         })
     }, []);
     return (
-        <div className={scss.bNavItem}>
+        <div className={styles.buiNavItem}>
             <div onClick={() => setIsActive(!isActive)}
-                 className={scss.clickArea}>
+                 className={styles.clickArea}>
                 <motion.div
                     initial={{rotate:0}}
                     animate={{rotate: isActive ? 0 : -90}}
@@ -40,13 +40,13 @@ function BNavItem({label, childItems}) {
                             overflow: 'hidden',
                             pointerEvents: isActive ? 'auto' : 'none'
                         }}
-                        className={scss.contentArea}
+                        className={styles.contentArea}
                     >
                         {
                             childItems && childItems.map((item, index) => (
                                 <li key={index}>
                                     <Link
-                                        className={`${pathname === item.path ? scss.active : ''}`}
+                                        className={`${pathname === item.path ? styles.active : ''}`}
                                         href={item.path}>
                                         {item.label}
                                     </Link>
@@ -61,4 +61,4 @@ function BNavItem({label, childItems}) {
     )
 }
 
-export default BNavItem;
+export default BuiNavItem;

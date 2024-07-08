@@ -1,25 +1,18 @@
 import scss from "./layout.module.scss";
-import BNav from "@/app/doc/layout-partials/BNav";
-import BuiLogo from "@/app/components/project/BuiLogo";
-import AsideContent from "@/app/doc/layout-partials/AsideContent";
+import BuiNav from "@/app/doc/layout-partials/BuiNav";
 import BuiRightNav from "@/app/doc/layout-partials/BuiRightNav";
+import BuiHeader from "@/app/doc/layout-partials/BuiHeader";
 
 function DocLayout({children}) {
-    const routes = AsideContent();
+
     return (
         <section className={scss.layout}>
-            <header>
-                <BuiLogo/>
-            </header>
-            <aside>
-                <BNav routes={routes}/>
-            </aside>
+            <BuiHeader />
+            <BuiNav/>
             <main>
                 {children}
             </main>
-            <aside>
-                <BuiRightNav routes={routes}/>
-            </aside>
+            <BuiRightNav/>
         </section>
     )
 }
