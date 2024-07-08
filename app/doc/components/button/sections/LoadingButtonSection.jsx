@@ -10,7 +10,7 @@ function LoadingButtonSection(props) {
         <BuiComponentShowcaseArea
             anchor="loading"
             title="Loading"
-            desc={<>You can send a boolean type value to the button component's prop named <BuiCode>isLoading</BuiCode>.If prop is true, the button will be <BuiCode>disabled</BuiCode></>}
+            desc={<>You can send a boolean type value to the button components prop named <BuiCode>isLoading</BuiCode>.If prop is true, the button will be <BuiCode>disabled</BuiCode></>}
             codeBlock={codeBlock}
         >
             <BuiButton isLoading={true}>Button</BuiButton>
