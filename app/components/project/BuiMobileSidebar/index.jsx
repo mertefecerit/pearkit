@@ -1,21 +1,35 @@
 import styles from './BuiMobileSidebar.module.scss';
 import BuiLogo from "@/app/components/project/BuiLogo";
 import {Icon} from "@iconify/react";
+import {motion, AnimatePresence} from "framer-motion";
 
-function BuiMobileSidebar({children}) {
+function BuiMobileSidebar({status, children, close}) {
     return (
-        <div className={styles.BuiMobileSidebarWrapper}>
-            <aside>
-                <div className={styles.mobileLogo}>
-                    <BuiLogo/>
-                    <button className={styles.closeButton}><Icon icon="mdi:times"/></button>
+        <AnimatePresence>
+            {
+                status &&
+                <div
+                    onClick={close}
+                    className={styles.BuiMobileSidebarWrapper}>
+                    <motion.aside
+                        onClick={(e) =>e.stopPropagation()}
+                        initial={{translateX: -300}}
+                        animate={{translateX: 0}}
+                        transition={{duration: 0.3, ease:"easeInOut"}}
+                        exit={{translateX: -300}}
+                    >
+                        <div className={styles.mobileLogo}>
+                            <BuiLogo/>
+                            <button onClick={close} className={styles.closeButton}><Icon icon="mdi:times"/></button>
+                        </div>
+                        <hr/>
+                        <div className={styles.mobileNav}>
+                            {children}
+                        </div>
+                    </motion.aside>
                 </div>
-                <hr/>
-                <div className={styles.mobileNav}>
-                    {children}
-                </div>
-            </aside>
-        </div>
+            }
+        </AnimatePresence>
     );
 }
 
