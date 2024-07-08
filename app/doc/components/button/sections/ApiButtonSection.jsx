@@ -1,5 +1,5 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
+import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 import BuiCode from "@/app/components/BuiCode";
 import styles from "../page.module.scss";
 

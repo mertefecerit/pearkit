@@ -1,7 +1,5 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/BuiButton";
-import BuiCode from "@/app/components/BuiCode";
+import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 
 function ImportButtonSection(props) {
     const codeBlock = `import { Button } from 'bubbleui/button';`;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import LogoSVG from "../../assets/images/svgs/logo.svg"
+import LogoSVG from "../../../assets/images/svgs/logo.svg"
 
 function BuiLogo(){
     return (

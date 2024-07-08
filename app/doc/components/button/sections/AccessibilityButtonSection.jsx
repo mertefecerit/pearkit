@@ -1,7 +1,5 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/BuiButton";
-import {Icon} from "@iconify/react";
+import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 import BuiCode from "@/app/components/BuiCode";
 
 function AccessibilityButtonSection(props) {

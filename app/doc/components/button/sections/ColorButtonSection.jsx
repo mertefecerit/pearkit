@@ -1,5 +1,5 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
+import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/BuiButton";
 import BuiCode from "@/app/components/BuiCode";
 import {Icon} from "@iconify/react";

@@ -1,7 +1,6 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/components/BuiComponentShowcaseArea";
+import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/BuiButton";
-import {Icon} from "@iconify/react";
 
 function RoundedButtonSection() {
     const codeBlock = `<BuiButton rounded>Button</BuiButton>
