@@ -22,100 +22,100 @@ function ApiButtonSection(props) {
                     </thead>
                     <tbody>
                     <tr>
-                        <td>type</td>
-                        <td><BuiCode>string</BuiCode></td>
+                        <td><BuiCode>type</BuiCode></td>
+                        <td>string</td>
                         <td><BuiCode color="gray">button</BuiCode></td>
-                        <td>Buton tipini belirler</td>
+                        <td>Specifies the button type.</td>
                     </tr>
                     <tr>
-                        <td>variant</td>
-                        <td><BuiCode>string</BuiCode></td>
+                        <td><BuiCode>variant</BuiCode></td>
+                        <td>string</td>
                         <td><BuiCode color="gray">basic</BuiCode></td>
-                        <td>3 değer alır basic, outlined ve text</td>
+                        <td>It can also take <BuiCode color="gray">outlined</BuiCode> and <BuiCode color="gray">text</BuiCode>.</td>
                     </tr>
                     <tr>
-                        <td>color</td>
-                        <td><BuiCode>string</BuiCode></td>
+                        <td><BuiCode>color</BuiCode></td>
+                        <td>string</td>
                         <td><BuiCode color="gray">blue</BuiCode></td>
-                        <td>Tüm tailwindcss renk paleti renklerini isim olarak geçebilirsiniz.</td>
+                        <td>You can pass all tailwind css color palette colors as names.</td>
                     </tr>
                     <tr>
-                        <td>size</td>
-                        <td><BuiCode>string</BuiCode></td>
+                        <td><BuiCode>size</BuiCode></td>
+                        <td>string</td>
                         <td><BuiCode color="gray">base</BuiCode></td>
-                        <td>varsayılan olarak base'dir, xs,sm,lg ve xl değerlerinide alabilir.</td>
+                        <td>It can also take <BuiCode color="gray">xs</BuiCode>, <BuiCode color="gray">sm</BuiCode>, <BuiCode color="gray">lg</BuiCode> and <BuiCode color="gray">xl</BuiCode> values.</td>
                     </tr>
                     <tr>
-                        <td>isLoading</td>
-                        <td><BuiCode>boolean</BuiCode></td>
+                        <td><BuiCode>isLoading</BuiCode></td>
+                        <td>boolean</td>
                         <td><BuiCode color="gray">false</BuiCode></td>
-                        <td>Loading durumunu kontrol edebilmek için gerekli</td>
+                        <td>Required to check the loading status.</td>
                     </tr>
                     <tr>
-                        <td>disabled</td>
-                        <td><BuiCode>boolean</BuiCode></td>
+                        <td><BuiCode>disabled</BuiCode></td>
+                        <td>boolean</td>
                         <td><BuiCode color="gray">false</BuiCode></td>
-                        <td>Buton durumunu belirtir true, false değerlerini alır.</td>
+                        <td>It is for the disable feature of the button.</td>
                     </tr>
                     <tr>
-                        <td>children</td>
-                        <td><BuiCode>node</BuiCode></td>
+                        <td><BuiCode>children</BuiCode></td>
+                        <td>node</td>
                         <td><BuiCode color="gray">null</BuiCode></td>
-                        <td>Butona child eleman verebilirsiniz.</td>
+                        <td>You can give components as children.</td>
                     </tr>
                     <tr>
-                        <td>startIcon</td>
-                        <td><BuiCode>elementType</BuiCode></td>
+                        <td><BuiCode>startIcon</BuiCode></td>
+                        <td>elementType</td>
                         <td><BuiCode color="gray">null</BuiCode></td>
-                        <td>başlangıç ikon koyabilirsiniz component destekler</td>
+                        <td>It can be placed before the child and given as a component.</td>
                     </tr>
                     <tr>
-                        <td>endIcon</td>
-                        <td><BuiCode>elementType</BuiCode></td>
+                        <td><BuiCode>endIcon</BuiCode></td>
+                        <td>elementType</td>
                         <td><BuiCode color="gray">null</BuiCode></td>
-                        <td>bitiş ikon koyabilirsiniz component destekler</td>
+                        <td>It is placed after child and can be given as a component. </td>
                     </tr>
                     <tr>
-                        <td>href</td>
-                        <td><BuiCode>string</BuiCode></td>
+                        <td><BuiCode>href</BuiCode></td>
+                        <td>string</td>
                         <td><BuiCode color="gray">null</BuiCode></td>
-                        <td>Buton'u link elemente çevirir ve href ekler</td>
+                        <td>Turns the button into "a" element.</td>
                     </tr>
                     <tr>
-                        <td>target</td>
-                        <td><BuiCode>string</BuiCode></td>
+                        <td><BuiCode>target</BuiCode></td>
+                        <td>string</td>
                         <td><BuiCode color="gray">_target</BuiCode></td>
-                        <td>link element olan butonun target özelliğini değiştirir</td>
+                        <td>It changes the target property of the button whose button has been converted to "a" element.</td>
                     </tr>
                     <tr>
-                        <td>onClick</td>
-                        <td><BuiCode>function</BuiCode></td>
+                        <td><BuiCode>onClick</BuiCode></td>
+                        <td>function</td>
                         <td><BuiCode color="gray">null</BuiCode></td>
-                        <td>tıklama olayı için bir fonksiyon çalıştırır</td>
+                        <td>Runs a function for the click event.</td>
                     </tr>
                     <tr>
-                        <td>animation</td>
-                        <td><BuiCode>boolean</BuiCode></td>
+                        <td><BuiCode>animation</BuiCode></td>
+                        <td>boolean</td>
                         <td><BuiCode color="gray">true</BuiCode></td>
-                        <td>Tıklama animasyonunu devreye sokar true, false değerleri alır</td>
+                        <td>t activates the click animation and takes <BuiCode color="gray">true</BuiCode> and <BuiCode color="gray">false</BuiCode> values.</td>
                     </tr>
                     <tr>
-                        <td>raised</td>
-                        <td><BuiCode>boolean</BuiCode></td>
+                        <td><BuiCode>raised</BuiCode></td>
+                        <td>boolean</td>
                         <td><BuiCode color="gray">false</BuiCode></td>
-                        <td>button'a gölge ekleyerek yukarıda gözükmesini sağlar true, false değerleri alır.</td>
+                        <td>By adding a shadow to the button, it makes it appear above and takes true and false values.</td>
                     </tr>
                     <tr>
-                        <td>rounded</td>
-                        <td><BuiCode>boolean</BuiCode></td>
+                        <td><BuiCode>rounded</BuiCode></td>
+                        <td>boolean</td>
                         <td><BuiCode color="gray">false</BuiCode></td>
-                        <td>button'u yuvarlak kenarlı gösterir true ve false değerlerini alır</td>
+                        <td>Shows the button with rounded edges and takes the values <BuiCode color="gray">true</BuiCode> and <BuiCode color="gray">false</BuiCode>.</td>
                     </tr>
                     <tr>
-                        <td>ariaLabel</td>
-                        <td><BuiCode>string</BuiCode></td>
+                        <td><BuiCode>ariaLabel</BuiCode></td>
+                        <td>string</td>
                         <td><BuiCode color="gray">button</BuiCode></td>
-                        <td>Button'un erişebilirlik seçeneği olan değerin değişmesini sağlar.</td>
+                        <td>It allows the value of the button's label accessibility option to be changed.</td>
                     </tr>
                     </tbody>
                 </table>
