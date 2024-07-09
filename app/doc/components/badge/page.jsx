@@ -2,6 +2,8 @@ import BasicBadgeSection from "@/app/doc/components/badge/sections/BasicBadgeSec
 import ImportBadgeSection from "@/app/doc/components/badge/sections/ImportBadgeSection";
 import ColorsBadgeSection from "@/app/doc/components/badge/sections/ColorsBadgeSection";
 import SizesBadgeSection from "@/app/doc/components/badge/sections/SizesBadgeSection";
+import PositionBadgeSection from "@/app/doc/components/badge/sections/PositionBadgeSection";
+import AccessibilityBadgeSection from "@/app/doc/components/badge/sections/AccessibilityBadgeSection";
 
 export const metadata = {
     title: 'Badge',
@@ -14,6 +16,8 @@ function BadgeComponentPage(){
             <BasicBadgeSection />
             <ColorsBadgeSection />
             <SizesBadgeSection/>
+            <PositionBadgeSection/>
+            <AccessibilityBadgeSection />
         </div>
     )
 }

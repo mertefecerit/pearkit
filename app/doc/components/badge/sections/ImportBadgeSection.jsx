@@ -1,4 +1,3 @@
-import React from 'react';
 import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 
 function ImportBadgeSection(props) {
