@@ -1,4 +1,3 @@
-"use client"
 import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 
 function ImportButtonSection(props) {

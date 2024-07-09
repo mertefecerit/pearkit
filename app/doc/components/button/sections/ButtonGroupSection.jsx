@@ -1,4 +1,3 @@
-"use client"
 import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 import BuiCode from "@/app/components/BuiCode";
 import BuiButtonGroup from "@/app/components/BuiButtonGroup";

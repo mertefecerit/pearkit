@@ -4,6 +4,7 @@ import ColorsBadgeSection from "@/app/doc/components/badge/sections/ColorsBadgeS
 import SizesBadgeSection from "@/app/doc/components/badge/sections/SizesBadgeSection";
 import PositionBadgeSection from "@/app/doc/components/badge/sections/PositionBadgeSection";
 import AccessibilityBadgeSection from "@/app/doc/components/badge/sections/AccessibilityBadgeSection";
+import ApiBadgeSection from "@/app/doc/components/badge/sections/ApiBadgeSection";
 
 export const metadata = {
     title: 'Badge',
@@ -18,6 +19,7 @@ function BadgeComponentPage(){
             <SizesBadgeSection/>
             <PositionBadgeSection/>
             <AccessibilityBadgeSection />
+            <ApiBadgeSection />
         </div>
     )
 }
