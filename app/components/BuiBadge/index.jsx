@@ -19,7 +19,7 @@ function BuiBadge({value, size='xs', color="red", positions}) {
     );
 }
 BuiBadge.propTypes = {
-    value: PropTypes.string.isRequired,
+    value: PropTypes.string,
     size: PropTypes.string,
     color: PropTypes.string,
     positions: PropTypes.object
