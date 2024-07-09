@@ -18,11 +18,6 @@ function BuiMobileSidebar({status, children, close}) {
                         transition={{duration: 0.3, ease:"easeInOut"}}
                         exit={{translateX: -300}}
                     >
-                        <div className={styles.mobileLogo}>
-                            <BuiLogo/>
-                            <button onClick={close} className={styles.closeButton}><Icon icon="mdi:times"/></button>
-                        </div>
-                        <hr/>
                         <div className={styles.mobileNav}>
                             {children}
                         </div>
