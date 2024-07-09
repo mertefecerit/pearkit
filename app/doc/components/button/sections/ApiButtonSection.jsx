@@ -99,6 +99,12 @@ function ApiButtonSection(props) {
             default: 'button',
             description: 'It allows the value of the button label accessibility option to be changed.'
         },
+        {
+            name: 'classes',
+            type: 'string',
+            default: 'null',
+            description: 'It is a prop for additional css classes.'
+        }
     ];
     return (
         <BuiComponentShowcaseArea

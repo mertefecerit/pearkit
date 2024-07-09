@@ -4,8 +4,7 @@ import BuiLogo from "@/app/components/project/BuiLogo";
 import BuiMobileSidebar from "@/app/components/project/BuiMobileSidebar";
 import BuiNav from "@/app/doc/layout-partials/BuiNavAside/BuiNav";
 import {useState} from "react";
-import {Icon} from "@iconify/react";
-
+import BuiHeaderMenu from "@/app/doc/layout-partials/BuiHeaderMenu";
 
 function BuiHeader() {
     const [mobileSidebarStatus, setMobileSidebarStatus] = useState(false);
@@ -13,9 +12,7 @@ function BuiHeader() {
         <header className={styles.BuiHeaderWrapper}>
             <div className="flex gap-2 items-center justify-between">
                 <BuiLogo/>
-                <button onClick={() => setMobileSidebarStatus(true)} className="lg:hidden block p-2 text-3xl hover:bg-gray-200 rounded">
-                    <Icon icon="mdi:menu"/>
-                </button>
+                <BuiHeaderMenu mobileSidebarToggle={() => setMobileSidebarStatus(true)}/>
             </div>
             <BuiMobileSidebar
                 status={mobileSidebarStatus}
