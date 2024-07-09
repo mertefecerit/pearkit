@@ -82,6 +82,19 @@ export default function AsideContent() {
                         }
                     ]
                 },
+                {
+                    path: '/doc/components/badge',
+                    label: 'Badge',
+                    children: [
+                        {path: '#import', label:'Import'},
+                        {path: '#basic', label:'Basic'},
+                        {path: '#colors', label:'Colors'},
+                        {path: '#sizes', label:'Sizes'},
+                        {path: '#position', label:'Position'},
+                        {path: '#accessibility', label:'Accessibility'},
+                        {path: '#api', label:'Api'},
+                    ]
+                }
             ]
         },
     ]

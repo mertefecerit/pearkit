@@ -1,3 +1,4 @@
+"use client"
 import scss from "./BuiComponentShowcaseArea.module.scss";
 import PropTypes from "prop-types";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';

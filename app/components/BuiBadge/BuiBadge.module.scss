@@ -1,12 +1,15 @@
+$colors : 'slate','gray','zinc','neutral','stone','red','orange','amber','yellow','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose';
+$sizes: 'xs','sm','base';
+
 .BuiBadgeWrapper {
-  @apply px-1 py-0.5 rounded-full z-40;
+  @apply rounded-full z-40 font-medium text-center;
   @each $color in $colors {
-    @if $color == 'yellow' {
-      @apply text-black;
-    } @else {
-      @apply text-white;
-    }
     &.#{$color} {
+      @if $color == 'yellow' {
+        @apply text-black;
+      } @else {
+        @apply text-white;
+      }
       @apply bg-#{$color}-500;
     }
   }
@@ -14,9 +17,17 @@
   @each $size in $sizes {
     &.#{$size} {
       @apply text-#{$size};
+      @if $size == 'xs' {
+        @apply h-6 w-6 leading-6 #{!important};
+      }
+      @else if $size == 'sm'{
+        @apply h-8 w-8 leading-8 #{!important};
+      }
+      @else if $size == 'base'{
+        @apply h-10 w-10 leading-10 #{!important};
+      }
     }
   }
-
 }
 
 

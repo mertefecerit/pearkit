@@ -2,7 +2,7 @@
 import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 
 function ImportButtonSection(props) {
-    const codeBlock = `import { Button } from 'bubbleui/button';`;
+    const codeBlock = `import { BuiButton } from 'bubble-ui/BuiButton';`;
 
     return (
         <BuiComponentShowcaseArea
