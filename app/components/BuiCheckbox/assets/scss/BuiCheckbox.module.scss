@@ -1,0 +1,43 @@
+$colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose';
+
+.BuiCheckboxWrapper {
+  @apply flex gap-2 items-center cursor-pointer;
+  &:hover {
+    & > span {
+      @each $color in $colors {
+        &.#{$color} {
+          @apply bg-#{$color}-200 border-#{$color}-300;
+        }
+      }
+    }
+  }
+  & > span {
+    @apply border rounded-lg flex items-center justify-center h-6 w-6 text-xl transition-colors;
+    @each $color in $colors {
+      &.#{$color} {
+        @apply border-#{$color}-200;
+      }
+    }
+  }
+
+  & > input[type='checkbox'] {
+    @apply hidden w-0 h-0;
+    &:checked {
+      & + span {
+        @apply border-transparent;
+        @each $color in $colors {
+          &.#{$color} {
+            @if $color == 'yellow' {
+              @apply text-black;
+            } @else {
+              @apply text-white;
+            }
+            @apply bg-#{$color}-500;
+          }
+        }
+      }
+    }
+  }
+}
+
+
