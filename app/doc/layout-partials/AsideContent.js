@@ -61,7 +61,6 @@ export default function AsideContent() {
                         {path: '#basic', label: 'Basic'},
                         {path: '#label', label: 'Label'},
                         {path: '#colors', label: 'Colors'},
-                        {path: '#sizes', label: 'Sizes'},
                         {path: '#invalid', label: 'Invalid'},
                         {path: '#disabled', label: 'Disabled'},
                         {path: '#accessibility', label: 'Accessibility'},
