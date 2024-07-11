@@ -6,14 +6,14 @@ import BuiHeader from "@/app/doc/layout-partials/BuiHeader";
 function DocLayout({children}) {
 
     return (
-        <section className={scss.layout}>
+        <div className={scss.layout}>
             <BuiHeader />
             <BuiNavAside />
             <main>
                 {children}
             </main>
             <BuiRightNavAside/>
-        </section>
+        </div>
     )
 }
 
