@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/BuiButton";
+import BuiButton from "@/app/components/src/BuiButton";
 import {Icon} from "@iconify/react";
-import BuiCode from "@/app/components/BuiCode";
+import BuiCode from "@/app/components/src/BuiCode";
 
 function SizesButtonSection(props) {
     const codeBlock = `<BuiButton size="xs" startIcon={<Icon icon="mdi:check"/>}>Button</BuiButton>

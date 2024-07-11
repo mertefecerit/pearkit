@@ -1,5 +1,5 @@
 import {Icon} from "@iconify/react";
-import BuiButton from "@/app/components/BuiButton";
+import BuiButton from "@/app/components/src/BuiButton";
 
 function BuiHeaderMenu({mobileSidebarToggle}) {
     return (

@@ -1,4 +1,4 @@
-import BuiBadge from "@/app/components/BuiBadge";
+import BuiBadge from "@/app/components/src/BuiBadge";
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function PositionBadgeSection(){

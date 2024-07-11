@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/BuiCode";
-import BuiButtonGroup from "@/app/components/BuiButtonGroup";
-import BuiButton from "@/app/components/BuiButton";
+import BuiCode from "@/app/components/src/BuiCode";
+import BuiButtonGroup from "@/app/components/src/BuiButtonGroup";
+import BuiButton from "@/app/components/src/BuiButton";
 
 function ButtonGroupSection(){
     const codeBlock =

@@ -1,5 +1,5 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/BuiButton";
+import BuiButton from "@/app/components/src/BuiButton";
 
 function RoundedButtonSection() {
     const codeBlock = `<BuiButton rounded>Button</BuiButton>

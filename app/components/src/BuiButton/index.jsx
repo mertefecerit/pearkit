@@ -2,7 +2,7 @@
 import styles from "./BuiButton.module.scss";
 import {motion} from "framer-motion";
 import PropTypes from "prop-types";
-import LoadingIcon from "@/app/components/BuiButton/LoadingIcon";
+import LoadingIcon from "./LoadingIcon";
 
 function BuiButton(
     {

@@ -1,5 +1,5 @@
 import styles from './BuiApiDescriptionTable.module.scss';
-import BuiCode from "@/app/components/BuiCode";
+import BuiCode from "@/app/components/src/BuiCode";
 
 function BuiApiDescriptionTable({content}) {
     return (

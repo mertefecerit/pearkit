@@ -1,5 +1,5 @@
-import BuiBadge from "@/app/components/BuiBadge";
-import BuiCode from "@/app/components/BuiCode";
+import BuiBadge from "@/app/components/src/BuiBadge";
+import BuiCode from "@/app/components/src/BuiCode";
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function SizesBadgeSection(){

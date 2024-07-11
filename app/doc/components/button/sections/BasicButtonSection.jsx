@@ -1,5 +1,5 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/BuiButton";
+import BuiButton from "@/app/components/src/BuiButton";
 
 function BasicButtonSection(props) {
     const codeBlock = `<BuiButton>Button</BuiButton>`;

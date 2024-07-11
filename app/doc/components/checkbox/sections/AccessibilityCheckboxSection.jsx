@@ -1,6 +1,6 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/BuiCode";
+import BuiCode from "@/app/components/src/BuiCode";
 
 function AccessibilityCheckboxSection() {
     return (

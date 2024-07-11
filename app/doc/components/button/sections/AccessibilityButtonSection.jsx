@@ -1,5 +1,5 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/BuiCode";
+import BuiCode from "@/app/components/src/BuiCode";
 
 function AccessibilityButtonSection(props) {
     const codeBlock = `<BuiButton ariaLabel="Submit Button">Submit</BuiButton>`;

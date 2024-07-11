@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/BuiButton";
-import BuiCode from "@/app/components/BuiCode";
+import BuiButton from "@/app/components/src/BuiButton";
+import BuiCode from "@/app/components/src/BuiCode";
 
 function LoadingButtonSection(props) {
     const codeBlock = `<BuiButton isLoading={true}>Submit</BuiButton>`;
