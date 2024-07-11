@@ -46,6 +46,12 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       @apply border-2 border-red-500;
     }
   }
+  &.isDisabled {
+    @apply opacity-70 cursor-not-allowed;
+    & > input {
+      @apply disabled:opacity-70 cursor-not-allowed;
+    }
+  }
 }
 
 

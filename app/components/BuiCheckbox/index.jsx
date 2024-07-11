@@ -1,16 +1,28 @@
 "use client"
 import styles from './assets/scss/BuiCheckbox.module.scss';
 import BuiCheckIcon from "./components/BuiCheckIcon";
+import PropTypes from "prop-types";
 
-function BuiCheckbox({invalid, checked, onChange, label, color='blue'}) {
+function BuiCheckbox({
+                         disabled=false,
+                         invalid=false,
+                         checked=false,
+                         onChange,
+                         label = '',
+                         color = 'blue',
+                         ariaLabel = '',
+                     }) {
     return (
         <label
-            className={`${styles.BuiCheckboxWrapper} ${invalid ? styles.isInvalid:''}`}
+            className={`${styles.BuiCheckboxWrapper} ${invalid ? styles.isInvalid : ''} ${disabled ? styles.isDisabled : ''}`}
         >
             <input
+                disabled={disabled}
                 type="checkbox"
                 onChange={onChange}
                 checked={checked}
+                aria-checked={checked}
+                aria-label={ariaLabel ?? label}
             />
             <span className={`${styles[color]}`}>
                 {
@@ -21,7 +33,15 @@ function BuiCheckbox({invalid, checked, onChange, label, color='blue'}) {
         </label>
     );
 }
-
+BuiCheckbox.propTypes = {
+    disabled: PropTypes.bool,
+    invalid: PropTypes.bool,
+    checked: PropTypes.bool.isRequired,
+    onChange: PropTypes.func.isRequired,
+    label: PropTypes.string,
+    color: PropTypes.string,
+    ariaLabel: PropTypes.string,
+}
 export default BuiCheckbox;
 
 
