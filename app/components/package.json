@@ -1,5 +1,5 @@
 {
-  "name": "bubbleui",
+  "name": "@mertefecerit/bubbleui",
   "version": "1.0.0",
   "description": "A React Component Kit",
   "main": "dist/bubbleUi.umd.js",
