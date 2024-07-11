@@ -11,6 +11,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       }
     }
   }
+
   & > span {
     @apply border rounded-lg flex items-center justify-center h-6 w-6 text-xl transition-colors;
     @each $color in $colors {
@@ -36,6 +37,13 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
           }
         }
       }
+    }
+  }
+
+  &.isInvalid {
+    @apply text-red-500 font-medium;
+    & > span {
+      @apply border-2 border-red-500;
     }
   }
 }

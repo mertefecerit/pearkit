@@ -2,6 +2,7 @@ import ImportCheckboxSection from "@/app/doc/components/checkbox/sections/Import
 import BasicCheckboxSection from "@/app/doc/components/checkbox/sections/BasicCheckboxSection";
 import ColorsCheckboxSection from "@/app/doc/components/checkbox/sections/ColorsCheckboxSection";
 import LabelCheckboxSection from "@/app/doc/components/checkbox/sections/LabelCheckboxSection";
+import InvalidCheckboxSection from "@/app/doc/components/checkbox/sections/InvalidCheckboxSection";
 
 export const metadata = {
     title: 'Checkbox',
@@ -14,6 +15,7 @@ function CheckboxPage(props) {
             <BasicCheckboxSection />
             <LabelCheckboxSection />
             <ColorsCheckboxSection />
+            <InvalidCheckboxSection />
         </div>
     );
 }

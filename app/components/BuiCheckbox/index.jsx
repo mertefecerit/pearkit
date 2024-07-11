@@ -2,10 +2,10 @@
 import styles from './assets/scss/BuiCheckbox.module.scss';
 import BuiCheckIcon from "./components/BuiCheckIcon";
 
-function BuiCheckbox({checked, onChange, label, color='blue'}) {
+function BuiCheckbox({invalid, checked, onChange, label, color='blue'}) {
     return (
         <label
-            className={`${styles.BuiCheckboxWrapper}`}
+            className={`${styles.BuiCheckboxWrapper} ${invalid ? styles.isInvalid:''}`}
         >
             <input
                 type="checkbox"
