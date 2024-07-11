@@ -14,7 +14,7 @@ function BuiNavItem({label, childItems}) {
         forEach(childItems, (item) => {
             if (item.path === pathname) return setIsActive(true);
         })
-    }, []);
+    }, [pathname]);
     return (
         <div className={styles.buiNavItem}>
             <div onClick={() => setIsActive(!isActive)}

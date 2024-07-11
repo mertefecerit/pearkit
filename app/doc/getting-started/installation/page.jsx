@@ -1,5 +1,6 @@
 import DownloadInstallationSection from "@/app/doc/getting-started/installation/sections/DownloadInstallationSection";
 import UsageInstallationSection from "@/app/doc/getting-started/installation/sections/UsageInstallationSection";
+import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 export const metadata = {
     title: 'Installation | BubbleUI',
@@ -14,6 +15,9 @@ function InstallationPage(props) {
             </div>
             <DownloadInstallationSection/>
             <UsageInstallationSection />
+            <BuiPaginator
+                next={{label:'Button', path:'/doc/components/button'}}
+            />
         </div>
     )
 }

@@ -6,6 +6,7 @@ import InvalidCheckboxSection from "@/app/doc/components/checkbox/sections/Inval
 import DisabledCheckboxSection from "@/app/doc/components/checkbox/sections/DisabledCheckboxSection";
 import AccessibilityCheckboxSection from "@/app/doc/components/checkbox/sections/AccessibilityCheckboxSection";
 import ApiCheckboxSection from "@/app/doc/components/checkbox/sections/ApiCheckboxSection";
+import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 export const metadata = {
     title: 'Checkbox',
@@ -22,6 +23,9 @@ function CheckboxPage(props) {
             <DisabledCheckboxSection />
             <AccessibilityCheckboxSection />
             <ApiCheckboxSection />
+            <BuiPaginator
+                prev={{label:'Badge', path:'/doc/components/badge'}}
+            />
         </div>
     );
 }

@@ -12,6 +12,7 @@ import SizesButtonSection from "@/app/doc/components/button/sections/SizesButton
 import AccessibilityButtonSection from "@/app/doc/components/button/sections/AccessibilityButtonSection";
 import ButtonGroupSection from "@/app/doc/components/button/sections/ButtonGroupSection";
 import ApiButtonSection from "@/app/doc/components/button/sections/ApiButtonSection";
+import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 
 export const metadata = {
@@ -36,6 +37,10 @@ function ButtonComponentPage() {
             <ButtonGroupSection />
             <AccessibilityButtonSection />
             <ApiButtonSection />
+            <BuiPaginator
+                next={{label:'Badge', path:'/doc/components/badge'}}
+                prev={{label:'Installation', path:'/doc/getting-started/installation'}}
+            />
         </div>
     )
 }
