@@ -1,8 +1,6 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
+import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiCode from "@/app/components/BuiCode";
-import BuiCheckbox from "@/app/components/BuiCheckbox";
-import {useState} from "react";
 
 function AccessibilityCheckboxSection() {
     return (

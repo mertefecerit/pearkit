@@ -1,5 +1,6 @@
-import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
-import BuiApiDescriptionTable from "@/app/components/project/BuiApiDescriptionTable";
+import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptionTable";
+
 
 function ApiBadgeSection() {
     const content = [

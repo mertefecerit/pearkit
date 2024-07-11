@@ -1,4 +1,4 @@
-import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
+import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/BuiButton";
 
 function DisabledButtonSection(props) {

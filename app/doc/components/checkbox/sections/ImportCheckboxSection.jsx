@@ -1,4 +1,4 @@
-import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
+import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportCheckboxSection() {
     const codeBlock = `import { BuiCheckbox } from 'bubble-ui/BuiCheckbox';`

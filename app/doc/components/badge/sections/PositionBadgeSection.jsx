@@ -1,5 +1,5 @@
-import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 import BuiBadge from "@/app/components/BuiBadge";
+import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function PositionBadgeSection(){
     const codeBlock = `<div className="relative w-[100px] h-[50px] border rounded">

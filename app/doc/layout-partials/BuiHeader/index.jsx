@@ -1,10 +1,11 @@
 "use client"
 import styles from './BuiHeader.module.scss';
-import BuiLogo from "@/app/components/project/BuiLogo";
-import BuiMobileSidebar from "@/app/components/project/BuiMobileSidebar";
+
 import BuiNav from "@/app/doc/layout-partials/BuiNavAside/BuiNav";
 import {useState} from "react";
 import BuiHeaderMenu from "@/app/doc/layout-partials/BuiHeaderMenu";
+import BuiLogo from "@/app/doc/components/global/BuiLogo";
+import BuiMobileSidebar from "@/app/doc/components/global/BuiMobileSidebar";
 
 function BuiHeader() {
     const [mobileSidebarStatus, setMobileSidebarStatus] = useState(false);

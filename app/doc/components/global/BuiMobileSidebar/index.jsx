@@ -1,6 +1,4 @@
 import styles from './BuiMobileSidebar.module.scss';
-import BuiLogo from "@/app/components/project/BuiLogo";
-import {Icon} from "@iconify/react";
 import {motion, AnimatePresence} from "framer-motion";
 
 function BuiMobileSidebar({status, children, close}) {

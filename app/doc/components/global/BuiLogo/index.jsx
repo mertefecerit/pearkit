@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import LogoSVG from "../../../assets/images/svgs/logo.svg"
-import OnlyLogo from "../../../assets/images/svgs/only-logo.svg"
+import LogoSVG from "@/app/assets/images/svgs/logo.svg"
+import OnlyLogo from "@/app/assets/images/svgs/only-logo.svg"
 
 function BuiLogo(){
     return (

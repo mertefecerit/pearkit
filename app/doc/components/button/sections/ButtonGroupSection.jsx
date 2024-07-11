@@ -1,4 +1,4 @@
-import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
+import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiCode from "@/app/components/BuiCode";
 import BuiButtonGroup from "@/app/components/BuiButtonGroup";
 import BuiButton from "@/app/components/BuiButton";

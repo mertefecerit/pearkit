@@ -1,6 +1,6 @@
-import BuiComponentShowcaseArea from "@/app/components/project/BuiComponentShowcaseArea";
 import BuiBadge from "@/app/components/BuiBadge";
 import BuiCode from "@/app/components/BuiCode";
+import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ColorsBadgeSection(){
     const codeBlock = `<BuiBadge color="red" value="2"/>
