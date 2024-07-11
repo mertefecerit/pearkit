@@ -4,16 +4,12 @@ export default function AsideContent() {
             label: 'Getting Started',
             children: [
                 {
-                    path: '/doc/getting-started/overview',
-                    label: 'Overview',
-                },
-                {
                     path: '/doc/getting-started/installation',
                     label: 'Installation',
-                },
-                {
-                    path: '/doc/getting-started/usage',
-                    label: 'Usage',
+                    children: [
+                        {path: '#download', label: 'Download'},
+                        {path: '#usage', label: 'Usage'},
+                    ]
                 },
             ]
         },
