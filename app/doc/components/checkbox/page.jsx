@@ -25,6 +25,7 @@ function CheckboxPage(props) {
             <ApiCheckboxSection />
             <BuiPaginator
                 prev={{label:'Badge', path:'/doc/components/badge'}}
+                next={{label:'Card', path:'/doc/components/card'}}
             />
         </div>
     );

@@ -1,0 +1,17 @@
+.BuiCardWrapper {
+  @apply sm:w-[500px] w-full bg-white flex flex-col shadow border rounded-lg;
+  & > div.buiCardTitleArea {
+    @apply flex flex-col gap-2 p-4;
+    & > span.title {
+      @apply font-bold text-2xl text-gray-700;
+    }
+    & > span.subTitle {
+      @apply text-gray-500;
+    }
+  }
+  & > div.buiCardChildrenArea {
+    @apply text-gray-500 p-4;
+  }
+}
+
+

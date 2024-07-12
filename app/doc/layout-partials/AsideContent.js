@@ -62,6 +62,17 @@ export default function AsideContent() {
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
+                },
+                {
+                    path: '/doc/components/card',
+                    label: 'Card',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#advanced', label: 'Advanced'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
                 }
             ]
         },
