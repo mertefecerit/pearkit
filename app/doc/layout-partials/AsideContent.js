@@ -80,6 +80,13 @@ export default function AsideContent() {
                     children: [
                         {path: '#import', label: 'Import'},
                         {path: '#basic', label: 'Basic'},
+                        {path: '#sizes', label: 'Sizes'},
+                        {path: '#variants', label: 'Variants'},
+                        {path: '#rounded', label: 'Rounded'},
+                        {path: '#invalid', label: 'Invalid'},
+                        {path: '#loading', label: 'Loading'},
+                        {path: '#disabled', label: 'Disabled'},
+                        {path: '#icon', label: 'Icon'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]

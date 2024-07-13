@@ -1,13 +1,20 @@
 $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose';
 
 .BuiInputWrapper {
-  @apply w-full flex flex-col gap-2 text-gray-500;
+  @apply
+  w-full
+  flex
+  flex-col
+  gap-2
+  text-gray-500;
   & > ul {
     @apply text-xs;
   }
+
   & > small {
     @apply text-xs;
   }
+
   & > div {
     @apply
     transition-all
@@ -53,7 +60,12 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     }
 
     & > input {
-      @apply w-full focus:outline-0 h-full bg-transparent;
+      @apply
+      w-full
+      min-w-[10rem]
+      focus:outline-0
+      h-full
+      bg-transparent;
       &.sm {
         @apply h-8 text-sm;
       }
@@ -67,6 +79,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       }
     }
   }
+
   &.isInvalid {
     @apply text-red-500;
     & > div {
