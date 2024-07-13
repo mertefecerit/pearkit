@@ -69,7 +69,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     & > input {
       @apply
       w-full
-      focus:outline-0
+      outline-none
       h-full
       disabled:cursor-not-allowed
       bg-transparent;
