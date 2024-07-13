@@ -1,0 +1,85 @@
+$colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose';
+
+.BuiInputWrapper {
+  @apply w-full flex flex-col gap-2 text-gray-500;
+  & > ul {
+    @apply text-xs;
+  }
+  & > small {
+    @apply text-xs;
+  }
+  & > div {
+    @apply
+    transition-all
+    flex
+    gap-3
+    items-center
+    px-4
+    w-full
+    text-gray-500;
+
+    &.outlined {
+      @apply
+      focus-within:ring-2
+      focus-within:border-transparent
+      ring-offset-2
+      rounded-lg
+      border;
+    }
+
+    &.underlined {
+      @apply border-b;
+    }
+
+    &.filled {
+      @apply border-b bg-gray-100;
+    }
+
+    @each $color in $colors {
+      &.#{$color} {
+        &.outlined {
+          @apply ring-#{$color}-500;
+        }
+
+        &.underlined,
+        &.filled {
+          @apply focus-within:border-b-#{$color}-500;
+        }
+      }
+    }
+
+    &.rounded {
+      @apply rounded-full #{!important};
+    }
+
+    & > input {
+      @apply w-full focus:outline-0 h-full bg-transparent;
+      &.sm {
+        @apply h-8 text-sm;
+      }
+
+      &.base {
+        @apply h-10 text-base;
+      }
+
+      &.lg {
+        @apply h-12 text-lg;
+      }
+    }
+  }
+  &.isInvalid {
+    @apply text-red-500;
+    & > div {
+      @apply
+      border-red-500
+      ring-red-500
+      hover:border-red-500
+      text-red-500 #{!important};
+      & > input::placeholder {
+        @apply text-red-300;
+      }
+    }
+  }
+}
+
+

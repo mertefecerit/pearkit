@@ -73,6 +73,16 @@ export default function AsideContent() {
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
+                },
+                {
+                    path: '/doc/components/input',
+                    label: 'Input',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
                 }
             ]
         },

@@ -44,7 +44,7 @@ function ApiCardSection() {
         <BuiComponentShowcaseArea
             anchor="api"
             title="Api"
-            desc={<>Here you can see all the working features for the checkbox component.</>}
+            desc={<>Here you can see all the working features for the card component.</>}
         >
             <BuiApiDescriptionTable content={content}/>
         </BuiComponentShowcaseArea>
