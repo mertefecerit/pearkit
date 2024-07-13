@@ -1,8 +1,7 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiRadio from "@/app/components/src/BuiRadio";
 import {useState} from "react";
-import BuiCode from "@/app/components/src/BuiCode";
+import {BuiCode, BuiRadio} from "@/app/components/src";
 
 function ColorsRadioSection() {
     const [optionColor,setOptionColor] = useState('indigo');
