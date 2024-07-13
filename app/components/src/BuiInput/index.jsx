@@ -5,7 +5,7 @@ import LoadingIcon from "./components/LoadingIcon";
 import BuiInputErrors from "./components/BuiInputErrors";
 import EyeIcon from "./components/EyeIcon";
 import {useState} from "react";
-import EyeOffIcon from "@/app/components/src/BuiInput/components/EyeOffIcon";
+import EyeOffIcon from "./components/EyeOffIcon";
 
 function BuiInput(
     {
