@@ -6,7 +6,7 @@ function ImportRadioSection() {
         <BuiComponentShowcaseArea
             anchor="import"
             title="Radio"
-            desc={<></>}
+            desc={<>A simple radio button but a little better in terms of design.</>}
             codeBlock={codeBlock}
         />
     );

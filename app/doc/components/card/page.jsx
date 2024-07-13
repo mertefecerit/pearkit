@@ -15,6 +15,7 @@ function Page(props) {
             <ApiCardSection />
             <BuiPaginator
                 prev={{label:'Checkbox', path:'/doc/components/checkbox'}}
+                next={{label:'Input', path:'/doc/components/input'}}
             />
         </div>
     );

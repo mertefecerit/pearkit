@@ -13,6 +13,7 @@ import LoadingInputSection from "@/app/doc/components/input/sections/LoadingInpu
 import DisabledInputSection from "@/app/doc/components/input/sections/DisabledInputSection";
 import IconInputSection from "@/app/doc/components/input/sections/IconInputSection";
 import PasswordRevealInputSection from "@/app/doc/components/input/sections/PasswordRevealInputSection";
+import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 function InputComponentPage(props) {
     return (
@@ -32,6 +33,10 @@ function InputComponentPage(props) {
             <PasswordRevealInputSection/>
             <AccessibilityInputSection/>
             <ApiInputSection/>
+                <BuiPaginator
+                    prev={{label:'Card', path:'/doc/components/card'}}
+                    next={{label:'Radio', path:'/doc/components/radio'}}
+                />
         </div>
     );
 }
