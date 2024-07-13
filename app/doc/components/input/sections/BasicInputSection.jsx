@@ -4,7 +4,7 @@ import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentSh
 import {BuiInput} from "@/app/components/src";
 
 function BasicInputSection() {
-    const codeBlock = `<BuiInput placeholder="example@bubbleui.com" onChange={(e) => console.log(e.target.value)}/>`
+    const codeBlock = `<BuiInput placeholder="example@bubbleui.com"/>`
     return (
         <BuiComponentShowcaseArea
             anchor="basic"
@@ -12,7 +12,7 @@ function BasicInputSection() {
             desc={<>It is the standard input element that you can use in forms. Gets all form attributes.</>}
             codeBlock={codeBlock}
         >
-            <div className="w-[300px] flex flex-col gap-4">
+            <div className="md:w-[300px] w-full flex flex-col gap-4">
                 <BuiInput placeholder="example@bubbleui.com" onChange={() => null}/>
             </div>
         </BuiComponentShowcaseArea>
