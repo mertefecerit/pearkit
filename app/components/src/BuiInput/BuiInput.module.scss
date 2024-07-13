@@ -48,9 +48,11 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
           @apply ring-#{$color}-500;
         }
 
-        &.underlined,
-        &.filled {
+        &.underlined{
           @apply focus-within:border-b-#{$color}-500;
+        }
+        &.filled {
+          @apply focus-within:bg-gray-200;
         }
       }
     }
@@ -83,13 +85,30 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
   &.isInvalid {
     @apply text-red-500;
     & > div {
-      @apply
-      border-red-500
-      ring-red-500
-      hover:border-red-500
-      text-red-500 #{!important};
+      @apply text-red-500 #{!important};
+      &.outlined {
+        @apply
+        border-red-300
+        ring-red-500
+        focus-within:border-transparent #{!important};
+      }
+      &.underlined, {
+        @apply
+        border-red-300
+        focus-within:border-red-500 #{!important};
+      }
+      &.filled {
+        @apply
+        bg-red-100
+        focus-within:bg-red-200
+        border-b-red-300
+        focus-within:border-b-red-500  #{!important};
+        & > input::placeholder {
+          @apply text-red-400 #{!important};
+        }
+      }
       & > input::placeholder {
-        @apply text-red-300;
+        @apply text-red-300 #{!important};
       }
     }
   }

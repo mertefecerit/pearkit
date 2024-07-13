@@ -13,6 +13,7 @@ function BuiInput(
         size="base",
         variant = 'outlined',
         label,
+        isInvalid=false,
         errors = [],
         description,
         rounded,
@@ -20,7 +21,7 @@ function BuiInput(
     }
 ) {
     return (
-        <label className={`${styles.BuiInputWrapper} ${errors.length > 0 ? styles.isInvalid : ''}`}>
+        <label className={`${styles.BuiInputWrapper} ${errors.length > 0 || isInvalid ? styles.isInvalid : ''}`}>
             {label && <span>{label}</span>}
             <div className={`${styles[color]} ${styles[variant]} ${rounded ? styles.rounded : ''}`}>
                 {isLoading && <LoadingIcon />}
