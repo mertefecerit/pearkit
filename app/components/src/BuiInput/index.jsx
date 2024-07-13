@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import styles from "./BuiInput.module.scss";
 import LoadingIcon from "./components/LoadingIcon";
 import BuiInputErrors from "./components/BuiInputErrors";
-import EyeIcon from "@/app/components/src/BuiInput/components/EyeIcon";
-import {useEffect, useState} from "react";
+import EyeIcon from "./components/EyeIcon";
+import {useState} from "react";
+import EyeOffIcon from "@/app/components/src/BuiInput/components/EyeOffIcon";
 
 function BuiInput(
     {
@@ -40,7 +41,9 @@ function BuiInput(
                 {
                     passwordReveal && type === 'password' &&
                     <div onClick={() => setShowPassword(!showPassword)} className={`${styles[size]} ${styles.passwordRevealIcon}`}>
-                        <EyeIcon/>
+                        {
+                            showPassword ? <EyeIcon/> : <EyeOffIcon/>
+                        }
                     </div>
                 }
             </div>
