@@ -94,7 +94,21 @@ export default function AsideContent() {
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
-                }
+                },
+                {
+                    path: '/doc/components/radio',
+                    label: 'Radio',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#label', label: 'Label'},
+                        {path: '#colors', label: 'Colors'},
+                        {path: '#invalid', label: 'Invalid'},
+                        {path: '#disabled', label: 'Disabled'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
             ]
         },
     ]
