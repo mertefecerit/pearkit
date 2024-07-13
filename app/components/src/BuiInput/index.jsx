@@ -19,7 +19,7 @@ function BuiInput(
         isInvalid=false,
         errors = [],
         description,
-        rounded,
+        rounded= false,
         passwordReveal = true,
         ...props
     }
