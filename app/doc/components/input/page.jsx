@@ -6,6 +6,11 @@ import SizesInputSection from "@/app/doc/components/input/sections/SizesInputSec
 import VariantsInputSection from "@/app/doc/components/input/sections/VariantsInputSection";
 import RoundedInputSection from "@/app/doc/components/input/sections/RoundedInputSection";
 import InvalidInputSection from "@/app/doc/components/input/sections/InvalidInputSection";
+import ErrorsInputSection from "@/app/doc/components/input/sections/ErrorsInputSection";
+import LabelInputSection from "@/app/doc/components/input/sections/LabelInputSection";
+import DescriptionInputSection from "@/app/doc/components/input/sections/DescriptionInputSection";
+import LoadingInputSection from "@/app/doc/components/input/sections/LoadingInputSection";
+import DisabledInputSection from "@/app/doc/components/input/sections/DisabledInputSection";
 
 function InputComponentPage(props) {
     return (
@@ -16,6 +21,11 @@ function InputComponentPage(props) {
             <SizesInputSection />
             <RoundedInputSection />
             <InvalidInputSection />
+            <ErrorsInputSection />
+            <LabelInputSection />
+            <DescriptionInputSection />
+            <LoadingInputSection />
+            <DisabledInputSection />
             <AccessibilityInputSection />
             <ApiInputSection />
         </div>

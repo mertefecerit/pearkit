@@ -60,6 +60,9 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     &.rounded {
       @apply rounded-full #{!important};
     }
+    &.isDisabled {
+      @apply bg-gray-200 cursor-not-allowed;
+    }
 
     & > input {
       @apply
@@ -67,6 +70,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       min-w-[10rem]
       focus:outline-0
       h-full
+      disabled:cursor-not-allowed
       bg-transparent;
       &.sm {
         @apply h-8 text-sm;

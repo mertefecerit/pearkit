@@ -23,7 +23,7 @@ function BuiInput(
     return (
         <label className={`${styles.BuiInputWrapper} ${errors.length > 0 || isInvalid ? styles.isInvalid : ''}`}>
             {label && <span>{label}</span>}
-            <div className={`${styles[color]} ${styles[variant]} ${rounded ? styles.rounded : ''}`}>
+            <div className={`${styles[color]} ${styles[variant]} ${rounded ? styles.rounded : ''} ${isLoading || props.disabled ? styles.isDisabled: ''}`}>
                 {isLoading && <LoadingIcon />}
                 {!isLoading && icon}
                 <input
