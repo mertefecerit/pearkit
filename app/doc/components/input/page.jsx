@@ -11,23 +11,27 @@ import LabelInputSection from "@/app/doc/components/input/sections/LabelInputSec
 import DescriptionInputSection from "@/app/doc/components/input/sections/DescriptionInputSection";
 import LoadingInputSection from "@/app/doc/components/input/sections/LoadingInputSection";
 import DisabledInputSection from "@/app/doc/components/input/sections/DisabledInputSection";
+import IconInputSection from "@/app/doc/components/input/sections/IconInputSection";
+import PasswordRevealInputSection from "@/app/doc/components/input/sections/PasswordRevealInputSection";
 
 function InputComponentPage(props) {
     return (
         <div className="flex flex-col gap-8">
-            <ImportInputSection />
-            <BasicInputSection />
-            <VariantsInputSection />
-            <SizesInputSection />
-            <RoundedInputSection />
-            <InvalidInputSection />
-            <ErrorsInputSection />
-            <LabelInputSection />
-            <DescriptionInputSection />
-            <LoadingInputSection />
-            <DisabledInputSection />
-            <AccessibilityInputSection />
-            <ApiInputSection />
+            <ImportInputSection/>
+            <BasicInputSection/>
+            <VariantsInputSection/>
+            <SizesInputSection/>
+            <RoundedInputSection/>
+            <InvalidInputSection/>
+            <ErrorsInputSection/>
+            <LabelInputSection/>
+            <DescriptionInputSection/>
+            <LoadingInputSection/>
+            <DisabledInputSection/>
+            <IconInputSection/>
+            <PasswordRevealInputSection/>
+            <AccessibilityInputSection/>
+            <ApiInputSection/>
         </div>
     );
 }

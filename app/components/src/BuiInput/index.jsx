@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import styles from "./BuiInput.module.scss";
 import LoadingIcon from "./components/LoadingIcon";
 import BuiInputErrors from "./components/BuiInputErrors";
+import EyeIcon from "@/app/components/src/BuiInput/components/EyeIcon";
+import {useEffect, useState} from "react";
 
 function BuiInput(
     {
@@ -17,9 +19,12 @@ function BuiInput(
         errors = [],
         description,
         rounded,
+        passwordReveal = true,
         ...props
     }
 ) {
+    const [showPassword, setShowPassword] = useState(false);
+
     return (
         <label className={`${styles.BuiInputWrapper} ${errors.length > 0 || isInvalid ? styles.isInvalid : ''}`}>
             {label && <span>{label}</span>}
@@ -29,9 +34,15 @@ function BuiInput(
                 <input
                     className={`${styles[size]}`}
                     {...props}
-                    type={type}
+                    type={showPassword && type === 'password' ? 'text' : type}
                     disabled={isLoading || props.disabled}
                 />
+                {
+                    passwordReveal && type === 'password' &&
+                    <div onClick={() => setShowPassword(!showPassword)} className={`${styles[size]} ${styles.passwordRevealIcon}`}>
+                        <EyeIcon/>
+                    </div>
+                }
             </div>
             {description && <small>{description}</small>}
             <BuiInputErrors errors={errors}/>
@@ -50,6 +61,7 @@ BuiInput.propTypes = {
     isLoading: PropTypes.bool,
     errors: PropTypes.arrayOf(PropTypes.string),
     description: PropTypes.string,
-    rounded: PropTypes.bool
+    rounded: PropTypes.bool,
+    passwordReveal: PropTypes.bool
 }
 export default BuiInput;

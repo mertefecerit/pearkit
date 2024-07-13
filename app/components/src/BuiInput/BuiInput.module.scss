@@ -63,11 +63,12 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     &.isDisabled {
       @apply bg-gray-200 cursor-not-allowed;
     }
-
+    & > div.passwordRevealIcon {
+      @apply cursor-pointer hover:brightness-90;
+    }
     & > input {
       @apply
       w-full
-      min-w-[10rem]
       focus:outline-0
       h-full
       disabled:cursor-not-allowed
@@ -85,7 +86,6 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       }
     }
   }
-
   &.isInvalid {
     @apply text-red-500;
     & > div {

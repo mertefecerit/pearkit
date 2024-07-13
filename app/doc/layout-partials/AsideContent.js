@@ -90,6 +90,7 @@ export default function AsideContent() {
                         {path: '#loading', label: 'Loading'},
                         {path: '#disabled', label: 'Disabled'},
                         {path: '#icon', label: 'Icon'},
+                        {path: '#passwordReveal', label: 'Password Reveal'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
