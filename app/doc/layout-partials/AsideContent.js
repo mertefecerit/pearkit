@@ -108,6 +108,17 @@ export default function AsideContent() {
                         {path: '#api', label: 'Api'},
                     ]
                 },
+                {
+                    path: '/doc/components/overlay',
+                    label: 'Overlay',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#colors', label: 'Colors'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
             ]
         },
     ]

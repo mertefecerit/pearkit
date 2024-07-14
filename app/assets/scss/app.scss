@@ -1,8 +1,12 @@
 @tailwind base;
 @layer base {
+  :root {
+    --bui-overlay-opacity: 0.5;
+  }
   body {
     @apply antialiased bg-gray-100 text-gray-700;
   }
 }
 @tailwind components;
 @tailwind utilities;
+
