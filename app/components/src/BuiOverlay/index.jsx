@@ -3,7 +3,7 @@
 import styles from './BuiOverlay.module.scss';
 import PropTypes from "prop-types";
 import {motion, AnimatePresence} from "framer-motion";
-import {useEffect} from "react";
+import {useEffect, useRef} from "react";
 
 function BuiOverlay({
                         status = false,
@@ -13,9 +13,13 @@ function BuiOverlay({
                         closable = true,
                         fullscreen = false,
                     }) {
-    const closeHandler = () => {
-        closable && !fullscreen && close();
+    const overlayRef = useRef(null);
+    const closeHandler = (e) => {
+        if (e.target === overlayRef.current && closable && !fullscreen) {
+             close();
+        }
     }
+
     useEffect(() => {
         const root = document.documentElement;
         if (fullscreen) {
@@ -24,20 +28,20 @@ function BuiOverlay({
             root.style.setProperty('--bui-overlay-opacity', 0.5);
         }
     }, [fullscreen])
+
     return (
         <AnimatePresence>
             {
                 status &&
                 <motion.div
+                    ref={overlayRef}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}
                     onClick={closeHandler}
                     className={`${styles.BuiOverlayWrapper} ${styles[color]} ${!fullscreen ? styles.nonFullScreen : ''}`}
                 >
-                    <div onClick={(e) => e.stopPropagation()}>
-                        {children}
-                    </div>
+                    {children}
                 </motion.div>
             }
         </AnimatePresence>
