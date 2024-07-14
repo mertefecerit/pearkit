@@ -5,6 +5,10 @@
   "main": "dist/bubbleUi.umd.js",
   "module": "dist/bubbleUi.es.js",
   "homepage": "https://bubbleui.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mertefecerit/bubbleui.git"
+  },
   "scripts": {
     "build": "vite build"
   },
