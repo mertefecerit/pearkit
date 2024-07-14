@@ -5,8 +5,8 @@ function ImportOverlaySection() {
     return (
         <BuiComponentShowcaseArea
             anchor="import"
-            title="Input"
-            desc={<></>}
+            title="Overlay"
+            desc={<>Standard overlay component for any component</>}
             codeBlock={codeBlock}
         />
     );

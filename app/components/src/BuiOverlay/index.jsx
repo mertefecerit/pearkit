@@ -33,7 +33,7 @@ function BuiOverlay({
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}
                     onClick={closeHandler}
-                    className={`${styles.BuiOverlayWrapper} ${styles[color]}`}
+                    className={`${styles.BuiOverlayWrapper} ${styles[color]} ${!fullscreen ? styles.nonFullScreen : ''}`}
                 >
                     <div onClick={(e) => e.stopPropagation()}>
                         {children}

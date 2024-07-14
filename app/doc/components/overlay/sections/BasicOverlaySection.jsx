@@ -20,7 +20,7 @@ function BasicOverlaySection() {
         >
             <BuiButton onClick={() => setOverlayStatus(true)}>Open Overlay</BuiButton>
             <BuiOverlay status={overlayStatus} close={() => setOverlayStatus(false)}>
-                <div className="bg-white p-8">
+                <div className="p-8 flex flex-col gap-8">
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, numquam.</p>
                         <BuiButton onClick={() => setOverlayStatus(false)}>X</BuiButton>
