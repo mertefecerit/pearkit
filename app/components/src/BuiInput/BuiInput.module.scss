@@ -29,17 +29,16 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       @apply
       focus-within:ring-2
       focus-within:border-transparent
-      ring-offset-2
       rounded-lg
       border;
     }
 
     &.underlined {
-      @apply border-b;
+      @apply border-b-2;
     }
 
     &.filled {
-      @apply border-b bg-gray-100;
+      @apply border-b-2 bg-gray-100;
     }
 
     @each $color in $colors {
