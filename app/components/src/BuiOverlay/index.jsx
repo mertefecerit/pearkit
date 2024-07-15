@@ -44,6 +44,7 @@ BuiOverlay.propTypes = {
     color: PropTypes.string,
     close: PropTypes.func,
     closable: PropTypes.bool,
+    className: PropTypes.string
 }
 export default BuiOverlay;
 

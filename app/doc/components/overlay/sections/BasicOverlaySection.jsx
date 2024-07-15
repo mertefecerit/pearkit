@@ -8,14 +8,14 @@ function BasicOverlaySection() {
     const codeBlock = `const [overlayStatus,setOverlayStatus] = useState(false);
 
 <BuiOverlay status={overlayStatus} close={() => setOverlayStatus(false)}>
-// any element or component
+    <LoginComponent />
 </BuiOverlay>
 `
     return (
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<></>}
+            desc={<>A standard overlay usage. Whether you use our BuiCard component or do it yourself, it will answer all of them.</>}
             codeBlock={codeBlock}
         >
             <BuiButton onClick={() => setOverlayStatus(true)}>Open Overlay</BuiButton>
