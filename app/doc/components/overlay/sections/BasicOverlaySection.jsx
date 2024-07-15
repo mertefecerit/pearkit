@@ -19,7 +19,7 @@ function BasicOverlaySection() {
             codeBlock={codeBlock}
         >
             <BuiButton onClick={() => setOverlayStatus(true)}>Open Overlay</BuiButton>
-            <BuiOverlay status={overlayStatus} close={() => setOverlayStatus(false)}>
+            <BuiOverlay className="justify-center p-8" status={overlayStatus} close={() => setOverlayStatus(false)}>
                 <BuiCard title="Login Screen" subTitle="Welcome again. Please login.">
                     <div className="flex flex-col gap-8">
                         <BuiInput placeholder="info@example.com" onChange={() => null}></BuiInput>
