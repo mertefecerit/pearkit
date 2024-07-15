@@ -1,13 +1,15 @@
 @import "../../../assets/scss/colors";
-
 .BuiOverlayWrapper {
-  @apply fixed h-dvh top-0 left-0 w-full z-40 overflow-y-auto;
-  &.nonFullScreen {
-    @apply p-8 flex items-start justify-center;
-  }
+  @apply fixed flex items-start h-dvh top-0 left-0 w-full z-40 overflow-y-auto;
   @each $color, $rgb in $colors {
-    &.#{$color}{
-      background-color: rgba(#{$rgb}, var(--bui-overlay-opacity));
+    &.#{$color} {
+      @if $color == 'black' {
+        @apply bg-black/50;
+      } @else if $color == 'white' {
+        @apply bg-white/50;
+      } @else {
+        @apply bg-#{$color}-500/50;
+      }
     }
   }
 }

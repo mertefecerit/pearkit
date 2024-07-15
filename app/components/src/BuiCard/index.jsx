@@ -1,9 +1,9 @@
 import styles from './BuiCard.module.scss';
 import PropTypes from "prop-types";
 
-function BuiCard({header, footer, title, subTitle, classes, children, role}) {
+function BuiCard({header, footer, title, subTitle, children, role}) {
     return (
-        <div role={role} className={`${styles.BuiCardWrapper} ${classes}`}>
+        <div role={role} className={`${styles.BuiCardWrapper}`}>
             {header}
             {title && <div className={styles.buiCardTitleArea}>
                 <span className={styles.title}>{title}</span>
@@ -22,7 +22,6 @@ BuiCard.propTypes = {
     footer: PropTypes.elementType,
     title: PropTypes.string,
     subTitle: PropTypes.string,
-    classes: PropTypes.string,
     children: PropTypes.node.isRequired
 }
 export default BuiCard;

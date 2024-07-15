@@ -1,6 +1,6 @@
 {
   "name": "bubbleui",
-  "version": "1.0.533",
+  "version": "1.0.564",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,12 +19,12 @@
   },
   "devDependencies": {
     "@iconify/react": "^5.0.1",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "sass": "^1.77.6",
     "tailwindcss": "^3.4.1",
-    "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.2.0"
   }
 }
