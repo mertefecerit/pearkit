@@ -19,6 +19,7 @@ function Page() {
             <ApiRadioSection />
             <BuiPaginator
                 prev={{label:'Input', path:'/doc/components/input'}}
+                next={{label:'Overlay', path:'/doc/components/overlay'}}
             />
         </div>
     );

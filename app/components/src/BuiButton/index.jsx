@@ -24,7 +24,7 @@ function BuiButton(
         raised = false,
         rounded = false,
         ariaLabel='button',
-        classes
+        className,
     }
 ) {
     const content = (
@@ -42,7 +42,7 @@ function BuiButton(
                            onClick={onClick}
                            whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                            disabled={disabled || isLoading}
-                           className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!children ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${classes}`}
+                           className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!children ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${className}`}
             >
                 {content}
             </motion.button>
@@ -52,7 +52,7 @@ function BuiButton(
                       target={target}
                       whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                       disabled={disabled || isLoading}
-                      className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!children ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${classes}`}
+                      className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!children ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${className}`}
             >
                 {content}
             </motion.a>
@@ -76,6 +76,6 @@ BuiButton.propTypes = {
     raised: PropTypes.bool,
     rounded: PropTypes.bool,
     ariaLabel: PropTypes.string,
-    classes: PropTypes.string
+    className: PropTypes.string
 }
 export default BuiButton;
