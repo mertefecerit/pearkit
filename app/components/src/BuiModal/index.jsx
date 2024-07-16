@@ -1,9 +1,9 @@
 "use client"
 import styles from './BuiModal.module.scss';
-import {BuiOverlay} from "@/app/components/src";
+import BuiOverlay from "../BuiOverlay";
 import {motion,} from "framer-motion";
 import PropTypes from "prop-types";
-import BuiModalCloseIcon from "@/app/components/src/BuiModal/components/BuiModalCloseIcon";
+import BuiModalCloseIcon from "./components/BuiModalCloseIcon";
 import ReactDOM from "react-dom";
 import React, {useEffect, useState} from "react";
 
