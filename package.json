@@ -1,9 +1,9 @@
 {
   "name": "bubbleui",
-  "version": "1.0.581",
+  "version": "1.0.595",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 192.168.1.39 -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

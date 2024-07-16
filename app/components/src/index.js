@@ -7,3 +7,4 @@ export {default as BuiCard} from "./BuiCard";
 export {default as BuiInput} from "./BuiInput";
 export {default as BuiRadio} from "./BuiRadio";
 export {default as BuiOverlay} from "./BuiOverlay";
+export {default as BuiModal} from "./BuiModal";

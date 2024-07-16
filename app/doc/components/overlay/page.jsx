@@ -18,6 +18,7 @@ function OverlayPage(props) {
             <ApiOverlaySection />
             <BuiPaginator
                 prev={{label:'Radio', path:'/doc/components/radio'}}
+                next={{label:'Modal', path:'/doc/components/modal'}}
             />
         </div>
     );

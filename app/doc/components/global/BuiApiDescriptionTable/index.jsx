@@ -11,6 +11,7 @@ function BuiApiDescriptionTable({content}) {
                     <th>Type</th>
                     <th>Default</th>
                     <th>Description</th>
+                    <th>Available Values</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -21,6 +22,9 @@ function BuiApiDescriptionTable({content}) {
                             <td>{row.type}</td>
                             <td><BuiCode color="gray">{row.default}</BuiCode></td>
                             <td>{row.description}</td>
+                            {
+                                row.values && <td><BuiCode color="gray">{row.values}</BuiCode></td>
+                            }
                         </tr>
                     ))
                 }

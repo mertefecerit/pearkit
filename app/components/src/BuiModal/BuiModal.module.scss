@@ -1,0 +1,27 @@
+.wrapper {
+  @apply bg-white rounded-xl shadow flex flex-col gap-2 z-50 overflow-hidden;
+  &.small {
+    @apply sm:w-[384px] w-full;
+  }
+  &.default {
+    @apply sm:w-[512px] w-full;
+  }
+  &.large {
+    @apply sm:w-[768px] w-full;
+  }
+  &.full {
+    @apply w-full;
+  }
+  & > div.modalHeader {
+    @apply text-xl text-gray-500 flex items-start justify-between font-medium p-4;
+    & > button {
+      @apply hover:bg-gray-200 p-1 rounded-full;
+    }
+  }
+
+  & > div.modalBody {
+    @apply p-4;
+  }
+}
+
+

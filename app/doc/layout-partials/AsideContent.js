@@ -119,6 +119,16 @@ export default function AsideContent() {
                         {path: '#api', label: 'Api'},
                     ]
                 },
+                {
+                    path: '/doc/components/modal',
+                    label: 'Modal',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
             ]
         },
     ]
