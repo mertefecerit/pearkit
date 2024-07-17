@@ -12,22 +12,26 @@ function BuiModal(
         modalHeader,
         status=false,
         children,
+        closable = true,
         modalTitle,
         close,
         overlayClassName = 'p-8 justify-center',
         className='',
-        outsideClick = true,
         size= 'default'
     }
 ) {
     const [documentLoaded,setDocumentLoaded] = useState(false);
     useEffect(() => setDocumentLoaded(true),[]);
 
+    const closeHandler = () => {
+        closable && close();
+    }
+
     return documentLoaded && ReactDOM.createPortal(
         <BuiOverlay
-            closable={outsideClick}
+            closable={closable}
             status={status}
-            close={close}
+            close={closeHandler}
             className={overlayClassName}
         >
             <motion.div
@@ -42,7 +46,7 @@ function BuiModal(
                     ??
                     <div className={styles.modalHeader}>
                         <span>{modalTitle}</span>
-                        <button onClick={close}><BuiModalCloseIcon/></button>
+                        <button onClick={closeHandler}><BuiModalCloseIcon/></button>
                     </div>
                 }
 
@@ -58,7 +62,7 @@ BuiModal.propTypes = {
     close: PropTypes.func,
     overlayClassName: PropTypes.string,
     className: PropTypes.string,
-    outsideClick: PropTypes.bool,
+    closable: PropTypes.bool,
     size: PropTypes.string
 }
 export default BuiModal;

@@ -26,6 +26,7 @@ function BasicModalSection() {
         >
             <BuiButton onClick={() => setModalStatus(true)}>Open Basic Modal</BuiButton>
             <BuiModal
+                closable={false}
                 modalTitle="Lorem Ipsum Modal"
                 status={modalStatus}
                 close={() => setModalStatus(false)}

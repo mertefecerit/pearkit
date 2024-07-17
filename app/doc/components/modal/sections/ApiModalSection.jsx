@@ -40,10 +40,10 @@ function ApiModalSection() {
             description: 'If you want set your modal class, use this',
         },
         {
-            name: 'outsideClick',
+            name: 'closable',
             type: 'boolean',
             default: 'true',
-            description: 'Modal & Overlay outside click control state prop',
+            description: 'Modal & Overlay all click control state prop',
         },
         {
             name: 'size',

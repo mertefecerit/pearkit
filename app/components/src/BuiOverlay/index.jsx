@@ -3,7 +3,7 @@
 import styles from './BuiOverlay.module.scss';
 import PropTypes from "prop-types";
 import {motion, AnimatePresence} from "framer-motion";
-import { useRef } from "react";
+import {useEffect, useRef} from "react";
 
 function BuiOverlay({
                         status = false,
@@ -19,6 +19,17 @@ function BuiOverlay({
             close();
         }
     }
+
+    useEffect(() => {
+        const onKeyHandler = (e) => {
+            e.key === 'Escape' && closable && close();
+        }
+        if (status) document.addEventListener('keyup', onKeyHandler);
+        return () => {
+            document.removeEventListener('keyup', onKeyHandler);
+        }
+    }, [status, close]);
+
     return (
         <AnimatePresence>
             {
