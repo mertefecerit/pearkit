@@ -3,7 +3,7 @@
   body {
     @apply antialiased bg-gray-100 text-gray-700;
     [data-mode="dark"] & {
-      @apply text-gray-200;
+      @apply text-gray-300;
     }
   }
 }
@@ -23,8 +23,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
