@@ -1,3 +1,13 @@
 .BuiNavAside {
-  @apply hidden lg:block row-span-1 col-span-1 bg-white overflow-y-auto p-4;
+  @apply
+  hidden
+  lg:block
+  row-span-1
+  col-span-1
+  bg-white
+  overflow-y-auto
+  p-4;
+  [data-mode="dark"] & {
+    @apply bg-gray-800;
+  }
 }

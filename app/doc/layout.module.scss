@@ -1,6 +1,16 @@
 .layout {
   @apply grid lg:grid-cols-[300px,1fr,250px] grid-cols-1 grid-rows-[auto,1fr] h-dvh;
   & > main {
-    @apply row-span-1 col-span-1 overflow-y-auto bg-white p-8 border-r border-l;
+    @apply
+    row-span-1
+    col-span-1
+    overflow-y-auto
+    bg-white
+    p-8
+    border-r
+    border-l;
+    [data-mode="dark"] & {
+      @apply bg-gray-800 border-gray-700;
+    }
   }
 }

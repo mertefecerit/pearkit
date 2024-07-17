@@ -2,8 +2,36 @@
 @layer base {
   body {
     @apply antialiased bg-gray-100 text-gray-700;
+    [data-mode="dark"] & {
+      @apply text-gray-200;
+    }
   }
 }
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .scrollbar-thumb {
+    @apply bg-gray-500; /* Thumb rengi */
+
+  }
+  .scrollbar-track {
+    @apply bg-gray-200; /* Track rengi */
+    [data-mode="dark"] & {
+      @apply bg-gray-700;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply scrollbar-thumb;
+}
+
+::-webkit-scrollbar-track {
+  @apply scrollbar-track;
+}
 

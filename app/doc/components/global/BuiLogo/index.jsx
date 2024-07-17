@@ -5,9 +5,10 @@ import OnlyLogo from "@/app/assets/images/svgs/only-logo.svg"
 
 function BuiLogo(){
     return (
-        <Link href="/">
+        <Link href="/" className="flex gap-2 items-end">
             <Image className="hidden lg:block" priority src={LogoSVG} alt="bubble-ui-logo" height={60}></Image>
             <Image className="lg:hidden block" priority src={OnlyLogo} alt="bubble-ui-logo" height={60}></Image>
+            <span className="text-sm font-bold">(Alpha Version)</span>
         </Link>
     )
 }

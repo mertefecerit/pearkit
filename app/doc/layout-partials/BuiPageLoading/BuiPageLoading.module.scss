@@ -1,5 +1,17 @@
 .buiPageLoading {
-  @apply text-6xl text-blue-500 bg-white flex justify-center items-center w-full h-full overflow-hidden;
+  @apply
+  text-6xl
+  text-blue-500
+  bg-white
+  flex
+  justify-center
+  items-center
+  w-full
+  h-full
+  overflow-hidden;
+  [data-mode="dark"] & {
+    @apply bg-gray-800;
+  }
   &.pageType {
     @apply min-h-screen fixed top-0 left-0;
   }

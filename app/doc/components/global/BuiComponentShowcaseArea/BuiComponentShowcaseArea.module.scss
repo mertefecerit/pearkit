@@ -11,6 +11,9 @@
   }
   & > div.showcase {
     @apply items-center w-full rounded-lg border p-4 bg-white flex justify-center flex-wrap gap-4;
+    [data-mode="dark"] & {
+      @apply bg-gray-800 border-gray-700;
+    }
   }
 
   & > div.codeArea {

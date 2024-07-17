@@ -10,7 +10,7 @@ import BuiMobileSidebar from "@/app/doc/components/global/BuiMobileSidebar";
 function BuiHeader() {
     const [mobileSidebarStatus, setMobileSidebarStatus] = useState(false);
     return (
-        <header className={styles.BuiHeaderWrapper}>
+        <header className={`${styles.BuiHeaderWrapper}`}>
             <div className="flex gap-2 items-center justify-between">
                 <BuiLogo/>
                 <BuiHeaderMenu mobileSidebarToggle={() => setMobileSidebarStatus(true)}/>
