@@ -15,6 +15,7 @@ function BuiModal(
         closable = true,
         modalTitle,
         close,
+        overlayColor = 'black',
         overlayClassName = 'p-8 justify-center',
         className='',
         size= 'default'
@@ -29,6 +30,7 @@ function BuiModal(
 
     return documentLoaded && ReactDOM.createPortal(
         <BuiOverlay
+            color={overlayColor}
             closable={closable}
             status={status}
             close={closeHandler}
@@ -63,7 +65,8 @@ BuiModal.propTypes = {
     overlayClassName: PropTypes.string,
     className: PropTypes.string,
     closable: PropTypes.bool,
-    size: PropTypes.string
+    size: PropTypes.string,
+    overlayColor: PropTypes.string,
 }
 export default BuiModal;
 

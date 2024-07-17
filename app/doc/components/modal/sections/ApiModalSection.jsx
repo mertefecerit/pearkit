@@ -51,6 +51,12 @@ function ApiModalSection() {
             default: 'default',
             description: 'Change modal size prop',
         },
+        {
+            name: 'overlayColor',
+            type: 'string',
+            default: 'black',
+            description: 'Change modal overlay color prop',
+        },
     ];
     return (
         <BuiComponentShowcaseArea
