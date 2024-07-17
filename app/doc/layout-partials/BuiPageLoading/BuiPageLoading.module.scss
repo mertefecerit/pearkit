@@ -9,7 +9,7 @@
   w-full
   h-full
   overflow-hidden;
-  [data-mode="dark"] & {
+  :global(.dark) & {
     @apply bg-gray-800;
   }
   &.pageType {

@@ -11,9 +11,9 @@ function BuiDarkModeToggle() {
 
     useEffect(() => {
         if (darkMode === 'dark') {
-            document.documentElement.setAttribute('data-mode', 'dark');
+            document.documentElement.classList.add('dark');
         } else {
-            document.documentElement.removeAttribute('data-mode');
+            document.documentElement.classList.remove('dark');
         }
         if (typeof window !== 'undefined') {
             localStorage.setItem('darkMode', darkMode);

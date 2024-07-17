@@ -34,7 +34,6 @@ $sizes: 'xs','sm','base','lg','xl';
     @apply rounded-full #{!important};
   }
 
-
   @each $color in $colors {
     &.#{$color} {
       @apply ring-#{$color}-500;

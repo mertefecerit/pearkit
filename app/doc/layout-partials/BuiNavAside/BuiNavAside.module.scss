@@ -7,7 +7,7 @@
   bg-white
   overflow-y-auto
   p-4;
-  [data-mode="dark"] & {
+  :global(.dark) & {
     @apply bg-gray-800;
   }
 }

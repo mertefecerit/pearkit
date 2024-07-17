@@ -5,7 +5,7 @@
   bg-white
   p-4
   border-b;
-  [data-mode="dark"] & {
+  :global(.dark) & {
     @apply bg-gray-800 border-gray-700;
   }
 }

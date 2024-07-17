@@ -1,37 +1,24 @@
 @tailwind base;
 @layer base {
   body {
-    @apply antialiased bg-gray-100 text-gray-700;
-    [data-mode="dark"] & {
-      @apply text-gray-300;
-    }
+    @apply antialiased bg-gray-100 text-gray-700 dark:text-gray-300;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-500;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-200 dark:bg-gray-700;
   }
 }
 @tailwind components;
 @tailwind utilities;
-@layer utilities {
-  .scrollbar-thumb {
-    @apply bg-gray-500; /* Thumb rengi */
 
-  }
-  .scrollbar-track {
-    @apply bg-gray-200; /* Track rengi */
-    [data-mode="dark"] & {
-      @apply bg-gray-700;
-    }
-  }
-}
 
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
 
-::-webkit-scrollbar-thumb {
-  @apply scrollbar-thumb;
-}
-
-::-webkit-scrollbar-track {
-  @apply scrollbar-track;
-}
 
