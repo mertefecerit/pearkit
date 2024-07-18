@@ -12,12 +12,12 @@
   & > div.showcase {
     @apply items-center w-full rounded-lg border p-4 bg-white flex justify-center flex-wrap gap-4;
     :global(.dark) & {
-      @apply bg-gray-800 border-gray-700;
+      @apply bg-gray-900 border-gray-800;
     }
   }
 
   & > div.codeArea {
-    @apply rounded-lg overflow-hidden bg-black;
+    @apply rounded-lg overflow-hidden bg-[#1e1e1e];
   }
 }
 

@@ -7,10 +7,10 @@
   flex-col
   shadow
   border
-    overflow-hidden
+  overflow-hidden
   rounded-lg;
   :global(.dark) & {
-    @apply bg-gray-800 border-gray-700 shadow-gray-900;
+    @apply bg-gray-800 border-gray-700 shadow-none;
   }
   & > div.buiCardTitleArea {
     @apply

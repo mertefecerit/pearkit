@@ -9,7 +9,7 @@
   p-4
   text-sm;
   :global(.dark) & {
-    @apply bg-gray-800;
+    @apply bg-gray-900;
   }
   & > nav {
     & > ul {

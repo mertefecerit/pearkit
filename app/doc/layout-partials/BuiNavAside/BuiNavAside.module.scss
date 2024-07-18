@@ -8,6 +8,6 @@
   overflow-y-auto
   p-4;
   :global(.dark) & {
-    @apply bg-gray-800;
+    @apply bg-gray-900;
   }
 }

@@ -6,6 +6,6 @@
   p-4
   border-b;
   :global(.dark) & {
-    @apply bg-gray-800 border-gray-700;
+    @apply bg-gray-900 border-gray-800;
   }
 }
