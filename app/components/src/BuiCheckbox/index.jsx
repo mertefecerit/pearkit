@@ -1,5 +1,5 @@
 "use client"
-import styles from './assets/scss/BuiCheckbox.module.scss';
+import styles from './BuiCheckbox.module.scss';
 import BuiCheckIcon from "./components/BuiCheckIcon";
 import PropTypes from "prop-types";
 

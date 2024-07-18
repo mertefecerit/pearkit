@@ -9,7 +9,11 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
           @apply bg-#{$color}-200 border-#{$color}-300;
         }
       }
+      :global(.dark) & {
+        @apply bg-opacity-50;
+      }
     }
+
   }
 
   & > span {
@@ -44,6 +48,14 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     @apply text-red-500 font-medium;
     & > span {
       @apply border-2 border-red-500;
+    }
+    &:hover {
+      & > span {
+        @apply bg-red-200 border-red-500;
+        :global(.dark) & {
+          @apply bg-opacity-50;
+        }
+      }
     }
   }
   &.isDisabled {
