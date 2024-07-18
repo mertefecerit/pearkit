@@ -7,7 +7,7 @@ const ButtonComponents = () => {
     return (
         <div className="flex gap-2 p-4">
             <BuiButton startIcon={<Icon icon="mdi:check"/>}>Save</BuiButton>
-            <BuiButton color="gray" startIcon={<Icon icon="mdi:times"/>}>Cancel</BuiButton>
+            <BuiButton variant="text" color="gray" startIcon={<Icon icon="mdi:times"/>}>Cancel</BuiButton>
         </div>
     )
 }
