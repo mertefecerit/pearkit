@@ -26,7 +26,7 @@ function BasicOverlaySection() {
                         <BuiInput placeholder="********" type="password" onChange={() => null}></BuiInput>
                         <div className="flex gap-2">
                             <BuiButton onClick={() => null}>Login</BuiButton>
-                            <BuiButton onClick={() => setOverlayStatus(false)} color="gray">Cancel</BuiButton>
+                            <BuiButton variant="text" onClick={() => setOverlayStatus(false)} color="gray">Cancel</BuiButton>
                         </div>
                     </div>
                 </BuiCard>

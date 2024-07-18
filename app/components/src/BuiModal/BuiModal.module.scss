@@ -1,5 +1,8 @@
 .wrapper {
   @apply bg-white rounded-xl shadow flex flex-col gap-2 z-50 overflow-hidden;
+  :global(.dark) & {
+    @apply bg-gray-800 border-gray-700;
+  }
   &.small {
     @apply sm:w-[384px] w-full;
   }
@@ -14,8 +17,14 @@
   }
   & > div.modalHeader {
     @apply text-xl text-gray-500 flex items-start justify-between font-medium p-4;
+    :global(.dark) & {
+      @apply text-gray-300;
+    }
     & > button {
       @apply hover:bg-gray-200 p-1 rounded-full;
+      :global(.dark) & {
+        @apply hover:bg-gray-900;
+      }
     }
   }
 

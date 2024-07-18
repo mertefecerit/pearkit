@@ -10,7 +10,7 @@
     overflow-hidden
   rounded-lg;
   :global(.dark) & {
-    @apply bg-gray-900/50 border-transparent shadow-none;
+    @apply bg-gray-800 border-gray-700 shadow-gray-900;
   }
   & > div.buiCardTitleArea {
     @apply

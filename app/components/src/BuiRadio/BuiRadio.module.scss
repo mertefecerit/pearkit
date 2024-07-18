@@ -7,6 +7,9 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       @each $color in $colors {
         &.#{$color}{
           @apply bg-#{$color}-200 border-#{$color}-300;
+          :global(.dark) & {
+            @apply bg-opacity-10;
+          }
         }
       }
     }
@@ -30,6 +33,9 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     }
     & > span {
       @apply bg-gray-100;
+      :global(.dark) & {
+        @apply bg-opacity-20;
+      }
     }
   }
   &.isInvalid {
