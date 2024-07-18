@@ -4,7 +4,7 @@ import {Icon} from "@iconify/react";
 
 export default function HomePage() {
     return (
-        <div className="h-dvh flex flex-col gap-8 items-center justify-center dark:bg-gray-800">
+        <div className="h-dvh flex flex-col gap-8 items-center justify-center dark:bg-gray-900">
             <BuiLogo/>
             <nav className="font-bold text-xl">
                 <Link className="inline-flex items-center gap-2 hover:text-blue-500 transition-all" href="/doc/getting-started/installation">
