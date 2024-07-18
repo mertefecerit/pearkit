@@ -6,7 +6,6 @@ import InvalidCheckboxSection from "@/app/doc/components/checkbox/sections/Inval
 import DisabledCheckboxSection from "@/app/doc/components/checkbox/sections/DisabledCheckboxSection";
 import AccessibilityCheckboxSection from "@/app/doc/components/checkbox/sections/AccessibilityCheckboxSection";
 import ApiCheckboxSection from "@/app/doc/components/checkbox/sections/ApiCheckboxSection";
-import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 export const metadata = {
     title: 'Checkbox',
@@ -14,7 +13,7 @@ export const metadata = {
 }
 function CheckboxPage(props) {
     return (
-        <div className="flex flex-col gap-8">
+        <>
             <ImportCheckboxSection />
             <BasicCheckboxSection />
             <LabelCheckboxSection />
@@ -23,11 +22,7 @@ function CheckboxPage(props) {
             <DisabledCheckboxSection />
             <AccessibilityCheckboxSection />
             <ApiCheckboxSection />
-            <BuiPaginator
-                prev={{label:'Badge', path:'/doc/components/badge'}}
-                next={{label:'Card', path:'/doc/components/card'}}
-            />
-        </div>
+        </>
     );
 }
 

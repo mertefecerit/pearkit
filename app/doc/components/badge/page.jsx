@@ -5,7 +5,6 @@ import SizesBadgeSection from "@/app/doc/components/badge/sections/SizesBadgeSec
 import PositionBadgeSection from "@/app/doc/components/badge/sections/PositionBadgeSection";
 import AccessibilityBadgeSection from "@/app/doc/components/badge/sections/AccessibilityBadgeSection";
 import ApiBadgeSection from "@/app/doc/components/badge/sections/ApiBadgeSection";
-import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 export const metadata = {
     title: 'Badge',
@@ -13,7 +12,7 @@ export const metadata = {
 }
 function BadgeComponentPage(){
     return (
-        <div className="flex flex-col gap-8">
+        <>
             <ImportBadgeSection />
             <BasicBadgeSection />
             <ColorsBadgeSection />
@@ -21,11 +20,7 @@ function BadgeComponentPage(){
             <PositionBadgeSection/>
             <AccessibilityBadgeSection />
             <ApiBadgeSection />
-            <BuiPaginator
-                next={{label:'Checkbox', path:'/doc/components/checkbox'}}
-                prev={{label:'Button', path:'/doc/components/button'}}
-            />
-        </div>
+        </>
     )
 }
 

@@ -5,7 +5,6 @@ import InvalidRadioSection from "@/app/doc/components/radio/sections/InvalidRadi
 import DisabledRadioSection from "@/app/doc/components/radio/sections/DisabledRadioSection";
 import AccessibilityRadioSection from "@/app/doc/components/radio/sections/AccessibilityRadioSection";
 import ApiRadioSection from "@/app/doc/components/radio/sections/ApiRadioSection";
-import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 export const metadata = {
     title : 'Radio',
@@ -14,7 +13,7 @@ export const metadata = {
 
 function Page() {
     return (
-        <div className="flex flex-col gap-8">
+        <>
             <ImportRadioSection />
             <BasicRadioSection />
             <ColorsRadioSection />
@@ -22,11 +21,7 @@ function Page() {
             <DisabledRadioSection />
             <AccessibilityRadioSection />
             <ApiRadioSection />
-            <BuiPaginator
-                prev={{label:'Input', path:'/doc/components/input'}}
-                next={{label:'Overlay', path:'/doc/components/overlay'}}
-            />
-        </div>
+        </>
     );
 }
 

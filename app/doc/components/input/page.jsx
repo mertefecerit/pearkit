@@ -13,7 +13,6 @@ import LoadingInputSection from "@/app/doc/components/input/sections/LoadingInpu
 import DisabledInputSection from "@/app/doc/components/input/sections/DisabledInputSection";
 import IconInputSection from "@/app/doc/components/input/sections/IconInputSection";
 import PasswordRevealInputSection from "@/app/doc/components/input/sections/PasswordRevealInputSection";
-import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
 export const metadata = {
     title: 'Input',
@@ -21,7 +20,7 @@ export const metadata = {
 }
 function InputComponentPage(props) {
     return (
-        <div className="flex flex-col gap-8">
+        <>
             <ImportInputSection/>
             <BasicInputSection/>
             <VariantsInputSection/>
@@ -37,11 +36,7 @@ function InputComponentPage(props) {
             <PasswordRevealInputSection/>
             <AccessibilityInputSection/>
             <ApiInputSection/>
-                <BuiPaginator
-                    prev={{label:'Card', path:'/doc/components/card'}}
-                    next={{label:'Radio', path:'/doc/components/radio'}}
-                />
-        </div>
+        </>
     );
 }
 

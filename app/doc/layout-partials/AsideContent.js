@@ -17,6 +17,19 @@ export default function AsideContent() {
             label: 'Components',
             children: [
                 {
+                    path: '/doc/components/badge',
+                    label: 'Badge',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#colors', label: 'Colors'},
+                        {path: '#sizes', label: 'Sizes'},
+                        {path: '#position', label: 'Position'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
+                {
                     path: '/doc/components/button',
                     label: 'Button',
                     children: [
@@ -37,14 +50,12 @@ export default function AsideContent() {
                     ]
                 },
                 {
-                    path: '/doc/components/badge',
-                    label: 'Badge',
+                    path: '/doc/components/card',
+                    label: 'Card',
                     children: [
                         {path: '#import', label: 'Import'},
                         {path: '#basic', label: 'Basic'},
-                        {path: '#colors', label: 'Colors'},
-                        {path: '#sizes', label: 'Sizes'},
-                        {path: '#position', label: 'Position'},
+                        {path: '#advanced', label: 'Advanced'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
@@ -59,17 +70,6 @@ export default function AsideContent() {
                         {path: '#colors', label: 'Colors'},
                         {path: '#invalid', label: 'Invalid'},
                         {path: '#disabled', label: 'Disabled'},
-                        {path: '#accessibility', label: 'Accessibility'},
-                        {path: '#api', label: 'Api'},
-                    ]
-                },
-                {
-                    path: '/doc/components/card',
-                    label: 'Card',
-                    children: [
-                        {path: '#import', label: 'Import'},
-                        {path: '#basic', label: 'Basic'},
-                        {path: '#advanced', label: 'Advanced'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
@@ -96,14 +96,11 @@ export default function AsideContent() {
                     ]
                 },
                 {
-                    path: '/doc/components/radio',
-                    label: 'Radio',
+                    path: '/doc/components/modal',
+                    label: 'Modal',
                     children: [
                         {path: '#import', label: 'Import'},
                         {path: '#basic', label: 'Basic'},
-                        {path: '#colors', label: 'Colors'},
-                        {path: '#invalid', label: 'Invalid'},
-                        {path: '#disabled', label: 'Disabled'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
@@ -120,11 +117,14 @@ export default function AsideContent() {
                     ]
                 },
                 {
-                    path: '/doc/components/modal',
-                    label: 'Modal',
+                    path: '/doc/components/radio',
+                    label: 'Radio',
                     children: [
                         {path: '#import', label: 'Import'},
                         {path: '#basic', label: 'Basic'},
+                        {path: '#colors', label: 'Colors'},
+                        {path: '#invalid', label: 'Invalid'},
+                        {path: '#disabled', label: 'Disabled'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
