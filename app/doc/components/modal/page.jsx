@@ -14,6 +14,7 @@ function ModalPage() {
             <ApiModalSection />
             <BuiPaginator
                 prev={{label:'Overlay', path:'/doc/components/overlay'}}
+                next={{label:'Switch', path:'/doc/components/switch'}}
             />
         </div>
     );

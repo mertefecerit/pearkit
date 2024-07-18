@@ -47,7 +47,7 @@ function BuiSearch({status, close}) {
                 />
                 {
                     results.length > 0 &&
-                    <div className="border p-4 rounded-xl bg-white flex flex-col gap-4">
+                    <div className="border p-4 rounded-xl bg-white flex flex-col gap-4 dark:bg-gray-800 dark:border-gray-700">
                         {
                             results.map((mainItem,i) => (
                                 <div key={i}>

@@ -1,0 +1,75 @@
+@import "../../../assets/scss/colors";
+
+.wrapper {
+  @apply w-fit;
+  & > div {
+    @apply
+    relative
+    w-12
+    h-7
+    cursor-pointer
+    shadow-inner
+    bg-gray-200
+    transition-all
+    rounded-full;
+    :global(.dark) & {
+      @apply bg-gray-700;
+    }
+
+    & > span {
+      @apply absolute top-1 left-1 rounded-full h-5 w-5 bg-white shrink-0 transition-transform duration-300 ease-in-out;
+      transition-timing-function: cubic-bezier(.65, -0.58, .27, 1.55);
+
+      :global(.dark) & {
+        @apply bg-gray-500;
+      }
+    }
+  }
+
+  & > input[type="checkbox"] {
+    @apply h-0 w-0 absolute outline-none;
+    &:focus-visible + div {
+      @apply ring-2 ring-offset-2;
+      @each $color, $rgb in $colors {
+        @if $color != 'black' and $color != 'white' {
+          &.#{$color} {
+            @apply ring-#{$color}-500;
+          }
+        }
+      }
+      :global(.dark) & {
+        @apply ring-offset-gray-800;
+      }
+    }
+    &:not(:disabled) + div {
+      @apply hover:brightness-[97%];
+      :global(.dark) & {
+        @apply hover:brightness-90;
+      }
+    }
+
+    &:disabled + div {
+      @apply opacity-50 cursor-not-allowed;
+    }
+
+    &:checked + div {
+      @each $color, $rgb in $colors {
+        @if $color != 'black' and $color != 'white' {
+          &.#{$color} {
+            @apply bg-#{$color}-500;
+          }
+        }
+      }
+
+      & > span {
+        @apply translate-x-[100%];
+        :global(.dark) & {
+          @apply bg-gray-700;
+        }
+      }
+    }
+  }
+
+}
+
+
