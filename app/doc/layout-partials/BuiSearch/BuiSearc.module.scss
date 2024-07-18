@@ -1,0 +1,20 @@
+.wrapper {
+  @apply flex flex-col gap-4;
+  & > div.searchResultContent {
+    @apply border p-4 rounded-xl bg-white flex flex-col gap-4 max-h-[500px] overflow-y-auto;
+    :global(.dark) & {
+      @apply bg-gray-800 border-gray-700
+    }
+    & > div {
+      & > a {
+        @apply text-xl font-bold hover:text-blue-500;
+      }
+      & > ul {
+        @apply pl-4;
+        & > li {
+          @apply hover:text-blue-500;
+        }
+      }
+    }
+  }
+}

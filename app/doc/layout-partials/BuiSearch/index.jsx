@@ -6,6 +6,7 @@ import {useEffect, useMemo, useState} from "react";
 import Fuse from "fuse.js";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
+import styles from "./BuiSearc.module.scss";
 
 function BuiSearch({status, close}) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -39,26 +40,27 @@ function BuiSearch({status, close}) {
 
     return (
         <BuiModal status={status} modalTitle="Search Document" close={closeHandler}>
-            <div className="flex flex-col gap-4">
+            <div className={styles.wrapper}>
                 <BuiInput
+                    focus={true}
                     placeholder="Modal | Button | Badge ..."
                     icon={<Icon icon="mdi:search" width={20}/>}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
                 {
                     results.length > 0 &&
-                    <div className="border p-4 rounded-xl bg-white flex flex-col gap-4 dark:bg-gray-800 dark:border-gray-700">
+                    <div className={styles.searchResultContent}>
                         {
                             results.map((mainItem,i) => (
                                 <div key={i}>
-                                    <Link onClick={closeHandler} className="text-xl font-bold hover:text-blue-500" href={mainItem.path}>
+                                    <Link onClick={closeHandler} href={mainItem.path}>
                                         {mainItem.label}
                                     </Link>
-                                    <ul className="pl-4">
+                                    <ul>
                                         {
                                             mainItem.children.map((subItem, i) => (
                                                 <li key={i}>
-                                                    <Link className="hover:text-blue-500" onClick={closeHandler} href={mainItem.path + subItem.path}>{subItem.label}</Link>
+                                                    <Link onClick={closeHandler} href={mainItem.path + subItem.path}>{subItem.label}</Link>
                                                 </li>
                                             ))
                                         }
