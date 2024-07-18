@@ -6,6 +6,11 @@ import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 import ColorsSwitchSection from "@/app/doc/components/switch/sections/ColorsSwitchSection";
 import DisabledSwitchSection from "@/app/doc/components/switch/sections/DisabledSwitchSection";
 
+export const metadata = {
+    title : 'Switch',
+    description : 'Standard switch component for form components',
+}
+
 function SwitchPage(props) {
 
     return (

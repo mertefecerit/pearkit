@@ -15,6 +15,10 @@ import IconInputSection from "@/app/doc/components/input/sections/IconInputSecti
 import PasswordRevealInputSection from "@/app/doc/components/input/sections/PasswordRevealInputSection";
 import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
+export const metadata = {
+    title: 'Input',
+    description: 'It is the standard input element that you can use in forms. Gets all form attributes.'
+}
 function InputComponentPage(props) {
     return (
         <div className="flex flex-col gap-8">

@@ -7,6 +7,11 @@ import AccessibilityRadioSection from "@/app/doc/components/radio/sections/Acces
 import ApiRadioSection from "@/app/doc/components/radio/sections/ApiRadioSection";
 import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 
+export const metadata = {
+    title : 'Radio',
+    description : 'Just as it receives all input attributes, you can also send a label prop. Here is a simple usage.',
+}
+
 function Page() {
     return (
         <div className="flex flex-col gap-8">

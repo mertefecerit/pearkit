@@ -6,7 +6,7 @@ import ColorsOverlaySection from "@/app/doc/components/overlay/sections/ColorsOv
 import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
 export const metadata = {
     title : 'Overlay',
-    description : 'Overlay description',
+    description : 'A standard overlay usage. Whether you use our BuiCard component or do it yourself, it will answer all of them.',
 }
 function OverlayPage(props) {
     return (
