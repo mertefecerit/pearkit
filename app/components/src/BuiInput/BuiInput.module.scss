@@ -20,25 +20,39 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     transition-all
     flex
     gap-3
+    bg-white
     items-center
     px-4
     w-full
     text-gray-500;
+    :global(.dark) & {
+      @apply bg-gray-700 text-gray-300;
+    }
 
     &.outlined {
       @apply
       focus-within:ring-2
       focus-within:border-transparent
       rounded-lg
+      border-gray-200
       border;
+      :global(.dark) & {
+        @apply border-gray-500 focus-within:border-transparent;
+      }
     }
 
     &.underlined {
       @apply border-b-2;
+      :global(.dark) & {
+        @apply border-gray-500;
+      }
     }
 
     &.filled {
       @apply border-b-2 bg-gray-100;
+      :global(.dark) & {
+        @apply bg-gray-800 border-gray-500;
+      }
     }
 
     @each $color in $colors {
@@ -52,6 +66,9 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
         }
         &.filled {
           @apply focus-within:bg-gray-200;
+          :global(.dark) & {
+            @apply focus-within:bg-gray-900;
+          }
         }
       }
     }
@@ -61,6 +78,9 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     }
     &.isDisabled {
       @apply bg-gray-200 cursor-not-allowed;
+      :global(.dark) & {
+        @apply bg-gray-500;
+      }
     }
     & > div.passwordRevealIcon {
       @apply cursor-pointer hover:brightness-90;
