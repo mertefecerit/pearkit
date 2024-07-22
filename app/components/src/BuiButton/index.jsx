@@ -2,7 +2,7 @@
 import styles from "./BuiButton.module.scss";
 import {motion} from "framer-motion";
 import PropTypes from "prop-types";
-import LoadingIcon from "./LoadingIcon";
+import LoadingIcon from "../components/icons/LoadingIcon";
 
 function BuiButton(
     {
@@ -29,7 +29,7 @@ function BuiButton(
 ) {
     const content = (
         <>
-            {isLoading && <LoadingIcon/>}
+            {isLoading && <LoadingIcon size="1.5em"/>}
             {!isLoading && startIcon}
             {children}
             {!isLoading && endIcon}

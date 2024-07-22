@@ -3,7 +3,7 @@ import styles from './BuiModal.module.scss';
 import BuiOverlay from "../BuiOverlay";
 import {motion,} from "framer-motion";
 import PropTypes from "prop-types";
-import BuiModalCloseIcon from "./components/BuiModalCloseIcon";
+import CloseIcon from "../components/icons/CloseIcon";
 import ReactDOM from "react-dom";
 import React, {useEffect, useState} from "react";
 
@@ -48,7 +48,7 @@ function BuiModal(
                     ??
                     <div className={styles.modalHeader}>
                         <span>{modalTitle}</span>
-                        <button onClick={closeHandler}><BuiModalCloseIcon/></button>
+                        <button onClick={closeHandler}><CloseIcon size="1em"/></button>
                     </div>
                 }
 

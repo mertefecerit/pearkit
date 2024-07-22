@@ -1,6 +1,6 @@
 "use client"
 import styles from './BuiCheckbox.module.scss';
-import BuiCheckIcon from "./components/BuiCheckIcon";
+import CheckIcon from "../components/icons/CheckIcon"
 import PropTypes from "prop-types";
 
 function BuiCheckbox({
@@ -26,7 +26,7 @@ function BuiCheckbox({
             />
             <span className={`${styles[color]}`}>
                 {
-                    checked && <BuiCheckIcon/>
+                    checked && <CheckIcon size="1em"/>
                 }
             </span>
             {label}

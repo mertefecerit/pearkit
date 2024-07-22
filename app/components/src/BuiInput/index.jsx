@@ -1,11 +1,11 @@
 "use client"
 import PropTypes from 'prop-types';
 import styles from "./BuiInput.module.scss";
-import LoadingIcon from "./components/LoadingIcon";
+import LoadingIcon from "../components/icons/LoadingIcon";
 import BuiInputErrors from "./components/BuiInputErrors";
-import EyeIcon from "./components/EyeIcon";
+import EyeIcon from "../components/icons/EyeIcon";
 import {useState} from "react";
-import EyeOffIcon from "./components/EyeOffIcon";
+import EyeOffIcon from "../components/icons/EyeOffIcon";
 
 function BuiInput(
     {
