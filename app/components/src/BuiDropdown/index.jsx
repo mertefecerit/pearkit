@@ -6,7 +6,7 @@ import {ChevronDownIcon, CloseIcon} from "../components/icons";
 import {AnimatePresence, motion} from "framer-motion";
 import {useEffect, useRef, useState} from "react";
 import PropTypes from "prop-types";
-import {useClickOutside} from "@/app/components/src/hooks";
+import {useClickOutside} from "../hooks";
 
 function BuiDropdown(
     {
