@@ -1,0 +1,92 @@
+$colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose';
+
+.wrapper {
+  @apply relative outline-none w-full;
+  &:focus {
+    & > div.placeholder {
+      @apply
+      ring-2
+      ring-offset-2;
+      :global(.dark) & {
+        @apply ring-offset-gray-900;
+      }
+      @each $color, $rgb in $colors {
+        &.#{$color} {
+          @apply ring-#{$color}-500;
+        }
+      }
+    }
+  }
+
+  & > select {
+    @apply w-0 h-0 absolute;
+  }
+
+  &.isOpen {
+    & > div.placeholder {
+      @apply border-b-0 rounded-b-none;
+    }
+
+    & > ul {
+      @apply rounded-t-none;
+    }
+  }
+
+  & > div.placeholder {
+    @apply
+    select-none
+    flex
+    items-center
+    justify-between
+    gap-2
+    w-full
+    border
+    rounded-lg
+    bg-white
+    h-10
+    px-4
+    py-2
+    cursor-pointer
+    transition-all;
+    :global(.dark) & {
+      @apply bg-gray-800 border-gray-700;
+    }
+
+    & > div.closeIconWrapper {
+      @apply p-0.5 hover:bg-gray-100 rounded-full cursor-pointer;
+      :global(.dark) & {
+        @apply hover:bg-gray-700;
+      }
+    }
+
+  }
+
+  & > ul {
+    @apply absolute top-[100%] bg-white rounded-lg border w-full z-40;
+    :global(.dark) & {
+      @apply bg-gray-800 border-gray-700;
+      & > li:hover {
+        @apply bg-gray-700
+      }
+    }
+    & > li {
+      @apply px-4 py-2 cursor-pointer;
+      @each $color in $colors {
+        &.#{$color} {
+          @apply hover:bg-#{$color}-100;
+          :global(.dark) & {
+            @apply hover:bg-#{$color}-500/20;
+          }
+        }
+        &.hg-#{$color} {
+          @apply bg-#{$color}-100;
+          :global(.dark) & {
+            @apply bg-#{$color}-500/20;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -9,3 +9,4 @@ export {default as BuiRadio} from "./BuiRadio";
 export {default as BuiOverlay} from "./BuiOverlay";
 export {default as BuiModal} from "./BuiModal";
 export {default as BuiSwitch} from "./BuiSwitch";
+export {default as BuiDropdown} from "./BuiDropdown";
