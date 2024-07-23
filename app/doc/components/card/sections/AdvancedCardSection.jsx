@@ -1,5 +1,5 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiButton, BuiCard, BuiCode} from "@/app/components/src";
+import {BuiButton, BuiCard, BuiTag} from "@/app/components/src";
 import {Icon} from "@iconify/react";
 import Image from "next/image";
 
@@ -31,7 +31,7 @@ function AdvancedCardSection() {
         <BuiComponentShowcaseArea
             anchor="advanced"
             title="Advanced"
-            desc={<>Card content can be customized further with <BuiCode>subTitle</BuiCode>, <BuiCode>header</BuiCode> and <BuiCode>footer</BuiCode> properties.</>}
+            desc={<>Card content can be customized further with <BuiTag>subTitle</BuiTag>, <BuiTag>header</BuiTag> and <BuiTag>footer</BuiTag> properties.</>}
             codeBlock={codeBlock}
         >
             <BuiCard

@@ -1,6 +1,6 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import BuiCheckbox from "@/app/components/src/BuiCheckbox";
 import {useState} from "react";
 
@@ -13,7 +13,7 @@ function BasicCheckboxSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Checkbox is used as a controlled input with <BuiCode>checked</BuiCode> and <BuiCode>onChange</BuiCode> properties.</>}
+            desc={<>Checkbox is used as a controlled input with <BuiTag>checked</BuiTag> and <BuiTag>onChange</BuiTag> properties.</>}
             codeBlock={codeBlock}
         >
             <BuiCheckbox checked={checked} onChange={() => setChecked(!checked)} />

@@ -152,6 +152,19 @@ export default function AsideContent() {
                         {path: '#api', label: 'Api'},
                     ]
                 },
+                {
+                    path: '/doc/components/tag',
+                    label: 'Tag',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#colors', label: 'Colors'},
+                        {path: '#rounded', label: 'Rounded'},
+                        {path: '#icon', label: 'Icon'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
             ]
         },
     ]

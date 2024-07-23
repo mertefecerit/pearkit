@@ -1,7 +1,7 @@
 "use client"
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiModal, BuiCode, BuiButton} from "@/app/components/src";
+import {BuiModal, BuiTag, BuiButton} from "@/app/components/src";
 import {useState} from "react";
 import Link from "next/link";
 
@@ -21,7 +21,7 @@ function BasicModalSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>A simple modal component wrapped into an <BuiCode><Link href="/doc/components/overlay" target="_blank">BuiOverlay</Link></BuiCode> component.</>}
+            desc={<>A simple modal component wrapped into an <BuiTag><Link href="/doc/components/overlay" target="_blank">BuiOverlay</Link></BuiTag> component.</>}
             codeBlock={codeBlock}
         >
             <BuiButton onClick={() => setModalStatus(true)}>Open Basic Modal</BuiButton>

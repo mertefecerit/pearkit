@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/src/BuiButton";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 
 function LinkButtonSection(props) {
     const codeBlock = `<BuiButton href="https://www.google.com">Google</BuiButton>
@@ -12,7 +12,7 @@ function LinkButtonSection(props) {
         <BuiComponentShowcaseArea
             anchor="link"
             title="Link"
-            desc={<>If you want to use it as a button link, just pass the <BuiCode>href</BuiCode> value as the prop. Also, the target property is <BuiCode>_target</BuiCode> by default, this value can also be sent as a prop.</>}
+            desc={<>If you want to use it as a button link, just pass the <BuiTag>href</BuiTag> value as the prop. Also, the target property is <BuiTag>_target</BuiTag> by default, this value can also be sent as a prop.</>}
             codeBlock={codeBlock}
         >
             <BuiButton href="https://www.google.com">Google</BuiButton>

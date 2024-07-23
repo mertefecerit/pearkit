@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/src/BuiButton";
 import {Icon} from "@iconify/react";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 
 function SizesButtonSection(props) {
     const codeBlock = `<BuiButton size="xs" startIcon={<Icon icon="mdi:check"/>}>Button</BuiButton>
@@ -14,7 +14,7 @@ function SizesButtonSection(props) {
         <BuiComponentShowcaseArea
             anchor="sizes"
             title="Sizes"
-            desc={<>5 types of size units are used. The <BuiCode>base</BuiCode> one is assigned by default. The other four are <BuiCode>xs</BuiCode>, <BuiCode>sm</BuiCode>, <BuiCode>lg</BuiCode> and <BuiCode>xl</BuiCode>.</>}
+            desc={<>5 types of size units are used. The <BuiTag>base</BuiTag> one is assigned by default. The other four are <BuiTag>xs</BuiTag>, <BuiTag>sm</BuiTag>, <BuiTag>lg</BuiTag> and <BuiTag>xl</BuiTag>.</>}
             codeBlock={codeBlock}
         >
             <BuiButton size="xs" startIcon={<Icon icon="mdi:check"/>}>Button</BuiButton>

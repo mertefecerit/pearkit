@@ -1,7 +1,7 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import {useState} from "react";
-import {BuiCode, BuiRadio} from "@/app/components/src";
+import {BuiTag, BuiRadio} from "@/app/components/src";
 
 function BasicRadioSection() {
     const [option,setOption] = useState('option1');
@@ -26,7 +26,7 @@ function BasicRadioSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Just as it receives all input attributes, you can also send a <BuiCode>label</BuiCode> prop. Here is a simple usage.</>}
+            desc={<>Just as it receives all input attributes, you can also send a <BuiTag>label</BuiTag> prop. Here is a simple usage.</>}
             codeBlock={codeBlock}
         >
             <BuiRadio

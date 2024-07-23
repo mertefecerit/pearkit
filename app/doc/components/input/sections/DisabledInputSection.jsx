@@ -2,7 +2,7 @@
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiInput from "@/app/components/src/BuiInput";
-import {BuiCode} from "@/app/components/src";
+import {BuiTag} from "@/app/components/src";
 
 function DisabledInputSection() {
     const codeBlock = `<BuiInput disabled/>`
@@ -10,7 +10,7 @@ function DisabledInputSection() {
         <BuiComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>For the <BuiCode>disabled</BuiCode> property, it is sufficient to provide the property itself directly.</>}
+            desc={<>For the <BuiTag>disabled</BuiTag> property, it is sufficient to provide the property itself directly.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

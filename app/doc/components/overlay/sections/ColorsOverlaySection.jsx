@@ -2,7 +2,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import {useState} from "react";
 import {BuiButton, BuiCard, BuiOverlay, BuiInput} from "@/app/components/src";
-import BuiCode from "../../../../components/src/BuiCode";
+import BuiTag from "../../../../components/src/BuiTag";
 
 function ColorsOverlaySection() {
     const [overlayStatus,setOverlayStatus] = useState(false);
@@ -18,7 +18,7 @@ function ColorsOverlaySection() {
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiCode>sky</BuiCode> <BuiCode>red</BuiCode> <BuiCode>indigo</BuiCode></>}
+                as props. For example : <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag></>}
             codeBlock={codeBlock}
         >
             <BuiButton color="yellow" onClick={() => setOverlay('yellow')}>Open Yellow Overlay</BuiButton>

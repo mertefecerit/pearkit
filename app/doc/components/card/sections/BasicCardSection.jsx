@@ -1,5 +1,5 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiCard, BuiCode} from "@/app/components/src";
+import {BuiCard, BuiTag} from "@/app/components/src";
 
 function BasicCardSection() {
     const codeBlock = `<BuiCard title="Simple Card">
@@ -9,7 +9,7 @@ function BasicCardSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>A simple Card is created with a <BuiCode>title</BuiCode> property along with the content as children.</>}
+            desc={<>A simple Card is created with a <BuiTag>title</BuiTag> property along with the content as children.</>}
             codeBlock={codeBlock}
         >
             <BuiCard title="Simple Card">

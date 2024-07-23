@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/src/BuiButton";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 
 function VariantButtonSection(props) {
     const codeBlock = `<BuiButton>Button</BuiButton>
@@ -12,7 +12,7 @@ function VariantButtonSection(props) {
         <BuiComponentShowcaseArea
             anchor="variants"
             title="Variants"
-            desc={<>There are 3 types of variants for buttons. <BuiCode>text</BuiCode>, <BuiCode>outlined</BuiCode> and <BuiCode>basic</BuiCode>, <BuiCode>basic</BuiCode> is selected by default.</>}
+            desc={<>There are 3 types of variants for buttons. <BuiTag>text</BuiTag>, <BuiTag>outlined</BuiTag> and <BuiTag>basic</BuiTag>, <BuiTag>basic</BuiTag> is selected by default.</>}
             codeBlock={codeBlock}
         >
             <BuiButton>Button</BuiButton>

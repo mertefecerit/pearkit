@@ -2,7 +2,7 @@
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiInput from "@/app/components/src/BuiInput";
-import {BuiCode} from "@/app/components/src";
+import {BuiTag} from "@/app/components/src";
 
 function VariantsInputSection() {
     const codeBlock = `<BuiInput />
@@ -12,7 +12,7 @@ function VariantsInputSection() {
         <BuiComponentShowcaseArea
             anchor="variants"
             title="Variant"
-            desc={<>We created 3 variants, thinking that you can make different designs. <BuiCode>outlined</BuiCode> is used by default. The other two are <BuiCode>underlined</BuiCode> and <BuiCode>filled</BuiCode> options.</>}
+            desc={<>We created 3 variants, thinking that you can make different designs. <BuiTag>outlined</BuiTag> is used by default. The other two are <BuiTag>underlined</BuiTag> and <BuiTag>filled</BuiTag> options.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

@@ -1,6 +1,6 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import BuiCheckbox from "@/app/components/src/BuiCheckbox";
 import {useState} from "react";
 
@@ -13,7 +13,7 @@ function LabelCheckboxSection() {
         <BuiComponentShowcaseArea
             anchor="label"
             title="Label"
-            desc={<>You can add it to the text by sending the <BuiCode>label</BuiCode> prop.</>}
+            desc={<>You can add it to the text by sending the <BuiTag>label</BuiTag> prop.</>}
             codeBlock={codeBlock}
         >
             <BuiCheckbox label="Checkbox 1" checked={checked} onChange={() => setChecked(!checked)} />

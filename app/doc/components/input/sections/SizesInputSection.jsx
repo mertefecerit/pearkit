@@ -2,7 +2,7 @@
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiInput from "@/app/components/src/BuiInput";
-import {BuiCode} from "@/app/components/src";
+import {BuiTag} from "@/app/components/src";
 
 function SizesInputSection() {
     const codeBlock = `<BuiInput size="sm"/>
@@ -13,8 +13,8 @@ function SizesInputSection() {
             anchor="sizes"
             title="Sizes"
             desc={<>The input component comes with 3 different size options. These
-                are <BuiCode>sm</BuiCode>, <BuiCode>base</BuiCode> and <BuiCode>lg</BuiCode>. By
-                default <BuiCode>base</BuiCode> works.</>}
+                are <BuiTag>sm</BuiTag>, <BuiTag>base</BuiTag> and <BuiTag>lg</BuiTag>. By
+                default <BuiTag>base</BuiTag> works.</>}
             codeBlock={codeBlock}
         >
             <div className="flex gap-2 flex-wrap w-full justify-center">

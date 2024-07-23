@@ -1,5 +1,5 @@
 import BuiBadge from "@/app/components/src/BuiBadge";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function BasicBadgeSection(){
@@ -8,7 +8,7 @@ function BasicBadgeSection(){
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Text to display is defined with the <BuiCode>value</BuiCode> property.</>}
+            desc={<>Text to display is defined with the <BuiTag>value</BuiTag> property.</>}
             codeBlock={codeBlock}
         >
             <BuiBadge value="1"/>

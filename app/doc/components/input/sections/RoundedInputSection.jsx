@@ -2,7 +2,7 @@
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiInput from "@/app/components/src/BuiInput";
-import {BuiCode} from "@/app/components/src";
+import {BuiTag} from "@/app/components/src";
 
 function RoundedInputSection() {
     const codeBlock = `<BuiInput rounded />
@@ -12,7 +12,7 @@ function RoundedInputSection() {
         <BuiComponentShowcaseArea
             anchor="rounded"
             title="Rounded"
-            desc={<>For fully <BuiCode>rounded</BuiCode> edges, you can use the rounded property.</>}
+            desc={<>For fully <BuiTag>rounded</BuiTag> edges, you can use the rounded property.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

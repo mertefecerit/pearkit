@@ -1,13 +1,13 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 
 function AccessibilityCheckboxSection() {
     return (
         <BuiComponentShowcaseArea
             anchor="accessibility"
             title="Accessibility (Beta)"
-            desc={<>Aria-checked and aria-label are provided for the screen reader. It can be changed by giving it as <BuiCode>aria-label</BuiCode> prop. If not given, the <BuiCode>label</BuiCode> prop is placed instead. You should use <BuiCode>aria-label</BuiCode> for options where you do not give a label.</>}
+            desc={<>Aria-checked and aria-label are provided for the screen reader. It can be changed by giving it as <BuiTag>aria-label</BuiTag> prop. If not given, the <BuiTag>label</BuiTag> prop is placed instead. You should use <BuiTag>aria-label</BuiTag> for options where you do not give a label.</>}
             codeBlock={`<BuiCheckbox aria-label="Checbox 1"/>`}
         />
     );

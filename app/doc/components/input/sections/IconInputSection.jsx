@@ -2,7 +2,7 @@
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiInput from "@/app/components/src/BuiInput";
-import {BuiCode} from "@/app/components/src";
+import {BuiTag} from "@/app/components/src";
 import {Icon} from "@iconify/react";
 
 function IconInputSection() {
@@ -11,7 +11,7 @@ function IconInputSection() {
         <BuiComponentShowcaseArea
             anchor="icon"
             title="Icon"
-            desc={<>Is it possible without an <BuiCode>icon</BuiCode> ? Of course not :) Here is how to use it with an <BuiCode>icon</BuiCode>.</>}
+            desc={<>Is it possible without an <BuiTag>icon</BuiTag> ? Of course not :) Here is how to use it with an <BuiTag>icon</BuiTag>.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

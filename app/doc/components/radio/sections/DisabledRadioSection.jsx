@@ -1,6 +1,6 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiCode, BuiRadio} from "@/app/components/src";
+import {BuiTag, BuiRadio} from "@/app/components/src";
 
 function DisabledRadioSection() {
     const codeBlock = `<BuiRadio disabled={true} />
@@ -11,7 +11,7 @@ function DisabledRadioSection() {
         <BuiComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>We can manage this state by sending the standard <BuiCode>disabled</BuiCode> property.</>}
+            desc={<>We can manage this state by sending the standard <BuiTag>disabled</BuiTag> property.</>}
             codeBlock={codeBlock}
         >
             <BuiRadio

@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/src/BuiButton";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import {Icon} from "@iconify/react";
 
 function IconButtonSection(props) {
@@ -23,7 +23,7 @@ function IconButtonSection(props) {
             title="Icon"
             desc={<>For more flexible use, you can send your icons as components.You can put icons at the beginning and
                 end of the button content. For this you use
-                the <BuiCode>startIcon</BuiCode> and <BuiCode>endIcon</BuiCode> props. If you do not submit content,
+                the <BuiTag>startIcon</BuiTag> and <BuiTag>endIcon</BuiTag> props. If you do not submit content,
                 only your icon will appear.</>}
             codeBlock={codeBlock}
         >

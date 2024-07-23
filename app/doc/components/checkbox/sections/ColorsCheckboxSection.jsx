@@ -1,6 +1,6 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import BuiCheckbox from "@/app/components/src/BuiCheckbox";
 import {useState} from "react";
 
@@ -20,7 +20,7 @@ function ColorsCheckboxSection() {
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiCode>sky</BuiCode> <BuiCode>red</BuiCode> <BuiCode>indigo</BuiCode></>}
+                as props. For example : <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag></>}
             codeBlock={codeBlock}
         >
             <BuiCheckbox checked={ch1} onChange={() => setCh1(!ch1)} />

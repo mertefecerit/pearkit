@@ -2,7 +2,7 @@
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiInput from "@/app/components/src/BuiInput";
-import {BuiCode} from "@/app/components/src";
+import {BuiTag} from "@/app/components/src";
 
 function LoadingInputSection() {
     const codeBlock = `<BuiInput isLoading={true}/>`
@@ -10,7 +10,7 @@ function LoadingInputSection() {
         <BuiComponentShowcaseArea
             anchor="loading"
             title="Loading"
-            desc={<>Considering that you are using server-side validation for the input component, we thought you would need an <BuiCode>isLoading</BuiCode> feature. :)</>}
+            desc={<>Considering that you are using server-side validation for the input component, we thought you would need an <BuiTag>isLoading</BuiTag> feature. :)</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

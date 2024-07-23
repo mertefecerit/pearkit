@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiButton from "@/app/components/src/BuiButton";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import {Icon} from "@iconify/react";
 
 function ColorButtonSection(props) {
@@ -14,7 +14,7 @@ function ColorButtonSection(props) {
             anchor="color"
             title="Color"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. <BuiCode>sky</BuiCode> <BuiCode>red</BuiCode> <BuiCode>indigo</BuiCode></>}
+                as props. <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag></>}
             codeBlock={codeBlock}
         >
             <div className="flex flex-col gap-4">

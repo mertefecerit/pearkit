@@ -1,5 +1,5 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import BuiButtonGroup from "@/app/components/src/BuiButtonGroup";
 import BuiButton from "@/app/components/src/BuiButton";
 
@@ -24,7 +24,7 @@ function ButtonGroupSection(){
         <BuiComponentShowcaseArea
             anchor="button-group"
             title="Button Group"
-            desc={<>The buttons can be grouped by wrapping them with the <BuiCode>BuiButtonGroup</BuiCode> component. They need to be immediate children. All the standard button variants are supported.</>}
+            desc={<>The buttons can be grouped by wrapping them with the <BuiTag>BuiButtonGroup</BuiTag> component. They need to be immediate children. All the standard button variants are supported.</>}
             codeBlock={codeBlock}
         >
             <div className="flex flex-col gap-4">

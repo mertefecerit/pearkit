@@ -1,7 +1,7 @@
 "use client";
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiCode, BuiDropdown} from "@/app/components/src";
+import {BuiTag, BuiDropdown} from "@/app/components/src";
 import {useState} from "react";
 
 function ColorsDropdownSection() {
@@ -21,7 +21,7 @@ function ColorsDropdownSection() {
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiCode>sky</BuiCode> <BuiCode>red</BuiCode> <BuiCode>indigo</BuiCode> etc.</>}
+                as props. For example : <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag> etc.</>}
             codeBlock={codeBlock}
         >
             <BuiDropdown

@@ -1,7 +1,7 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import {useState} from "react";
-import {BuiCode, BuiRadio} from "@/app/components/src";
+import {BuiTag, BuiRadio} from "@/app/components/src";
 
 function ColorsRadioSection() {
     const [optionColor,setOptionColor] = useState('indigo');
@@ -11,7 +11,7 @@ function ColorsRadioSection() {
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiCode>sky</BuiCode> <BuiCode>red</BuiCode> <BuiCode>indigo</BuiCode> etc.</>}
+                as props. For example : <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag> etc.</>}
             codeBlock={codeBlock}
         >
             <BuiRadio

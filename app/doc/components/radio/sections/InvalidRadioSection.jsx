@@ -1,6 +1,6 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiCode, BuiRadio} from "@/app/components/src";
+import {BuiTag, BuiRadio} from "@/app/components/src";
 
 function InvalidRadioSection() {
     const codeBlock = `<BuiRadio isInvalid={true}/>
@@ -11,7 +11,7 @@ function InvalidRadioSection() {
         <BuiComponentShowcaseArea
             anchor="invalid"
             title="Invalid"
-            desc={<>We can manage this state by sending the standard <BuiCode>isInvalid</BuiCode> property.</>}
+            desc={<>We can manage this state by sending the standard <BuiTag>isInvalid</BuiTag> property.</>}
             codeBlock={codeBlock}
         >
             <BuiRadio

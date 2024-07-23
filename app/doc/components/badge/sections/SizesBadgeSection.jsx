@@ -1,5 +1,5 @@
 import BuiBadge from "@/app/components/src/BuiBadge";
-import BuiCode from "@/app/components/src/BuiCode";
+import BuiTag from "@/app/components/src/BuiTag";
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function SizesBadgeSection(){
@@ -11,7 +11,7 @@ function SizesBadgeSection(){
         <BuiComponentShowcaseArea
             anchor="sizes"
             title="Sizes"
-            desc={<>3 sizes available. Of these, <BuiCode>xs</BuiCode> is selected by default, the other 2 options are <BuiCode>sm</BuiCode> and <BuiCode>base</BuiCode>.</>}
+            desc={<>3 sizes available. Of these, <BuiTag>xs</BuiTag> is selected by default, the other 2 options are <BuiTag>sm</BuiTag> and <BuiTag>base</BuiTag>.</>}
             codeBlock={codeBlock}
         >
             <BuiBadge value="7"/>
