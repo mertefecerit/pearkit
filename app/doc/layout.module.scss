@@ -9,6 +9,8 @@
     p-8
     flex flex-col gap-8
     border-r
+    max-w-screen-lg
+    mx-auto
     border-l;
     :global(.dark) & {
       @apply bg-gray-900 border-gray-800;
