@@ -19,7 +19,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
   }
 
   & > select {
-    @apply w-0 h-0 absolute;
+    @apply w-0 h-0 hidden;
   }
 
   &.isOpen {
@@ -29,6 +29,11 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
 
     & > ul {
       @apply rounded-t-none;
+    }
+  }
+  &.isDisabled {
+    & > div.placeholder {
+      @apply opacity-50 cursor-not-allowed;
     }
   }
 

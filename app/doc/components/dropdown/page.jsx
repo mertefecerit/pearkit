@@ -3,6 +3,7 @@ import BasicDropdownSection from "@/app/doc/components/dropdown/sections/BasicDr
 import ApiDropdownSection from "@/app/doc/components/dropdown/sections/ApiDropdownSection";
 import AccessibilityDropdownSection from "@/app/doc/components/dropdown/sections/AccessibilityDropdownSection";
 import ColorsDropdownSection from "@/app/doc/components/dropdown/sections/ColorsDropdownSection";
+import DisabledDropdownSection from "@/app/doc/components/dropdown/sections/DisabledDropdownSection";
 
 function DropdownPage() {
 
@@ -11,6 +12,7 @@ function DropdownPage() {
             <ImportDropdownSection />
             <BasicDropdownSection />
             <ColorsDropdownSection />
+            <DisabledDropdownSection />
             <AccessibilityDropdownSection />
             <ApiDropdownSection />
         </>

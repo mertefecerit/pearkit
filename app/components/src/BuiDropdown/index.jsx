@@ -14,9 +14,10 @@ function BuiDropdown(
         selector = "label",
         onChange,
         selected,
-        placeholder= "Select Item",
+        placeholder = "Select Item",
         itemComponent,
         color = "blue",
+        disabled = false
     }
 ) {
     const [status, setStatus] = useState(false);
@@ -26,6 +27,7 @@ function BuiDropdown(
     useClickOutside(dropdownRef, () => setStatus(false));
 
     const toggle = (e) => {
+        if (disabled) return;
         if (e.key === 'Escape') setStatus(false);
         if (e.key === ' ' || e.key === "Enter") {
             e.preventDefault();
@@ -74,8 +76,8 @@ function BuiDropdown(
         <div
             onKeyDown={toggle}
             onBlur={() => setStatus(false)}
-            tabIndex="0"
-            className={`${styles.wrapper} ${status ? styles.isOpen : ''}`}
+            tabIndex={!disabled && 0}
+            className={`${ styles.wrapper } ${ status ? styles.isOpen : '' } ${ disabled ? styles.isDisabled : '' }`}
             ref={dropdownRef}
         >
 
@@ -88,7 +90,7 @@ function BuiDropdown(
             </select>
 
             <div
-                onClick={() => setStatus(!status)}
+                onClick={() => {!disabled && setStatus(!status)}}
                 className={`${styles.placeholder} ${styles[color]}`}
             >
                 {
@@ -98,7 +100,7 @@ function BuiDropdown(
                     selectedOption[selector] ?
                         <div
                             className={styles.closeIconWrapper}
-                             onClick={clearSelectedOption}
+                            onClick={clearSelectedOption}
                         >
                             <CloseIcon size="1.2em"/>
                         </div>
@@ -124,7 +126,7 @@ function BuiDropdown(
                             options.map((option, i) =>
                                 <li onClick={() => selectOption(option)}
                                     key={i}
-                                    className={`${i === highlightedIndex ? styles['hg-'+color] : ''} ${styles[color]}`}
+                                    className={`${i === highlightedIndex ? styles['hg-' + color] : ''} ${styles[color]}`}
                                 >
                                     {
                                         (itemComponent && React.cloneElement(itemComponent, options[i])) ?? option[selector]
@@ -147,6 +149,7 @@ BuiDropdown.propTypes = {
     placeholder: PropTypes.string,
     itemComponent: PropTypes.elementType,
     color: PropTypes.string,
+    disabled: PropTypes.bool,
 }
 export default BuiDropdown;
 
