@@ -31,7 +31,7 @@ function AdvancedCardSection() {
         <BuiComponentShowcaseArea
             anchor="advanced"
             title="Advanced"
-            desc={<>Card content can be customized further with <BuiTag>subTitle</BuiTag>, <BuiTag>header</BuiTag> and <BuiTag>footer</BuiTag> properties.</>}
+            desc={<>Card content can be customized further with <BuiTag label="subTitle"/>, <BuiTag label="header"/> and <BuiTag label="footer"/> properties.</>}
             codeBlock={codeBlock}
         >
             <BuiCard

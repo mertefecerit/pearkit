@@ -8,7 +8,7 @@ function BasicBadgeSection(){
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Text to display is defined with the <BuiTag>value</BuiTag> property.</>}
+            desc={<>Text to display is defined with the <BuiTag label="value"/> property.</>}
             codeBlock={codeBlock}
         >
             <BuiBadge value="1"/>

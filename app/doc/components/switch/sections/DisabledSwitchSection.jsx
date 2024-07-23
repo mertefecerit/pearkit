@@ -12,7 +12,7 @@ function DisabledSwitchSection() {
         <BuiComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>For the <BuiTag>disabled</BuiTag> property, it is sufficient to provide the property itself directly.</>}
+            desc={<>For the <BuiTag label={"disabled"}/> property, it is sufficient to provide the property itself directly.</>}
             codeBlock={codeBlock}
         >
             <BuiSwitch disabled color="orange" checked={value1} onChange={() => setValue1(!value1)}/>

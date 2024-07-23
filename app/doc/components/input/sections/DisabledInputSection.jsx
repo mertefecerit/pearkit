@@ -10,7 +10,7 @@ function DisabledInputSection() {
         <BuiComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>For the <BuiTag>disabled</BuiTag> property, it is sufficient to provide the property itself directly.</>}
+            desc={<>For the <BuiTag label={"disabled"}/> property, it is sufficient to provide the property itself directly.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

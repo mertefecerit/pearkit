@@ -10,7 +10,7 @@ function InvalidInputSection() {
         <BuiComponentShowcaseArea
             anchor="invalid"
             title="Invalid"
-            desc={<>You can use the <BuiTag>isInvalid</BuiTag> property when using input validation on a form element.</>}
+            desc={<>You can use the <BuiTag label={"isInvalid"}/> property when using input validation on a form element.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

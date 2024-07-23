@@ -1,13 +1,27 @@
 import PropTypes from "prop-types";
 import styles from "./BuiTag.module.scss";
 
-function BuiTag({children, color="blue"}) {
+function BuiTag(
+    {
+        label,
+        color = "blue",
+        rounded = false,
+        className,
+        icon
+    }
+) {
     return (
-        <code className={`${styles.wrapper} ${styles[color]}`}>{children}</code>
+        <span className={`${styles.wrapper} ${styles[color]} ${rounded ? styles.isRounded : ''} ${className}`}>
+            {icon}
+            {label}
+        </span>
     )
 }
+
 BuiTag.propTypes = {
-    children: PropTypes.node.isRequired,
-    color: PropTypes.string
+    label: PropTypes.string.isRequired,
+    color: PropTypes.string,
+    rounded: PropTypes.bool,
+    className : PropTypes.string,
 }
 export default BuiTag;

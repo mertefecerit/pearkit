@@ -12,7 +12,7 @@ function VariantButtonSection(props) {
         <BuiComponentShowcaseArea
             anchor="variants"
             title="Variants"
-            desc={<>There are 3 types of variants for buttons. <BuiTag>text</BuiTag>, <BuiTag>outlined</BuiTag> and <BuiTag>basic</BuiTag>, <BuiTag>basic</BuiTag> is selected by default.</>}
+            desc={<>There are 3 types of variants for buttons. <BuiTag label="text"/>, <BuiTag label="outlined"/> and <BuiTag label="basic"/>, <BuiTag label="basic"></BuiTag> is selected by default.</>}
             codeBlock={codeBlock}
         >
             <BuiButton>Button</BuiButton>

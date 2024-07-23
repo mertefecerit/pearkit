@@ -11,7 +11,7 @@ function InvalidRadioSection() {
         <BuiComponentShowcaseArea
             anchor="invalid"
             title="Invalid"
-            desc={<>We can manage this state by sending the standard <BuiTag>isInvalid</BuiTag> property.</>}
+            desc={<>We can manage this state by sending the standard <BuiTag label={"isInvalid"}/> property.</>}
             codeBlock={codeBlock}
         >
             <BuiRadio

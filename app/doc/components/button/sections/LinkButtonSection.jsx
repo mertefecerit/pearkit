@@ -12,7 +12,7 @@ function LinkButtonSection(props) {
         <BuiComponentShowcaseArea
             anchor="link"
             title="Link"
-            desc={<>If you want to use it as a button link, just pass the <BuiTag>href</BuiTag> value as the prop. Also, the target property is <BuiTag>_target</BuiTag> by default, this value can also be sent as a prop.</>}
+            desc={<>If you want to use it as a button link, just pass the <BuiTag label="href"></BuiTag> value as the prop. Also, the target property is <BuiTag label="_target"></BuiTag> by default, this value can also be sent as a prop.</>}
             codeBlock={codeBlock}
         >
             <BuiButton href="https://www.google.com">Google</BuiButton>

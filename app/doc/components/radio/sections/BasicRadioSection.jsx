@@ -26,7 +26,7 @@ function BasicRadioSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Just as it receives all input attributes, you can also send a <BuiTag>label</BuiTag> prop. Here is a simple usage.</>}
+            desc={<>Just as it receives all input attributes, you can also send a <BuiTag label={"label"}/> prop. Here is a simple usage.</>}
             codeBlock={codeBlock}
         >
             <BuiRadio

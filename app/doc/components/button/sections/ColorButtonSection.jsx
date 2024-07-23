@@ -14,7 +14,7 @@ function ColorButtonSection(props) {
             anchor="color"
             title="Color"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag></>}
+                as props. <BuiTag label="sky"/> <BuiTag label="red"/> <BuiTag label="indigo"/></>}
             codeBlock={codeBlock}
         >
             <div className="flex flex-col gap-4">

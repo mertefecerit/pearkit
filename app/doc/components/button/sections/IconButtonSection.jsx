@@ -23,7 +23,7 @@ function IconButtonSection(props) {
             title="Icon"
             desc={<>For more flexible use, you can send your icons as components.You can put icons at the beginning and
                 end of the button content. For this you use
-                the <BuiTag>startIcon</BuiTag> and <BuiTag>endIcon</BuiTag> props. If you do not submit content,
+                the <BuiTag label="startIcon"/> and <BuiTag label="endIcon" /> props. If you do not submit content,
                 only your icon will appear.</>}
             codeBlock={codeBlock}
         >

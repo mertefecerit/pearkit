@@ -10,7 +10,7 @@ function LabelInputSection() {
         <BuiComponentShowcaseArea
             anchor="label"
             title="Label"
-            desc={<>You can declare what the input is about by adding a <BuiTag>label</BuiTag> property.</>}
+            desc={<>You can declare what the input is about by adding a <BuiTag label="label" /> property.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

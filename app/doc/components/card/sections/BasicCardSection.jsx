@@ -9,7 +9,7 @@ function BasicCardSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>A simple Card is created with a <BuiTag>title</BuiTag> property along with the content as children.</>}
+            desc={<>A simple Card is created with a <BuiTag label="title"/> property along with the content as children.</>}
             codeBlock={codeBlock}
         >
             <BuiCard title="Simple Card">

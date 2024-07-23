@@ -10,7 +10,7 @@ function PasswordRevealInputSection() {
         <BuiComponentShowcaseArea
             anchor="passwordReveal"
             title="Password Reveal"
-            desc={<>If your input component type is <BuiTag>password</BuiTag> we give you a show/hide password icon. Also, you do not have to show this icon all the time. You can use the <BuiTag>passwordReveal</BuiTag> property to manage this situation.</>}
+            desc={<>If your input component type is <BuiTag label={"password"}/> we give you a show/hide password icon. Also, you do not have to show this icon all the time. You can use the <BuiTag label={"passwordReveal"}/> property to manage this situation.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

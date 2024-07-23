@@ -21,7 +21,7 @@ function ColorsDropdownSection() {
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag> etc.</>}
+                as props. For example : <BuiTag label={"sky"}/> <BuiTag label={"red"}/> <BuiTag label={"indigo"}/> etc.</>}
             codeBlock={codeBlock}
         >
             <BuiDropdown

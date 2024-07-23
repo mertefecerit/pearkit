@@ -21,7 +21,7 @@ function BasicModalSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>A simple modal component wrapped into an <BuiTag><Link href="/doc/components/overlay" target="_blank">BuiOverlay</Link></BuiTag> component.</>}
+            desc={<>A simple modal component wrapped into an <BuiTag label={<Link href="/doc/components/overlay" target="_blank">BuiOverlay</Link>}></BuiTag> component.</>}
             codeBlock={codeBlock}
         >
             <BuiButton onClick={() => setModalStatus(true)}>Open Basic Modal</BuiButton>

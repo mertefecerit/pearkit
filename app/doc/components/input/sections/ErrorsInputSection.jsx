@@ -10,7 +10,7 @@ function ErrorsInputSection() {
         <BuiComponentShowcaseArea
             anchor="errors"
             title="Errors"
-            desc={<>Or you can write errors by filling in the <BuiTag>errors</BuiTag> property. This option puts the component in invalid state without looking at the <BuiTag>isInvalid</BuiTag> property.</>}
+            desc={<>Or you can write errors by filling in the <BuiTag label={"errors"} /> property. This option puts the component in invalid state without looking at the <BuiTag label={"isInvalid"}/> property.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

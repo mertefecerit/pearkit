@@ -10,7 +10,7 @@ function DescriptionInputSection() {
         <BuiComponentShowcaseArea
             anchor="description"
             title="Description"
-            desc={<>By adding a <BuiTag>description</BuiTag> property, you can specify a situation that needs attention for the input.</>}
+            desc={<>By adding a <BuiTag label={"description"}/> property, you can specify a situation that needs attention for the input.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

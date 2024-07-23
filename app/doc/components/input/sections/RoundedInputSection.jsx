@@ -12,7 +12,7 @@ function RoundedInputSection() {
         <BuiComponentShowcaseArea
             anchor="rounded"
             title="Rounded"
-            desc={<>For fully <BuiTag>rounded</BuiTag> edges, you can use the rounded property.</>}
+            desc={<>For fully <BuiTag label="rounded"/> edges, you can use the rounded property.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

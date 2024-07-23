@@ -14,7 +14,7 @@ function ColorsBadgeSection(){
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag>sky</BuiTag> <BuiTag>red</BuiTag> <BuiTag>indigo</BuiTag></>}
+                as props. For example : <BuiTag label="sky"/> <BuiTag label="red"/> <BuiTag label="indigo"/></>}
             codeBlock={codeBlock}
         >
             <BuiBadge color="red" value="2"/>

@@ -13,8 +13,8 @@ function SizesInputSection() {
             anchor="sizes"
             title="Sizes"
             desc={<>The input component comes with 3 different size options. These
-                are <BuiTag>sm</BuiTag>, <BuiTag>base</BuiTag> and <BuiTag>lg</BuiTag>. By
-                default <BuiTag>base</BuiTag> works.</>}
+                are <BuiTag label={"sm"}/>, <BuiTag label={"base"}/> and <BuiTag label={"lg"}/>. By
+                default <BuiTag label={"base"}/> works.</>}
             codeBlock={codeBlock}
         >
             <div className="flex gap-2 flex-wrap w-full justify-center">

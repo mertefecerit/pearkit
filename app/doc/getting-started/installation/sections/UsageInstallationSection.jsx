@@ -15,7 +15,7 @@ import {BuiButton} from "@mertefecerit/bubbleui";
         <BuiComponentShowcaseArea
             anchor="usage"
             title="Usage"
-            desc={<>Tailwind was used for the designs of this component. Even though tailwindcss is compiled, it needs a <BuiTag>preflight</BuiTag> file. You can check out tailwind next or vite/react installation at this <Link href="https://tailwindcss.com/docs/installation/framework-guides" target="_target" className="text-blue-500 font-bold">address</Link>.</>}
+            desc={<>Tailwind was used for the designs of this component. Even though tailwindcss is compiled, it needs a <BuiTag label="preflight"/> file. You can check out tailwind next or vite/react installation at this <Link href="https://tailwindcss.com/docs/installation/framework-guides" target="_target" className="text-blue-500 font-bold">address</Link>.</>}
             codeBlock={codeBlock}
         />
     );

@@ -14,7 +14,7 @@ function SizesButtonSection(props) {
         <BuiComponentShowcaseArea
             anchor="sizes"
             title="Sizes"
-            desc={<>5 types of size units are used. The <BuiTag>base</BuiTag> one is assigned by default. The other four are <BuiTag>xs</BuiTag>, <BuiTag>sm</BuiTag>, <BuiTag>lg</BuiTag> and <BuiTag>xl</BuiTag>.</>}
+            desc={<>5 types of size units are used. The <BuiTag label="base"/> one is assigned by default. The other four are <BuiTag label="xs"/>, <BuiTag label="sm"/>, <BuiTag label="lg"/> and <BuiTag label="xl"/>.</>}
             codeBlock={codeBlock}
         >
             <BuiButton size="xs" startIcon={<Icon icon="mdi:check"/>}>Button</BuiButton>

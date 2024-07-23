@@ -11,7 +11,7 @@ function SizesBadgeSection(){
         <BuiComponentShowcaseArea
             anchor="sizes"
             title="Sizes"
-            desc={<>3 sizes available. Of these, <BuiTag>xs</BuiTag> is selected by default, the other 2 options are <BuiTag>sm</BuiTag> and <BuiTag>base</BuiTag>.</>}
+            desc={<>3 sizes available. Of these, <BuiTag label="xs"/> is selected by default, the other 2 options are <BuiTag label="sm"/> and <BuiTag label="base"/>.</>}
             codeBlock={codeBlock}
         >
             <BuiBadge value="7"/>

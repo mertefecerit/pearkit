@@ -11,7 +11,7 @@ function DisabledCheckboxSection() {
         <BuiComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>You can manage this process by sending a <BuiTag>boolean</BuiTag> value to the <BuiTag>disabled</BuiTag> prop of the checkbox component.</>}
+            desc={<>You can manage this process by sending a <BuiTag label="boolean"/> value to the <BuiTag label="disabled"/> prop of the checkbox component.</>}
             codeBlock={codeBlock}
         >
             <BuiCheckbox disabled={true} label="Checkbox 1" checked={checked} onChange={() => setChecked(!checked)} />

@@ -11,7 +11,7 @@ function DisabledRadioSection() {
         <BuiComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>We can manage this state by sending the standard <BuiTag>disabled</BuiTag> property.</>}
+            desc={<>We can manage this state by sending the standard <BuiTag label={"disabled"}/> property.</>}
             codeBlock={codeBlock}
         >
             <BuiRadio

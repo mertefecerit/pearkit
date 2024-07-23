@@ -24,7 +24,7 @@ function ButtonGroupSection(){
         <BuiComponentShowcaseArea
             anchor="button-group"
             title="Button Group"
-            desc={<>The buttons can be grouped by wrapping them with the <BuiTag>BuiButtonGroup</BuiTag> component. They need to be immediate children. All the standard button variants are supported.</>}
+            desc={<>The buttons can be grouped by wrapping them with the <BuiTag label="BuiButtonGroup"/> component. They need to be immediate children. All the standard button variants are supported.</>}
             codeBlock={codeBlock}
         >
             <div className="flex flex-col gap-4">

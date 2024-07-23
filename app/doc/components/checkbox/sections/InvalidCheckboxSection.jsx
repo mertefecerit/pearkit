@@ -11,7 +11,7 @@ function InvalidCheckboxSection() {
         <BuiComponentShowcaseArea
             anchor="invalid"
             title="Invalid"
-            desc={<>You can manage this process by sending a <BuiTag>boolean</BuiTag> value to the <BuiTag>invalid</BuiTag> prop of the checkbox component using form validation libraries.</>}
+            desc={<>You can manage this process by sending a <BuiTag label={"boolean"}/> value to the <BuiTag label={"invalid"}/> prop of the checkbox component using form validation libraries.</>}
             codeBlock={codeBlock}
         >
             <BuiCheckbox label="Checkbox 1" invalid={true} checked={checked} onChange={() => setChecked(!checked)} />

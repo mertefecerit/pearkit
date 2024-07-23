@@ -13,7 +13,7 @@ function LabelCheckboxSection() {
         <BuiComponentShowcaseArea
             anchor="label"
             title="Label"
-            desc={<>You can add it to the text by sending the <BuiTag>label</BuiTag> prop.</>}
+            desc={<>You can add it to the text by sending the <BuiTag label="label"/> prop.</>}
             codeBlock={codeBlock}
         >
             <BuiCheckbox label="Checkbox 1" checked={checked} onChange={() => setChecked(!checked)} />

@@ -11,20 +11,16 @@ function BuiApiDescriptionTable({content}) {
                     <th>Type</th>
                     <th>Default</th>
                     <th>Description</th>
-                    <th>Available Values</th>
                 </tr>
                 </thead>
                 <tbody>
                 {
                     content && content.map((row, r) => (
                         <tr key={r}>
-                            <td><BuiTag>{row.name}</BuiTag></td>
+                            <td><BuiTag label={row.name}/></td>
                             <td>{row.type}</td>
-                            <td><BuiTag color="gray">{row.default}</BuiTag></td>
+                            <td><BuiTag color="gray" label={row.default}/></td>
                             <td>{row.description}</td>
-                            {
-                                row.values && <td><BuiTag color="gray">{row.values}</BuiTag></td>
-                            }
                         </tr>
                     ))
                 }

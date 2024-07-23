@@ -11,7 +11,7 @@ function IconInputSection() {
         <BuiComponentShowcaseArea
             anchor="icon"
             title="Icon"
-            desc={<>Is it possible without an <BuiTag>icon</BuiTag> ? Of course not :) Here is how to use it with an <BuiTag>icon</BuiTag>.</>}
+            desc={<>Is it possible without an <BuiTag label={"icon"}/> ? Of course not :) Here is how to use it with an <BuiTag label={"icon"}/>.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

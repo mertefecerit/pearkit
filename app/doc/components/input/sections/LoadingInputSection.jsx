@@ -10,7 +10,7 @@ function LoadingInputSection() {
         <BuiComponentShowcaseArea
             anchor="loading"
             title="Loading"
-            desc={<>Considering that you are using server-side validation for the input component, we thought you would need an <BuiTag>isLoading</BuiTag> feature. :)</>}
+            desc={<>Considering that you are using server-side validation for the input component, we thought you would need an <BuiTag label={"isLoading"}/> feature. :)</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">

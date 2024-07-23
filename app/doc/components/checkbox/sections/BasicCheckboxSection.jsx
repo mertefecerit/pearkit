@@ -13,7 +13,7 @@ function BasicCheckboxSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Checkbox is used as a controlled input with <BuiTag>checked</BuiTag> and <BuiTag>onChange</BuiTag> properties.</>}
+            desc={<>Checkbox is used as a controlled input with <BuiTag label="checked"/> and <BuiTag label="onChange"/> properties.</>}
             codeBlock={codeBlock}
         >
             <BuiCheckbox checked={checked} onChange={() => setChecked(!checked)} />
