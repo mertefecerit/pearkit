@@ -10,3 +10,4 @@ export {default as BuiOverlay} from "./BuiOverlay";
 export {default as BuiModal} from "./BuiModal";
 export {default as BuiSwitch} from "./BuiSwitch";
 export {default as BuiDropdown} from "./BuiDropdown";
+export {default as BuiDrawer} from "./BuiDrawer";

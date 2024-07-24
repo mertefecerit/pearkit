@@ -1,0 +1,29 @@
+.wrapper {
+  @apply bg-black bg-opacity-30 fixed z-40 top-0 left-0 w-full h-dvh;
+  & > .content {
+    @apply bg-white absolute overflow-auto;
+    :global(.dark) & {
+      @apply bg-gray-800;
+    }
+    &.leftOrRightSide {
+      @apply h-full;
+      &.leftSide {
+        @apply left-0;
+      }
+      &.rightSide {
+        @apply right-0;
+      }
+    }
+    &.topOrBottomSide {
+      @apply w-full;
+      &.topSide {
+        @apply top-0;
+      }
+      &.bottomSide {
+        @apply bottom-0;
+      }
+    }
+  }
+}
+
+

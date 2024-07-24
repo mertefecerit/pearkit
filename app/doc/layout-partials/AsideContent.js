@@ -75,6 +75,17 @@ export default function AsideContent() {
                     ]
                 },
                 {
+                    path: '/doc/components/drawer',
+                    label: 'Drawer',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#position', label: 'Position'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
+                {
                     path: '/doc/components/dropdown',
                     label: 'Dropdown',
                     children: [

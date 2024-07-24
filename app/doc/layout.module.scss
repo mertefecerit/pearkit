@@ -11,6 +11,7 @@
     border-r
     lg:max-w-screen-lg
     lg:mx-auto
+    w-full
     border-l;
     :global(.dark) & {
       @apply bg-gray-900 border-gray-800;
