@@ -35,14 +35,6 @@
       }
     }
   }
-  & > div.buiCardChildrenArea {
-    @apply
-    text-gray-500
-    p-4;
-    :global(.dark) & {
-      @apply text-gray-100;
-    }
-  }
 }
 
 

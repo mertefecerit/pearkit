@@ -25,7 +25,9 @@ function AdvancedCardSection() {
     subTitle="This is subtitle"
     footer={<ButtonComponents/>}
 >
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+    <div className="p-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+    </div>
 </BuiCard>`
     return (
         <BuiComponentShowcaseArea
@@ -40,7 +42,9 @@ function AdvancedCardSection() {
                 subTitle="This is subtitle"
                 footer={<ButtonComponents/>}
             >
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+                <div className="p-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+                </div>
             </BuiCard>
         </BuiComponentShowcaseArea>
     );

@@ -39,6 +39,12 @@ function ApiCardSection() {
             default:'null',
             description: 'Used to get the child elements of the component.'
         },
+        {
+            name: 'className',
+            type: 'string',
+            default:'null',
+            description: 'CSS classes for card wrapper'
+        }
     ];
     return (
         <BuiComponentShowcaseArea

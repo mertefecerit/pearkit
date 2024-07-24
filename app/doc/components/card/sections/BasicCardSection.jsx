@@ -3,7 +3,9 @@ import {BuiCard, BuiTag} from "@/app/components/src";
 
 function BasicCardSection() {
     const codeBlock = `<BuiCard title="Simple Card">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+    <div className="p-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+    </div>
 </BuiCard>`
     return (
         <BuiComponentShowcaseArea
@@ -13,7 +15,9 @@ function BasicCardSection() {
             codeBlock={codeBlock}
         >
             <BuiCard title="Simple Card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+                <div className={"p-4"}>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
+                </div>
             </BuiCard>
         </BuiComponentShowcaseArea>
     );
