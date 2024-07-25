@@ -1,9 +1,10 @@
 "use client"
+
 import styles from './BuiBadge.module.scss';
 import React, {useEffect, useState} from "react";
-import {IBuiBadgeProps} from "@/app/components/src/BuiBadge/type";
+import {IBuiBadgePropTypes} from "@/app/components/src/BuiBadge/type";
 
-const BuiBadge:React.FC<IBuiBadgeProps> = (
+const BuiBadge:React.FC<IBuiBadgePropTypes> = (
     {
         value= 0,
         size = 'xs',

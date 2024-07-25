@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Card',
     description: 'A simple Card is created with a title property along with the content as children.'
 }
-function Page(props) {
+function Page() {
     return (
         <>
             <ImportCardSection />

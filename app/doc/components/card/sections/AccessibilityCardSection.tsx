@@ -4,7 +4,7 @@ function AccessibilityCardSection() {
     return (
         <BuiComponentShowcaseArea
             anchor="accessibility"
-            title="Accessibility (Beta)"
+            title="Accessibility (Not Ready Yet)"
             desc={<>None</>}
         />
     );

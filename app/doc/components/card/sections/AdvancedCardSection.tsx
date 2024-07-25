@@ -1,17 +1,17 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import {BuiButton, BuiCard, BuiTag} from "@/app/components/src";
 import {Icon} from "@iconify/react";
-import Image from "next/image";
+import React from "react";
 
-const ButtonComponents = () => {
+const ButtonComponents:React.FC = () => {
     return (
         <div className="flex gap-2 p-4">
-            <BuiButton startIcon={<Icon icon="mdi:check"/>}>Save</BuiButton>
-            <BuiButton variant="text" color="gray" startIcon={<Icon icon="mdi:times"/>}>Cancel</BuiButton>
+            <BuiButton startIcon={<Icon icon="mdi:check"/>} label="Save"/>
+            <BuiButton variant="text" color="gray" startIcon={<Icon icon="mdi:times"/>} label="Cancel"/>
         </div>
     )
 }
-const HeaderAreaComponent = () => {
+const HeaderAreaComponent:React.FC = () => {
     return (
         <div className="overflow-hidden">
             <img width={500} height={300} src={"https://placehold.co/500x300"} alt="placeholder-image"/>

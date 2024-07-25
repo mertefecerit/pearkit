@@ -4,9 +4,9 @@ import styles from "./BuiButton.module.scss";
 import {motion} from "framer-motion";
 import LoadingIcon from "../components/icons/LoadingIcon";
 import React from "react";
-import {BuiButtonProps} from "./type";
+import {IBuiButtonPropTypes} from "./type";
 
-const BuiButton:React.FC<BuiButtonProps> = (
+const BuiButton:React.FC<IBuiButtonPropTypes> = (
     {
         variant = "basic",
         color = "blue",
