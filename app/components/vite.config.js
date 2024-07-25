@@ -5,7 +5,7 @@ export default defineConfig({
     plugins: [react()],
     build: {
         lib: {
-            entry: './src/index.js',
+            entry: './src/index.ts',
             name: 'BubbleUI',
             fileName: (format) => `bubbleUi.${format}.js`
         },
