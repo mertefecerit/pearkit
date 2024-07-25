@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
-function ImportBadgeSection(props) {
+function ImportBadgeSection() {
     const codeBlock = `import { BuiBadge } from '@mertefecerit/bubbleui';`
     return (
         <BuiComponentShowcaseArea

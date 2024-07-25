@@ -7,61 +7,61 @@ function ApiButtonSection() {
             name: 'variant',
             type: "string | basic | outlined | text",
             default: 'basic',
-            description: 'Variants of the button component.'
+            description: 'Variants of the component.'
         },
         {
             name: 'color',
             type: "string | Tailwind Color Names",
             default: 'blue',
-            description: 'Colors of the button component.'
+            description: 'Colors of the component.'
         },
         {
             name: 'size',
             type: "string | xs | sm | base | lg | xl",
             default: 'base',
-            description: 'Sizes of the button component.'
+            description: 'Sizes of the component.'
         },
         {
             name: 'isLoading',
             type: "boolean | true | false",
             default: 'false',
-            description: 'The button component is used for loading status control.'
+            description: 'The component is used for loading status control.'
         },
         {
             name: 'label',
             type: "string",
             default: 'Empty',
-            description: 'Label of the button component.'
+            description: 'Label of the component.'
         },
         {
             name: 'startIcon',
             type: "ReactNode",
             default: 'null',
-            description: 'To put an icon at the beginning of a button component.'
+            description: 'To put an icon at the beginning of a component.'
         },
         {
             name: 'endIcon',
             type: "ReactNode",
             default: 'null',
-            description: 'To put an icon at the end of the button component.'
+            description: 'To put an icon at the end of the component.'
         },
         {
             name: 'animation',
             type: "boolean | true | false",
             default: 'true',
-            description: 'Button component is used for animation state control.'
+            description: 'Component is used for animation state control.'
         },
         {
             name: 'raised',
             type: "boolean | true | false",
             default: 'true',
-            description: 'Control of the change the button raised design.'
+            description: 'Control of the change the component raised design.'
         },
         {
             name: 'rounded',
             type: "boolean | true | false",
             default: 'true',
-            description: 'Control of the change the button rounded design.'
+            description: 'Control of the change the component rounded design.'
         },
     ];
     return (

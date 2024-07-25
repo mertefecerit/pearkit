@@ -1,9 +1,8 @@
-import BuiBadge from "@/app/components/src/BuiBadge";
-import BuiTag from "@/app/components/src/BuiTag";
+import {BuiBadge, BuiTag} from "@/app/components/src";
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function BasicBadgeSection(){
-    const codeBlock = `<BuiBadge value="1"/>`;
+    const codeBlock = `<BuiBadge value={1}/>`;
     return (
         <BuiComponentShowcaseArea
             anchor="basic"
@@ -11,7 +10,7 @@ function BasicBadgeSection(){
             desc={<>Text to display is defined with the <BuiTag label="value"/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiBadge value="1"/>
+            <BuiBadge value={1}/>
         </BuiComponentShowcaseArea>
     )
 }

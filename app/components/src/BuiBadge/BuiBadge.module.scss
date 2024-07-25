@@ -13,9 +13,6 @@ $sizes: 'xs','sm','base';
       @apply bg-#{$color}-500;
     }
   }
-  &.havePosition {
-    @apply absolute;
-  }
 
   @each $size in $sizes {
     &.#{$size} {
