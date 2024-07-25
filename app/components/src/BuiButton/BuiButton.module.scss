@@ -30,6 +30,27 @@ $sizes: 'xs', 'sm', 'base', 'lg', 'xl';
   @each $color in $colors {
     &.#{$color} {
       @apply ring-#{$color}-500;
+      &.basic {
+        @apply
+        bg-#{$color}-500
+        hover:bg-#{$color}-600;
+        :global(.dark) & {
+          @apply text-#{$color}-950;
+        }
+      }
+
+      &.outlined {
+        @apply
+        border-#{$color}-500
+        hover:bg-#{$color}-100
+        text-#{$color}-500;
+      }
+
+      &.text {
+        @apply
+        hover:bg-#{$color}-100
+        text-#{$color}-500;
+      }
     }
   }
 
@@ -48,41 +69,16 @@ $sizes: 'xs', 'sm', 'base', 'lg', 'xl';
 
   &.basic {
     @apply text-white;
-    @each $color in $colors {
-      &.#{$color} {
-        @apply
-        bg-#{$color}-500
-        hover:bg-#{$color}-600;
-        :global(.dark) & {
-          @apply text-#{$color}-950;
-        }
-      }
-    }
   }
 
   &.outlined {
     @apply focus:border-transparent;
-    @each $color in $colors {
-      &.#{$color} {
-        @apply
-        border-#{$color}-500
-        hover:bg-#{$color}-100
-        text-#{$color}-500;
-      }
-    }
     :global(.dark) & {
       @apply hover:bg-opacity-10;
     }
   }
 
   &.text {
-    @each $color in $colors {
-      &.#{$color} {
-        @apply
-        hover:bg-#{$color}-100
-        text-#{$color}-500;
-      }
-    }
     :global(.dark) & {
       @apply hover:bg-opacity-10;
     }
