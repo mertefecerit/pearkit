@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
-function DownloadInstallationSection(props) {
+function DownloadInstallationSection() {
     const codeBlock = `npm i @mertefecerit/bubbleui`
     return (
         <BuiComponentShowcaseArea

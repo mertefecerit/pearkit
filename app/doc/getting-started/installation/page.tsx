@@ -5,7 +5,7 @@ export const metadata = {
     title: 'Installation | BubbleUI',
     description : 'BubbleUI is a rich set of open source UI components for React.'
 }
-function InstallationPage(props) {
+function InstallationPage() {
     return (
         <>
             <div className="flex flex-col gap-2">

@@ -2,7 +2,7 @@ import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentSh
 import {BuiTag} from "@/app/components/src";
 import Link from "next/link";
 
-function UsageInstallationSection(props) {
+function UsageInstallationSection() {
     const codeBlock = `// import css file to main css or scss file
 @import "@mertefecerit/bubbleui/dist/style.css";"
 

@@ -1,9 +1,8 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/src/BuiButton";
-import BuiTag from "@/app/components/src/BuiTag";
+import {BuiButton, BuiTag} from "@/app/components/src";
 
-function LoadingButtonSection(props) {
-    const codeBlock = `<BuiButton isLoading={true}>Submit</BuiButton>`;
+function LoadingButtonSection() {
+    const codeBlock = `<BuiButton isLoading={true} label="Submit"/>`;
 
     return (
         <BuiComponentShowcaseArea
@@ -12,9 +11,9 @@ function LoadingButtonSection(props) {
             desc={<>You can send a boolean type value to the button components prop named <BuiTag label="isLoading"/>. If prop is true, the button will be <BuiTag label="disabled"/></>}
             codeBlock={codeBlock}
         >
-            <BuiButton isLoading={true}>Button</BuiButton>
-            <BuiButton isLoading={true} variant="outlined">Button</BuiButton>
-            <BuiButton isLoading={true} variant="text">Button</BuiButton>
+            <BuiButton isLoading={true} label={"Button"}/>
+            <BuiButton isLoading={true} variant="outlined" label={"Button"}/>
+            <BuiButton isLoading={true} variant="text" label={"Button"}/>
         </BuiComponentShowcaseArea>
     )
 }

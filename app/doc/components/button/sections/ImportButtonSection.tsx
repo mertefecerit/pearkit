@@ -1,6 +1,6 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
-function ImportButtonSection(props) {
+function ImportButtonSection() {
     const codeBlock = `import { BuiButton } from '@mertefecerit/bubbleui';`;
 
     return (

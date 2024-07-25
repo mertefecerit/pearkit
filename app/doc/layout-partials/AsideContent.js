@@ -36,7 +36,6 @@ export default function AsideContent() {
                         {path: '#import', label: 'Import'},
                         {path: '#basic', label: 'Basic'},
                         {path: '#variants', label: 'Variants'},
-                        {path: '#link', label: 'Link'},
                         {path: '#icon', label: 'Icon'},
                         {path: '#loading', label: 'Loading'},
                         {path: '#color', label: 'Color'},

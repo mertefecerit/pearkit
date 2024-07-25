@@ -1,6 +1,5 @@
 import ImportButtonSection from "@/app/doc/components/button/sections/ImportButtonSection";
 import BasicButtonSection from "@/app/doc/components/button/sections/BasicButtonSection";
-import LinkButtonSection from "@/app/doc/components/button/sections/LinkButtonSection";
 import IconButtonSection from "@/app/doc/components/button/sections/IconButtonSection";
 import LoadingButtonSection from "@/app/doc/components/button/sections/LoadingButtonSection";
 import ColorButtonSection from "@/app/doc/components/button/sections/ColorButtonSection";
@@ -25,7 +24,6 @@ function ButtonComponentPage() {
             <ImportButtonSection/>
             <BasicButtonSection/>
             <VariantButtonSection />
-            <LinkButtonSection/>
             <IconButtonSection/>
             <LoadingButtonSection />
             <ColorButtonSection />
