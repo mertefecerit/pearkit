@@ -1,6 +1,5 @@
 "use client"
 import scss from "./BuiComponentShowcaseArea.module.scss";
-import PropTypes from "prop-types";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {vscDarkPlus} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import React, {useState} from "react";
@@ -69,12 +68,4 @@ const BuiComponentShowcaseArea:React.FC<BuiComponentShowcaseAreaPropTypes> = (
         </section>
     )
 }
-
-BuiComponentShowcaseArea.propTypes = {
-    title: PropTypes.string.isRequired,
-    desc: PropTypes.string.element,
-    children: PropTypes.node.isRequired,
-    anchor: PropTypes.string
-}
-
 export default BuiComponentShowcaseArea;
