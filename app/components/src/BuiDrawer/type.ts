@@ -1,7 +1,17 @@
 import React from "react";
+import {Positions} from "@/app/components/src/types/Positions";
+import {Variant} from "framer-motion";
 
-export interface IBuiDrawerPropTypes extends React.HTMLAttributes<HTMLDivElement> {
+type BuiDrawerType = React.HTMLAttributes<HTMLDivElement>;
+
+export interface IBuiDrawerPropTypes extends BuiDrawerType {
     status: true | false,
     close: () => void
-    position?: string | 'left' | 'right' | 'top' | 'bottom',
+    position?: Positions,
+}
+
+export interface IVariants {
+    [key: string]: Variant;
+    visible: { x?: number; y?: number };
+    hidden: { x?: string; y?: string };
 }

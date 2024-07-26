@@ -1,0 +1,1 @@
+export type Positions = string | 'left' | 'right' | 'top' | 'bottom';

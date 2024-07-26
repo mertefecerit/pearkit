@@ -4,7 +4,8 @@ import styles from './BuiDrawer.module.scss';
 import {motion, AnimatePresence} from "framer-motion";
 import React, { useEffect, useState } from "react";
 import {join} from "lodash";
-import {IBuiDrawerPropTypes} from "@/app/components/src/BuiDrawer/type";
+import {IBuiDrawerPropTypes, IVariants} from "@/app/components/src/BuiDrawer/type";
+import {Positions} from "@/app/components/src/types/Positions";
 
 const BuiDrawer: React.FC<IBuiDrawerPropTypes> = (
     {
@@ -34,7 +35,7 @@ const BuiDrawer: React.FC<IBuiDrawerPropTypes> = (
         }
     }, [position])
 
-    const variants = {
+    const variants:Record<Positions, IVariants> = {
         left: {visible: {x: 0}, hidden: {x: '-100%'}},
         right: {visible: {x: 0}, hidden: {x: '100%'}},
         top: {visible: {y: 0}, hidden: {y: '-100%'}},
