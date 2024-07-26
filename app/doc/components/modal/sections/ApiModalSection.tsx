@@ -18,7 +18,7 @@ function ApiModalSection() {
         {
             name: 'closable',
             type: 'boolean',
-            default: 'false',
+            default: 'true',
             description: 'Closable state of the component',
         },
         {

@@ -8,7 +8,7 @@ export const metadata = {
     title : 'Overlay',
     description : 'A standard overlay usage. Whether you use our BuiCard component or do it yourself, it will answer all of them.',
 }
-function OverlayPage(props) {
+function OverlayPage() {
     return (
         <>
             <ImportOverlaySection/>

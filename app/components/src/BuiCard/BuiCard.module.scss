@@ -16,8 +16,8 @@
     @apply
     flex
     flex-col
-    gap-2
-    p-4;
+    mb-4
+    gap-2;
     & > span.title {
       @apply
       font-bold

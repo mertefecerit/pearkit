@@ -1,31 +1,32 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptionTable";
+import {TwColor} from "@/app/components/src/types/TwColor";
 
 function ApiOverlaySection() {
     const content = [
         {
-            name: 'color',
-            type: 'string',
-            default:'black',
-            description: 'Color of overlay component.'
+            name: 'status',
+            type: 'boolean | true | false',
+            default:'false',
+            description: 'Status state of the component'
         },
         {
-            name: 'status',
-            type: 'boolean',
-            default:'false',
-            description: 'State of overlay component'
+            name: 'closable',
+            type: 'boolean | true | false',
+            default:'true',
+            description: 'Closable state of the component'
         },
         {
             name: 'close',
             type: 'function',
-            default:'null',
-            description: 'Close method of overlay component.'
+            default:'void',
+            description: 'Close method of the component'
         },
         {
-            name: 'closable',
-            type: 'boolean',
-            default:'false',
-            description: 'Closable control state of overlay component'
+            name: 'color',
+            type: 'TwColor | black | white',
+            default:'black',
+            description: 'Colors of the component'
         },
     ];
     return (

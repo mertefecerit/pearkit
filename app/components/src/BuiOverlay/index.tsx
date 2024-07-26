@@ -1,34 +1,35 @@
 "use client"
 
 import styles from './BuiOverlay.module.scss';
-import PropTypes from "prop-types";
 import {motion, AnimatePresence} from "framer-motion";
-import {useEffect, useRef} from "react";
+import React, {useEffect, useRef} from "react";
+import {IBuiOverlayPropTypes} from "./type";
 
-function BuiOverlay({
-                        status = false,
-                        close,
-                        children,
-                        color = "black",
-                        closable = true,
-                        className
-                    }) {
+const BuiOverlay:React.FC<IBuiOverlayPropTypes> = (
+    {
+        status = false,
+        close,
+        color = "black",
+        closable = true,
+        ...props
+    }
+) => {
     const overlayRef = useRef(null);
-    const closeHandler = (e) => {
+    const closeHandler = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         if (e.target === overlayRef.current && closable) {
-            close();
+            if (close) close();
         }
     }
 
     useEffect(() => {
-        const onKeyHandler = (e) => {
-            e.key === 'Escape' && closable && close();
+        const onKeyHandler = (e:KeyboardEvent) => {
+            e.key === 'Escape' && closable && close && close();
         }
         if (status) document.addEventListener('keyup', onKeyHandler);
         return () => {
             document.removeEventListener('keyup', onKeyHandler);
         }
-    }, [status, close]);
+    }, [status, closable, close]);
 
     return (
         <AnimatePresence>
@@ -40,23 +41,15 @@ function BuiOverlay({
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}
                     onClick={closeHandler}
-                    className={`${styles.BuiOverlayWrapper} ${styles[color]} ${className}`}
+                    className={`${styles.BuiOverlayWrapper} ${styles[color]} ${props.className}`}
                 >
-                    {children}
+                    {props.children}
                 </motion.div>
             }
         </AnimatePresence>
     );
 }
 
-BuiOverlay.propTypes = {
-    status: PropTypes.bool.isRequired,
-    children: PropTypes.node.isRequired,
-    color: PropTypes.string,
-    close: PropTypes.func,
-    closable: PropTypes.bool,
-    className: PropTypes.string
-}
 export default BuiOverlay;
 
 
