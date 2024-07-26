@@ -18,7 +18,7 @@ export const metadata = {
     title: 'Input',
     description: 'It is the standard input element that you can use in forms. Gets all form attributes.'
 }
-function InputComponentPage(props) {
+function InputComponentPage() {
     return (
         <>
             <ImportInputSection/>

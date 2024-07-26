@@ -4,76 +4,70 @@ import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptio
 function ApiInputSection() {
     const content = [
         {
-            name: 'label',
-            type: 'string',
+            name: 'icon',
+            type: 'ReactNode',
             default:'null',
-            description: 'Label of input component.'
+            description: 'Icon of the component.'
         },
         {
             name: 'isLoading',
             type: 'boolean',
             default:'false',
-            description: 'Input component loading status.'
-        },
-        {
-            name: 'type',
-            type: 'string',
-            default: 'text',
-            description: 'Type of input component.'
+            description: 'Loading state of the component.'
         },
         {
             name: 'color',
-            type: 'string',
+            type: 'TwColor | Tailwind Color Names Union',
             default:'blue',
-            description: 'Colors of input component all tailwindcss color names supported.'
+            description: 'Colors of the component.'
         },
         {
             name: 'size',
-            type: 'string',
-            default:'base',
-            description: 'There are 3 type of size named by sm,base and lg.'
+            type: 'string | sm | base | lg',
+            default: 'base',
+            description: 'Sizes of the component.'
         },
         {
             name: 'variant',
-            type: 'string',
+            type: 'string | outlined | underline | filled',
             default:'outlined',
-            description: 'There are 3 type of variant named by outlined, underlined and filled.'
+            description: 'Variant of the component.'
         },
         {
-            name: 'icon',
-            type: 'elementType',
+            name: 'label',
+            type: 'string',
             default:'null',
-            description: 'For icon component'
+            description: 'Label of the component.'
         },
         {
             name: 'isInvalid',
             type: 'boolean',
             default:'false',
-            description: 'Invalid state of input component'
+            description: 'Invalid state of the component.'
         },
         {
             name: 'errors',
-            type: 'array',
+            type: 'string[]',
             default:'[]',
-            description: 'It is used to send error array.'
+            description: 'Errors of the component.'
         },
         {
             name: 'description',
             type: 'string',
-            default:'null',
-            description: 'It is used to description of input component.'
+            default: 'null',
+            description: 'Description of the component.'
         },
         {
             name: 'rounded',
             type: 'boolean',
             default:'false',
-            description: 'It is used to full rounded edge of input component.'
+            description: 'Fully rounded design of the component.'
         },
         {
             name: 'passwordReveal',
             type: 'boolean',
-            default:'true',
-            description: 'This feature is used to "activate" or "deactivate" the button that "shows" or "hide" your password.'
+            default: 'false',
+            description: 'Change type prop of the component.'
         },
     ];
     return (

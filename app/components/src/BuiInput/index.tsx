@@ -1,17 +1,18 @@
 "use client"
-import PropTypes from 'prop-types';
+
+import React from "react";
 import styles from "./BuiInput.module.scss";
 import LoadingIcon from "../components/icons/LoadingIcon";
 import BuiInputErrors from "./components/BuiInputErrors";
 import EyeIcon from "../components/icons/EyeIcon";
 import {useState} from "react";
 import EyeOffIcon from "../components/icons/EyeOffIcon";
+import {IBuiInputPropTypes} from "./type";
 
-function BuiInput(
+const BuiInput:React.FC<IBuiInputPropTypes> = (
     {
         icon,
         isLoading = false,
-        type = "text",
         color= 'blue',
         size="base",
         variant = 'outlined',
@@ -23,7 +24,7 @@ function BuiInput(
         passwordReveal = true,
         ...props
     }
-) {
+) => {
     const [showPassword, setShowPassword] = useState(false);
 
     return (
@@ -35,11 +36,11 @@ function BuiInput(
                 <input
                     className={`${styles[size]}`}
                     {...props}
-                    type={showPassword && type === 'password' ? 'text' : type}
+                    type={showPassword && props.type === 'password' ? 'text' : props.type}
                     disabled={isLoading || props.disabled}
                 />
                 {
-                    passwordReveal && type === 'password' &&
+                    passwordReveal && props.type === 'password' &&
                     <div onClick={() => setShowPassword(!showPassword)} className={`${styles[size]} ${styles.passwordRevealIcon}`}>
                         {
                             showPassword ? <EyeIcon/> : <EyeOffIcon/>
@@ -51,20 +52,5 @@ function BuiInput(
             <BuiInputErrors errors={errors}/>
         </label>
     );
-}
-
-BuiInput.propTypes = {
-    icon: PropTypes.elementType,
-    color: PropTypes.string,
-    placeholder: PropTypes.string,
-    type: PropTypes.string,
-    onChange: PropTypes.func.isRequired,
-    isInvalid: PropTypes.bool,
-    label: PropTypes.string,
-    isLoading: PropTypes.bool,
-    errors: PropTypes.arrayOf(PropTypes.string),
-    description: PropTypes.string,
-    rounded: PropTypes.bool,
-    passwordReveal: PropTypes.bool
 }
 export default BuiInput;

@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import React from "react";
 
-function BuiInputErrors({errors}) {
+const BuiInputErrors:React.FC<{ errors: string[] }> = ({errors}) => {
     return (
         errors && errors.length > 0 &&
         <ul>
@@ -9,7 +9,4 @@ function BuiInputErrors({errors}) {
     )
 }
 
-BuiInputErrors.propTypes = {
-    errors: PropTypes.arrayOf(PropTypes.string),
-}
 export default BuiInputErrors;
