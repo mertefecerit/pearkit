@@ -58,6 +58,9 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     w-6
     text-xl
     transition-colors;
+    :global(.dark) & {
+      @apply border-gray-700;
+    }
   }
 }
 
