@@ -2,17 +2,18 @@
 
 import styles from './BuiDrawer.module.scss';
 import {motion, AnimatePresence} from "framer-motion";
-import PropTypes from "prop-types";
-import {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import {join} from "lodash";
+import {IBuiDrawerPropTypes} from "@/app/components/src/BuiDrawer/type";
 
-function BuiDrawer({
-                       status,
-                       close,
-                       children,
-                       className,
-                       position = "left",
-                   }) {
+const BuiDrawer: React.FC<IBuiDrawerPropTypes> = (
+    {
+        status,
+        close,
+        position = "left",
+        ...props
+    }
+) => {
 
     const [directionClass, setDirectionClass] = useState(join([styles.leftOrRightSide, styles.leftSide], ' '));
 
@@ -56,23 +57,15 @@ function BuiDrawer({
                             exit="hidden"
                             transition={{duration: 0.3, ease: "easeInOut"}}
                             onClick={(e) => e.stopPropagation()}
-                            className={`${styles.content} ${directionClass} ${className}`}
+                            className={`${styles.content} ${directionClass} ${props.className}`}
                         >
-                            {children}
+                            {props.children}
                         </motion.div>
                     </div>
                 )
             }
         </AnimatePresence>
     );
-}
-
-BuiDrawer.propTypes = {
-    status: PropTypes.bool.isRequired,
-    close: PropTypes.func.isRequired,
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string,
-    position: PropTypes.oneOf(["left", "right", "top", "bottom"]),
 }
 export default BuiDrawer;
 

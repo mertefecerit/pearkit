@@ -4,7 +4,7 @@ import AccessibilityDrawerSection from "@/app/doc/components/drawer/sections/Acc
 import ApiDrawerSection from "@/app/doc/components/drawer/sections/ApiDrawerSection";
 import PositionDrawerSection from "@/app/doc/components/drawer/sections/PositionDrawerSection";
 
-function DrawerPage(props) {
+function DrawerPage() {
 
     return (
         <>

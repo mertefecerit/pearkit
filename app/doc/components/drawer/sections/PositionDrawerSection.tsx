@@ -1,5 +1,4 @@
 "use client";
-
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import {BuiButton, BuiDrawer, BuiTag} from "@/app/components/src";
 import {useState} from "react";
@@ -11,7 +10,7 @@ function PositionDrawerSection() {
     const codeBlock = `<BuiDrawer position="right">
     // Content
 </BuiDrawer>`
-    const clickHandler = (position) => {
+    const clickHandler = (position:string) => {
         setPos(position);
         setStatus(true)
     }

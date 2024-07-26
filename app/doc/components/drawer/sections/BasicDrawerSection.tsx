@@ -1,5 +1,4 @@
 "use client";
-
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import {BuiButton, BuiDrawer, BuiTag} from "@/app/components/src";
 import {useState} from "react";
@@ -21,7 +20,7 @@ function BasicDrawerSection() {
             desc={<>The drawer is controlled through the <BuiTag label="status"/> and <BuiTag label={"close"} /> props via the useState hook. It is also measured by the size of the content.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton onClick={() => setStatus(true)}>Open Drawer</BuiButton>
+            <BuiButton onClick={() => setStatus(true)} label={"Open Drawer"}/>
             <BuiDrawer
                 status={status}
                 close={() => setStatus(false)}

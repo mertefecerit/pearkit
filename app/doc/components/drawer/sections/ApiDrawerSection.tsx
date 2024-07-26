@@ -1,38 +1,31 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptionTable";
-import {BuiTag} from "@/app/components/src";
 
 function ApiDrawerSection() {
     const content = [
         {
             name: 'status',
-            type: 'boolean',
+            type: 'boolean | true | false',
             default:'false',
             description: 'State of drawer component'
         },
         {
             name: 'close',
             type: 'function',
-            default:'null',
+            default:'void',
             description: 'Trigger click overlay area'
         },
         {
             name: 'children',
-            type: 'node',
+            type: 'ReactNode',
             default:'null',
             description: 'Child node(s) or component(s) for drawer component'
         },
         {
-            name: 'className',
-            type: 'string',
-            default:'null',
-            description: 'CSS Class for drawer component not drawer overlay'
-        },
-        {
             name: 'position',
-            type: 'string',
+            type: 'string | left | right | bottom | top',
             default:'left',
-            description: <>Position of drawer component. Also take <BuiTag label={"right"}/> <BuiTag label={"bottom"}/> <BuiTag label={"top"}/></>
+            description: 'Position of drawer component.'
         },
     ];
     return (
