@@ -5,10 +5,10 @@ import styles from './BuiDropdown.module.scss';
 import {ChevronDownIcon, CloseIcon} from "../components/icons";
 import {AnimatePresence, motion} from "framer-motion";
 import {useEffect, useRef, useState} from "react";
-import PropTypes from "prop-types";
 import {useClickOutside} from "../hooks";
+import {DropdownItemType, IBuiDropdownPropTypes} from "@/app/components/src/BuiDropdown/type";
 
-function BuiDropdown(
+const  BuiDropdown:React.FC<IBuiDropdownPropTypes> = (
     {
         options,
         selector = "label",
@@ -17,16 +17,18 @@ function BuiDropdown(
         placeholder = "Select Item",
         itemComponent,
         color = "blue",
-        disabled = false
+        disabled = false,
+        ...props
     }
-) {
+) => {
     const [status, setStatus] = useState(false);
     const dropdownRef = useRef(null);
     const [selectedOption, setSelectedOption] = useState(selected);
     const [highlightedIndex, setHighlightedIndex] = useState(-1);
+
     useClickOutside(dropdownRef, () => setStatus(false));
 
-    const toggle = (e) => {
+    const toggle = (e:React.KeyboardEvent) => {
         if (disabled) return;
         if (e.key === 'Escape') setStatus(false);
         if (e.key === ' ' || e.key === "Enter") {
@@ -52,14 +54,14 @@ function BuiDropdown(
         }
     }
 
-    const selectOption = (value) => {
+    const selectOption = (value:DropdownItemType) => {
         if (!status) return;
         onChange(value);
         setSelectedOption(value);
         setStatus(false);
     }
 
-    const clearSelectedOption = (e) => {
+    const clearSelectedOption = (e:React.MouseEvent) => {
         e.stopPropagation();
         setSelectedOption({})
         onChange({});
@@ -76,12 +78,13 @@ function BuiDropdown(
         <div
             onKeyDown={toggle}
             onBlur={() => setStatus(false)}
-            tabIndex={!disabled && 0}
+            tabIndex={disabled ? -1 : 0}
             className={`${ styles.wrapper } ${ status ? styles.isOpen : '' } ${ disabled ? styles.isDisabled : '' }`}
             ref={dropdownRef}
+            {...props}
         >
 
-            <select aria-hidden={true} tabIndex="-1">
+            <select aria-hidden={true} tabIndex={-1}>
                 {
                     options && options.length > 0 && options.map((option, i) =>
                         <option key={i}>{option[selector]}</option>
@@ -129,7 +132,9 @@ function BuiDropdown(
                                     className={`${i === highlightedIndex ? styles['hg-' + color] : ''} ${styles[color]}`}
                                 >
                                     {
-                                        (itemComponent && React.cloneElement(itemComponent, options[i])) ?? option[selector]
+                                        itemComponent && React.isValidElement(itemComponent)
+                                            ? React.cloneElement(itemComponent, options[i])
+                                            : option[selector]
                                     }
                                 </li>
                             )
@@ -139,17 +144,6 @@ function BuiDropdown(
             </AnimatePresence>
         </div>
     );
-}
-
-BuiDropdown.propTypes = {
-    options: PropTypes.array.isRequired,
-    selector: PropTypes.string,
-    onChange: PropTypes.func.isRequired,
-    selected: PropTypes.object,
-    placeholder: PropTypes.string,
-    itemComponent: PropTypes.elementType,
-    color: PropTypes.string,
-    disabled: PropTypes.bool,
 }
 export default BuiDropdown;
 

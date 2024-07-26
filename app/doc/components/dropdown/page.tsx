@@ -6,7 +6,6 @@ import ColorsDropdownSection from "@/app/doc/components/dropdown/sections/Colors
 import DisabledDropdownSection from "@/app/doc/components/dropdown/sections/DisabledDropdownSection";
 
 function DropdownPage() {
-
     return (
         <>
             <ImportDropdownSection />
