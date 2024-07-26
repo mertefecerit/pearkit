@@ -1,6 +1,6 @@
 import React from "react";
 import {HTMLMotionProps} from "framer-motion";
-type ButtonMotionPropType = React.HTMLAttributes<HTMLButtonElement> & HTMLMotionProps<"button">;
+type ButtonMotionPropType = React.ButtonHTMLAttributes<HTMLButtonElement> & HTMLMotionProps<"button">;
 import {TwColor} from "../types/TwColor";
 
 export interface IBuiButtonPropTypes extends ButtonMotionPropType {

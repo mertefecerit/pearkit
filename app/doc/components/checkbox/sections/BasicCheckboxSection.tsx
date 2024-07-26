@@ -1,7 +1,6 @@
 "use client"
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiTag from "@/app/components/src/BuiTag";
-import BuiCheckbox from "@/app/components/src/BuiCheckbox";
+import {BuiTag, BuiCheckbox} from "@/app/components/src";
 import {useState} from "react";
 
 function BasicCheckboxSection() {

@@ -11,7 +11,7 @@ export const metadata = {
     title: 'Checkbox',
     description: 'Checkboxes allow the user to select one or more items from a set.'
 }
-function CheckboxPage(props) {
+function CheckboxPage() {
     return (
         <>
             <ImportCheckboxSection />
