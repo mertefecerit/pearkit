@@ -1,14 +1,8 @@
 import styles from "./BuiTag.module.scss";
 import React from "react";
+import {IBuiTagPropTypes} from "@/app/components/src/BuiTag/type";
 
-interface BuiTagProps extends React.HTMLAttributes<HTMLSpanElement> {
-    label: string;
-    color?: string
-    rounded?: boolean
-    icon?: React.ReactNode
-}
-
-const BuiTag: React.FC<BuiTagProps> = (
+const BuiTag: React.FC<IBuiTagPropTypes> = (
     {
         label,
         color = "blue",

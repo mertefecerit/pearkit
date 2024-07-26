@@ -24,7 +24,7 @@ function BasicModalSection() {
             desc={<>A simple modal component wrapped into an <BuiTag label={<Link href="/doc/components/overlay" target="_blank">BuiOverlay</Link>}></BuiTag> component.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton onClick={() => setModalStatus(true)}>Open Basic Modal</BuiButton>
+            <BuiButton onClick={() => setModalStatus(true)} label="Open Basic Modal"/>
             <BuiModal
                 modalTitle="Lorem Ipsum Modal"
                 status={modalStatus}
