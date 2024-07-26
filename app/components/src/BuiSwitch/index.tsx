@@ -1,9 +1,15 @@
 "use client";
 
 import styles from './BuiSwitch.module.scss';
-import PropTypes from "prop-types";
+import React from "react";
+import {IBuiSwitchPropTypes} from "@/app/components/src/BuiSwitch/type";
 
-function BuiSwitch({color="blue", ...props}) {
+const BuiSwitch:React.FC<IBuiSwitchPropTypes> = (
+    {
+        color = "blue",
+        ...props
+    }
+) => {
     return (
         <label className={styles.wrapper}>
             <input type="checkbox" {...props}/>
@@ -12,11 +18,6 @@ function BuiSwitch({color="blue", ...props}) {
             </div>
         </label>
     );
-}
-BuiSwitch.propTypes = {
-    onChange: PropTypes.func.isRequired,
-    checked: PropTypes.bool.isRequired,
-    disabled: PropTypes.bool,
 }
 export default BuiSwitch;
 

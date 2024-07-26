@@ -10,7 +10,7 @@ export const metadata = {
     description : 'Standard switch component for form components',
 }
 
-function SwitchPage(props) {
+function SwitchPage() {
 
     return (
         <>

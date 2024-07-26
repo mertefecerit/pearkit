@@ -13,7 +13,7 @@ function ColorsSwitchSection() {
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag label="sky"/> <BuiTag label="red"/> <BuiTag label="indigo"/></>}
+                as props. For example : <BuiTag color={"sky"} label="sky"/> <BuiTag color={"red"} label="red"/> <BuiTag color={"indigo"} label="indigo"/></>}
             codeBlock={codeBlock}
         >
             <BuiSwitch color="orange" checked={value1} onChange={() => setValue1(!value1)}/>

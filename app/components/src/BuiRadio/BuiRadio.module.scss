@@ -39,7 +39,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     }
   }
   &.isInvalid {
-    @apply text-red-500 font-medium;
+    @apply text-red-500;
     & > span {
       @apply border-2 border-red-500;
     }
@@ -57,6 +57,9 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     text-xl
     ring-inset
     transition-all;
+    :global(.dark) & {
+      @apply border-gray-700;
+    }
   }
 }
 
