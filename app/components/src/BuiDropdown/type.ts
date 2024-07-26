@@ -1,4 +1,4 @@
-import React, {HTMLAttributes} from "react";
+import React from "react";
 import {TwColor} from "@/app/components/src/types/TwColor";
 
 export type DropdownItemType = {
