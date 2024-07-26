@@ -31,10 +31,10 @@ const BuiButton:React.FC<IBuiButtonPropTypes> = (
     )
     return (
         <motion.button
+            {...props}
             whileTap={{scale: (props.disabled || isLoading || !animation) ? 1 : 0.95}}
             disabled={props.disabled || isLoading}
-            className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!label ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''}`}
-            {...props}
+            className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!label ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${props.className}`}
         >
             {content}
         </motion.button>

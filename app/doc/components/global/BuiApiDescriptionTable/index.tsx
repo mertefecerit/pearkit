@@ -1,7 +1,9 @@
 import styles from './BuiApiDescriptionTable.module.scss';
 import BuiTag from "@/app/components/src/BuiTag";
+import React from "react";
+import {IBuiApiDescriptionTablePropTypes} from "./type";
 
-function BuiApiDescriptionTable({content}) {
+const BuiApiDescriptionTable:React.FC<IBuiApiDescriptionTablePropTypes> = ({content}) => {
     return (
         <div className={styles.BuiApiDescriptionTableWrapper}>
             <table>

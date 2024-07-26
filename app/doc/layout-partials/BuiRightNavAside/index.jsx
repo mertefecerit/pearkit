@@ -6,7 +6,7 @@ import {find} from "lodash";
 import Link from "next/link";
 import AsideContent from "@/app/doc/layout-partials/AsideContent";
 
-function BuiRightNav() {
+const BuiRightNav = () => {
     const routes = AsideContent();
     const pathname = usePathname();
     const [fastMenuContent, setFastMenuContent] = useState([])

@@ -8,7 +8,7 @@ import AsideContent from "@/app/doc/layout-partials/AsideContent";
 import {useMemo} from "react";
 import {usePathname} from "next/navigation";
 
-function BuiPaginator() {
+const BuiPaginator = () =>  {
     const routes = AsideContent();
     const pathname = usePathname();
 

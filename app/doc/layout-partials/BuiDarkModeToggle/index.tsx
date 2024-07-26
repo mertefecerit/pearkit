@@ -4,7 +4,7 @@ import {Icon} from "@iconify/react";
 import BuiButton from "../../../components/src/BuiButton";
 import {useEffect, useState} from "react";
 
-function BuiDarkModeToggle() {
+const BuiDarkModeToggle = () => {
     const [darkMode, setDarkMode] = useState(
         typeof window !== 'undefined' ? localStorage.getItem('darkMode') || 'light' : 'light'
     );

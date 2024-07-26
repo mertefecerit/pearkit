@@ -7,7 +7,7 @@ import BuiHeaderMenu from "@/app/doc/layout-partials/BuiHeaderMenu";
 import BuiLogo from "@/app/doc/components/global/BuiLogo";
 import BuiMobileSidebar from "@/app/doc/components/global/BuiMobileSidebar";
 
-function BuiHeader() {
+const BuiHeader = () => {
     const [mobileSidebarStatus, setMobileSidebarStatus] = useState(false);
     return (
         <header className={`${styles.BuiHeaderWrapper}`}>

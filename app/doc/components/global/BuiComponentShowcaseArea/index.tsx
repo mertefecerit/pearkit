@@ -2,18 +2,28 @@
 import scss from "./BuiComponentShowcaseArea.module.scss";
 import PropTypes from "prop-types";
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import {useState} from "react";
+import {vscDarkPlus} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import React, {useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
-function BuiComponentShowcaseArea({children, title, desc, codeBlock, anchor}) {
-    const [clicked,setClicked] = useState(false);
+import {BuiComponentShowcaseAreaPropTypes} from "./type";
+
+const BuiComponentShowcaseArea:React.FC<BuiComponentShowcaseAreaPropTypes> = (
+    {
+        title,
+        desc,
+        codeBlock,
+        anchor,
+        ...props
+    }
+) => {
+    const [clicked, setClicked] = useState(false);
     const copyPath = () => {
         const fullPath = window.location.origin + window.location.pathname + '#' + anchor;
         navigator.clipboard.writeText(fullPath);
         setClicked(true);
         setTimeout(() => {
             setClicked(false)
-        },500)
+        }, 500)
     }
     return (
         <section id={anchor} className={scss.buiComponentShowcaseArea}>
@@ -42,9 +52,9 @@ function BuiComponentShowcaseArea({children, title, desc, codeBlock, anchor}) {
                 </p>
             </div>
             {
-                children && (
+                props.children && (
                     <div className={scss.showcase}>
-                        {children}
+                        {props.children}
                     </div>
                 )
             }
