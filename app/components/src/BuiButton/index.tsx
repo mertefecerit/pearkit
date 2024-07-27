@@ -18,6 +18,8 @@ const BuiButton:React.FC<IBuiButtonPropTypes> = (
         animation = true,
         raised = false,
         rounded = false,
+        disabled = false,
+        target = "_blank",
         ...props
     }
 ) => {
@@ -30,14 +32,25 @@ const BuiButton:React.FC<IBuiButtonPropTypes> = (
         </>
     )
     return (
-        <motion.button
-            {...props}
-            whileTap={{scale: (props.disabled || isLoading || !animation) ? 1 : 0.95}}
-            disabled={props.disabled || isLoading}
-            className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!label ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${props.className}`}
-        >
-            {content}
-        </motion.button>
+        !props.href ?
+            <motion.button
+                {...props}
+                whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
+                disabled={disabled || isLoading}
+                className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!label ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${props.className}`}
+            >
+                {content}
+            </motion.button>
+            :
+            <motion.a
+                {...props}
+                target={target}
+                onClick={disabled || isLoading ? (e) => e.preventDefault() : props.onClick}
+                whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
+                className={`${styles.buiButton} ${styles[color]} ${styles[size]} ${styles[variant]} ${!label ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${props.className}`}
+            >
+                {content}
+            </motion.a>
     )
 }
 export default BuiButton;

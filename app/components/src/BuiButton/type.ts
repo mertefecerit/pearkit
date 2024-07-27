@@ -1,17 +1,21 @@
 import React from "react";
 import {HTMLMotionProps} from "framer-motion";
-type ButtonMotionPropType = React.ButtonHTMLAttributes<HTMLButtonElement> & HTMLMotionProps<"button">;
+type ButtonMotionPropType =
+    Omit<React.ButtonHTMLAttributes<HTMLButtonElement> &
+    React.AnchorHTMLAttributes<HTMLAnchorElement> &
+    HTMLMotionProps<"button">,'disabled'>;
 import {TwColor} from "../types/TwColor";
 
 export interface IBuiButtonPropTypes extends ButtonMotionPropType {
-    variant?: 'basic' | 'outlined' | 'text',
+    variant?: string | 'basic' | 'outlined' | 'text',
     color?: TwColor,
-    size?: 'xs' | 'sm' | 'base' | 'lg' | 'xl',
-    isLoading?: true | false,
+    size?: string | 'xs' | 'sm' | 'base' | 'lg' | 'xl',
+    isLoading?: boolean | true | false,
     label?: string,
     startIcon?: React.ReactNode,
     endIcon?: React.ReactNode,
-    animation?: true | false,
-    raised?: true | false,
-    rounded?: true | false,
+    animation?: boolean | true | false,
+    raised?: boolean | true | false,
+    rounded?: boolean | true | false,
+    disabled?: boolean | true | false,
 }

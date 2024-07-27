@@ -11,6 +11,7 @@ import SizesButtonSection from "@/app/doc/components/button/sections/SizesButton
 import AccessibilityButtonSection from "@/app/doc/components/button/sections/AccessibilityButtonSection";
 import ButtonGroupSection from "@/app/doc/components/button/sections/ButtonGroupSection";
 import ApiButtonSection from "@/app/doc/components/button/sections/ApiButtonSection";
+import LinkButtonSection from "@/app/doc/components/button/sections/LinkButtonSection";
 
 
 export const metadata = {
@@ -24,6 +25,7 @@ function ButtonComponentPage() {
             <ImportButtonSection/>
             <BasicButtonSection/>
             <VariantButtonSection />
+            <LinkButtonSection />
             <IconButtonSection/>
             <LoadingButtonSection />
             <ColorButtonSection />
