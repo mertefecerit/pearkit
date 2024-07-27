@@ -7,31 +7,25 @@ function ApiTagSection() {
             name: 'label',
             type: 'string',
             default:'null',
-            description: 'Value of tag component'
+            description: 'Label of the component'
         },
         {
             name: 'color',
-            type: 'string',
+            type: 'TwColor',
             default:'blue',
-            description: 'Color of switch component.(Tailwindcss color names)'
+            description: 'Colors of the component'
         },
         {
             name: 'rounded',
             type: 'boolean',
-            default:'false',
-            description: 'For fully rounded tag property'
-        },
-        {
-            name: 'className',
-            type: 'string',
-            default: 'null',
-            description: 'For extra css classes tag component'
+            default:'true',
+            description: 'Fully rounded design of the component'
         },
         {
             name: 'icon',
-            type: 'elementType',
+            type: 'ReactNode',
             default:'null',
-            description: 'Icon component for tag component'
+            description: 'Icon component of the tag component'
         },
     ];
     return (

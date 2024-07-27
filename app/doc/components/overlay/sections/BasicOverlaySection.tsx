@@ -13,8 +13,10 @@ function BasicOverlaySection() {
 
 //Login Component
 
-<BuiCard className={"p-8"} title="Login Screen" subTitle="Welcome again. Please login.">
+<BuiCard className={"p-8"}>
 <div className="flex flex-col gap-8">
+    <h1 className="text-2xl font-bold mb-2">Login Screen</h1>
+    <h2 className="text-gray-500 mb-4">Welcome again. Please login.</h2>
     <BuiInput placeholder="info@example.com" onChange={() => null}/>
     <BuiInput placeholder="********" type="password" onChange={() => null}/>
     <div className="flex gap-2">
@@ -37,13 +39,16 @@ function BasicOverlaySection() {
                 status={overlayStatus}
                 close={() => setOverlayStatus(false)}
             >
-                <BuiCard className={"p-8"} title="Login Screen" subTitle="Welcome again. Please login.">
+                <BuiCard className={"p-8"}>
+                    <h1 className="text-2xl font-bold mb-2">Login Screen</h1>
+                    <h2 className="text-gray-500 mb-4">Welcome again. Please login.</h2>
                     <div className="flex flex-col gap-8">
                         <BuiInput placeholder="info@example.com" onChange={() => null}/>
                         <BuiInput placeholder="********" type="password" onChange={() => null}/>
                         <div className="flex gap-2">
                             <BuiButton onClick={() => null} label={"Login"}></BuiButton>
-                            <BuiButton variant="text" onClick={() => setOverlayStatus(false)} color="gray" label="Cancel"/>
+                            <BuiButton variant="text" onClick={() => setOverlayStatus(false)} color="gray"
+                                       label="Cancel"/>
                         </div>
                     </div>
                 </BuiCard>
