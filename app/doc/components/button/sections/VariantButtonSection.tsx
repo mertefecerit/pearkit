@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 import {BuiButton, BuiTag} from "@/app/components/src";
 
-function VariantButtonSection(props) {
+function VariantButtonSection() {
     const codeBlock = `<BuiButton label="Button"/>
 <BuiButton variant="outlined" label="Button"/>
 <BuiButton variant="text" label="Button"/>

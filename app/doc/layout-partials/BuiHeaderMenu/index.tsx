@@ -21,6 +21,11 @@ const BuiHeaderMenu:React.FC<{mobileSidebarToggle: () => void}> = ({mobileSideba
                 variant="outlined"
                 startIcon={<Icon icon="mdi:search"/>}
             />
+            <BuiButton
+                href={"https://github.com/mertefecerit/bubbleui"}
+                variant="outlined"
+                startIcon={<Icon icon="mdi:github"/>}
+            />
             <BuiDarkModeToggle />
             <BuiButton
                 className="flex lg:hidden"
