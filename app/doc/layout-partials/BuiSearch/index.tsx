@@ -2,15 +2,21 @@
 
 import {BuiInput, BuiModal} from "@/app/components/src";
 import AsideContent from "@/app/doc/layout-partials/AsideContent";
-import {useEffect, useMemo, useState} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import Fuse from "fuse.js";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
 import styles from "./BuiSearc.module.scss";
+import {IBuiSearchPropTypes, BuiSearchChild} from "./type";
 
-function BuiSearch({status, close}) {
+const BuiSearch: React.FC<IBuiSearchPropTypes> = (
+    {
+        status,
+        close
+    }
+) => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [results, setResults] = useState([]);
+    const [results, setResults] = useState<BuiSearchChild[]>([]);
     const asideContent = useMemo(() => AsideContent(), []);
     const fuse = useMemo(() => new Fuse(asideContent, {
         keys: ['children.label'],
@@ -25,8 +31,11 @@ function BuiSearch({status, close}) {
         }
         const foo = fuse.search(searchTerm);
 
-        const matchedChildren = foo.flatMap(result =>
-            result.matches.map(match => result.item.children.find(child => child.label === match.value))
+        const matchedChildren: BuiSearchChild[] = foo.flatMap((result: any) =>
+            result.matches ? result.matches.map((match: any) =>
+                result.item.children.find((child: BuiSearchChild) =>
+                    child.label === match.value)
+            ).filter((child: BuiSearchChild | undefined): child is BuiSearchChild => child !== undefined) : []
         );
 
         setResults(matchedChildren);
@@ -42,7 +51,7 @@ function BuiSearch({status, close}) {
         <BuiModal status={status} modalTitle="Search Document" close={closeHandler}>
             <div className={styles.wrapper}>
                 <BuiInput
-                    focus={true}
+                    autoFocus
                     placeholder="Modal | Button | Badge ..."
                     icon={<Icon icon="mdi:search" width={20}/>}
                     onChange={(e) => setSearchTerm(e.target.value)}
@@ -51,7 +60,7 @@ function BuiSearch({status, close}) {
                     results.length > 0 &&
                     <div className={styles.searchResultContent}>
                         {
-                            results.map((mainItem,i) => (
+                            results.map((mainItem, i) => (
                                 <div key={i}>
                                     <Link onClick={closeHandler} href={mainItem.path}>
                                         {mainItem.label}
@@ -60,7 +69,8 @@ function BuiSearch({status, close}) {
                                         {
                                             mainItem.children.map((subItem, i) => (
                                                 <li key={i}>
-                                                    <Link onClick={closeHandler} href={mainItem.path + subItem.path}>{subItem.label}</Link>
+                                                    <Link onClick={closeHandler}
+                                                          href={mainItem.path + subItem.path}>{subItem.label}</Link>
                                                 </li>
                                             ))
                                         }
