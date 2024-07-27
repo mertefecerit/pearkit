@@ -1,6 +1,6 @@
 {
   "name": "@mertefecerit/bubbleui",
-  "version": "1.0.872",
+  "version": "2.0.205",
   "description": "A React Component Kit",
   "main": "dist/bubbleUi.umd.js",
   "module": "dist/bubbleUi.es.js",
@@ -20,6 +20,11 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@vitejs/plugin-react": "^4.2.1",
     "postcss": "^8",
     "sass": "^1.77.6",
