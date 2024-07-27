@@ -3,6 +3,6 @@ import {TwColor} from "@/app/components/src/types/TwColor";
 
 export interface IBuiCheckboxPropTypes extends React.InputHTMLAttributes<HTMLInputElement> {
     invalid?: true | false,
-    color: TwColor,
+    color?: TwColor,
     label?: string,
 }

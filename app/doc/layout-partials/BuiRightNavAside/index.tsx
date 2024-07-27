@@ -6,10 +6,15 @@ import {find} from "lodash";
 import Link from "next/link";
 import AsideContent from "@/app/doc/layout-partials/AsideContent";
 
+interface BuiRightNavAsideMenuItemType {
+    path: string;
+    label: string;
+}
+
 const BuiRightNav = () => {
     const routes = AsideContent();
     const pathname = usePathname();
-    const [fastMenuContent, setFastMenuContent] = useState([])
+    const [fastMenuContent, setFastMenuContent] = useState<BuiRightNavAsideMenuItemType[]>([])
     const [currentPathHash, setCurrentPathHash] = useState('');
 
     useEffect(() => {

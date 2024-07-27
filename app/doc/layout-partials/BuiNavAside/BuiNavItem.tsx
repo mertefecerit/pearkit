@@ -20,7 +20,7 @@ const BuiNavItem:React.FC<BuiNavItemPropTypes> = (
         forEach(childItems, (item) => {
             if (item.path === pathname) return setIsActive(true);
         })
-    }, [pathname]);
+    }, [childItems, pathname]);
     return (
         <div className={styles.buiNavItem}>
             <div onClick={() => setIsActive(!isActive)}
