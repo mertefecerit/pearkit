@@ -1,4 +1,4 @@
-function Logo(props) {
+function Logo() {
     return (
         <svg className="lg:hidden block h-[60px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 597.21 455.5">
             <g>

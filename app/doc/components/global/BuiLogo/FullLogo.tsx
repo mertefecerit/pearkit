@@ -1,4 +1,4 @@
-function FullLogo(props) {
+function FullLogo() {
     return (
         <svg className="hidden lg:block h-[60px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1619.23 455.5">
             <g>
