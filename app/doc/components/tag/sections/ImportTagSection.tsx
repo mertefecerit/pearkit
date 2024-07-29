@@ -5,7 +5,7 @@ function ImportTagSection() {
     return (
         <BuiComponentShowcaseArea
             anchor="import"
-            title="Code"
+            title="Tag"
             desc={<>Standard tag component for categorize content</>}
             codeBlock={codeBlock}
         />

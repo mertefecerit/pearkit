@@ -164,6 +164,20 @@ export default function AsideContent() {
                     ]
                 },
                 {
+                    path: '/doc/components/tabs',
+                    label: 'Tabs',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#activeTab', label: 'Active Tab'},
+                        {path: '#colors', label: 'Colors'},
+                        {path: '#disabled', label: 'Disabled'},
+                        {path: '#icon', label: 'Icon'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
+                {
                     path: '/doc/components/tag',
                     label: 'Tag',
                     children: [

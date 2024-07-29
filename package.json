@@ -1,6 +1,6 @@
 {
   "name": "bubbleui",
-  "version": "2.0.224",
+  "version": "2.0.245",
   "private": true,
   "scripts": {
     "dev": "next dev",
