@@ -28,7 +28,7 @@ function BasicTabsSection() {
             desc={<></>}
             codeBlock={codeBlock}
         >
-            <BuiTabs activeTabIndex={2} onChange={(e) => console.log(e)}>
+            <BuiTabs>
                 {
                     Array.from({length:5},(_, index) => index + 1).map((i) => (
                         <BuiTab key={i} label={'Tab ' + i}>

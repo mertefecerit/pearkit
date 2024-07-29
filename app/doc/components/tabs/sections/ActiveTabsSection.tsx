@@ -28,7 +28,7 @@ function ActiveTabsSection() {
     const [activeIndex,setActiveIndex] = useState(3);
     return (
         <BuiComponentShowcaseArea
-            anchor="activeTab"
+            anchor="active-tab"
             title="Active Tab"
             desc={<></>}
             codeBlock={codeBlock}

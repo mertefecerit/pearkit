@@ -4,6 +4,7 @@ import ActiveTabsSection from "@/app/doc/components/tabs/sections/ActiveTabsSect
 import ColorsTabsSection from "@/app/doc/components/tabs/sections/ColorsTabsSection";
 import IconTabsSection from "@/app/doc/components/tabs/sections/IconTabsSection";
 import DisabledTabsSection from "@/app/doc/components/tabs/sections/DisabledTabsSection";
+import OverflowTabsSection from "@/app/doc/components/tabs/sections/OverflowTabsSection";
 import AccessibilityTabsSection from "@/app/doc/components/tabs/sections/AccessibilityTabsSection";
 import ApiTabsSection from "@/app/doc/components/tabs/sections/ApiTabsSection";
 
@@ -16,6 +17,7 @@ const TabsPage = () => {
             <ColorsTabsSection />
             <IconTabsSection />
             <DisabledTabsSection />
+            <OverflowTabsSection />
             <AccessibilityTabsSection />
             <ApiTabsSection />
         </>

@@ -169,10 +169,11 @@ export default function AsideContent() {
                     children: [
                         {path: '#import', label: 'Import'},
                         {path: '#basic', label: 'Basic'},
-                        {path: '#activeTab', label: 'Active Tab'},
+                        {path: '#active-tab', label: 'Active Tab'},
                         {path: '#colors', label: 'Colors'},
-                        {path: '#disabled', label: 'Disabled'},
                         {path: '#icon', label: 'Icon'},
+                        {path: '#disabled', label: 'Disabled'},
+                        {path: '#overflow', label: 'Overflow'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},
                     ]
