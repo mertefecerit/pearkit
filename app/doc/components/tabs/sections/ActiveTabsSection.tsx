@@ -1,7 +1,7 @@
 "use client";
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTab, BuiTabs} from "@/app/components/src";
+import {BuiTab, BuiTabs, BuiTag} from "@/app/components/src";
 import {useState} from "react";
 
 function ActiveTabsSection() {
@@ -30,7 +30,7 @@ function ActiveTabsSection() {
         <BuiComponentShowcaseArea
             anchor="active-tab"
             title="Active Tab"
-            desc={<></>}
+            desc={<>You can determine which tab will be selected when the component is first loaded with the <BuiTag label="activeTabIndex" /> property. And you can control every index change by connecting it to a state.</>}
             codeBlock={codeBlock}
         >
             <span>Active Index : {activeIndex}</span>

@@ -18,7 +18,7 @@ function OverflowTabsSection() {
         <BuiComponentShowcaseArea
             anchor="overflow"
             title="Overflow"
-            desc={<></>}
+            desc={<>If the component exceeds the size of its container, the scroll function is automatically activated and the relevant buttons appear.</>}
             codeBlock={codeBlock}
         >
             <BuiTabs>

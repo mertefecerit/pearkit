@@ -15,7 +15,7 @@ function IconTabsSection() {
         <BuiComponentShowcaseArea
             anchor="icon"
             title="Icon"
-            desc={<>You can add a tag icon by passing an icon component to the <BuiTag label="icon"/> property.</>}
+            desc={<>You can add a icon by passing an icon component to the <BuiTag label="icon"/> property.</>}
             codeBlock={codeBlock}
         >
             <BuiTabs>

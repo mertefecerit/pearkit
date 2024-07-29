@@ -1,7 +1,7 @@
 "use client";
 
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTab, BuiTabs} from "@/app/components/src";
+import {BuiTab, BuiTabs, BuiTag} from "@/app/components/src";
 
 function BasicTabsSection() {
     const codeBlock = `<BuiTabs color="orange">
@@ -25,7 +25,7 @@ function BasicTabsSection() {
         <BuiComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<></>}
+            desc={<><BuiTag label="BuiTabs"/> consists of one or more <BuiTag label="BuiTab"/> components.</>}
             codeBlock={codeBlock}
         >
             <BuiTabs>

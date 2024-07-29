@@ -1,5 +1,5 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTabs, BuiTab} from "@/app/components/src";
+import {BuiTabs, BuiTab, BuiTag} from "@/app/components/src";
 
 function DisabledTabsSection() {
     const codeBlock = `<BuiTabs>
@@ -13,7 +13,7 @@ function DisabledTabsSection() {
         <BuiComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<></>}
+            desc={<>You can disable the relevant tab by giving the component the <BuiTag label={"disabled"}/> property.</>}
             codeBlock={codeBlock}
         >
             <BuiTabs>
