@@ -3,7 +3,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./BuiTabs.module.scss";
 import {IBuiTabsPropTypes} from "./type";
-import {motion, AnimatePresence} from "framer-motion";
+import {motion} from "framer-motion";
 import {ArrowBackIos, ArrowForwardIos} from "../components/icons";
 
 const BuiTabs:React.FC<IBuiTabsPropTypes> = (
@@ -77,19 +77,17 @@ const BuiTabs:React.FC<IBuiTabsPropTypes> = (
                 </button>}
             </div>
 
-            <AnimatePresence mode="wait">
-                <motion.div
-                    key={activeIndex}
-                    initial={{opacity: 0, x: 50}}
-                    animate={{opacity: 1, x: 0}}
-                    exit={{opacity: 0, x: -50}}
-                    transition={{duration: 0.3}}
-                >
-                    {
-                        React.isValidElement(childrenArray[activeIndex]) && childrenArray[activeIndex]
-                    }
-                </motion.div>
-            </AnimatePresence>
+            <motion.div
+                key={activeIndex}
+                initial={{opacity: 0, x: 50}}
+                animate={{opacity: 1, x: 0}}
+                exit={{opacity: 0, x: -50}}
+                transition={{duration: 0.3}}
+            >
+                {
+                    React.isValidElement(childrenArray[activeIndex]) && childrenArray[activeIndex]
+                }
+            </motion.div>
         </div>
     );
 }
