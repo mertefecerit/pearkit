@@ -1,17 +1,17 @@
-import {BuiBadge, BuiTag} from "@/app/components/src";
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import {PBadge, PTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function BasicBadgeSection(){
-    const codeBlock = `<BuiBadge value={1}/>`;
+    const codeBlock = `<PBadge value={1}/>`;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Text to display is defined with the <BuiTag label="value"/> property.</>}
+            desc={<>Text to display is defined with the <PTag label="value"/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiBadge value={1}/>
-        </BuiComponentShowcaseArea>
+            <PBadge value={1}/>
+        </PComponentShowcaseArea>
     )
 }
 

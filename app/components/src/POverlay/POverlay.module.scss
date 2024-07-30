@@ -1,0 +1,17 @@
+@import "../../../assets/scss/colors";
+.wrapper {
+  @apply fixed flex items-start h-dvh top-0 left-0 w-full z-40 overflow-y-auto;
+  @each $color, $rgb in $colors {
+    &.#{$color} {
+      @if $color == 'black' {
+        @apply bg-black/50;
+      } @else if $color == 'white' {
+        @apply bg-white/50;
+      } @else {
+        @apply bg-#{$color}-500/50;
+      }
+    }
+  }
+}
+
+

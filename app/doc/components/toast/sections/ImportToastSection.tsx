@@ -1,18 +1,18 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag} from "@/app/components/src";
 
 function ImportToastSection() {
-    const codeBlock = `import {BuiToastProvider, useBuiToast} from "pearkit;
+    const codeBlock = `import {PToastProvider, usePToast} from "pearkit;
 
-<BuiToastProvider>
-    // access useBuiToast hook,
-</BuiToastProvider>    
+<PToastProvider>
+    // access usePToast hook,
+</PToastProvider>    
 `
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Toast"
-            desc={<>Standard toast component for user interaction. Use <BuiTag label={"BuiToastProvider"}/> provider for access <BuiTag label={"useBuiToast"}/> hook from children components</>}
+            desc={<>Standard toast component for user interaction. Use <PTag label={"PToastProvider"}/> provider for access <PTag label={"usePToast"}/> hook from children components</>}
             codeBlock={codeBlock}
         />
     );

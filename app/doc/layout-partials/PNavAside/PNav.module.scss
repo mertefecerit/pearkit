@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex flex-col gap-2;
+
+  & > .navItem {
+    & > div.clickArea {
+      @apply font-medium flex gap-1 items-center cursor-pointer py-1 rounded;
+    }
+
+    & > ul.contentArea {
+      @apply pl-2;
+      & > li > a {
+        @apply outline-0 transition-all inline-block w-full border-l-2 pl-4 py-1 hover:rounded-r hover:border-gray-500;
+        &.active {
+          @apply border-lime-500 rounded-r text-lime-500 font-medium;
+        }
+      }
+    }
+  }
+}

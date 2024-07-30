@@ -1,18 +1,18 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiButton} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PButton} from "@/app/components/src";
 
 function DisabledButtonSection() {
-    const codeBlock = `<BuiButton disabled label="Button"/>`;
+    const codeBlock = `<PButton disabled label="Button"/>`;
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
             desc={<>You can give a bool value to disable the button.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton disabled label={"Button"}/>
-        </BuiComponentShowcaseArea>
+            <PButton disabled label={"Button"}/>
+        </PComponentShowcaseArea>
     )
 }
 

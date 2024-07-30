@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function DownloadInstallationSection() {
     const codeBlock = `npm i pearkit`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="dowload"
             title="Download"
             desc={<>PearKIT is available for download at npm</>}

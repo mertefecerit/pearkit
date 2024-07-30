@@ -1,27 +1,27 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag, BuiRadio} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag, PRadio} from "@/app/components/src";
 
 function InvalidRadioSection() {
-    const codeBlock = `<BuiRadio isInvalid={true}/>
+    const codeBlock = `<PRadio isInvalid={true}/>
 //or
-<BuiRadio isInvalid/>
+<PRadio isInvalid/>
 `;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="invalid"
             title="Invalid"
-            desc={<>We can manage this state by sending the standard <BuiTag label={"isInvalid"}/> property.</>}
+            desc={<>We can manage this state by sending the standard <PTag label={"isInvalid"}/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiRadio
+            <PRadio
                 isInvalid={true}
                 label="Invalid"
                 name="invalid"
                 checked={false}
                 onChange={() => null}
             />
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 export default InvalidRadioSection;

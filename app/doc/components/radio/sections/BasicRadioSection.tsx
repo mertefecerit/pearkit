@@ -1,20 +1,20 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 import {useState} from "react";
-import {BuiTag, BuiRadio} from "@/app/components/src";
+import {PTag, PRadio} from "@/app/components/src";
 
 function BasicRadioSection() {
     const [option,setOption] = useState('option1');
     const codeBlock = `const [option, setOption] = useState('option1');
 
-<BuiRadio
+<PRadio
     label="Option 1"
     name="options"
     value="option1"
     checked={option === 'option1'}
     onChange={(e) => setOption(e.target.value)}
 />
-<BuiRadio
+<PRadio
     label="Option 2"
     name="options"
     value="option2"
@@ -23,27 +23,27 @@ function BasicRadioSection() {
 />     
 `;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Just as it receives all input attributes, you can also send a <BuiTag label={"label"}/> prop. Here is a simple usage.</>}
+            desc={<>Just as it receives all input attributes, you can also send a <PTag label={"label"}/> prop. Here is a simple usage.</>}
             codeBlock={codeBlock}
         >
-            <BuiRadio
+            <PRadio
                 label="Option 1"
                 name="options"
                 value="option1"
                 checked={option === 'option1'}
                 onChange={(e) => setOption(e.target.value)}
             />
-            <BuiRadio
+            <PRadio
                 label="Option 2"
                 name="options"
                 value="option2"
                 checked={option === 'option2'}
                 onChange={(e) => setOption(e.target.value)}
             />
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 export default BasicRadioSection;

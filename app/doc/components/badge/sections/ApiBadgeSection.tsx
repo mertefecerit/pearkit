@@ -1,5 +1,5 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptionTable";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PApiDescriptionTable from "@/app/doc/components/global/PApiDescriptionTable";
 
 
 function ApiBadgeSection() {
@@ -24,13 +24,13 @@ function ApiBadgeSection() {
         },
     ];
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="api"
             title="Api"
             desc={<>Here you can see all the working features for the badge.</>}
         >
-            <BuiApiDescriptionTable content={content}/>
-        </BuiComponentShowcaseArea>
+            <PApiDescriptionTable content={content}/>
+        </PComponentShowcaseArea>
     )
 }
 

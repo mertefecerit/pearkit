@@ -1,24 +1,24 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag, BuiSwitch} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag, PSwitch} from "@/app/components/src";
 import {useState} from "react";
 
 function DisabledSwitchSection() {
     const [value1, setValue1] = useState(false);
     const [value2, setValue2] = useState(true);
     const [value3, setValue3] = useState(true);
-    const codeBlock = `<BuiSwitch disabled />`;
+    const codeBlock = `<PSwitch disabled />`;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>For the <BuiTag label={"disabled"}/> property, it is sufficient to provide the property itself directly.</>}
+            desc={<>For the <PTag label={"disabled"}/> property, it is sufficient to provide the property itself directly.</>}
             codeBlock={codeBlock}
         >
-            <BuiSwitch disabled color="orange" checked={value1} onChange={() => setValue1(!value1)}/>
-            <BuiSwitch disabled color="green" checked={value2} onChange={() => setValue2(!value2)}/>
-            <BuiSwitch disabled color="indigo" checked={value3} onChange={() => setValue3(!value3)}/>
-        </BuiComponentShowcaseArea>
+            <PSwitch disabled color="orange" checked={value1} onChange={() => setValue1(!value1)}/>
+            <PSwitch disabled color="green" checked={value2} onChange={() => setValue2(!value2)}/>
+            <PSwitch disabled color="indigo" checked={value3} onChange={() => setValue3(!value3)}/>
+        </PComponentShowcaseArea>
     );
 }
 

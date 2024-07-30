@@ -1,24 +1,24 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiButton from "@/app/components/src/BuiButton";
-import BuiTag from "@/app/components/src/BuiTag";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PButton from "@/app/components/src/PButton";
+import PTag from "@/app/components/src/PTag";
 
 function LinkButtonSection() {
-    const codeBlock = `<BuiButton href="https://www.google.com" label="Google"/>
-<BuiButton href="https://www.google.com" variant="outlined" label="Google"/>
-<BuiButton href="https://www.google.com" variant="text" label="Google"/>
+    const codeBlock = `<PButton href="https://www.google.com" label="Google"/>
+<PButton href="https://www.google.com" variant="outlined" label="Google"/>
+<PButton href="https://www.google.com" variant="text" label="Google"/>
 `;
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="link"
             title="Link"
-            desc={<>If you want to use it as a button link, just pass the <BuiTag label="href"></BuiTag> value as the prop. Also, the target property is <BuiTag label="_target"></BuiTag> by default, this value can also be sent as a prop.</>}
+            desc={<>If you want to use it as a button link, just pass the <PTag label="href"></PTag> value as the prop. Also, the target property is <PTag label="_target"></PTag> by default, this value can also be sent as a prop.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton href="https://www.google.com" label="Google"/>
-            <BuiButton href="https://www.google.com" variant="outlined" label={"Google"}/>
-            <BuiButton href="https://www.google.com" variant="text" label={"Google"}/>
-        </BuiComponentShowcaseArea>
+            <PButton href="https://www.google.com" label="Google"/>
+            <PButton href="https://www.google.com" variant="outlined" label={"Google"}/>
+            <PButton href="https://www.google.com" variant="text" label={"Google"}/>
+        </PComponentShowcaseArea>
     )
 }
 

@@ -1,7 +1,7 @@
 "use client"
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiModal, BuiTag, BuiButton} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PModal, PTag, PButton} from "@/app/components/src";
 import {useState} from "react";
 import Link from "next/link";
 
@@ -9,30 +9,30 @@ function BasicModalSection() {
     const [modalStatus,setModalStatus] = useState(false);
     const codeBlock = `const [modalStatus,setModalStatus] = useState(false);
     
-<BuiButton onClick={() => setModalStatus(true)}>Open Basic Modal</BuiButton>
-<BuiModal
+<PButton onClick={() => setModalStatus(true)}>Open Basic Modal</PButton>
+<PModal
     modalTitle="Lorem Ipsum Modal"
     status={modalStatus}
     close={() => setModalStatus(false)}
 >
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sequi.</p>
-</BuiModal>`
+</PModal>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>A simple modal component wrapped into an <BuiTag label={<Link href="/doc/components/overlay" target="_blank">BuiOverlay</Link>}></BuiTag> component.</>}
+            desc={<>A simple modal component wrapped into an <PTag label={<Link href="/doc/components/overlay" target="_blank">POverlay</Link>}></PTag> component.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton onClick={() => setModalStatus(true)} label="Open Basic Modal"/>
-            <BuiModal
+            <PButton onClick={() => setModalStatus(true)} label="Open Basic Modal"/>
+            <PModal
                 modalTitle="Lorem Ipsum Modal"
                 status={modalStatus}
                 close={() => setModalStatus(false)}
             >
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sequi.</p>
-            </BuiModal>
-        </BuiComponentShowcaseArea>
+            </PModal>
+        </PComponentShowcaseArea>
     );
 }
 

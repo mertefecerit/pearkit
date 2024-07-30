@@ -1,27 +1,27 @@
-import {BuiBadge, BuiTag} from "@/app/components/src";
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import {PBadge, PTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ColorsBadgeSection(){
-    const codeBlock = `<BuiBadge color="red" value={2}/>
-<BuiBadge color="indigo" value={7}/>
-<BuiBadge color="yellow" value={12}/>
-<BuiBadge color="sky" value={148}/>
-<BuiBadge color="blue" value={34}/>`;
+    const codeBlock = `<PBadge color="red" value={2}/>
+<PBadge color="indigo" value={7}/>
+<PBadge color="yellow" value={12}/>
+<PBadge color="sky" value={148}/>
+<PBadge color="blue" value={34}/>`;
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag color={"sky"} label="sky"/> <BuiTag color={"red"} label="red"/> <BuiTag color={"indigo"} label="indigo"/></>}
+                as props. For example : <PTag color={"sky"} label="sky"/> <PTag color={"red"} label="red"/> <PTag color={"indigo"} label="indigo"/></>}
             codeBlock={codeBlock}
         >
-            <BuiBadge color="red" value={2}/>
-            <BuiBadge color="indigo" value={7}/>
-            <BuiBadge color="yellow" value={12}/>
-            <BuiBadge color="sky" value={148}/>
-            <BuiBadge color="blue" value={34}/>
-        </BuiComponentShowcaseArea>
+            <PBadge color="red" value={2}/>
+            <PBadge color="indigo" value={7}/>
+            <PBadge color="yellow" value={12}/>
+            <PBadge color="sky" value={148}/>
+            <PBadge color="blue" value={34}/>
+        </PComponentShowcaseArea>
     )
 }
 

@@ -1,12 +1,12 @@
 "use client";
 
 import React from 'react';
-import {BuiTag, useBuiToast} from "@/app/components/src";
-import {BuiButton} from "@/app/components/src";
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import {PTag, usePToast} from "@/app/components/src";
+import {PButton} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 const BasicToastSection = () => {
-    const codeBlock = `const toast = useBuiToast();
+    const codeBlock = `const toast = usePToast();
 
     const showToast = () => {
         toast.fire({
@@ -15,9 +15,9 @@ const BasicToastSection = () => {
         });
     }
     
-<BuiButton onClick={showToast} label="Show Info Toast"/>
+<PButton onClick={showToast} label="Show Info Toast"/>
     `
-    const toast = useBuiToast();
+    const toast = usePToast();
     const showToast = () => {
         toast.fire({
             title: 'Success Toast Title',
@@ -25,14 +25,14 @@ const BasicToastSection = () => {
         },{position: 'top-end',timeout:3000});
     }
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>This is standard use of the toast component. Use <BuiTag label={"useBuiToast"} /> hook and access the fire function.</>}
+            desc={<>This is standard use of the toast component. Use <PTag label={"usePToast"} /> hook and access the fire function.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton onClick={showToast} label="Show Info Toast"/>
-        </BuiComponentShowcaseArea>
+            <PButton onClick={showToast} label="Show Info Toast"/>
+        </PComponentShowcaseArea>
     );
 };
 

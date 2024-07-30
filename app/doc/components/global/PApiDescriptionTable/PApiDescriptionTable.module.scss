@@ -1,0 +1,16 @@
+.wrapper {
+  @apply overflow-x-auto w-full;
+  & > table {
+    @apply table-auto w-full text-left border-separate border-spacing-4;
+    & > thead {}
+    & > tbody {
+      & > tr {
+        & > td {
+          @apply py-4;
+        }
+      }
+    }
+  }
+}
+
+

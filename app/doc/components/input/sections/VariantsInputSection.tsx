@@ -1,26 +1,26 @@
 "use client"
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiInput from "@/app/components/src/BuiInput";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PInput from "@/app/components/src/PInput";
+import {PTag} from "@/app/components/src";
 
 function VariantsInputSection() {
-    const codeBlock = `<BuiInput />
-<BuiInput variant="underlined" />
-<BuiInput variant="filled" />`
+    const codeBlock = `<PInput />
+<PInput variant="underlined" />
+<PInput variant="filled" />`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="variants"
             title="Variant"
-            desc={<>We created 3 variants, thinking that you can make different designs. <BuiTag label={"outlined"}/> is used by default. The other two are <BuiTag label={"underlined"}/> and <BuiTag label={"filled"}/> options.</>}
+            desc={<>We created 3 variants, thinking that you can make different designs. <PTag label={"outlined"}/> is used by default. The other two are <PTag label={"underlined"}/> and <PTag label={"filled"}/> options.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 

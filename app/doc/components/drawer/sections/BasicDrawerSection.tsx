@@ -1,35 +1,35 @@
 "use client";
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiButton, BuiDrawer, BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PButton, PDrawer, PTag} from "@/app/components/src";
 import {useState} from "react";
-import BuiNav from "@/app/doc/layout-partials/BuiNavAside/BuiNav";
+import PNav from "@/app/doc/layout-partials/PNavAside/PNav";
 
 function BasicDrawerSection() {
     const [status, setStatus] = useState(false);
     const codeBlock = `const [status, setStatus] = useState(false);
 
-<BuiDrawer status={status} close={() => setStatus(false)}>
+<PDrawer status={status} close={() => setStatus(false)}>
     <div className="p-4 w-[300px]">
-        <BuiNav />
+        <PNav />
     </div>
-</BuiDrawer>`
+</PDrawer>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>The drawer is controlled through the <BuiTag label="status"/> and <BuiTag label={"close"} /> props via the useState hook. It is also measured by the size of the content.</>}
+            desc={<>The drawer is controlled through the <PTag label="status"/> and <PTag label={"close"} /> props via the useState hook. It is also measured by the size of the content.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton onClick={() => setStatus(true)} label={"Open Drawer"}/>
-            <BuiDrawer
+            <PButton onClick={() => setStatus(true)} label={"Open Drawer"}/>
+            <PDrawer
                 status={status}
                 close={() => setStatus(false)}
             >
                 <div className="p-4 w-[300px]">
-                    <BuiNav />
+                    <PNav />
                 </div>
-            </BuiDrawer>
-        </BuiComponentShowcaseArea>
+            </PDrawer>
+        </PComponentShowcaseArea>
     );
 }
 

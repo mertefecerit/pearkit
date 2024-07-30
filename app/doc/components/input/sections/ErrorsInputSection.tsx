@@ -1,24 +1,24 @@
 "use client"
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiInput from "@/app/components/src/BuiInput";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PInput from "@/app/components/src/PInput";
+import {PTag} from "@/app/components/src";
 
 function ErrorsInputSection() {
-    const codeBlock = `<BuiInput errors={['Error 1', 'Error 2']} />`
+    const codeBlock = `<PInput errors={['Error 1', 'Error 2']} />`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="errors"
             title="Errors"
-            desc={<>Or you can write errors by filling in the <BuiTag label={"errors"} /> property. This option puts the component in invalid state without looking at the <BuiTag label={"isInvalid"}/> property.</>}
+            desc={<>Or you can write errors by filling in the <PTag label={"errors"} /> property. This option puts the component in invalid state without looking at the <PTag label={"isInvalid"}/> property.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput errors={['Error 1', 'Error 2']} placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput errors={['Error 1', 'Error 2']} variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput errors={['Error 1', 'Error 2']} variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput errors={['Error 1', 'Error 2']} placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput errors={['Error 1', 'Error 2']} variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput errors={['Error 1', 'Error 2']} variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 

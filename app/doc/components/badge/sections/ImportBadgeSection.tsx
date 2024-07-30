@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportBadgeSection() {
-    const codeBlock = `import { BuiBadge } from 'pearkit';`
+    const codeBlock = `import { PBadge } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Badge"
             desc={<>Badge is a small status indicator for another element.</>}

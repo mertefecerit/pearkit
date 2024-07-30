@@ -1,13 +1,13 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiButton, BuiCard, BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PButton, PCard, PTag} from "@/app/components/src";
 import {Icon} from "@iconify/react";
 import React from "react";
 
 const ButtonComponents:React.FC = () => {
     return (
         <div className="flex gap-2 p-4">
-            <BuiButton startIcon={<Icon icon="mdi:check"/>} label="Save"/>
-            <BuiButton variant="text" color="gray" startIcon={<Icon icon="mdi:times"/>} label="Cancel"/>
+            <PButton startIcon={<Icon icon="mdi:check"/>} label="Save"/>
+            <PButton variant="text" color="gray" startIcon={<Icon icon="mdi:times"/>} label="Cancel"/>
         </div>
     )
 }
@@ -19,7 +19,7 @@ const HeaderAreaComponent:React.FC = () => {
     )
 }
 function AdvancedCardSection() {
-    const codeBlock = `<BuiCard
+    const codeBlock = `<PCard
     header={<HeaderAreaComponent/>}
     title="Advanced Card"
     subTitle="This is subtitle"
@@ -28,15 +28,15 @@ function AdvancedCardSection() {
     <div className="p-4">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
     </div>
-</BuiCard>`
+</PCard>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="advanced"
             title="Advanced"
-            desc={<>Card content can be customized further with <BuiTag label="subTitle"/>, <BuiTag label="header"/> and <BuiTag label="footer"/> properties.</>}
+            desc={<>Card content can be customized further with <PTag label="subTitle"/>, <PTag label="header"/> and <PTag label="footer"/> properties.</>}
             codeBlock={codeBlock}
         >
-            <BuiCard
+            <PCard
                 header={<HeaderAreaComponent/>}
                 title="Advanced Card"
                 subTitle="This is subtitle"
@@ -45,8 +45,8 @@ function AdvancedCardSection() {
                 <div className="p-4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
                 </div>
-            </BuiCard>
-        </BuiComponentShowcaseArea>
+            </PCard>
+        </PComponentShowcaseArea>
     );
 }
 

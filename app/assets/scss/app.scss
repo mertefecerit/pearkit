@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply antialiased bg-gray-100 text-gray-700 dark:text-gray-300;
+    @apply antialiased text-gray-700 dark:text-gray-300;
   }
   ::-webkit-scrollbar {
     width: 6px;

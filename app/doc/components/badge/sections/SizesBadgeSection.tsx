@@ -1,22 +1,22 @@
-import {BuiBadge, BuiTag} from "@/app/components/src";
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import {PBadge, PTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function SizesBadgeSection(){
-    const codeBlock = `<BuiBadge value={7}/>
-<BuiBadge color="sky" size="sm" value={65}/>
-<BuiBadge color="orange" size="base" value={300}/>`;
+    const codeBlock = `<PBadge value={7}/>
+<PBadge color="sky" size="sm" value={65}/>
+<PBadge color="orange" size="base" value={300}/>`;
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="sizes"
             title="Sizes"
-            desc={<>3 sizes available. Of these, <BuiTag label="xs"/> is selected by default, the other 2 options are <BuiTag label="sm"/> and <BuiTag label="base"/>.</>}
+            desc={<>3 sizes available. Of these, <PTag label="xs"/> is selected by default, the other 2 options are <PTag label="sm"/> and <PTag label="base"/>.</>}
             codeBlock={codeBlock}
         >
-            <BuiBadge value={7}/>
-            <BuiBadge color="sky" size="sm" value={65}/>
-            <BuiBadge color="orange" size="base" value={300}/>
-        </BuiComponentShowcaseArea>
+            <PBadge value={7}/>
+            <PBadge color="sky" size="sm" value={65}/>
+            <PBadge color="orange" size="base" value={300}/>
+        </PComponentShowcaseArea>
     )
 }
 

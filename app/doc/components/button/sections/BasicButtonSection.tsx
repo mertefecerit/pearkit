@@ -1,19 +1,19 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiButton, BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PButton, PTag} from "@/app/components/src";
 
 function BasicButtonSection() {
-    const codeBlock = `<BuiButton label={"Button"}/>`;
+    const codeBlock = `<PButton label={"Button"}/>`;
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
             desc={<>
-                The text to be displayed on the button is defined on the button using the <BuiTag label="label"/> property.</>}
+                The text to be displayed on the button is defined on the button using the <PTag label="label"/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton label={"Button"}/>
-        </BuiComponentShowcaseArea>
+            <PButton label={"Button"}/>
+        </PComponentShowcaseArea>
     )
 }
 

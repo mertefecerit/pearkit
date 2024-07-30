@@ -1,7 +1,7 @@
 "use client";
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiDropdown} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PDropdown} from "@/app/components/src";
 import {useState} from "react";
 
 
@@ -22,26 +22,26 @@ const countries = [
     {label: 'Country 4', value: 'co4'},
     {label: 'Country 5', value: 'co5'}
 ]
-<BuiDropdown
+<PDropdown
     options={countries}
     selected={selected}
     onChange={setSelected}
     placeholder="Select Country"
 />`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
             desc={<>Customsizable dropdown component with extra features.</>}
             codeBlock={codeBlock}
         >
-            <BuiDropdown
+            <PDropdown
                 options={countries}
                 selected={selected}
                 onChange={setSelected}
                 placeholder="Select Country"
             />
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 

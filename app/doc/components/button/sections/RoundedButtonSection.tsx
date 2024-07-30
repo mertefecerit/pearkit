@@ -1,23 +1,23 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiButton} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PButton} from "@/app/components/src";
 
 function RoundedButtonSection() {
-    const codeBlock = `<BuiButton rounded label="Button"/>
-<BuiButton rounded variant="outlined" label="Button"/>
-<BuiButton rounded variant="text" label="Button"/>
+    const codeBlock = `<PButton rounded label="Button"/>
+<PButton rounded variant="outlined" label="Button"/>
+<PButton rounded variant="text" label="Button"/>
 `;
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="rounded"
             title="Rounded"
             desc={<>Rounded buttons have a circular border radius.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton rounded label="Button"/>
-            <BuiButton rounded variant="outlined" label={"Button"}/>
-            <BuiButton rounded variant="text" label={"Button"}/>
-        </BuiComponentShowcaseArea>
+            <PButton rounded label="Button"/>
+            <PButton rounded variant="outlined" label={"Button"}/>
+            <PButton rounded variant="text" label={"Button"}/>
+        </PComponentShowcaseArea>
     )
 }
 

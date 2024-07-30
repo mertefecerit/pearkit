@@ -1,25 +1,25 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag, BuiSwitch} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag, PSwitch} from "@/app/components/src";
 import {useState} from "react";
 
 function ColorsSwitchSection() {
     const [value1, setValue1] = useState(true);
     const [value2, setValue2] = useState(true);
     const [value3, setValue3] = useState(true);
-    const codeBlock = `<BuiSwitch disabled color="orange" />`;
+    const codeBlock = `<PSwitch disabled color="orange" />`;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag color={"sky"} label="sky"/> <BuiTag color={"red"} label="red"/> <BuiTag color={"indigo"} label="indigo"/></>}
+                as props. For example : <PTag color={"sky"} label="sky"/> <PTag color={"red"} label="red"/> <PTag color={"indigo"} label="indigo"/></>}
             codeBlock={codeBlock}
         >
-            <BuiSwitch color="orange" checked={value1} onChange={() => setValue1(!value1)}/>
-            <BuiSwitch color="green" checked={value2} onChange={() => setValue2(!value2)}/>
-            <BuiSwitch color="indigo" checked={value3} onChange={() => setValue3(!value3)}/>
-        </BuiComponentShowcaseArea>
+            <PSwitch color="orange" checked={value1} onChange={() => setValue1(!value1)}/>
+            <PSwitch color="green" checked={value2} onChange={() => setValue2(!value2)}/>
+            <PSwitch color="indigo" checked={value3} onChange={() => setValue3(!value3)}/>
+        </PComponentShowcaseArea>
     );
 }
 

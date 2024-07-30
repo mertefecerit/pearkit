@@ -1,0 +1,66 @@
+$colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose';
+
+.wrapper {
+  @apply flex gap-2 items-center cursor-pointer;
+  &:hover {
+    & > input[type="radio"]:not(:checked, :disabled) + span {
+      @each $color in $colors {
+        &.#{$color}{
+          @apply bg-#{$color}-200 border-#{$color}-300;
+          :global(.dark) & {
+            @apply bg-opacity-10;
+          }
+        }
+      }
+    }
+  }
+
+  & > input[type="radio"] {
+    @apply outline-none w-0 h-0;
+    &:checked + span {
+      @apply border-4;
+      @each $color in $colors {
+        &.#{$color}{
+          @apply border-#{$color}-500;
+        }
+      }
+    }
+  }
+  &.isDisabled {
+    @apply opacity-70 cursor-not-allowed;
+    & > input {
+      @apply disabled:opacity-70 cursor-not-allowed;
+    }
+    & > span {
+      @apply bg-gray-100;
+      :global(.dark) & {
+        @apply bg-opacity-20;
+      }
+    }
+  }
+  &.isInvalid {
+    @apply text-red-500;
+    & > span {
+      @apply border-2 border-red-500;
+    }
+  }
+
+  & > span {
+    @apply
+    border
+    rounded-full
+    flex
+    items-center
+    justify-center
+    h-6
+    w-6
+    text-xl
+    ring-inset
+    transition-all;
+    :global(.dark) & {
+      @apply border-gray-700;
+    }
+  }
+}
+
+

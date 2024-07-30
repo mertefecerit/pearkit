@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportCheckboxSection() {
-    const codeBlock = `import { BuiCheckbox } from 'pearkit';`
+    const codeBlock = `import { PCheckbox } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Checkbox"
             desc={<>Checkboxes allow the user to select one or more items from a set.</>}

@@ -1,0 +1,103 @@
+$colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose';
+$sizes: 'xs', 'sm', 'base', 'lg', 'xl';
+
+.wrapper {
+  @apply
+  sm:w-fit
+  w-full
+  font-medium
+  border
+  border-transparent
+  text-nowrap
+  py-2
+  flex
+  items-center
+  justify-center
+  gap-1
+  disabled:cursor-not-allowed
+  disabled:opacity-50
+  rounded-lg
+  select-none
+  transition-all
+  focus:ring-2
+  focus:z-10
+  focus:ring-offset-2
+  outline-none;
+  :global(.dark) & {
+    @apply focus:ring-offset-gray-800;
+  }
+
+  @each $color in $colors {
+    &.#{$color} {
+      @apply ring-#{$color}-500;
+      &.basic {
+        @apply
+        bg-#{$color}-500
+        hover:bg-#{$color}-600;
+        :global(.dark) & {
+          @apply text-#{$color}-950;
+        }
+      }
+
+      &.outlined {
+        @apply
+        border-#{$color}-500
+        hover:bg-#{$color}-100
+        text-#{$color}-500;
+      }
+
+      &.text {
+        @apply
+        hover:bg-#{$color}-100
+        text-#{$color}-500;
+      }
+    }
+  }
+
+  &.onlyIcon {
+    @apply px-2 py-2 w-fit #{!important}
+  }
+
+  &.raised {
+    @apply shadow-md;
+  }
+
+  &.roundedMax {
+    @apply rounded-full #{!important};
+  }
+
+
+  &.basic {
+    @apply text-white;
+  }
+
+  &.outlined {
+    @apply focus:border-transparent;
+    :global(.dark) & {
+      @apply hover:bg-opacity-10;
+    }
+  }
+
+  &.text {
+    :global(.dark) & {
+      @apply hover:bg-opacity-10;
+    }
+  }
+
+  @each $size in $sizes {
+    &.#{$size} {
+      @apply text-#{$size};
+      @if $size == 'xs' {
+        @apply min-h-6 min-w-6 px-4;
+      } @else if $size == 'sm' {
+        @apply min-h-8 min-w-8 px-4;
+      } @else if $size == 'base' {
+        @apply min-h-10 min-w-10 px-4;
+      } @else if $size == 'lg' {
+        @apply min-h-12 min-w-12 px-6;
+      } @else if $size == 'xl' {
+        @apply min-h-14 min-w-14 px-6;
+      }
+    }
+  }
+}

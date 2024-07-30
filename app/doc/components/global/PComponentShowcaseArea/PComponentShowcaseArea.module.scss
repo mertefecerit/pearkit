@@ -1,0 +1,26 @@
+.wrapper {
+  @apply flex flex-col gap-4;
+  & > div.header {
+    @apply flex flex-col gap-2;
+    & > p {
+      @apply leading-8;
+    }
+    & > h2 {
+      @apply text-2xl font-bold w-fit cursor-pointer;
+      & > span {
+        @apply text-lime-300;
+      }
+    }
+  }
+  & > div.showcase {
+    @apply items-center w-full rounded-lg border p-4 bg-white flex justify-center flex-wrap gap-4;
+    :global(.dark) & {
+      @apply bg-gray-900 border-gray-800;
+    }
+  }
+
+  & > div.codeArea {
+    @apply rounded-lg overflow-hidden bg-[#1e1e1e];
+  }
+}
+

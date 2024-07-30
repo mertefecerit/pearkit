@@ -1,4 +1,4 @@
-import {BuiToastProvider} from "@/app/components/src";
+import {PToastProvider} from "@/app/components/src";
 import BasicToastSection from "@/app/doc/components/toast/sections/BasicToastSection";
 import OptionsToastSection from "@/app/doc/components/toast/sections/OptionsToastSection";
 import StatusToastSection from "@/app/doc/components/toast/sections/StatusToastSection";
@@ -9,14 +9,14 @@ import ImportToastSection from "@/app/doc/components/toast/sections/ImportToastS
 const ToastPage = () => {
     return (
         <>
-         <BuiToastProvider>
+         <PToastProvider>
              <ImportToastSection />
              <BasicToastSection />
              <OptionsToastSection />
              <StatusToastSection />
              <AccessibilityToastSection />
              <ApiToastSection />
-         </BuiToastProvider>
+         </PToastProvider>
         </>
     );
 };

@@ -1,0 +1,18 @@
+.wrapper {
+  @apply
+  text-6xl
+  text-lime-500
+  bg-white
+  flex
+  justify-center
+  items-center
+  w-full
+  h-full
+  overflow-hidden;
+  :global(.dark) & {
+    @apply bg-gray-900;
+  }
+  &.pageType {
+    @apply min-h-screen fixed top-0 left-0;
+  }
+}

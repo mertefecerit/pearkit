@@ -1,18 +1,18 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag} from "@/app/components/src";
 import {Icon} from "@iconify/react";
 
 function IconTagSection() {
-    const codeBlock = `<BuiTag icon={<Icon icon="mdi:check"/>} />`
+    const codeBlock = `<PTag icon={<Icon icon="mdi:check"/>} />`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="icon"
             title="Icon"
-            desc={<>You can add a tag icon by passing an icon component to the <BuiTag label="icon"/> property.</>}
+            desc={<>You can add a tag icon by passing an icon component to the <PTag label="icon"/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiTag label="New" icon={<Icon icon="mdi:check"/>} />
-        </BuiComponentShowcaseArea>
+            <PTag label="New" icon={<Icon icon="mdi:check"/>} />
+        </PComponentShowcaseArea>
     );
 }
 

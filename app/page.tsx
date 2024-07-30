@@ -1,11 +1,11 @@
-import BuiLogo from "@/app/doc/components/global/BuiLogo";
+import PLogo from "@/app/doc/components/global/PLogo";
 import Link from "next/link";
 import {Icon} from "@iconify/react";
 
 export default function HomePage() {
     return (
         <div className="h-dvh flex flex-col gap-8 items-center justify-center dark:bg-gray-900">
-            <BuiLogo/>
+            <PLogo/>
             <nav className="font-bold text-xl">
                 <Link className="inline-flex items-center gap-2 hover:text-lime-500 transition-all" href="/doc/getting-started/installation">
                     <Icon icon="mdi:cursor-default-click" width={25}></Icon>

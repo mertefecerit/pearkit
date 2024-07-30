@@ -1,0 +1,70 @@
+@import "../../../assets/scss/colors";
+
+.wrapper {
+  @apply
+  w-full
+  flex
+  flex-col
+  gap-4;
+  & > .tabs {
+    & > button:first-child,
+    & > button:last-child {
+      @apply
+      p-2
+      h-full;
+    }
+
+    @apply flex items-center;
+    & > .content {
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      @apply
+      font-medium
+      overflow-x-auto
+      flex
+      scroll-smooth;
+      :global(.dark) & {
+        @apply border-gray-700;
+      }
+
+      &.isOverflow {
+        @apply
+        border-l-2
+        border-r-2
+      }
+
+      & > span {
+        @apply
+        h-14
+        px-4
+        flex
+        items-center
+        border-b-2
+        cursor-pointer
+        text-nowrap;
+        :global(.dark) & {
+          @apply border-gray-700;
+        }
+
+        &.isDisabled {
+          @apply opacity-50 cursor-not-allowed;
+        }
+
+        @each $color, $rgb in $colors {
+          @if $color != 'black' and $color != 'white' {
+            &.#{$color}:not(.isDisabled) {
+              @apply hover:border-b-#{$color}-500;
+              &.isActive {
+                @apply border-b-#{$color}-500 text-#{$color}-500;
+              }
+            }
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+    }
+  }
+}

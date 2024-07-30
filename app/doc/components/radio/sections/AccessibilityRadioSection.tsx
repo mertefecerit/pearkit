@@ -1,9 +1,9 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function AccessibilityRadioSection() {
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="accessibility"
             title="Accessibility (Not Ready Yet)"
             desc={<></>}

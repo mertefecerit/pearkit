@@ -1,17 +1,17 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag} from "@/app/components/src";
 
 function BasicTagSection() {
-    const codeBlock = `<BuiTag label="New" />`
+    const codeBlock = `<PTag label="New" />`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Label of the tag is defined with the <BuiTag label="label"/> property.</>}
+            desc={<>Label of the tag is defined with the <PTag label="label"/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiTag label="New" />
-        </BuiComponentShowcaseArea>
+            <PTag label="New" />
+        </PComponentShowcaseArea>
     );
 }
 

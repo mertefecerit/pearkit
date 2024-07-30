@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportCardSection() {
-    const codeBlock = `import { BuiCard } from 'pearkit';`
+    const codeBlock = `import { PCard } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Card"
             desc={<>Card is a flexible container component.</>}

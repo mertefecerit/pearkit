@@ -1,21 +1,21 @@
 import scss from "./layout.module.scss";
-import BuiNavAside from "@/app/doc/layout-partials/BuiNavAside";
-import BuiRightNavAside from "@/app/doc/layout-partials/BuiRightNavAside";
-import BuiHeader from "@/app/doc/layout-partials/BuiHeader";
-import BuiPaginator from "@/app/doc/components/global/BuiPaginator";
+import PNavAside from "@/app/doc/layout-partials/PNavAside";
+import PRightNavAside from "@/app/doc/layout-partials/PRightNavAside";
+import PHeader from "@/app/doc/layout-partials/PHeader";
+import PPaginator from "@/app/doc/components/global/PPaginator";
 import React from "react";
 
 function DocLayout({children}: Readonly<{ children: React.ReactNode}>) {
 
     return (
         <div className={scss.layout}>
-            <BuiHeader />
-            <BuiNavAside />
+            <PHeader />
+            <PNavAside />
             <main>
                 {children}
-                <BuiPaginator />
+                <PPaginator />
             </main>
-            <BuiRightNavAside/>
+            <PRightNavAside/>
         </div>
     )
 }

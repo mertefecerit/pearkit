@@ -1,53 +1,53 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptionTable";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PApiDescriptionTable from "@/app/doc/components/global/PApiDescriptionTable";
 
 function ApiTabsSection() {
     const content = [
         {
-            name: 'BuiTab | label',
+            name: 'PTab | label',
             type: 'string',
             default:'null',
-            description: 'Label of the BuiTab component'
+            description: 'Label of the PTab component'
         },
         {
-            name: 'BuiTab | disabled',
+            name: 'PTab | disabled',
             type: 'boolean | true | false',
             default:'false',
-            description: 'Disabled status of the BuiTab component'
+            description: 'Disabled status of the PTab component'
         },
         {
-            name: 'BuiTab | icon',
+            name: 'PTab | icon',
             type: 'ReactNode',
             default:'null',
-            description: 'Icon component of the BuiTab component'
+            description: 'Icon component of the PTab component'
         },
         {
-            name: 'BuiTabs | colors',
+            name: 'PTabs | colors',
             type: 'TwColor | All tailwind color names',
             default:'blue',
-            description: 'Colors of the BuiTabs component'
+            description: 'Colors of the PTabs component'
         },
         {
-            name: 'BuiTabs | activeIndexTab',
+            name: 'PTabs | activeIndexTab',
             type: 'number',
             default:'0',
-            description: 'Active Tab of the BuiTabs component'
+            description: 'Active Tab of the PTabs component'
         },
         {
-            name: 'BuiTabs | onChange',
+            name: 'PTabs | onChange',
             type: 'function',
             default:'Tab Index Number',
-            description: 'onChange method of the BuiTabs component'
+            description: 'onChange method of the PTabs component'
         },
     ];
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="api"
             title="Api"
             desc={<>Here you can see all the working features for the tabs and tab component.</>}
         >
-            <BuiApiDescriptionTable content={content}/>
-        </BuiComponentShowcaseArea>
+            <PApiDescriptionTable content={content}/>
+        </PComponentShowcaseArea>
     )
 }
 

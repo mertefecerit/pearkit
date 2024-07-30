@@ -1,17 +1,17 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag} from "@/app/components/src";
 
 function RoundedTagSection() {
-    const codeBlock = `<BuiTag rounded />`
+    const codeBlock = `<PTag rounded />`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="rounded"
             title="Rounded"
             desc={<>Enabling rounded, displays a tag as a fully rounded</>}
             codeBlock={codeBlock}
         >
-            <BuiTag label="New" rounded />
-        </BuiComponentShowcaseArea>
+            <PTag label="New" rounded />
+        </PComponentShowcaseArea>
     );
 }
 

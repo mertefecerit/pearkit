@@ -1,25 +1,25 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiCard, BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PCard, PTag} from "@/app/components/src";
 
 function BasicCardSection() {
-    const codeBlock = `<BuiCard title="Simple Card">
+    const codeBlock = `<PCard title="Simple Card">
     <div className="p-4">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
     </div>
-</BuiCard>`
+</PCard>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>A simple Card is created with a <BuiTag label="title"/> property along with the content as children.</>}
+            desc={<>A simple Card is created with a <PTag label="title"/> property along with the content as children.</>}
             codeBlock={codeBlock}
         >
-            <BuiCard title="Simple Card">
+            <PCard title="Simple Card">
                 <div className={"p-4"}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reprehenderit.</p>
                 </div>
-            </BuiCard>
-        </BuiComponentShowcaseArea>
+            </PCard>
+        </PComponentShowcaseArea>
     );
 }
 

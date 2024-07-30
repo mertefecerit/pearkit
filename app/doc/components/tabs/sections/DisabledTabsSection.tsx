@@ -1,39 +1,39 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTabs, BuiTab, BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTabs, PTab, PTag} from "@/app/components/src";
 
 function DisabledTabsSection() {
-    const codeBlock = `<BuiTabs>
+    const codeBlock = `<PTabs>
     // other tabs
-    <BuiTab label="Tab 3" disabled>
+    <PTab label="Tab 3" disabled>
         <p>Tab 3 = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, expedita.</p>
-    </BuiTab>
+    </PTab>
     // other tabs
-</BuiTabs>`
+</PTabs>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>You can disable the relevant tab by giving the component the <BuiTag label={"disabled"}/> property.</>}
+            desc={<>You can disable the relevant tab by giving the component the <PTag label={"disabled"}/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiTabs>
-                <BuiTab label="Tab 1">
+            <PTabs>
+                <PTab label="Tab 1">
                     <p>Tab 1 = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, expedita.</p>
-                </BuiTab>
-                <BuiTab label="Tab 2">
+                </PTab>
+                <PTab label="Tab 2">
                     <p>Tab 2 = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, expedita.</p>
-                </BuiTab>
-                <BuiTab label="Tab 3" disabled>
+                </PTab>
+                <PTab label="Tab 3" disabled>
                     <p>Tab 3 = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, expedita.</p>
-                </BuiTab>
-                <BuiTab label="Tab 4">
+                </PTab>
+                <PTab label="Tab 4">
                     <p>Tab 4 = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, expedita.</p>
-                </BuiTab>
-                <BuiTab label="Tab 5">
+                </PTab>
+                <PTab label="Tab 5">
                     <p>Tab 5 = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, expedita.</p>
-                </BuiTab>
-            </BuiTabs>
-        </BuiComponentShowcaseArea>
+                </PTab>
+            </PTabs>
+        </PComponentShowcaseArea>
     );
 }
 

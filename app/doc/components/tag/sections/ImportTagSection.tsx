@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportTagSection() {
-    const codeBlock = `import { BuiTag } from 'pearkit';`
+    const codeBlock = `import { PTag } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Tag"
             desc={<>Standard tag component for categorize content</>}

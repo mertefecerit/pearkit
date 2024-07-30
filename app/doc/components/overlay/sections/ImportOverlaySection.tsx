@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportOverlaySection() {
-    const codeBlock = `import { BuiOverlay } from 'pearkit';`
+    const codeBlock = `import { POverlay } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Overlay"
             desc={<>Standard overlay component for any component</>}

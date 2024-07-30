@@ -1,5 +1,5 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptionTable";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PApiDescriptionTable from "@/app/doc/components/global/PApiDescriptionTable";
 
 function ApiInputSection() {
     const content = [
@@ -71,13 +71,13 @@ function ApiInputSection() {
         },
     ];
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="api"
             title="Api"
             desc={<>Here you can see all the working features for the input component. You can also send all HTML input properties.</>}
         >
-            <BuiApiDescriptionTable content={content}/>
-        </BuiComponentShowcaseArea>
+            <PApiDescriptionTable content={content}/>
+        </PComponentShowcaseArea>
     )
 }
 

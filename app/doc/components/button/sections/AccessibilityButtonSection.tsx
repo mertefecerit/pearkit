@@ -1,14 +1,14 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function AccessibilityButtonSection() {
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="accessibility"
             title="Accessibility (Not Ready Yet)"
             desc={<>None</>}
         >
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     )
 }
 

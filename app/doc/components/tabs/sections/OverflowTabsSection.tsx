@@ -1,38 +1,38 @@
 "use client";
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTab, BuiTabs} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTab, PTabs} from "@/app/components/src";
 
 function OverflowTabsSection() {
-    const codeBlock = `<BuiTabs>
+    const codeBlock = `<PTabs>
     {
         Array.from({length:99},(_, index) => index + 1).map((i) => 
-            <BuiTab key={i} label={'Tab ' + i}>
+            <PTab key={i} label={'Tab ' + i}>
                 <p>{'Tab ' + i} = Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit. Cum, expedita.</p>
-            </BuiTab>
+            </PTab>
         )
 }
-</BuiTabs>`
+</PTabs>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="overflow"
             title="Overflow"
             desc={<>If the component exceeds the size of its container, the scroll function is automatically activated and the relevant buttons appear.</>}
             codeBlock={codeBlock}
         >
-            <BuiTabs>
+            <PTabs>
                 {
                     Array.from({length: 99}, (_, index) => index + 1).map((i) => (
-                            <BuiTab key={i} label={'Tab ' + i}>
+                            <PTab key={i} label={'Tab ' + i}>
                                 <p>{'Tab ' + i} = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum,
                                     expedita.</p>
-                            </BuiTab>
+                            </PTab>
                         )
                     )
                 }
-            </BuiTabs>
-        </BuiComponentShowcaseArea>
+            </PTabs>
+        </PComponentShowcaseArea>
     );
 }
 

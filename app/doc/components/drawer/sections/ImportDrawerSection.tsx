@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportDrawerSection() {
-    const codeBlock = `import { BuiDrawer } from 'pearkit';`
+    const codeBlock = `import { PDrawer } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Drawer"
             desc={<>Drawer, also known as Sidebar, is a container component displayed as an overlay.</>}

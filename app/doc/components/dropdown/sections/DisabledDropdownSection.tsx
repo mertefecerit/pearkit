@@ -1,7 +1,7 @@
 "use client";
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiDropdown} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PDropdown} from "@/app/components/src";
 import {useState} from "react";
 
 function DisabledDropdownSection() {
@@ -9,22 +9,22 @@ function DisabledDropdownSection() {
     const countries = [
         {label: 'Country 1', value: 'co1'},
     ]
-    const codeBlock = `<BuiDropdown disabled={true}>`
+    const codeBlock = `<PDropdown disabled={true}>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
             desc={<>Disabled feature for custom dropdown component</>}
             codeBlock={codeBlock}
         >
-            <BuiDropdown
+            <PDropdown
                 disabled={true}
                 options={countries}
                 selected={selected}
                 onChange={setSelected}
                 placeholder="Select Country"
             />
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 

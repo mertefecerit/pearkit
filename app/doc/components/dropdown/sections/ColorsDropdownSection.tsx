@@ -1,7 +1,7 @@
 "use client";
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag, BuiDropdown} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag, PDropdown} from "@/app/components/src";
 import {useState} from "react";
 
 function ColorsDropdownSection() {
@@ -15,37 +15,37 @@ function ColorsDropdownSection() {
         {label: 'Country 4', value: 'co4'},
         {label: 'Country 5', value: 'co5'},
     ]
-    const codeBlock = `<BuiDropdown color="yellow"/>`
+    const codeBlock = `<PDropdown color="yellow"/>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag label={"sky"}/> <BuiTag label={"red"}/> <BuiTag label={"indigo"}/> etc.</>}
+                as props. For example : <PTag label={"sky"}/> <PTag label={"red"}/> <PTag label={"indigo"}/> etc.</>}
             codeBlock={codeBlock}
         >
-            <BuiDropdown
+            <PDropdown
                 color="yellow"
                 options={countries}
                 selected={selected}
                 onChange={setSelected}
                 placeholder="Select Country Yellow"
             />
-            <BuiDropdown
+            <PDropdown
                 color="indigo"
                 options={countries}
                 selected={selected2}
                 onChange={setSelected2}
                 placeholder="Select Country Indigo"
             />
-            <BuiDropdown
+            <PDropdown
                 color="cyan"
                 options={countries}
                 selected={selected3}
                 onChange={setSelected3}
                 placeholder="Select Country Cyan"
             />
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 

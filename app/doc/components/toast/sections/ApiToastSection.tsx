@@ -1,5 +1,5 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiApiDescriptionTable from "@/app/doc/components/global/BuiApiDescriptionTable";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PApiDescriptionTable from "@/app/doc/components/global/PApiDescriptionTable";
 
 function ApiToastSection() {
     const content = [
@@ -10,7 +10,7 @@ function ApiToastSection() {
             description: 'Trigger function of the component'
         },
         {
-            name: 'BuiToastProvider',
+            name: 'PToastProvider',
             type: 'provider',
             default:'null',
             description: 'Need for toast component hook'
@@ -29,13 +29,13 @@ function ApiToastSection() {
         },
     ];
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="api"
             title="Api"
             desc={<>Here you can see all the working features for the toast component.</>}
         >
-            <BuiApiDescriptionTable content={content}/>
-        </BuiComponentShowcaseArea>
+            <PApiDescriptionTable content={content}/>
+        </PComponentShowcaseArea>
     )
 }
 

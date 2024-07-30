@@ -1,32 +1,32 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTab, BuiTabs, BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTab, PTabs, PTag} from "@/app/components/src";
 import {Icon} from "@iconify/react";
 
 function IconTabsSection() {
-    const codeBlock = `<BuiTabs>
-    <BuiTab label="Register Form" icon={<Icon icon="mdi:user-plus"/>}>
+    const codeBlock = `<PTabs>
+    <PTab label="Register Form" icon={<Icon icon="mdi:user-plus"/>}>
         <p>Register Form</p>
-    </BuiTab>
-    <BuiTab label="Login Form" icon={<Icon icon="mdi:login"/>}>
+    </PTab>
+    <PTab label="Login Form" icon={<Icon icon="mdi:login"/>}>
         <p>Login Form</p>
-    </BuiTab>
-</BuiTabs>`
+    </PTab>
+</PTabs>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="icon"
             title="Icon"
-            desc={<>You can add a icon by passing an icon component to the <BuiTag label="icon"/> property.</>}
+            desc={<>You can add a icon by passing an icon component to the <PTag label="icon"/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiTabs>
-                <BuiTab label="Register Form" icon={<Icon icon="mdi:user-plus"/>}>
+            <PTabs>
+                <PTab label="Register Form" icon={<Icon icon="mdi:user-plus"/>}>
                     <p>Register Form</p>
-                </BuiTab>
-                <BuiTab label="Login Form" icon={<Icon icon="mdi:login"/>}>
+                </PTab>
+                <PTab label="Login Form" icon={<Icon icon="mdi:login"/>}>
                     <p>Login Form</p>
-                </BuiTab>
-            </BuiTabs>
-        </BuiComponentShowcaseArea>
+                </PTab>
+            </PTabs>
+        </PComponentShowcaseArea>
     );
 }
 

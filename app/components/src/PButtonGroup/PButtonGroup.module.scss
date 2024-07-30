@@ -1,0 +1,30 @@
+.wrapper {
+  & > button {
+    @apply w-full rounded-none justify-center #{!important};
+  }
+  &.horizontal {
+    @apply flex;
+    & > button {
+      &:first-child {
+        @apply border-r-0 rounded-l #{!important};
+      }
+      &:last-child {
+        @apply border-l-0 rounded-r #{!important};
+      }
+    }
+  }
+  &.vertical {
+    @apply flex flex-col;
+    & > button {
+      &:first-child {
+        @apply border-b-0 rounded-t #{!important};
+      }
+      &:last-child {
+        @apply border-t-0 rounded-b #{!important};
+      }
+    }
+  }
+
+}
+
+

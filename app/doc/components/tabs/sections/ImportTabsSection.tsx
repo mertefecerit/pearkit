@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportTabsSection() {
-    const codeBlock = `import { BuiTabs, BuiTab } from 'pearkit';`
+    const codeBlock = `import { PTabs, PTab } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Tabs"
             desc={<></>}

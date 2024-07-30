@@ -1,0 +1,20 @@
+.wrapper {
+  @apply top-0 left-0 absolute z-50 bg-black bg-opacity-50 w-full block h-dvh lg:hidden;
+  & > aside {
+    @apply bg-white min-w-[300px] max-w-[300px] h-full relative overflow-y-auto border-r;
+    :global(.dark) & {
+      @apply bg-gray-900 border-gray-800;
+    }
+    & > div.mobileLogo{
+      @apply p-4;
+      & > button.closeButton {
+        @apply p-1 rounded-full hover:bg-gray-100 absolute right-2 top-2 text-xl;
+      }
+    }
+    & > div.mobileNav {
+      @apply p-4;
+    }
+  }
+}
+
+

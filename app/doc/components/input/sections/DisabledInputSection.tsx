@@ -1,24 +1,24 @@
 "use client"
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiInput from "@/app/components/src/BuiInput";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PInput from "@/app/components/src/PInput";
+import {PTag} from "@/app/components/src";
 
 function DisabledInputSection() {
-    const codeBlock = `<BuiInput disabled/>`
+    const codeBlock = `<PInput disabled/>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>For the <BuiTag label={"disabled"}/> property, it is sufficient to provide the property itself directly.</>}
+            desc={<>For the <PTag label={"disabled"}/> property, it is sufficient to provide the property itself directly.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput disabled placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput disabled variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput disabled variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput disabled placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput disabled variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput disabled variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 

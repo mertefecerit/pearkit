@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportRadioSection() {
-    const codeBlock = `import { BuiRadio } from 'pearkit';`
+    const codeBlock = `import { PRadio } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Radio"
             desc={<>A simple radio button but a little better in terms of design.</>}

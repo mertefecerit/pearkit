@@ -1,8 +1,8 @@
-import BuiPageLoading from "@/app/doc/layout-partials/BuiPageLoading";
+import PPageLoading from "@/app/doc/layout-partials/PPageLoading";
 
 
 function Loading(){
-    return <BuiPageLoading type="page"/>
+    return <PPageLoading type="page"/>
 }
 
 export default Loading;

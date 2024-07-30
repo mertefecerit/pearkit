@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportInputSection() {
-    const codeBlock = `import { BuiInput } from 'pearkit';`
+    const codeBlock = `import { PInput } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Input"
             desc={<>Input component is standard form object</>}

@@ -1,20 +1,20 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 import {useState} from "react";
-import {BuiTag, BuiRadio} from "@/app/components/src";
+import {PTag, PRadio} from "@/app/components/src";
 
 function ColorsRadioSection() {
     const [optionColor,setOptionColor] = useState('indigo');
-    const codeBlock = `<BuiRadio color="indigo"/>`;
+    const codeBlock = `<PRadio color="indigo"/>`;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag label="sky"/> <BuiTag label="red"/> <BuiTag label="indigo"/> etc.</>}
+                as props. For example : <PTag label="sky"/> <PTag label="red"/> <PTag label="indigo"/> etc.</>}
             codeBlock={codeBlock}
         >
-            <BuiRadio
+            <PRadio
                 color="indigo"
                 label="Indigo"
                 name="optionsColor"
@@ -22,7 +22,7 @@ function ColorsRadioSection() {
                 checked={optionColor === 'indigo'}
                 onChange={(e) => setOptionColor(e.target.value)}
             />
-            <BuiRadio
+            <PRadio
                 color="red"
                 label="Red"
                 name="optionsColor"
@@ -30,7 +30,7 @@ function ColorsRadioSection() {
                 checked={optionColor === 'red'}
                 onChange={(e) => setOptionColor(e.target.value)}
             />
-            <BuiRadio
+            <PRadio
                 color="green"
                 label="Green"
                 name="optionsColor"
@@ -38,7 +38,7 @@ function ColorsRadioSection() {
                 checked={optionColor === 'green'}
                 onChange={(e) => setOptionColor(e.target.value)}
             />
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 export default ColorsRadioSection;

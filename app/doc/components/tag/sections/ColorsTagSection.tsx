@@ -1,20 +1,20 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag} from "@/app/components/src";
 
 function ColorsTagSection() {
-    const codeBlock = `<BuiTag color="orange" />`
+    const codeBlock = `<PTag color="orange" />`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="colors"
             title="Colors"
             desc={<>Since we use the tailwind color palette in our design, you can use the names of all tailwind colors
-                as props. For example : <BuiTag color="sky" label="sky"/> <BuiTag color="red" label="red"/> <BuiTag color="indigo" label="indigo"/></>}
+                as props. For example : <PTag color="sky" label="sky"/> <PTag color="red" label="red"/> <PTag color="indigo" label="indigo"/></>}
             codeBlock={codeBlock}
         >
-            <BuiTag color="gray" label="New" />
-            <BuiTag color="orange" label="New" />
-            <BuiTag color="cyan" label="New" />
-        </BuiComponentShowcaseArea>
+            <PTag color="gray" label="New" />
+            <PTag color="orange" label="New" />
+            <PTag color="cyan" label="New" />
+        </PComponentShowcaseArea>
     );
 }
 

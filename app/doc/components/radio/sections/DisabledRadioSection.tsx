@@ -1,27 +1,27 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag, BuiRadio} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag, PRadio} from "@/app/components/src";
 
 function DisabledRadioSection() {
-    const codeBlock = `<BuiRadio disabled={true} />
+    const codeBlock = `<PRadio disabled={true} />
 //or
-<BuiRadio disabled />
+<PRadio disabled />
 `;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="disabled"
             title="Disabled"
-            desc={<>We can manage this state by sending the standard <BuiTag label={"disabled"}/> property.</>}
+            desc={<>We can manage this state by sending the standard <PTag label={"disabled"}/> property.</>}
             codeBlock={codeBlock}
         >
-            <BuiRadio
+            <PRadio
                 disabled
                 label="Disabled"
                 name="disabled"
                 checked={false}
                 onChange={() => null}
             />
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 export default DisabledRadioSection;

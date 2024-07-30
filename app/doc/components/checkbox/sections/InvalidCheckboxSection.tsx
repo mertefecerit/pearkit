@@ -1,20 +1,20 @@
 "use client"
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiTag, BuiCheckbox} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PTag, PCheckbox} from "@/app/components/src";
 import {useState} from "react";
 
 function InvalidCheckboxSection() {
     const [checked,setChecked] = useState(false);
-    const codeBlock = `<BuiCheckbox invalid={true} />`;
+    const codeBlock = `<PCheckbox invalid={true} />`;
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="invalid"
             title="Invalid"
-            desc={<>You can manage this process by sending a <BuiTag label={"boolean"}/> value to the <BuiTag label={"invalid"}/> prop of the checkbox component using form validation libraries.</>}
+            desc={<>You can manage this process by sending a <PTag label={"boolean"}/> value to the <PTag label={"invalid"}/> prop of the checkbox component using form validation libraries.</>}
             codeBlock={codeBlock}
         >
-            <BuiCheckbox label="Checkbox 1" invalid={true} checked={checked} onChange={() => setChecked(!checked)} />
-        </BuiComponentShowcaseArea>
+            <PCheckbox label="Checkbox 1" invalid={true} checked={checked} onChange={() => setChecked(!checked)} />
+        </PComponentShowcaseArea>
     );
 }
 export default InvalidCheckboxSection;

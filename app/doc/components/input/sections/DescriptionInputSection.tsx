@@ -1,24 +1,24 @@
 "use client"
 
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import BuiInput from "@/app/components/src/BuiInput";
-import {BuiTag} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import PInput from "@/app/components/src/PInput";
+import {PTag} from "@/app/components/src";
 
 function DescriptionInputSection() {
-    const codeBlock = `<BuiInput description="Please add valid email address"/>`
+    const codeBlock = `<PInput description="Please add valid email address"/>`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="description"
             title="Description"
-            desc={<>By adding a <BuiTag label={"description"}/> property, you can specify a situation that needs attention for the input.</>}
+            desc={<>By adding a <PTag label={"description"}/> property, you can specify a situation that needs attention for the input.</>}
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput description="Please add valid email address" placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput description="Please add valid email address" variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
-                <BuiInput description="Please add valid email address" variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput description="Please add valid email address" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput description="Please add valid email address" variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <PInput description="Please add valid email address" variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
-        </BuiComponentShowcaseArea>
+        </PComponentShowcaseArea>
     );
 }
 

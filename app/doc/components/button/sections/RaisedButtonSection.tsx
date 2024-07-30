@@ -1,23 +1,23 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
-import {BuiButton} from "@/app/components/src";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
+import {PButton} from "@/app/components/src";
 
 function RaisedButtonSection() {
-    const codeBlock = `<BuiButton raised label="Button"/>
-<BuiButton raised variant="outlined" label="Button"/>
-<BuiButton raised variant="text" label="Button"/>
+    const codeBlock = `<PButton raised label="Button"/>
+<PButton raised variant="outlined" label="Button"/>
+<PButton raised variant="text" label="Button"/>
 `;
 
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="raised"
             title="Raised"
             desc={<>Raised buttons display a shadow to indicate elevation.</>}
             codeBlock={codeBlock}
         >
-            <BuiButton raised label={"Button"}/>
-            <BuiButton raised variant="outlined" label={"Button"}/>
-            <BuiButton raised variant="text" label={"Button"}/>
-        </BuiComponentShowcaseArea>
+            <PButton raised label={"Button"}/>
+            <PButton raised variant="outlined" label={"Button"}/>
+            <PButton raised variant="text" label={"Button"}/>
+        </PComponentShowcaseArea>
     )
 }
 

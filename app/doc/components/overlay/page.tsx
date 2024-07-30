@@ -6,7 +6,7 @@ import ColorsOverlaySection from "@/app/doc/components/overlay/sections/ColorsOv
 
 export const metadata = {
     title : 'Overlay',
-    description : 'A standard overlay usage. Whether you use our BuiCard component or do it yourself, it will answer all of them.',
+    description : 'A standard overlay usage. Whether you use our PCard component or do it yourself, it will answer all of them.',
 }
 function OverlayPage() {
     return (

@@ -1,8 +1,8 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function AccessibilitySwitchSection() {
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="accessibility"
             title="Accessibility (Beta)"
             desc={<>None</>}

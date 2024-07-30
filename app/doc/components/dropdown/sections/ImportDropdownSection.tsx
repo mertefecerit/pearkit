@@ -1,9 +1,9 @@
-import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
+import PComponentShowcaseArea from "@/app/doc/components/global/PComponentShowcaseArea";
 
 function ImportDropdownSection() {
-    const codeBlock = `import { BuiDropdown } from 'pearkit';`
+    const codeBlock = `import { PDropdown } from 'pearkit';`
     return (
-        <BuiComponentShowcaseArea
+        <PComponentShowcaseArea
             anchor="import"
             title="Dropdown"
             desc={<>Dropdown is flexible form select component</>}
