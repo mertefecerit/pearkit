@@ -17,4 +17,4 @@ npm install pearkit
 ```
 
 ### Documents
-For detailed information about all components and their uses, you can visit our documentation [pearkit.vercel.app/doc](https://pearkit.vercel.app/doc).
+For detailed information about all components and their uses, you can visit our documentation [pearkit.com/doc](https://pearkit.com/doc).

@@ -1,10 +1,10 @@
 {
   "name": "pearkit",
-  "version": "2.0.351",
+  "version": "2.0.355",
   "description": "A React Component Kit",
   "main": "dist/pearKit.umd.js",
   "module": "dist/pearKit.es.js",
-  "homepage": "https://pearkit.vercel.app",
+  "homepage": "https://pearkit.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/mertefecerit/pearkit.git"
