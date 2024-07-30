@@ -13,3 +13,4 @@ export {default as BuiDropdown} from "./BuiDropdown";
 export {default as BuiDrawer} from "./BuiDrawer";
 export {default as BuiTabs} from "./BuiTabs";
 export {default as BuiTab} from "./BuiTabs/BuiTab";
+export {default as BuiToast} from "./BuiToast";

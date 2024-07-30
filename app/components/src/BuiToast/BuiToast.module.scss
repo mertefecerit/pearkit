@@ -1,0 +1,50 @@
+.wrapper {
+  @apply fixed  p-4 flex flex-col gap-4;
+  &.top-start {
+    @apply top-0 left-0;
+  }
+
+  &.top-end {
+    @apply top-0 right-0;
+  }
+
+  &.bottom-start {
+    @apply bottom-0 left-0;
+  }
+
+  &.bottom-end {
+    @apply bottom-0 right-0;
+  }
+
+  & > .toast {
+    @apply w-[300px] p-4 items-start rounded-lg shadow flex gap-2;
+    & > div {
+      @apply flex flex-col gap-2;
+      & > span:first-child {
+        @apply font-bold;
+      }
+
+      & > span:last-child {
+        @apply text-sm;
+      }
+    }
+
+    &.success {
+      @apply bg-green-200 text-green-700;
+    }
+
+    &.error {
+      @apply bg-red-200 text-red-700;
+    }
+
+    &.info {
+      @apply bg-blue-200 text-blue-700;
+    }
+
+    &.warning {
+      @apply bg-yellow-200 text-yellow-700;
+    }
+  }
+}
+
+
