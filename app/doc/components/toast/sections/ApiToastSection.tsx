@@ -24,7 +24,7 @@ function ApiToastSection() {
         {
             name: 'options',
             type: 'fire function 2nd parameter',
-            default:'{position:\'top-end\'}',
+            default:'{position:\'top-end\', timeout:3000}',
             description: 'Fire function options'
         },
     ];

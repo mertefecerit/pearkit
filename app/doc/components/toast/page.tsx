@@ -1,6 +1,6 @@
 import {BuiToastProvider} from "@/app/components/src";
 import BasicToastSection from "@/app/doc/components/toast/sections/BasicToastSection";
-import PositionToastSection from "@/app/doc/components/toast/sections/PositionToastSection";
+import OptionsToastSection from "@/app/doc/components/toast/sections/OptionsToastSection";
 import StatusToastSection from "@/app/doc/components/toast/sections/StatusToastSection";
 import AccessibilityToastSection from "@/app/doc/components/toast/sections/AccessibilityToastSection";
 import ApiToastSection from "@/app/doc/components/toast/sections/ApiToastSection";
@@ -12,7 +12,7 @@ const ToastPage = () => {
          <BuiToastProvider>
              <ImportToastSection />
              <BasicToastSection />
-             <PositionToastSection />
+             <OptionsToastSection />
              <StatusToastSection />
              <AccessibilityToastSection />
              <ApiToastSection />

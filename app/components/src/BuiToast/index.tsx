@@ -12,11 +12,8 @@ import {ToastType} from "../providers/BuiToastProvider/types";
 
 const BuiToast:React.FC<IBuiToastPropTypes> = (
     {
-        config = {
-            position: "top-end"
-        },
-        toasts,
-        ...props
+        config,
+        toasts
     }
 ) => {
 
@@ -38,7 +35,7 @@ const BuiToast:React.FC<IBuiToastPropTypes> = (
 
     return (
         <ul
-            className={`${styles.wrapper} ${styles[config.position]}`}>
+            className={`${styles.wrapper} ${styles[config.position || 'top-end']}`}>
             <AnimatePresence>
                 {
                     toasts && toasts.map((toast) => (
@@ -49,7 +46,7 @@ const BuiToast:React.FC<IBuiToastPropTypes> = (
                                 exit={{opacity: 0, y: -50}}
                                 transition={{duration: 0.2}}
                                 key={toast.id}>
-                                { IconPlacer(toast) }
+                                {IconPlacer(toast)}
                                 <div>
                                     <span>{toast.title}</span>
                                     <span>{toast.message}</span>

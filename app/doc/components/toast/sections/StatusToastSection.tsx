@@ -26,7 +26,7 @@ const StatusToastSection = () => {
             title: 'Success Toast Title',
             message: 'Success toast message...',
             type
-        });
+        },{position: 'top-end',timeout:3000});
     }
     return (
         <BuiComponentShowcaseArea

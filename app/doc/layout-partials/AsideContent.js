@@ -197,7 +197,7 @@ export default function AsideContent() {
                     children: [
                         {path: '#import', label: 'Import'},
                         {path: '#basic', label: 'Basic'},
-                        {path: '#position', label: 'Position'},
+                        {path: '#options', label: 'Options'},
                         {path: '#status', label: 'Status'},
                         {path: '#accessibility', label: 'Accessibility'},
                         {path: '#api', label: 'Api'},

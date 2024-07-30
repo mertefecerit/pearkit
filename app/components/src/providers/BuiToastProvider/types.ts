@@ -14,7 +14,8 @@ export interface ToastType {
 }
 
 export interface ToastConfig {
-    position: ToastPosition;
+    position?: ToastPosition;
+    timeout?: number
 }
 
 export interface ToastContextType {

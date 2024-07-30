@@ -1,6 +1,6 @@
 {
   "name": "@mertefecerit/bubbleui",
-  "version": "2.0.284",
+  "version": "2.0.296",
   "description": "A React Component Kit",
   "main": "dist/bubbleUi.umd.js",
   "module": "dist/bubbleUi.es.js",
