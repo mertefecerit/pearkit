@@ -6,7 +6,7 @@ import {IBuiSwitchPropTypes} from "@/app/components/src/BuiSwitch/type";
 
 const BuiSwitch:React.FC<IBuiSwitchPropTypes> = (
     {
-        color = "blue",
+        color = "lime",
         ...props
     }
 ) => {

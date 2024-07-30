@@ -8,7 +8,7 @@ import {ArrowBackIos, ArrowForwardIos} from "../components/icons";
 
 const BuiTabs:React.FC<IBuiTabsPropTypes> = (
     {
-        color="blue",
+        color="lime",
         activeTabIndex= 0,
         onChange,
         ...props

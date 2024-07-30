@@ -14,9 +14,9 @@ function DisabledInputSection() {
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput disabled placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput disabled variant="underlined" placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput disabled variant="filled" placeholder="example@bubbleui.com" onChange={() => null}/>
+                <BuiInput disabled placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput disabled variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput disabled variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
         </BuiComponentShowcaseArea>
     );

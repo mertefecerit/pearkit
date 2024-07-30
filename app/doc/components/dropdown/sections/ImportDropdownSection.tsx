@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportDropdownSection() {
-    const codeBlock = `import { BuiDropdown } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiDropdown } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

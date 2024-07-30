@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportModalSection() {
-    const codeBlock = `import { BuiModal } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiModal } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

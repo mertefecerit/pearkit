@@ -6,8 +6,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: './src/index.ts',
-            name: 'BubbleUI',
-            fileName: (format) => `bubbleUi.${format}.js`
+            name: 'PearKit',
+            fileName: (format) => `pearKit.${format}.js`
         },
         rollupOptions: {
             external: ['react', 'react-dom','lodash','prop-types','framer-motion'],

@@ -14,9 +14,9 @@ function LoadingInputSection() {
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput isLoading={true} placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput isLoading={true} variant="underlined" placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput isLoading={true} variant="filled" placeholder="example@bubbleui.com" onChange={() => null}/>
+                <BuiInput isLoading={true} placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput isLoading={true} variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput isLoading={true} variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
         </BuiComponentShowcaseArea>
     );

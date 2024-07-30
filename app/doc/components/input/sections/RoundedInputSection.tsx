@@ -16,9 +16,9 @@ function RoundedInputSection() {
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput rounded placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput rounded variant="underlined" placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput rounded variant="filled" placeholder="example@bubbleui.com" onChange={() => null}/>
+                <BuiInput rounded placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput rounded variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput rounded variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
         </BuiComponentShowcaseArea>
     );

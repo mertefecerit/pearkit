@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportOverlaySection() {
-    const codeBlock = `import { BuiOverlay } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiOverlay } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

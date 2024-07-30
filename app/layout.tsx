@@ -4,7 +4,7 @@ import "./assets/scss/app.scss";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
-    title: "BubbleUI",
+    title: "PearKIT",
     description: "A ReactJS Component Kit",
 };
 

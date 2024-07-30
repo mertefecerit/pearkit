@@ -5,7 +5,7 @@ import {IBuiTagPropTypes} from "@/app/components/src/BuiTag/type";
 const BuiTag: React.FC<IBuiTagPropTypes> = (
     {
         label,
-        color = "blue",
+        color = "lime",
         rounded = false,
         icon,
         ...props

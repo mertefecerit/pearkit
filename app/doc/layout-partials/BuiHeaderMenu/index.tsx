@@ -22,7 +22,7 @@ const BuiHeaderMenu:React.FC<{mobileSidebarToggle: () => void}> = ({mobileSideba
                 startIcon={<Icon icon="mdi:search"/>}
             />
             <BuiButton
-                href={"https://github.com/mertefecerit/bubbleui"}
+                href={"https://github.com/mertefecerit/pearkit"}
                 variant="outlined"
                 startIcon={<Icon icon="mdi:github"/>}
             />

@@ -1,7 +1,7 @@
 .BuiPaginatorWrapper {
   @apply flex items-center justify-between;
   & > div > a {
-    @apply inline-flex items-center gap-1 hover:text-blue-500 font-medium;
+    @apply inline-flex items-center gap-1 hover:text-lime-500 font-medium;
   }
 }
 

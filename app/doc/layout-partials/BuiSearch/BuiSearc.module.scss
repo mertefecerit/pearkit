@@ -7,12 +7,12 @@
     }
     & > div {
       & > a {
-        @apply text-xl font-bold hover:text-blue-500;
+        @apply text-xl font-bold hover:text-lime-500;
       }
       & > ul {
         @apply pl-4;
         & > li {
-          @apply hover:text-blue-500;
+          @apply hover:text-lime-500;
         }
       }
     }

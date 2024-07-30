@@ -9,7 +9,7 @@ import {IBuiButtonPropTypes} from "./type";
 const BuiButton:React.FC<IBuiButtonPropTypes> = (
     {
         variant = "basic",
-        color = "blue",
+        color = "lime",
         size = "base",
         isLoading = false,
         label,

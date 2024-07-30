@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportButtonSection() {
-    const codeBlock = `import { BuiButton } from '@mertefecerit/bubbleui';`;
+    const codeBlock = `import { BuiButton } from 'pearkit';`;
 
     return (
         <BuiComponentShowcaseArea

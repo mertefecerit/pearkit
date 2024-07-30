@@ -7,7 +7,7 @@ const BuiRadio:React.FC<IRadioPropTypes> = (
     {
         isInvalid = false,
         label,
-        color = 'blue',
+        color = 'lime',
         ...props
     }
 ) => {

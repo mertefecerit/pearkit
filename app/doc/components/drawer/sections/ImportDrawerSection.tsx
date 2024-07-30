@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportDrawerSection() {
-    const codeBlock = `import { BuiDrawer } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiDrawer } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportTagSection() {
-    const codeBlock = `import { BuiTag } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiTag } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

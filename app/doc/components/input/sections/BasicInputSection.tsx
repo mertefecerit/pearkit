@@ -4,7 +4,7 @@ import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentSh
 import {BuiInput} from "@/app/components/src";
 
 function BasicInputSection() {
-    const codeBlock = `<BuiInput placeholder="example@bubbleui.com"/>`
+    const codeBlock = `<BuiInput placeholder="example@pearkit.com"/>`
     return (
         <BuiComponentShowcaseArea
             anchor="basic"
@@ -13,7 +13,7 @@ function BasicInputSection() {
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex flex-col gap-4">
-                <BuiInput placeholder="example@bubbleui.com" onChange={() => null}/>
+                <BuiInput placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
         </BuiComponentShowcaseArea>
 );

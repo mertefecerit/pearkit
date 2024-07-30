@@ -13,7 +13,7 @@ const BuiInput:React.FC<IBuiInputPropTypes> = (
     {
         icon,
         isLoading = false,
-        color= 'blue',
+        color= 'lime',
         size="base",
         variant = 'outlined',
         label,

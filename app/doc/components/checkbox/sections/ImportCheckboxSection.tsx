@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportCheckboxSection() {
-    const codeBlock = `import { BuiCheckbox } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiCheckbox } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

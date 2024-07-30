@@ -14,9 +14,9 @@ function ErrorsInputSection() {
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput errors={['Error 1', 'Error 2']} placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput errors={['Error 1', 'Error 2']} variant="underlined" placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput errors={['Error 1', 'Error 2']} variant="filled" placeholder="example@bubbleui.com" onChange={() => null}/>
+                <BuiInput errors={['Error 1', 'Error 2']} placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput errors={['Error 1', 'Error 2']} variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput errors={['Error 1', 'Error 2']} variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
         </BuiComponentShowcaseArea>
     );

@@ -11,7 +11,7 @@
       & > li > a {
         @apply outline-0 transition-all inline-block w-full border-l-2 pl-4 py-1 hover:rounded-r hover:border-gray-500;
         &.active {
-          @apply border-blue-500 rounded-r text-blue-500;
+          @apply border-lime-500 rounded-r text-lime-500 font-medium;
         }
       }
     }

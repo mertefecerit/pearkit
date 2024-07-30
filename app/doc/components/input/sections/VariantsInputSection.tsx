@@ -16,9 +16,9 @@ function VariantsInputSection() {
             codeBlock={codeBlock}
         >
             <div className="md:w-[300px] w-full flex gap-4 flex-col">
-                <BuiInput placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput variant="underlined" placeholder="example@bubbleui.com" onChange={() => null}/>
-                <BuiInput variant="filled" placeholder="example@bubbleui.com" onChange={() => null}/>
+                <BuiInput placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput variant="underlined" placeholder="example@pearkit.com" onChange={() => null}/>
+                <BuiInput variant="filled" placeholder="example@pearkit.com" onChange={() => null}/>
             </div>
         </BuiComponentShowcaseArea>
     );

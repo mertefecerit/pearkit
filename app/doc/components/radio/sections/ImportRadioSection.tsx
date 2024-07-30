@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportRadioSection() {
-    const codeBlock = `import { BuiRadio } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiRadio } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

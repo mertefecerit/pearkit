@@ -1,7 +1,7 @@
 import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentShowcaseArea";
 
 function ImportSwitchSection() {
-    const codeBlock = `import { BuiSwitch } from '@mertefecerit/bubbleui';`
+    const codeBlock = `import { BuiSwitch } from 'pearkit';`
     return (
         <BuiComponentShowcaseArea
             anchor="import"

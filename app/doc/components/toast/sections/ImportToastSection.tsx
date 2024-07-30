@@ -2,7 +2,7 @@ import BuiComponentShowcaseArea from "@/app/doc/components/global/BuiComponentSh
 import {BuiTag} from "@/app/components/src";
 
 function ImportToastSection() {
-    const codeBlock = `import {BuiToastProvider, useBuiToast} from "@mertefecerit/bubbleui;
+    const codeBlock = `import {BuiToastProvider, useBuiToast} from "pearkit;
 
 <BuiToastProvider>
     // access useBuiToast hook,

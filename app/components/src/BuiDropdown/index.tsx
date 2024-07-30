@@ -16,7 +16,7 @@ const  BuiDropdown:React.FC<IBuiDropdownPropTypes> = (
         selected,
         placeholder = "Select Item",
         itemComponent,
-        color = "blue",
+        color = "lime",
         disabled = false,
         ...props
     }

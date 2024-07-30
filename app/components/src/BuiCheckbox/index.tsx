@@ -8,7 +8,7 @@ const BuiCheckbox: React.FC<IBuiCheckboxPropTypes> = (
     {
         invalid = false,
         label,
-        color = 'blue',
+        color = 'lime',
         ...props
     }
 ) => {

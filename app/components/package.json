@@ -1,13 +1,13 @@
 {
-  "name": "@mertefecerit/bubbleui",
-  "version": "2.0.296",
+  "name": "pearkit",
+  "version": "2.0.351",
   "description": "A React Component Kit",
-  "main": "dist/bubbleUi.umd.js",
-  "module": "dist/bubbleUi.es.js",
-  "homepage": "https://bubbleui.vercel.app",
+  "main": "dist/pearKit.umd.js",
+  "module": "dist/pearKit.es.js",
+  "homepage": "https://pearkit.vercel.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mertefecerit/bubbleui.git"
+    "url": "https://github.com/mertefecerit/pearkit.git"
   },
   "scripts": {
     "build": "vite build"
