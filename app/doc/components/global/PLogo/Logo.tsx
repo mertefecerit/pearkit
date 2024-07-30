@@ -1,6 +1,6 @@
 function Logo() {
     return (
-        <svg className="h-[60px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1717.88 640.76">
+        <svg className="h-[50px] lg:h-[60px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1717.88 640.76">
             <g>
                 <g>
                     <g>

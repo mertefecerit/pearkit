@@ -5,7 +5,6 @@ function PLogo(){
     return (
         <Link href="/" className="flex gap-2 items-end">
             <Logo />
-            <span className="text-sm font-bold">(Alpha)</span>
         </Link>
     )
 }
