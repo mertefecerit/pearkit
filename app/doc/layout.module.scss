@@ -1,5 +1,13 @@
 .layout {
-  @apply grid lg:grid-cols-[300px,1fr,250px] grid-cols-1 grid-rows-[auto,1fr] h-dvh;
+  @apply
+  grid
+  lg:grid-cols-[300px,1fr,250px]
+  grid-cols-1
+  grid-rows-[auto,1fr]
+  h-dvh;
+  :global(.dark) & {
+    @apply bg-gray-900
+  }
   & > main {
     @apply
     row-span-1
