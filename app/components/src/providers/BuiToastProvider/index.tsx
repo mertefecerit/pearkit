@@ -2,7 +2,7 @@
 
 import React, {createContext, useContext, useState} from 'react';
 import {ToastConfig, ToastContextType, ToastProviderProps, ToastType} from "./types";
-import {BuiToast} from "@/app/components/src";
+import {BuiToast} from "../../";
 
 const BuiToastContext = createContext<ToastContextType | undefined>(undefined);
 

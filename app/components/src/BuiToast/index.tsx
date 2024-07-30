@@ -5,10 +5,10 @@ import styles from "./BuiToast.module.scss";
 import {IBuiToastPropTypes} from "./type";
 import {AnimatePresence, motion} from "framer-motion";
 import CheckCircleOutline from "../components/icons/CheckCircleOutline";
-import ErrorOutline from "@/app/components/src/components/icons/ErrorOutline";
-import InfoOutline from "@/app/components/src/components/icons/InfoOutline";
-import WarningOutline from "@/app/components/src/components/icons/WarningOutline";
-import {ToastType} from "@/app/components/src/providers/BuiToastProvider/types";
+import ErrorOutline from "../components/icons/ErrorOutline";
+import InfoOutline from "../components/icons/InfoOutline";
+import WarningOutline from "../components/icons/WarningOutline";
+import {ToastType} from "../providers/BuiToastProvider/types";
 
 const BuiToast:React.FC<IBuiToastPropTypes> = (
     {
