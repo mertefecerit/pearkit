@@ -4,18 +4,19 @@ import React, {createContext, useContext, useState} from 'react';
 import {ToastConfig, ToastContextType, ToastProviderProps, ToastType} from "./types";
 import {BuiToast} from "@/app/components/src";
 
-const ToastContext = createContext<ToastContextType | undefined>(undefined);
+const BuiToastContext = createContext<ToastContextType | undefined>(undefined);
 
-export const ToastProvider: React.FC<ToastProviderProps> = ({children}) => {
+export const BuiToastProvider: React.FC<ToastProviderProps> = ({children}) => {
     const [toasts, setToasts] = useState<ToastType[]>([])
     const [toastConfig, setToastConfig] = useState<ToastConfig>({
         position: "top-end"
     })
 
-    const fire = (toast: ToastType, config:ToastConfig) => {
+    const fire = (toast: ToastType, config?: ToastConfig) => {
         const id = Date.now();
         toast.id = id;
-        setToastConfig(config)
+        if (!toast.type) toast.type = 'info';
+        setToastConfig(config || toastConfig)
         setToasts((prevToast) => [...prevToast, toast]);
         setTimeout(() => remove(id), 3000)
     }
@@ -25,16 +26,16 @@ export const ToastProvider: React.FC<ToastProviderProps> = ({children}) => {
     }
 
     return (
-        <ToastContext.Provider value={{fire}}>
+        <BuiToastContext.Provider value={{fire}}>
             {children}
-            <BuiToast config={toastConfig} toasts={toasts} />
-        </ToastContext.Provider>
+            <BuiToast config={toastConfig} toasts={toasts}/>
+        </BuiToastContext.Provider>
     );
 }
 
 
-export const useToast = (): ToastContextType => {
-    const context = useContext(ToastContext);
+export const useBuiToast = (): ToastContextType => {
+    const context = useContext(BuiToastContext);
     if (!context) {
         throw new Error('useToast must be used within a ToastProvider');
     }

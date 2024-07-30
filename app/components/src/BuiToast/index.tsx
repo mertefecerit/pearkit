@@ -5,10 +5,10 @@ import styles from "./BuiToast.module.scss";
 import {IBuiToastPropTypes} from "./type";
 import {AnimatePresence, motion} from "framer-motion";
 import CheckCircleOutline from "../components/icons/CheckCircleOutline";
-import {ToastType} from "@/app/components/src/providers/ToastProvider/types";
 import ErrorOutline from "@/app/components/src/components/icons/ErrorOutline";
 import InfoOutline from "@/app/components/src/components/icons/InfoOutline";
 import WarningOutline from "@/app/components/src/components/icons/WarningOutline";
+import {ToastType} from "@/app/components/src/providers/BuiToastProvider/types";
 
 const BuiToast:React.FC<IBuiToastPropTypes> = (
     {
@@ -43,7 +43,7 @@ const BuiToast:React.FC<IBuiToastPropTypes> = (
                 {
                     toasts && toasts.map((toast) => (
                             <motion.li
-                                className={`${styles.toast} ${styles[toast.type]}`}
+                                className={`${styles.toast} ${styles[toast.type || 'info']}`}
                                 initial={{opacity: 0, y: 50}}
                                 animate={{opacity: 1, y: 0}}
                                 exit={{opacity: 0, y: -50}}

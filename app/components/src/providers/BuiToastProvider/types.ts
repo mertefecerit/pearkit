@@ -10,7 +10,7 @@ export interface ToastType {
     id?: number;
     title: string,
     message: string,
-    type: string | 'success' | 'error' | 'warning' | 'info'
+    type?: string | 'success' | 'error' | 'warning' | 'info'
 }
 
 export interface ToastConfig {
@@ -18,5 +18,5 @@ export interface ToastConfig {
 }
 
 export interface ToastContextType {
-    fire: (toast:ToastType, config:ToastConfig) => void;
+    fire: (toast:ToastType, config?:ToastConfig) => void;
 }

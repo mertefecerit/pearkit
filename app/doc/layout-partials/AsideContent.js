@@ -191,6 +191,18 @@ export default function AsideContent() {
                         {path: '#api', label: 'Api'},
                     ]
                 },
+                {
+                    path: '/doc/components/toast',
+                    label: 'Toast',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#position', label: 'Position'},
+                        {path: '#status', label: 'Status'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
             ]
         },
     ]
