@@ -16,7 +16,8 @@ import PasswordRevealInputSection from "@/app/doc/components/input/sections/Pass
 
 export const metadata = {
     title: 'Input',
-    description: 'It is the standard input element that you can use in forms. Gets all form attributes.'
+    description: 'It is the standard input element that you can use in forms. Gets all form attributes.',
+    keywords: 'react, input'
 }
 function InputComponentPage() {
     return (

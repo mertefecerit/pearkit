@@ -5,7 +5,8 @@ import AccessibilityModalSection from "@/app/doc/components/modal/sections/Acces
 
 export const metadata = {
     title: 'Modal',
-    description: 'A simple modal component wrapped into an POverlay component.'
+    description: 'A simple modal component wrapped into an POverlay component.',
+    keywords: 'react, modal'
 }
 function ModalPage() {
 

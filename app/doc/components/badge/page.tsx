@@ -8,7 +8,8 @@ import ApiBadgeSection from "@/app/doc/components/badge/sections/ApiBadgeSection
 
 export const metadata = {
     title: 'Badge',
-    description: 'Badge is a small status indicator for another element.'
+    description: 'Badge is a small status indicator for another element.',
+    keywords: 'react, badge'
 }
 function BadgeComponentPage(){
     return (

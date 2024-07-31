@@ -6,7 +6,11 @@ import ColorsTagSection from "@/app/doc/components/tag/sections/ColorsTagSection
 import RoundedTagSection from "@/app/doc/components/tag/sections/RoundedTagSection";
 import IconTagSection from "@/app/doc/components/tag/sections/IconTagSection";
 
-
+export const metadata = {
+    title: 'Tag | PearKIT',
+    description: 'Standard tag component for categorize content.',
+    keywords: 'tag, react'
+}
 function CodePage() {
     return (
         <>

@@ -4,8 +4,12 @@ import AccessibilityDrawerSection from "@/app/doc/components/drawer/sections/Acc
 import ApiDrawerSection from "@/app/doc/components/drawer/sections/ApiDrawerSection";
 import PositionDrawerSection from "@/app/doc/components/drawer/sections/PositionDrawerSection";
 
+export const metadata = {
+    title: 'Drawer | PearKIT',
+    description: 'Drawer, also known as Sidebar, is a container component displayed as an overlay.',
+    keywords: 'react, drawer'
+}
 function DrawerPage() {
-
     return (
         <>
             <ImportDrawerSection />

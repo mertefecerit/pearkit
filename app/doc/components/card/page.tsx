@@ -6,7 +6,8 @@ import AccessibilityCardSection from "@/app/doc/components/card/sections/Accessi
 
 export const metadata = {
     title: 'Card',
-    description: 'A simple Card is created with a title property along with the content as children.'
+    description: 'A simple Card is created with a title property along with the content as children.',
+    keywords: 'react, card'
 }
 function Page() {
     return (

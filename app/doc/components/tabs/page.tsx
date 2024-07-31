@@ -8,6 +8,11 @@ import OverflowTabsSection from "@/app/doc/components/tabs/sections/OverflowTabs
 import AccessibilityTabsSection from "@/app/doc/components/tabs/sections/AccessibilityTabsSection";
 import ApiTabsSection from "@/app/doc/components/tabs/sections/ApiTabsSection";
 
+export const metadata = {
+    title: 'Tabs | PearKIT',
+    description: 'PTabs consists of one or more PTab components.',
+    keywords: 'react, tabs'
+}
 const TabsPage = () => {
     return (
         <>

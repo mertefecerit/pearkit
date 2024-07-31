@@ -16,7 +16,8 @@ import LinkButtonSection from "@/app/doc/components/button/sections/LinkButtonSe
 
 export const metadata = {
     title: 'Button',
-    description: 'Buttons allow users to take actions, and make choices, with a single tap.'
+    description: 'Buttons allow users to take actions, and make choices, with a single tap.',
+    keywords: 'react, button'
 }
 
 function ButtonComponentPage() {

@@ -6,6 +6,12 @@ import TypesAlertSection from "@/app/doc/components/alert/sections/TypesAlertSec
 import ClosableAlertSection from "@/app/doc/components/alert/sections/ClosableAlertSection";
 import LifetimeAlertSection from "@/app/doc/components/alert/sections/LifetimeAlertSection";
 
+
+export const metadata = {
+    title: 'Alert | PearKIT',
+    description: 'Alert messages are used for user interaction.',
+    keywords: 'react, alert'
+}
 const AlertPage = () => {
 
     return (

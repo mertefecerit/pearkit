@@ -9,7 +9,8 @@ import ApiCheckboxSection from "@/app/doc/components/checkbox/sections/ApiCheckb
 
 export const metadata = {
     title: 'Checkbox',
-    description: 'Checkboxes allow the user to select one or more items from a set.'
+    description: 'Checkboxes allow the user to select one or more items from a set.',
+    keywords: 'react, checkbox'
 }
 function CheckboxPage() {
     return (

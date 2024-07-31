@@ -8,6 +8,7 @@ import DisabledSwitchSection from "@/app/doc/components/switch/sections/Disabled
 export const metadata = {
     title : 'Switch',
     description : 'Standard switch component for form components',
+    keywords: 'react, switch'
 }
 
 function SwitchPage() {
