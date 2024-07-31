@@ -7,7 +7,7 @@ import RoundedTagSection from "@/app/doc/components/tag/sections/RoundedTagSecti
 import IconTagSection from "@/app/doc/components/tag/sections/IconTagSection";
 
 export const metadata = {
-    title: 'Tag | PearKIT',
+    title: 'Tag',
     description: 'Standard tag component for categorize content.',
     keywords: 'tag, react'
 }

@@ -8,7 +8,7 @@ import LifetimeAlertSection from "@/app/doc/components/alert/sections/LifetimeAl
 
 
 export const metadata = {
-    title: 'Alert | PearKIT',
+    title: 'Alert',
     description: 'Alert messages are used for user interaction.',
     keywords: 'react, alert'
 }

@@ -5,7 +5,7 @@ import ApiDrawerSection from "@/app/doc/components/drawer/sections/ApiDrawerSect
 import PositionDrawerSection from "@/app/doc/components/drawer/sections/PositionDrawerSection";
 
 export const metadata = {
-    title: 'Drawer | PearKIT',
+    title: 'Drawer',
     description: 'Drawer, also known as Sidebar, is a container component displayed as an overlay.',
     keywords: 'react, drawer'
 }

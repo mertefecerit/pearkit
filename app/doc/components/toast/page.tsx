@@ -8,7 +8,7 @@ import ImportToastSection from "@/app/doc/components/toast/sections/ImportToastS
 
 
 export const metadata = {
-    title: 'Toast | PearKIT',
+    title: 'Toast',
     description: 'Standard toast component for user interaction.',
     keywords: 'react, toast'
 }

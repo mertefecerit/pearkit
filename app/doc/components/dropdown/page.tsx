@@ -6,7 +6,7 @@ import ColorsDropdownSection from "@/app/doc/components/dropdown/sections/Colors
 import DisabledDropdownSection from "@/app/doc/components/dropdown/sections/DisabledDropdownSection";
 
 export const metadata = {
-    title: 'Dropdown | PearKIT',
+    title: 'Dropdown',
     description: 'Dropdown is flexible form select component.',
     keywords: 'react, dropdown'
 }

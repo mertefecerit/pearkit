@@ -6,16 +6,19 @@ import {animate, useMotionValue, useTransform, motion} from "framer-motion";
 
 function LifetimeAlertSection() {
     const [alertStatus, setAlertStatus] = useState(false);
-    const count = useMotionValue(0);
+    const count = useMotionValue(3000);
     const rounded = useTransform(count, Math.round);
 
     useEffect(() => {
-        if (!alertStatus) return;
-        count.setCurrent(0)
-        const animation = animate(count, 3000, { duration: 3 });
+        if (!alertStatus) {
+            count.set(3000)
+            return;
+        }
+        count.set(3000)
+        const animation = animate(count, 0, { duration: 3 });
 
         return animation.stop;
-    }, [alertStatus]);
+    }, [count, alertStatus]);
 
 
     const codeBlock = `<PAlert lifetime={3000} status={alertStatus} close={() => setAlertStatus(false)} />`;
@@ -26,7 +29,7 @@ function LifetimeAlertSection() {
             desc={<>Here, we can enable the alert component to be closed automatically with the <PTag label={"lifetime"}/> feature. However, since the state is outside, it still needs the <PTag label="close"/> and <PTag label={"status"}/> props. Because the <PTag label="lifetime"/> feature triggers the <PTag label={"close"}/> feature of the component. It also controls the <PTag label={"closable"}/> feature.</>}
             codeBlock={codeBlock}
         >
-            <PButton label={<div className="flex gap-2 items-center">
+            <PButton disabled={alertStatus} label={<div className="flex gap-2 items-center">
                 <span>Close Time</span>
                 <motion.span>{rounded}</motion.span>
             </div>} onClick={() => setAlertStatus(true)}/>

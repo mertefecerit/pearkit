@@ -9,7 +9,7 @@ import AccessibilityTabsSection from "@/app/doc/components/tabs/sections/Accessi
 import ApiTabsSection from "@/app/doc/components/tabs/sections/ApiTabsSection";
 
 export const metadata = {
-    title: 'Tabs | PearKIT',
+    title: 'Tabs',
     description: 'PTabs consists of one or more PTab components.',
     keywords: 'react, tabs'
 }
