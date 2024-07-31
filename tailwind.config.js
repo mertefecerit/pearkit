@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import colors from "tailwindcss/colors";
+
 module.exports = {
   important: true,
   darkMode: 'class',
@@ -8,7 +10,11 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: theme => ({
+        'custom-gradient': `linear-gradient(to top, ${colors.lime[200]} 1%, ${colors.white} 40%)`,
+      }),
+    }
   },
   plugins: [],
 };

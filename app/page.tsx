@@ -5,7 +5,7 @@ import React from "react";
 
 export default function HomePage() {
     return (
-        <div className="h-dvh flex flex-col gap-8 items-center justify-center dark:bg-gray-900">
+        <div className="bg-custom-gradient h-dvh flex flex-col gap-8 items-center pt-20 dark:bg-gray-900">
             <PLogo/>
             <div className="flex gap-2">
                 <PButton
