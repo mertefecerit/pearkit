@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function UsageInstallationSection() {
     const codeBlock = `// import css file to main css or scss file
-@import "pearkit/dist/style.css";"
+@import "pearkit/dist/style.css";
 
 // import any component in your components
 import {PButton} from "pearkit";

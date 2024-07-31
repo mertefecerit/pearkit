@@ -12,7 +12,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'custom-gradient': `linear-gradient(to top, ${colors.lime[200]} 1%, ${colors.white} 40%)`,
+        'custom-gradient': `linear-gradient(to top, ${colors.lime[200]}, ${colors.white} 40%)`,
+        'custom-gradient-dark': `linear-gradient(to top, ${colors.lime[500]}, ${colors.gray[900]} 90%)`,
       }),
     }
   },
