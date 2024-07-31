@@ -1,6 +1,6 @@
 {
   "name": "pearkit",
-  "version": "3.0.290",
+  "version": "3.0.294",
   "description": "A React Component Kit",
   "main": "dist/pearKit.umd.js",
   "module": "dist/pearKit.es.js",
