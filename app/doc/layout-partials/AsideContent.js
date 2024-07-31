@@ -17,6 +17,19 @@ export default function AsideContent() {
             label: 'Components',
             children: [
                 {
+                    path: '/doc/components/alert',
+                    label: 'Alert',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#types', label: 'Types'},
+                        {path: '#closable', label: 'Closable'},
+                        {path: '#lifetime', label: 'Lifetime'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
+                {
                     path: '/doc/components/badge',
                     label: 'Badge',
                     children: [
