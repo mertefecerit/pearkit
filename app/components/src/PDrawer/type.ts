@@ -1,5 +1,5 @@
 import React from "react";
-import {Positions} from "@/app/components/src/types/Positions";
+import {Positions} from "@/types/Positions";
 import {Variant} from "framer-motion";
 
 type PDrawerType = React.HTMLAttributes<HTMLDivElement>;

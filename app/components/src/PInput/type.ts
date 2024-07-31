@@ -1,5 +1,5 @@
 import React from "react";
-import {TwColor} from "@/app/components/src/types/TwColor";
+import {TwColor} from "@/types/TwColor";
 
 export interface IPInputPropTypes extends Omit<React.InputHTMLAttributes<HTMLInputElement>,'size'> {
     icon?: React.ReactNode;

@@ -4,7 +4,7 @@ type ButtonMotionPropType =
     Omit<React.ButtonHTMLAttributes<HTMLButtonElement> &
     React.AnchorHTMLAttributes<HTMLAnchorElement> &
     HTMLMotionProps<"button">,'disabled'>;
-import {TwColor} from "../types/TwColor";
+import {TwColor} from "@/types/TwColor";
 
 export interface IPButtonPropTypes extends ButtonMotionPropType {
     variant?: string | 'basic' | 'outlined' | 'text',

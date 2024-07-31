@@ -1,4 +1,4 @@
-import {TwColor} from "@/app/components/src/types/TwColor";
+import {TwColor} from "@/types/TwColor";
 import React from "react";
 
 export interface IPRadioPropTypes extends React.InputHTMLAttributes<HTMLInputElement> {

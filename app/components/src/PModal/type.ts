@@ -1,6 +1,6 @@
 import React from "react";
 import {HTMLMotionProps} from "framer-motion";
-import {TwColor} from "@/app/components/src/types/TwColor";
+import {TwColor} from "@/types/TwColor";
 
 type PModalType = React.HTMLAttributes<HTMLDivElement> & HTMLMotionProps<"div">
 export interface IPModalPropType extends PModalType {

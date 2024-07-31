@@ -1,5 +1,4 @@
 import React from 'react';
-
 const InfoOutline:React.FC<{size?:string}> = ({size="1em"}) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24">
@@ -7,5 +6,4 @@ const InfoOutline:React.FC<{size?:string}> = ({size="1em"}) => {
         </svg>
     );
 };
-
 export default InfoOutline;

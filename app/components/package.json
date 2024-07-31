@@ -1,19 +1,19 @@
 {
   "name": "pearkit",
-  "version": "3.0.218",
+  "version": "3.0.290",
   "description": "A React Component Kit",
   "main": "dist/pearKit.umd.js",
   "module": "dist/pearKit.es.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://pearkit.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/mertefecerit/pearkit.git"
   },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build & tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
-    "prop-types": "^15.8.1",
     "framer-motion": "^11.2.12",
     "lodash": "^4.17.21",
     "react": "^18",
@@ -28,7 +28,8 @@
     "@vitejs/plugin-react": "^4.2.1",
     "postcss": "^8",
     "sass": "^1.77.6",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "typescript": "^5.5.4"
   },
   "keywords": [
     "react",
@@ -38,8 +39,8 @@
     "component",
     "kit"
   ],
-  "author": "mert efe cerit",
-  "license": "ISC",
+  "author": "Mert Efe Cerit",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   }
