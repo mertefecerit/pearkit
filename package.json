@@ -1,6 +1,6 @@
 {
   "name": "pearkit",
-  "version": "3.0.312",
+  "version": "3.0.322",
   "private": true,
   "scripts": {
     "dev": "next dev",

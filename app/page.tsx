@@ -3,10 +3,11 @@ import {Icon} from "@iconify/react";
 import {PButton} from "@/app/components/src";
 import React from "react";
 import PDarkModeToggle from "@/app/doc/layout-partials/PDarkModeToggle";
+import Npm from "@/app/npm";
 
 export default function HomePage() {
     return (
-        <div className="bg-custom-gradient h-dvh flex flex-col gap-8 items-center pt-20 dark:bg-custom-gradient-dark">
+        <div className="bg-custom-gradient h-dvh flex flex-col gap-8 items-center pt-28 dark:bg-custom-gradient-dark">
             <PLogo/>
             <div className="flex gap-2">
                 <PButton
@@ -28,6 +29,7 @@ export default function HomePage() {
                 />
                 <PDarkModeToggle/>
             </div>
+            <Npm />
         </div>
     )
 }
