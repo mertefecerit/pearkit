@@ -1,4 +1,4 @@
-import {ToastPosition, ToastType} from "@/providers/PToastProvider/types";
+import {ToastPosition, ToastType} from "../providers/PToastProvider/types";
 
 export interface IPToastPropTypes {
     toasts: ToastType[],

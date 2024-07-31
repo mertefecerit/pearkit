@@ -17,12 +17,7 @@
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
-    "outDir": "./dist",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"],
-      "types/*": ["src/types/*"]
-    }
+    "outDir": "./dist"
   },
   "include": ["src","global.d.ts"],
   "exclude": ["node_modules", "dist"]
