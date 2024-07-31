@@ -1,0 +1,27 @@
+$types: (
+        'danger': 'red',
+        'warning': 'yellow',
+        'info' : 'blue',
+        'success': 'green'
+);
+.wrapper {
+  @apply w-full flex gap-4 p-4 rounded-lg justify-between items-center border-l-[8px];
+  & > div:first-child {
+    @apply flex gap-4 items-center;
+  }
+
+  & > div.closeIcon{
+    @apply p-0.5 rounded-full cursor-pointer;
+  }
+
+  @each $type, $color in $types {
+    &.#{$type} {
+      @apply bg-#{$color}-500/20 text-#{$color}-500 border-#{$color}-500;
+      & > div.closeIcon {
+        @apply hover:bg-#{$color}-500/20;
+      }
+    }
+  }
+}
+
+

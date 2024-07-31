@@ -11,7 +11,7 @@ export interface IPButtonPropTypes extends ButtonMotionPropType {
     color?: TwColor,
     size?: string | 'xs' | 'sm' | 'base' | 'lg' | 'xl',
     isLoading?: boolean | true | false,
-    label?: string,
+    label?: string | React.ReactNode,
     startIcon?: React.ReactNode,
     endIcon?: React.ReactNode,
     animation?: boolean | true | false,

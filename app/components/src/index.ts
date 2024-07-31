@@ -1,3 +1,6 @@
+export {PToastProvider, usePToast} from "./providers/PToastProvider";
+
+
 export {default as PTag} from "./PTag";
 export {default as PButtonGroup} from "./PButtonGroup";
 export {default as PButton} from "./PButton";
@@ -14,4 +17,4 @@ export {default as PDrawer} from "./PDrawer";
 export {default as PTabs} from "./PTabs";
 export {default as PTab} from "./PTabs/PTab";
 export {default as PToast} from "./PToast";
-export {PToastProvider, usePToast} from "./providers/PToastProvider";
+export {default as PAlert} from "./PAlert";
