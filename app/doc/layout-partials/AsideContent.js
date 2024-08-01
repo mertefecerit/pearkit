@@ -218,5 +218,23 @@ export default function AsideContent() {
                 },
             ]
         },
+        {
+            label: 'Advanced Components',
+            children: [
+                {
+                    path: '/doc/advanced-components/searchable-select',
+                    label: 'Searchable Select',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#customizable-item-component', label: 'Customizable Item Component'},
+                        {path: '#disabled', label: 'Disabled'},
+                        {path: '#focus-open', label: 'Focus Open'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
+            ]
+        }
     ]
 }

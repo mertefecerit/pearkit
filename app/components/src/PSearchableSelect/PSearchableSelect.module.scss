@@ -1,0 +1,99 @@
+@import "../../../assets/scss/colors";
+
+.wrapper {
+  @apply w-full relative select-none;
+  & > .placeholder {
+    @apply
+    focus-visible:ring-2
+    outline-none
+    transition-all
+    flex
+    items-center
+    justify-between
+    px-4
+    py-2
+    min-h-10
+    border
+    rounded-lg
+    bg-white
+    cursor-pointer;
+    :global(.dark) & {
+      @apply bg-gray-800 border-gray-700;
+    }
+    @each $color, $rgb in $colors {
+      &.#{$color} {
+        @if $color != 'black' and $color != 'white' {
+          @apply ring-#{$color}-500;
+        }
+      }
+    }
+    & > .closeIcon {
+      @apply cursor-pointer p-0.5 hover:bg-gray-100 rounded-full;
+    }
+
+    &.isOpenContent {
+      @apply rounded-b-none;
+    }
+    &.isDisabled {
+      @apply bg-gray-100 cursor-not-allowed;
+      :global(.dark) & {
+        @apply bg-gray-700;
+      }
+    }
+  }
+
+  & > .content {
+    @apply
+    flex
+    flex-col
+    gap-4
+    z-40
+    absolute
+    bg-white
+    w-full
+    p-4
+    border-t-0
+    border
+    rounded-lg
+    rounded-t-none;
+    :global(.dark) & {
+      @apply bg-gray-800 border-gray-700;
+    }
+    & > div {
+      @apply relative;
+      & > div {
+        @apply
+        top-0
+        left-0
+        absolute
+        w-full
+        h-full
+        bg-white/50
+        flex
+        items-center
+        justify-center;
+        @each $color, $rgb in $colors {
+          &.#{$color} {
+            @if $color != 'black' and $color != 'white' {
+              @apply text-#{$color}-500;
+            }
+          }
+        }
+        :global(.dark) & {
+          @apply bg-gray-800/50;
+        }
+      }
+      & > ul {
+        @apply overflow-y-auto max-h-[200px] pr-4;
+        & > li {
+          @apply rounded-lg hover:bg-gray-100 cursor-pointer px-4 py-2;
+          :global(.dark) & {
+            @apply hover:bg-gray-700;
+          }
+        }
+      }
+    }
+  }
+}
+
+

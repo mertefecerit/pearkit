@@ -18,3 +18,4 @@ export {default as PTabs} from "./PTabs";
 export {default as PTab} from "./PTabs/PTab";
 export {default as PToast} from "./PToast";
 export {default as PAlert} from "./PAlert";
+export {default as PSearchableSelect} from "./PSearchableSelect";
