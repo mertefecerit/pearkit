@@ -54,7 +54,7 @@ const BasicSearchableSelectSection: React.FC = () => {
         <PComponentShowcaseArea
             anchor="basic"
             title="Basic"
-            desc={<>Here's an example of how it's done. Here, we send a request to https://dummyjson.com/products, update our state named <PTag label="products"/> and send it to the component. Here, the <PTag label={"loader"}/> prop is triggered when the component <PTag label={"status"}/> is true or the <PTag label={"search status"}/> is true.</>}
+            desc={<>Here is an example of how it is done. Here, we send a request to https://dummyjson.com/products, update our state named <PTag label="products"/> and send it to the component. Here, the <PTag label={"loader"}/> prop is triggered when the component <PTag label={"status"}/> is true or the <PTag label={"search status"}/> is true.</>}
             codeBlock={codeBlock}
         >
             <PSearchableSelect
