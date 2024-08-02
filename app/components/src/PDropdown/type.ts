@@ -2,9 +2,9 @@ import React from "react";
 import {TwColor} from "../types/TwColor";
 
 export type DropdownItemType = {
-    [key:string]: string | undefined,
+    [key:string]: string | number | undefined,
     label?: string,
-    value?: string,
+    value?: string | number,
 }
 export interface IPDropdownPropTypes extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
     options: DropdownItemType[],
