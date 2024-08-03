@@ -1,0 +1,31 @@
+.wrapper {
+  @apply w-full border rounded-lg relative;
+  :global(.dark) & {
+    @apply border-gray-700;
+  }
+  & > div.tableHeader {
+    @apply p-4 flex justify-between items-center;
+  }
+  & > div.tableContent {
+    @apply overflow-x-auto;
+    & > table {
+      @apply w-full;
+    }
+  }
+  & > div.tableFooter {
+    @apply
+    p-4
+    border-t;
+    :global(.dark) & {
+      @apply border-gray-700;
+    }
+  }
+  & > div.isPending {
+    @apply absolute top-0 left-0 w-full h-full flex justify-center items-center bg-white/50 rounded-lg;
+    :global(.dark) & {
+      @apply bg-gray-800/50;
+    }
+  }
+}
+
+

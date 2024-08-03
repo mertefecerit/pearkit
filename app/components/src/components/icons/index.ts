@@ -12,3 +12,4 @@ export { default as CheckCircleOutline} from './CheckCircleOutline';
 export { default as ErrorOutline} from './ErrorOutline';
 export { default as WarningOutline} from './WarningOutline';
 export { default as InfoOutline} from './InfoOutline';
+export { default as SearchIcon} from './SearchIcon';

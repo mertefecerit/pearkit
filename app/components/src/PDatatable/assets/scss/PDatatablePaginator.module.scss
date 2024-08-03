@@ -1,0 +1,15 @@
+.wrapper {
+  @apply flex items-center justify-between;
+  & > ul {
+    @apply flex divide-x border rounded-lg w-fit;
+    & > li {
+      @apply
+      size-8
+      flex
+      items-center
+      justify-center
+      cursor-pointer
+      hover:bg-gray-100;
+    }
+  }
+}

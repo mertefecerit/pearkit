@@ -1,0 +1,9 @@
+.tbody {
+  @apply divide-y;
+  :global(.dark) & {
+    @apply divide-gray-700;
+  }
+  & > tr > td {
+    @apply px-4 py-2;
+  }
+}
