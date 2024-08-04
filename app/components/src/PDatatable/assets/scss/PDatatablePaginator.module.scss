@@ -1,15 +1,32 @@
+@import "../../../../../assets/scss/colors";
+
 .wrapper {
   @apply flex items-center justify-between;
+
+
+  @each $color, $rgb in $colors {
+    @if $color != 'white' and $color != 'black'{
+      &.#{$color} > ul > li {
+        @apply hover:bg-#{$color}-500/20;
+        &.isSelected {
+          @apply bg-#{$color}-500/20;
+        }
+      }
+    }
+  }
+
   & > ul {
-    @apply flex divide-x border rounded-lg w-fit;
+    @apply flex divide-x border rounded-lg w-fit overflow-hidden;
+    :global(.dark) & {
+      @apply border-gray-700 divide-gray-700;
+    }
     & > li {
       @apply
       size-8
       flex
       items-center
       justify-center
-      cursor-pointer
-      hover:bg-gray-100;
+      cursor-pointer;
     }
   }
 }

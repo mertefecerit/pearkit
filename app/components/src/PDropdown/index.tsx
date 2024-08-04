@@ -18,6 +18,7 @@ const  PDropdown:React.FC<IPDropdownPropTypes> = (
         itemComponent,
         color = "lime",
         disabled = false,
+        cancelable = true,
         ...props
     }
 ) => {
@@ -62,6 +63,7 @@ const  PDropdown:React.FC<IPDropdownPropTypes> = (
     }
 
     const clearSelectedOption = (e:React.MouseEvent) => {
+        if (!cancelable) return;
         e.stopPropagation();
         setSelectedOption({})
         onChange({});
@@ -100,7 +102,7 @@ const  PDropdown:React.FC<IPDropdownPropTypes> = (
                     selectedOption[selector] ?? <span>{placeholder}</span>
                 }
                 {
-                    selectedOption[selector] ?
+                    selectedOption[selector] && cancelable ?
                         <div
                             className={styles.closeIconWrapper}
                             onClick={clearSelectedOption}

@@ -1,3 +1,5 @@
+@import "../../../../../assets/scss/colors";
+
 .wrapper {
   @apply w-full border rounded-lg relative;
   :global(.dark) & {
@@ -22,6 +24,13 @@
   }
   & > div.isPending {
     @apply absolute top-0 left-0 w-full h-full flex justify-center items-center bg-white/50 rounded-lg;
+    @each $color, $rgb in $colors {
+      &.#{$color} {
+        @if $color != 'white' and $color != 'black'{
+          @apply text-#{$color}-500;
+        }
+      }
+    }
     :global(.dark) & {
       @apply bg-gray-800/50;
     }

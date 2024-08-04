@@ -13,6 +13,7 @@ export interface IPDropdownPropTypes extends Omit<React.HTMLAttributes<HTMLDivEl
     selected: DropdownItemType,
     placeholder?: string,
     itemComponent?: React.ReactNode,
-    color?: TwColor,
+    color?: string | TwColor,
     disabled?: true | false
+    cancelable?: true | false
 }

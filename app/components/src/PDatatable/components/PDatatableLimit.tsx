@@ -1,21 +1,31 @@
 import React, {useState} from 'react';
 import {usePDatatable} from "../PDatatableProvider";
+import {PDropdown} from "../../index";
+import {DropdownItemType} from "../../PDropdown/type";
 
 const PDatatableLimit:React.FC = () => {
-    const {tableState, setTableState, config, limits} = usePDatatable();
-    const [selectedLimit, setSelectedLimit] = useState<number>(tableState.limit);
-    const onLimitChangeHandler = (e:any) => {
-        const newLimit = parseInt(e.target.value);
-        setSelectedLimit(newLimit);
-        setTableState({...tableState, limit:newLimit, skip:0})
+    const {tableState, dispatch, color, config, limits} = usePDatatable();
+    const [selectedLimit, setSelectedLimit] = useState<DropdownItemType>({
+        label: tableState.limit.toString(),
+        value: tableState.limit
+    });
+    const onLimitChangeHandler = (selectValue:DropdownItemType) => {
+        setSelectedLimit(selectValue);
+        if (typeof selectValue.value === 'number'){
+            dispatch({type:'SET_LIMIT', value:selectValue.value})
+            dispatch({type:'SET_SKIP', value:0})
+        }
     }
     return (
         <div>
-            <select onChange={onLimitChangeHandler} value={selectedLimit}>
-                {
-                    limits.map((limit, i) => <option key={i} value={limit}>{limit}</option>)
-                }
-            </select>
+            <PDropdown
+                color={color}
+                cancelable={false}
+                placeholder={"Limit"}
+                onChange={onLimitChangeHandler}
+                selected={selectedLimit}
+                options={limits}
+            />
         </div>
     );
 };

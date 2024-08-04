@@ -1,5 +1,8 @@
 .thead {
   @apply bg-gray-100 text-left;
+  :global(.dark) & {
+    @apply bg-gray-800;
+  }
   & > tr > th {
     @apply px-4 py-2;
   }

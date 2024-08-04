@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react';
 import styles from "../assets/scss/PDatatable.module.scss";
 import PDatatableTHead from "./PDatatableTHead";
@@ -10,8 +8,11 @@ import {LoadingIcon} from "../../components/icons";
 import PDatatableLimit from "./PDatatableLimit";
 import PDatatableSearch from "./PDatatableSearch";
 
+
+
+
 const PDatatableWrapper:React.FC = () => {
-    const {config} = usePDatatable();
+    const {config,tableState, color} = usePDatatable();
     return (
         <div className={`${styles.wrapper}`}>
             <div className={styles.tableHeader}>
@@ -25,10 +26,12 @@ const PDatatableWrapper:React.FC = () => {
                 </table>
             </div>
             <div className={styles.tableFooter}>
-                <PDatatablePaginator />
+                {
+                    tableState.limit != 0 && <PDatatablePaginator />
+                }
             </div>
             {
-                config.isPending && <div className={styles.isPending}>
+                config.isPending && <div className={`${styles.isPending} ${styles[color]}`}>
                     <LoadingIcon size="3em"/>
                 </div>
             }

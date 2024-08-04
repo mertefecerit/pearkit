@@ -1,4 +1,5 @@
 import React from "react";
+import {TwColor} from "../types/TwColor";
 
 export type TableStateType = {
     limit: number
@@ -19,8 +20,12 @@ export interface IPDatatablePropTypes {
         limit?:number,
         total:number,
         isPending?:boolean | true | false
-        limits?:number[]
-    }
+        color?: string | TwColor
+        limits?: {
+            label: string,
+            value: number
+        }[]
+    },
 }
 
 export interface IPDatatableProviderTypes {
@@ -28,9 +33,20 @@ export interface IPDatatableProviderTypes {
     config: IPDatatablePropTypes['config']
 }
 
+export type PDatatableActionTypes =
+    { type: 'SET_LIMIT'; value: TableStateType['limit'] } |
+    { type: 'SET_SKIP'; value: TableStateType['skip'] } |
+    { type: 'SET_ORDER'; value: TableStateType['order'] } |
+    { type: 'SET_SEARCH'; value: TableStateType['search'] } |
+    { type: 'SET_SORTBY'; value: TableStateType['sortBy'] }
+
 export interface IPDatatableContextTypes {
     config: IPDatatablePropTypes['config'];
     tableState: TableStateType,
-    setTableState: (state: TableStateType) => void,
-    limits:number[]
+    limits:{
+        label: string,
+        value: number
+    }[],
+    color: string | TwColor,
+    dispatch:React.Dispatch<PDatatableActionTypes>,
 }

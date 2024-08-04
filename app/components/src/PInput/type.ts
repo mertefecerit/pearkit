@@ -4,7 +4,7 @@ import {TwColor} from "../types/TwColor";
 export interface IPInputPropTypes extends Omit<React.InputHTMLAttributes<HTMLInputElement>,'size'> {
     icon?: React.ReactNode;
     isLoading?: boolean | true | false,
-    color?: TwColor,
+    color?: string | TwColor,
     size?: string | 'sm' | 'base' | 'lg'
     variant?: string | 'outlined' | 'underlined' | 'filled'
     label?: string,

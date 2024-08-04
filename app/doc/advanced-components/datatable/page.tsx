@@ -35,7 +35,7 @@ const DatatablePage = () => {
         stack: dataStack.products,
         limit: 10,
         total: dataStack.total,
-        isPending:isPending
+        isPending:isPending,
     }
     return (
         <PDatatable config={config}/>

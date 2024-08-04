@@ -26,7 +26,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     w-full
     text-gray-500;
     :global(.dark) & {
-      @apply bg-gray-700 text-gray-300;
+      @apply bg-gray-800 text-gray-300;
     }
 
     &.outlined {
@@ -37,7 +37,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
       border-gray-200
       border;
       :global(.dark) & {
-        @apply border-gray-500 focus-within:border-transparent;
+        @apply border-gray-700 focus-within:border-transparent;
       }
     }
 
@@ -79,7 +79,7 @@ $colors: 'slate', 'gray', 'zinc', 'neutral', 'stone', 'red', 'orange', 'amber', 
     &.isDisabled {
       @apply bg-gray-200 cursor-not-allowed;
       :global(.dark) & {
-        @apply bg-gray-500;
+        @apply bg-gray-700;
       }
     }
     & > div.passwordRevealIcon {
