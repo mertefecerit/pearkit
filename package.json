@@ -1,6 +1,6 @@
 {
   "name": "pearkit",
-  "version": "3.0.341",
+  "version": "3.0.391",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,30 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "axios": "^1.7.2",
-    "framer-motion": "^11.2.12",
+    "axios": "^1.7.7",
+    "framer-motion": "^11.5.4",
     "fuse.js": "^7.0.0",
     "lodash": "^4.17.21",
-    "next": "14.2.4",
-    "prop-types": "^15.8.1",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
-    "@iconify/react": "^5.0.1",
+    "@iconify/react": "^5.0.2",
     "@types/lodash": "^4.17.7",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.7",
+    "@types/react-dom": "^18.3.0",
     "@types/react-syntax-highlighter": "^15.5.13",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4",
-    "postcss": "^8",
-    "sass": "^1.77.6",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.5.4",
-    "vite": "^5.2.0"
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.4",
+    "postcss": "^8.4.47",
+    "sass": "^1.79.1",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.6"
   }
 }

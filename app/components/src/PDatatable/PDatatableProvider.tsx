@@ -37,13 +37,13 @@ export const PDatatableProvider:React.FC<IPDatatableProviderTypes> = ({children,
 
     const [tableState, dispatch] = useReducer(tableStateReducer, initialTableState)
 
-    const limits= [
+    const limits= config.limits ?? [
         {label:'All',value:0},
         {label:'10',value:10},
         {label:'25',value:25},
         {label:'50',value:50},
         {label:'100',value:100},
-    ] ?? config.limits;
+    ];
 
     const color = config.color ?? "lime";
 

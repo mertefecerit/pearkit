@@ -4,6 +4,12 @@
     @apply bg-gray-800;
   }
   & > tr > th {
-    @apply px-4 py-2;
+    @apply px-4 py-2 hover:bg-gray-200 cursor-pointer;
+    &:not(:last-child){
+      @apply border-r;
+    }
+    & > div {
+      @apply flex justify-between items-center gap-2 text-nowrap;
+    }
   }
 }

@@ -6,7 +6,7 @@
     @apply divide-gray-700;
   }
   & > tr {
-    @apply hover:cursor-pointer;
+    @apply hover:cursor-context-menu;
     @each $color, $rgb in $colors {
       &.#{$color} {
         @if $color != 'white' and $color != 'black'{

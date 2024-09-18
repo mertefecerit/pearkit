@@ -15,7 +15,6 @@ export default defineConfig({
                 globals: {
                     react: 'React',
                     'react-dom': 'ReactDOM',
-                    'prop-types': 'PropTypes',
                     'framer-motion': 'framerMotion',
                     'lodash': '_'
                 }

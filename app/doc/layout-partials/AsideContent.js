@@ -234,6 +234,16 @@ export default function AsideContent() {
                         {path: '#api', label: 'Api'},
                     ]
                 },
+                {
+                    path: '/doc/advanced-components/datatable',
+                    label: 'Datatable (Beta)',
+                    children: [
+                        {path: '#import', label: 'Import'},
+                        {path: '#basic', label: 'Basic'},
+                        {path: '#accessibility', label: 'Accessibility'},
+                        {path: '#api', label: 'Api'},
+                    ]
+                },
             ]
         }
     ]

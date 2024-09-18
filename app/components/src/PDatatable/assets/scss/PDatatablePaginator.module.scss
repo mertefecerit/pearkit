@@ -1,7 +1,7 @@
 @import "../../../../../assets/scss/colors";
 
 .wrapper {
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between select-none;
 
 
   @each $color, $rgb in $colors {
