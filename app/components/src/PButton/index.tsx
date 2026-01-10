@@ -20,6 +20,7 @@ const PButton:React.FC<IPButtonPropTypes> = (
         rounded = false,
         disabled = false,
         target = "_blank",
+        ref,
         ...props
     }
 ) => {
@@ -35,6 +36,7 @@ const PButton:React.FC<IPButtonPropTypes> = (
         !props.href ?
             <motion.button
                 {...props}
+                ref={ref as React.Ref<HTMLButtonElement>}
                 whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
                 disabled={disabled || isLoading}
                 className={`${styles.wrapper} ${styles[color]} ${styles[size]} ${styles[variant]} ${!label ? styles.onlyIcon : ''} ${raised ? styles.raised : ''} ${rounded ? styles.roundedMax : ''} ${props.className}`}
@@ -44,6 +46,7 @@ const PButton:React.FC<IPButtonPropTypes> = (
             :
             <motion.a
                 {...props}
+                ref={ref as React.Ref<HTMLAnchorElement>}
                 target={target}
                 onClick={disabled || isLoading ? (e) => e.preventDefault() : props.onClick}
                 whileTap={{scale: (disabled || isLoading || !animation) ? 1 : 0.95}}
