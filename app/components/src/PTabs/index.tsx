@@ -2,7 +2,7 @@
 
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./PTabs.module.scss";
-import {IPTabsPropTypes} from "./type";
+import {IPTabPropTypes, IPTabsPropTypes} from "./type";
 import {motion} from "framer-motion";
 import {ArrowBackIos, ArrowForwardIos} from "../components/icons";
 
@@ -56,7 +56,7 @@ const PTabs:React.FC<IPTabsPropTypes> = (
                 <div className={`${styles.content} ${showArrows ? styles.isOverflow : ''}`} ref={tabListRef}>
                 {
                         React.Children.map(props.children, (child, i) => {
-                            return React.isValidElement(child) &&
+                            return React.isValidElement<IPTabPropTypes>(child) &&
                                 <span
                                     className={`${activeIndex === i ? styles.isActive : ''} ${styles[color]} ${child.props.disabled ? styles.isDisabled : ''}`}
                                     onClick={

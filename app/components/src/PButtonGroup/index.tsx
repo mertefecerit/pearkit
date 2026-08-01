@@ -17,7 +17,7 @@ const PButtonGroup:React.FC<IPButtonGroupPropType> = (
             {
                 React.Children.map(props.children, (child) => {
                     if (React.isValidElement(child)) {
-                        return React.cloneElement(child as ReactElement, {animation: false})
+                        return React.cloneElement(child as ReactElement<{animation?: boolean}>, {animation: false})
                     }
                     return child;
                 })
