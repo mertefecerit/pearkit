@@ -2,7 +2,7 @@
 
 import styles from './PDrawer.module.scss';
 import {motion, AnimatePresence} from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {join} from "lodash";
 import {Positions} from "../types/Positions";
 import {IPDrawerPropTypes, IVariants} from "./type";
@@ -16,24 +16,13 @@ const PDrawer: React.FC<IPDrawerPropTypes> = (
     }
 ) => {
 
-    const [directionClass, setDirectionClass] = useState(join([styles.leftOrRightSide, styles.leftSide], ' '));
-
-    useEffect(() => {
-        switch (position) {
-            case "right":
-                setDirectionClass(join([styles.leftOrRightSide, styles.rightSide], ' '))
-                break;
-            case "top":
-                setDirectionClass(join([styles.topOrBottomSide, styles.topSide], ' '))
-                break;
-            case "bottom":
-                setDirectionClass(join([styles.topOrBottomSide, styles.bottomSide], ' '))
-                break;
-            case 'left' :
-                setDirectionClass(join([styles.leftOrRightSide, styles.leftSide], ' '))
-                break;
-        }
-    }, [position])
+    const directionClasses:Record<Positions, string> = {
+        left: join([styles.leftOrRightSide, styles.leftSide], ' '),
+        right: join([styles.leftOrRightSide, styles.rightSide], ' '),
+        top: join([styles.topOrBottomSide, styles.topSide], ' '),
+        bottom: join([styles.topOrBottomSide, styles.bottomSide], ' ')
+    }
+    const directionClass = directionClasses[position];
 
     const variants:Record<Positions, IVariants> = {
         left: {visible: {x: 0}, hidden: {x: '-100%'}},

@@ -4,7 +4,7 @@ import React from "react";
 import styles from './PDropdown.module.scss';
 import {ChevronDownIcon, CloseIcon} from "../components/icons";
 import {AnimatePresence, motion} from "framer-motion";
-import {useEffect, useRef, useState} from "react";
+import {useRef, useState} from "react";
 import {useClickOutside} from "../hooks";
 import {DropdownItemType, IPDropdownPropTypes} from "./type";
 
@@ -27,14 +27,24 @@ const  PDropdown:React.FC<IPDropdownPropTypes> = (
     const [selectedOption, setSelectedOption] = useState(selected);
     const [highlightedIndex, setHighlightedIndex] = useState(-1);
 
-    useClickOutside(dropdownRef, () => setStatus(false));
+    const closeDropdown = () => {
+        setStatus(false);
+        setHighlightedIndex(-1);
+    }
+
+    const toggleDropdown = () => {
+        if (status) closeDropdown();
+        else setStatus(true);
+    }
+
+    useClickOutside(dropdownRef, closeDropdown);
 
     const toggle = (e:React.KeyboardEvent) => {
         if (disabled) return;
-        if (e.key === 'Escape') setStatus(false);
+        if (e.key === 'Escape') closeDropdown();
         if (e.key === ' ' || e.key === "Enter") {
             e.preventDefault();
-            setStatus(!status);
+            toggleDropdown();
         }
         if (e.key === 'ArrowDown') {
             e.preventDefault();
@@ -59,7 +69,7 @@ const  PDropdown:React.FC<IPDropdownPropTypes> = (
         if (!status) return;
         onChange(value);
         setSelectedOption(value);
-        setStatus(false);
+        closeDropdown();
     }
 
     const clearSelectedOption = (e:React.MouseEvent) => {
@@ -69,17 +79,10 @@ const  PDropdown:React.FC<IPDropdownPropTypes> = (
         onChange({});
     }
 
-    useEffect(() => {
-        if (!status) {
-            setHighlightedIndex(-1);
-        }
-    }, [status]);
-
-
     return (
         <div
             onKeyDown={toggle}
-            onBlur={() => setStatus(false)}
+            onBlur={closeDropdown}
             tabIndex={disabled ? -1 : 0}
             className={`${ styles.wrapper } ${ status ? styles.isOpen : '' } ${ disabled ? styles.isDisabled : '' }`}
             ref={dropdownRef}
@@ -95,7 +98,7 @@ const  PDropdown:React.FC<IPDropdownPropTypes> = (
             </select>
 
             <div
-                onClick={() => {!disabled && setStatus(!status)}}
+                onClick={() => {!disabled && toggleDropdown()}}
                 className={`${styles.placeholder} ${styles[color]}`}
             >
                 {

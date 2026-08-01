@@ -4,7 +4,8 @@ import POverlay from "../POverlay";
 import {motion} from "framer-motion";
 import CloseIcon from "../components/icons/CloseIcon";
 import ReactDOM from "react-dom";
-import React, {useEffect, useState} from "react";
+import React from "react";
+import {useIsHydrated} from "../hooks";
 import {IPModalPropType} from "./type";
 
 const PModal:React.FC<IPModalPropType> = (
@@ -20,8 +21,7 @@ const PModal:React.FC<IPModalPropType> = (
         ...props
     }
 ) => {
-    const [documentLoaded,setDocumentLoaded] = useState(false);
-    useEffect(() => setDocumentLoaded(true),[]);
+    const documentLoaded = useIsHydrated();
 
     const closeHandler = () => {
         closable && close();

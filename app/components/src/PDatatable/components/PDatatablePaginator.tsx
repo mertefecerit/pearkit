@@ -1,15 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React, {useMemo} from 'react';
 import styles from "../assets/scss/PDatatablePaginator.module.scss";
 import {usePDatatable} from "../PDatatableProvider";
 import {ArrowBackIos, ArrowForwardIos} from "../../components/icons";
 
 const PDatatablePaginator = () => {
     const {config,dispatch, tableState,color} = usePDatatable();
-    const [pageNumbers, setPageNumbers] = useState<number[]>([]);
     const currentPage = Math.floor(tableState.skip / tableState.limit) + 1;
     const totalPages = Math.ceil(config.total / tableState.limit);
 
-    useEffect(() => {
+    const pageNumbers = useMemo(() => {
         let startPage = Math.max(currentPage - 2, 1);
         let endPage = Math.min(currentPage + 2, totalPages);
         if (totalPages <= 5) {
@@ -22,12 +21,12 @@ const PDatatablePaginator = () => {
                 startPage = Math.max(totalPages - 4, 1);
             }
         }
-        let pageNumberStack:number[] = [];
+        const pageNumberStack:number[] = [];
         for (let i = startPage; i <= endPage; i++) {
             pageNumberStack.push(i);
         }
-        setPageNumbers(pageNumberStack);
-    }, [totalPages, currentPage,tableState]);
+        return pageNumberStack;
+    }, [totalPages, currentPage]);
 
 
     const previousHandler = () => {

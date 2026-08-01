@@ -1,7 +1,7 @@
 "use client"
 
 import styles from './PBadge.module.scss';
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {IPBadgePropTypes} from "./type";
 
 const PBadge:React.FC<IPBadgePropTypes> = (
@@ -12,14 +12,7 @@ const PBadge:React.FC<IPBadgePropTypes> = (
         ...props
     }
 ) => {
-    const [modValue, setModValue] = useState('');
-    useEffect(() => {
-        if (value > 99) {
-            setModValue('9+')
-        } else {
-            setModValue(value.toString())
-        }
-    }, [value]);
+    const modValue = value > 99 ? '9+' : value.toString();
     return (
         <div
             className={`${styles.wrapper} ${styles[size]} ${styles[color]}`}

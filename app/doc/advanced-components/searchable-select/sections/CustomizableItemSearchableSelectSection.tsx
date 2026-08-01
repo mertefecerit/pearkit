@@ -5,8 +5,26 @@ import {PSearchableSelect} from "@/app/components/src";
 import axios from "axios";
 import {PTag} from "@/app/components/src";
 
+const CustomItemComponent = (props:any) => {
+    return (
+        <div className="flex gap-2 items-center">
+            <img src={props.images[0]} alt={props.title} className="size-6 w-auto"/>
+            <span>{props.title}</span>
+        </div>
+    )
+}
+
 const CustomizableItemSearchableSelectSection: React.FC = () => {
     const codeBlock = `
+    const CustomItemComponent = (props) => {
+        return (
+            <div className="flex gap-2 items-center">
+                <img src={props.images[0]} alt={props.title} className="size-6 w-auto"/>
+                <span>{props.title}</span>
+            </div>
+        )
+    }
+
     const [selected, setSelected] = useState({});
     const [products, setProducts] = useState([]);
     const [isPending, setIsPending] = useState(false);
@@ -21,16 +39,7 @@ const CustomizableItemSearchableSelectSection: React.FC = () => {
         setProducts(response.data.products);
         setIsPending(false);
     }
-    
-    const CustomItemComponent = (props) => {
-        return (
-            <div className="flex gap-2 items-center">
-                <img src={props.images[0]} alt={props.title} className="size-6 w-auto"/>
-                <span>{props.title}</span>
-            </div>
-        )
-    }
-    
+
     <PSearchableSelect
         selected={selected}
         selector={"title"}
@@ -56,15 +65,6 @@ const CustomizableItemSearchableSelectSection: React.FC = () => {
         const response = await axios.get(url);
         setProducts(response.data.products);
         setIsPending(false);
-    }
-
-    const CustomItemComponent = (props:any) => {
-        return (
-            <div className="flex gap-2 items-center">
-                <img src={props.images[0]} alt={props.title} className="size-6 w-auto"/>
-                <span>{props.title}</span>
-            </div>
-        )
     }
 
     return (

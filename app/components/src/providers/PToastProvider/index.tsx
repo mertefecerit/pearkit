@@ -1,6 +1,6 @@
 "use client";
 
-import React, {createContext, useContext, useState} from 'react';
+import React, {createContext, useCallback, useContext, useRef, useState} from 'react';
 import {ToastConfig, ToastContextType, ToastProviderProps, ToastType} from "./types";
 import {PToast} from "../../";
 
@@ -13,19 +13,21 @@ export const PToastProvider: React.FC<ToastProviderProps> = ({children}) => {
         timeout: 3000,
     })
 
-    const fire = (toast: ToastType, config?: ToastConfig) => {
-        const id = Date.now();
+    const lastId = useRef(0);
+
+    const remove = useCallback((id: number) => {
+        setToasts((prevToasts) => prevToasts.filter((toast) => toast.id !== id));
+    }, [])
+
+    const fire = useCallback((toast: ToastType, config?: ToastConfig) => {
+        const id = ++lastId.current;
         toast.id = id;
         if (!toast.type) toast.type = 'info';
         const newConfig = {...defaultConfig, ...config};
         setDefaultConfig(newConfig);
         setToasts((prevToast) => [...prevToast, toast]);
         setTimeout(() => remove(id), newConfig.timeout);
-    }
-
-    const remove = (id: number) => {
-        setToasts((prevToasts) => prevToasts.filter((toast) => toast.id !== id));
-    }
+    }, [defaultConfig, remove])
 
     return (
         <PToastContext.Provider value={{fire}}>

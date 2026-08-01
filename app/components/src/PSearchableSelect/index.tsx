@@ -26,11 +26,12 @@ const PSearchableSelect: React.FC<IPSearchableSelectPropTypes> = (
     }
 ) => {
     const wrapperRef = useRef(null);
-    useClickOutside(wrapperRef, () => setStatus(false));
 
     const [status, setStatus] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [payload, setPayload] = useState<ValuesType>([])
+
+    useClickOutside(wrapperRef, () => setStatus(false));
 
     const onToggleHandler = useCallback(() => {
         if (disabled) return;
